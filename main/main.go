@@ -1,19 +1,19 @@
 package main
 
 import (
-	"CK2Commands/family/bi"
-	"CK2Commands/family/fu"
-	"CK2Commands/family/lin"
-	"CK2Commands/family/lou"
-	"CK2Commands/family/pictish"
-	"CK2Commands/family/sesende"
-	"CK2Commands/family/wu"
-	"CK2Commands/family/wuyibu"
-	"CK2Commands/family/yin"
-	"CK2Commands/family/yuan"
-	"CK2Commands/people"
 	"fmt"
-	"github.com/thalesfu/paradoxtools/CK2/earth"
+	"github.com/thalesfu/CK2Commands/earth"
+	"github.com/thalesfu/CK2Commands/family/bi"
+	"github.com/thalesfu/CK2Commands/family/fu"
+	"github.com/thalesfu/CK2Commands/family/lin"
+	"github.com/thalesfu/CK2Commands/family/lou"
+	"github.com/thalesfu/CK2Commands/family/pictish"
+	"github.com/thalesfu/CK2Commands/family/sesende"
+	"github.com/thalesfu/CK2Commands/family/wu"
+	"github.com/thalesfu/CK2Commands/family/wuyibu"
+	"github.com/thalesfu/CK2Commands/family/yin"
+	"github.com/thalesfu/CK2Commands/family/yuan"
+	"github.com/thalesfu/CK2Commands/people"
 )
 
 func main() {

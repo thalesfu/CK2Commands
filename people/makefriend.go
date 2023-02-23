@@ -1,9 +1,9 @@
 package people
 
 import (
-	"CK2Commands/utils"
 	"bufio"
 	"fmt"
+	"github.com/thalesfu/CK2Commands/utils"
 	"log"
 )
 

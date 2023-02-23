@@ -1,8 +1,8 @@
 package people
 
 import (
-	"CK2Commands/utils"
 	"bufio"
+	"github.com/thalesfu/CK2Commands/utils"
 	"log"
 	"math/rand"
 	"time"

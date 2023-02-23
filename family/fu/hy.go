@@ -1,7 +1,7 @@
 package fu
 
 import (
-	"CK2Commands/people"
+	"github.com/thalesfu/CK2Commands/people"
 )
 
 func Hy() {
