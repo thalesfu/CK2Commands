@@ -29,6 +29,6 @@ var educationTraits = []string{
 
 func removeEducationTraits(writer *bufio.Writer, peopleId int) {
 	for _, trait := range educationTraits {
-		removeTrait(writer, trait, peopleId)
+		writeRemoveTrait(writer, trait, peopleId)
 	}
 }

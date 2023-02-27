@@ -14,13 +14,13 @@ var fatherTraits = []string{
 
 func addFatherTraits(writer *bufio.Writer, peopleId int) {
 	for _, trait := range fatherTraits {
-		addTrait(writer, trait, peopleId)
+		writeAddTrait(writer, trait, peopleId)
 	}
 }
 
 func addFatherLearning(writer *bufio.Writer, peopleId int) {
-	addLearning(writer, peopleId, 5)
-	addMartial(writer, peopleId, 15)
+	writeAddLearning(writer, peopleId, 5)
+	writeAddMartial(writer, peopleId, 15)
 }
 
 func getFatherFunctions() []buildFunc {

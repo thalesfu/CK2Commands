@@ -5,35 +5,35 @@ import (
 	"fmt"
 )
 
-func addTrait(writer *bufio.Writer, trait string, peopleId int) {
+func writeAddTrait(writer *bufio.Writer, trait string, peopleId int) {
 	writer.WriteString(fmt.Sprintf("add_trait %s %d\n", trait, peopleId))
 }
 
-func removeTrait(writer *bufio.Writer, trait string, peopleId int) {
+func writeRemoveTrait(writer *bufio.Writer, trait string, peopleId int) {
 	writer.WriteString(fmt.Sprintf("remove_trait %s %d\n", trait, peopleId))
 }
 
-func addDiplomacy(writer *bufio.Writer, peopleId int, value int) {
+func writeAddDiplomacy(writer *bufio.Writer, peopleId int, value int) {
 	writer.WriteString(fmt.Sprintf("add_diplomacy %d %d\n", peopleId, value))
 }
 
-func addMartial(writer *bufio.Writer, peopleId int, value int) {
+func writeAddMartial(writer *bufio.Writer, peopleId int, value int) {
 	writer.WriteString(fmt.Sprintf("add_martial %d %d\n", peopleId, value))
 }
 
-func addStewardship(writer *bufio.Writer, peopleId int, value int) {
+func writeAddStewardship(writer *bufio.Writer, peopleId int, value int) {
 	writer.WriteString(fmt.Sprintf("add_stewardship %d %d\n", peopleId, value))
 }
 
-func addIntrigue(writer *bufio.Writer, peopleId int, value int) {
+func writeAddIntrigue(writer *bufio.Writer, peopleId int, value int) {
 	writer.WriteString(fmt.Sprintf("add_intrigue %d %d\n", peopleId, value))
 }
 
-func addLearning(writer *bufio.Writer, peopleId int, value int) {
+func writeAddLearning(writer *bufio.Writer, peopleId int, value int) {
 	writer.WriteString(fmt.Sprintf("add_learning %d %d\n", peopleId, value))
 }
 
-func changeCulture(writer *bufio.Writer, peopleId int, culture string, ethnicity string) {
+func writeChangeCulture(writer *bufio.Writer, peopleId int, culture string, ethnicity string) {
 	if culture != "" {
 		writer.WriteString(fmt.Sprintf("culture %d %s\n", peopleId, culture))
 	}
@@ -43,6 +43,6 @@ func changeCulture(writer *bufio.Writer, peopleId int, culture string, ethnicity
 	}
 }
 
-func changeReligion(writer *bufio.Writer, peopleId int, religion string, ethnicity string) {
+func writeChangeReligion(writer *bufio.Writer, peopleId int, religion string) {
 	writer.WriteString(fmt.Sprintf("religion %d %s\n", peopleId, religion))
 }

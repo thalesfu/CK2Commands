@@ -17,7 +17,7 @@ type JibalDuke interface {
     CLuristan洛雷斯坦() 	luristan.LuristanCounty
     CQom库姆() 	qom.QomCounty
     CRayy雷伊() 	rayy.RayyCounty
-    CZanjan_abhar赞詹—阿卜哈尔() 	zanjan_abhar.Zanjan_abharCounty
+    CZanjan_abhar赞詹_阿卜哈尔() 	zanjan_abhar.Zanjan_abharCounty
 }
 
 type 吉巴勒JibalDuke struct {
@@ -27,7 +27,7 @@ type 吉巴勒JibalDuke struct {
 	洛雷斯坦Luristan 	luristan.LuristanCounty
 	库姆Qom 	qom.QomCounty
 	雷伊Rayy 	rayy.RayyCounty
-	赞詹—阿卜哈尔Zanjan_abhar 	zanjan_abhar.Zanjan_abharCounty
+	赞詹_阿卜哈尔Zanjan_abhar 	zanjan_abhar.Zanjan_abharCounty
 }
 
 func (d *吉巴勒JibalDuke) CEsfahan伊斯法罕() esfahan.EsfahanCounty {
@@ -50,8 +50,8 @@ func (d *吉巴勒JibalDuke) CRayy雷伊() rayy.RayyCounty {
 	return d.雷伊Rayy
 }
     
-func (d *吉巴勒JibalDuke) CZanjan_abhar赞詹—阿卜哈尔() zanjan_abhar.Zanjan_abharCounty {
-	return d.赞詹—阿卜哈尔Zanjan_abhar
+func (d *吉巴勒JibalDuke) CZanjan_abhar赞詹_阿卜哈尔() zanjan_abhar.Zanjan_abharCounty {
+	return d.赞詹_阿卜哈尔Zanjan_abhar
 }
     
 var DJibal吉巴勒 JibalDuke = &吉巴勒JibalDuke{}
@@ -80,7 +80,7 @@ func init() {
 	f.雷伊Rayy = rayy.CRayy雷伊
 	f.雷伊Rayy.SetParent(f)
 	
-	f.赞詹—阿卜哈尔Zanjan_abhar = zanjan_abhar.CZanjan_abhar赞詹—阿卜哈尔
-	f.赞詹—阿卜哈尔Zanjan_abhar.SetParent(f)
+	f.赞詹_阿卜哈尔Zanjan_abhar = zanjan_abhar.CZanjan_abhar赞詹_阿卜哈尔
+	f.赞詹_阿卜哈尔Zanjan_abhar.SetParent(f)
 	
 }

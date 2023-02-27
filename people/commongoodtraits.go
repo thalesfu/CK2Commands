@@ -20,6 +20,6 @@ var commonGoodTraits = []string{
 
 func addCommonGoodTraits(writer *bufio.Writer, peopleId int) {
 	for _, trait := range commonGoodTraits {
-		addTrait(writer, trait, peopleId)
+		writeAddTrait(writer, trait, peopleId)
 	}
 }

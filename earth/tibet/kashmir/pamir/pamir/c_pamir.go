@@ -7,7 +7,7 @@ import (
 type PamirCounty interface {
     feud.County
     BDarmadar达麦大() 	feud.Barony
-    BDaroot_korgon达拉乌特—库尔干() 	feud.Barony
+    BDaroot_korgon达拉乌特_库尔干() 	feud.Barony
     BKala_panja喀喇喷赤() 	feud.Barony
     BKhorugh霍罗格() 	feud.Barony
     BTraguladar特拉古拉达尔() 	feud.Barony
@@ -18,7 +18,7 @@ type PamirCounty interface {
 type 播密PamirCounty struct {
 	feud.BaseCounty
 	达麦大Darmadar 	feud.Barony
-	达拉乌特—库尔干Daroot_korgon 	feud.Barony
+	达拉乌特_库尔干Daroot_korgon 	feud.Barony
 	喀喇喷赤Kala_panja 	feud.Barony
 	霍罗格Khorugh 	feud.Barony
 	特拉古拉达尔Traguladar 	feud.Barony
@@ -30,8 +30,8 @@ func (c *播密PamirCounty) BDarmadar达麦大() feud.Barony {
 	return c.达麦大Darmadar
 }
     
-func (c *播密PamirCounty) BDaroot_korgon达拉乌特—库尔干() feud.Barony {
-	return c.达拉乌特—库尔干Daroot_korgon
+func (c *播密PamirCounty) BDaroot_korgon达拉乌特_库尔干() feud.Barony {
+	return c.达拉乌特_库尔干Daroot_korgon
 }
     
 func (c *播密PamirCounty) BKala_panja喀喇喷赤() feud.Barony {
@@ -69,8 +69,8 @@ func init() {
 	f.达麦大Darmadar = BDarmadar达麦大
 	f.达麦大Darmadar.SetParent(f)
 	
-	f.达拉乌特—库尔干Daroot_korgon = BDaroot_korgon达拉乌特—库尔干
-	f.达拉乌特—库尔干Daroot_korgon.SetParent(f)
+	f.达拉乌特_库尔干Daroot_korgon = BDaroot_korgon达拉乌特_库尔干
+	f.达拉乌特_库尔干Daroot_korgon.SetParent(f)
 	
 	f.喀喇喷赤Kala_panja = BKala_panja喀喇喷赤
 	f.喀喇喷赤Kala_panja.SetParent(f)

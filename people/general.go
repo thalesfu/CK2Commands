@@ -12,12 +12,12 @@ var generalTraits = []string{
 
 func addGeneralTraits(writer *bufio.Writer, peopleId int) {
 	for _, trait := range generalTraits {
-		addTrait(writer, trait, peopleId)
+		writeAddTrait(writer, trait, peopleId)
 	}
 }
 
 func addGeneralMartial(writer *bufio.Writer, peopleId int) {
-	addMartial(writer, peopleId, 5)
+	writeAddMartial(writer, peopleId, 5)
 }
 
 func getGeneralFunctions() []buildFunc {

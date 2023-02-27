@@ -3,7 +3,7 @@ package people
 import "bufio"
 
 func setCultureToHanPictish(writer *bufio.Writer, peopleId int) {
-	changeCulture(writer, peopleId, "han", "pictish")
+	writeChangeCulture(writer, peopleId, "han", "pictish")
 }
 
 func CultureIsHanPictish(peopleId ...int) {
@@ -15,7 +15,7 @@ func CultureIsHanPictish(peopleId ...int) {
 }
 
 func setCultureToHanScottish(writer *bufio.Writer, peopleId int) {
-	changeCulture(writer, peopleId, "han", "scottish")
+	writeChangeCulture(writer, peopleId, "han", "scottish")
 }
 
 func CultureIsHanScottish(peopleId ...int) {
@@ -27,7 +27,7 @@ func CultureIsHanScottish(peopleId ...int) {
 }
 
 func setCultureToHanWelsh(writer *bufio.Writer, peopleId int) {
-	changeCulture(writer, peopleId, "han", "welsh")
+	writeChangeCulture(writer, peopleId, "han", "welsh")
 }
 
 func CultureIsHanWelsh(peopleId ...int) {

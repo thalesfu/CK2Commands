@@ -44,7 +44,7 @@ var illTraits = []string{
 
 func cureIlls(writer *bufio.Writer, peopleId int) {
 	for _, trait := range illTraits {
-		removeTrait(writer, trait, peopleId)
+		writeRemoveTrait(writer, trait, peopleId)
 	}
 }
 

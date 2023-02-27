@@ -13,12 +13,12 @@ var doctorTraits = []string{
 
 func addDoctorTraits(writer *bufio.Writer, peopleId int) {
 	for _, trait := range doctorTraits {
-		addTrait(writer, trait, peopleId)
+		writeAddTrait(writer, trait, peopleId)
 	}
 }
 
 func addDoctorLearning(writer *bufio.Writer, peopleId int) {
-	addLearning(writer, peopleId, 10)
+	writeAddLearning(writer, peopleId, 10)
 }
 
 func getDoctorFunctions() []buildFunc {
