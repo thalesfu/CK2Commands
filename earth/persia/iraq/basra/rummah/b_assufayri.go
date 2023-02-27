@@ -11,7 +11,7 @@ type 苏费里AssufayriBarony struct {
 var BAssufayri苏费里 feud.Barony = &苏费里AssufayriBarony{}
 
 func init() {
-	f := BAssufayri苏费里.(*苏费里AssufayriBarony)
+    f := BAssufayri苏费里.(*苏费里AssufayriBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "assufayri",
 		TitleName: "苏费里",

@@ -11,7 +11,7 @@ type 奥利耶科利AuliekolBarony struct {
 var BAuliekol奥利耶科利 feud.Barony = &奥利耶科利AuliekolBarony{}
 
 func init() {
-	f := BAuliekol奥利耶科利.(*奥利耶科利AuliekolBarony)
+    f := BAuliekol奥利耶科利.(*奥利耶科利AuliekolBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "auliekol",
 		TitleName: "奥利耶科利",

@@ -11,7 +11,7 @@ type 卡尔塔雷_阿亚特KartalyBarony struct {
 var BKartaly卡尔塔雷_阿亚特 feud.Barony = &卡尔塔雷_阿亚特KartalyBarony{}
 
 func init() {
-	f := BKartaly卡尔塔雷_阿亚特.(*卡尔塔雷_阿亚特KartalyBarony)
+    f := BKartaly卡尔塔雷_阿亚特.(*卡尔塔雷_阿亚特KartalyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kartaly",
 		TitleName: "卡尔塔雷_阿亚特",

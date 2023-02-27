@@ -11,7 +11,7 @@ type 苇关WeiguanBarony struct {
 var BWeiguan苇关 feud.Barony = &苇关WeiguanBarony{}
 
 func init() {
-	f := BWeiguan苇关.(*苇关WeiguanBarony)
+    f := BWeiguan苇关.(*苇关WeiguanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "weiguan",
 		TitleName: "苇关",

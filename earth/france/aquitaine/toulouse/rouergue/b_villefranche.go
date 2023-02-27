@@ -11,7 +11,7 @@ type 自由城VillefrancheBarony struct {
 var BVillefranche自由城 feud.Barony = &自由城VillefrancheBarony{}
 
 func init() {
-	f := BVillefranche自由城.(*自由城VillefrancheBarony)
+    f := BVillefranche自由城.(*自由城VillefrancheBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "villefranche",
 		TitleName: "自由城",

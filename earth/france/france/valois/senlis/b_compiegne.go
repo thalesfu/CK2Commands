@@ -11,7 +11,7 @@ type 贡比涅CompiegneBarony struct {
 var BCompiegne贡比涅 feud.Barony = &贡比涅CompiegneBarony{}
 
 func init() {
-	f := BCompiegne贡比涅.(*贡比涅CompiegneBarony)
+    f := BCompiegne贡比涅.(*贡比涅CompiegneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "compiegne",
 		TitleName: "贡比涅",

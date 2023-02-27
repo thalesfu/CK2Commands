@@ -11,7 +11,7 @@ type 坎波那拉亚CamponarayaBarony struct {
 var BCamponaraya坎波那拉亚 feud.Barony = &坎波那拉亚CamponarayaBarony{}
 
 func init() {
-	f := BCamponaraya坎波那拉亚.(*坎波那拉亚CamponarayaBarony)
+    f := BCamponaraya坎波那拉亚.(*坎波那拉亚CamponarayaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "camponaraya",
 		TitleName: "坎波那拉亚",

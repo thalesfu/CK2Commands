@@ -11,7 +11,7 @@ type 泰于西内IvanovskayaBarony struct {
 var BIvanovskaya泰于西内 feud.Barony = &泰于西内IvanovskayaBarony{}
 
 func init() {
-	f := BIvanovskaya泰于西内.(*泰于西内IvanovskayaBarony)
+    f := BIvanovskaya泰于西内.(*泰于西内IvanovskayaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ivanovskaya",
 		TitleName: "泰于西内",

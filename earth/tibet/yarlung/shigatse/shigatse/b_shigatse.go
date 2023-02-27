@@ -11,7 +11,7 @@ type 日喀则ShigatseBarony struct {
 var BShigatse日喀则 feud.Barony = &日喀则ShigatseBarony{}
 
 func init() {
-	f := BShigatse日喀则.(*日喀则ShigatseBarony)
+    f := BShigatse日喀则.(*日喀则ShigatseBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "shigatse",
 		TitleName: "日喀则",

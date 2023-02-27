@@ -11,7 +11,7 @@ type 翳迦林伽视EklingjiBarony struct {
 var BEklingji翳迦林伽视 feud.Barony = &翳迦林伽视EklingjiBarony{}
 
 func init() {
-	f := BEklingji翳迦林伽视.(*翳迦林伽视EklingjiBarony)
+    f := BEklingji翳迦林伽视.(*翳迦林伽视EklingjiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "eklingji",
 		TitleName: "翳迦林伽视",

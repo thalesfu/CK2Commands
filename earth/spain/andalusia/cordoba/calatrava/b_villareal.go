@@ -11,7 +11,7 @@ type 比利亚雷亚尔VillarealBarony struct {
 var BVillareal比利亚雷亚尔 feud.Barony = &比利亚雷亚尔VillarealBarony{}
 
 func init() {
-	f := BVillareal比利亚雷亚尔.(*比利亚雷亚尔VillarealBarony)
+    f := BVillareal比利亚雷亚尔.(*比利亚雷亚尔VillarealBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "villareal",
 		TitleName: "比利亚雷亚尔",

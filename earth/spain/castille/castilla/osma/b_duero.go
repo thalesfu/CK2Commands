@@ -11,7 +11,7 @@ type 杜罗DueroBarony struct {
 var BDuero杜罗 feud.Barony = &杜罗DueroBarony{}
 
 func init() {
-	f := BDuero杜罗.(*杜罗DueroBarony)
+    f := BDuero杜罗.(*杜罗DueroBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "duero",
 		TitleName: "杜罗",

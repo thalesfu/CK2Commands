@@ -11,7 +11,7 @@ type 奥克瑙舒高陶格AknasugatagBarony struct {
 var BAknasugatag奥克瑙舒高陶格 feud.Barony = &奥克瑙舒高陶格AknasugatagBarony{}
 
 func init() {
-	f := BAknasugatag奥克瑙舒高陶格.(*奥克瑙舒高陶格AknasugatagBarony)
+    f := BAknasugatag奥克瑙舒高陶格.(*奥克瑙舒高陶格AknasugatagBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "aknasugatag",
 		TitleName: "奥克瑙舒高陶格",

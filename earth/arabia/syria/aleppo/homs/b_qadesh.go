@@ -11,7 +11,7 @@ type 卡迭石QadeshBarony struct {
 var BQadesh卡迭石 feud.Barony = &卡迭石QadeshBarony{}
 
 func init() {
-	f := BQadesh卡迭石.(*卡迭石QadeshBarony)
+    f := BQadesh卡迭石.(*卡迭石QadeshBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "qadesh",
 		TitleName: "卡迭石",

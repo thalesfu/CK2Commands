@@ -5,7 +5,7 @@ import (
 )
 
 type CandarKingdom interface {
-	feud.Kingdom
+    feud.Kingdom
 }
 
 type 钱达尔CandarKingdom struct {
@@ -20,7 +20,7 @@ func init() {
 		Title:     "candar",
 		TitleName: "钱达尔",
 		TitleCode: "k_candar",
-		Dukes:     map[string]feud.Duke{},
+		Dukes:  map[string]feud.Duke{},
 	}
 
 }

@@ -11,7 +11,7 @@ type 推罗TyrusBarony struct {
 var BTyrus推罗 feud.Barony = &推罗TyrusBarony{}
 
 func init() {
-	f := BTyrus推罗.(*推罗TyrusBarony)
+    f := BTyrus推罗.(*推罗TyrusBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tyrus",
 		TitleName: "推罗",

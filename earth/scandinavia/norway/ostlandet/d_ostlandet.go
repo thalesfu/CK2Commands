@@ -8,31 +8,31 @@ import (
 )
 
 type OstlandetDuke interface {
-	feud.Duke
-	CAkershus阿克什胡斯() akershus.AkershusCounty
-	CVestfold西福尔() vestfold.VestfoldCounty
-	CViken博胡斯伦() viken.VikenCounty
+    feud.Duke
+    CAkershus阿克什胡斯() 	akershus.AkershusCounty
+    CVestfold西福尔() 	vestfold.VestfoldCounty
+    CViken博胡斯伦() 	viken.VikenCounty
 }
 
 type 维肯OstlandetDuke struct {
 	feud.BaseDuke
-	阿克什胡斯Akershus akershus.AkershusCounty
-	西福尔Vestfold   vestfold.VestfoldCounty
-	博胡斯伦Viken     viken.VikenCounty
+	阿克什胡斯Akershus 	akershus.AkershusCounty
+	西福尔Vestfold 	vestfold.VestfoldCounty
+	博胡斯伦Viken 	viken.VikenCounty
 }
 
 func (d *维肯OstlandetDuke) CAkershus阿克什胡斯() akershus.AkershusCounty {
 	return d.阿克什胡斯Akershus
 }
-
+    
 func (d *维肯OstlandetDuke) CVestfold西福尔() vestfold.VestfoldCounty {
 	return d.西福尔Vestfold
 }
-
+    
 func (d *维肯OstlandetDuke) CViken博胡斯伦() viken.VikenCounty {
 	return d.博胡斯伦Viken
 }
-
+    
 var DOstlandet维肯 OstlandetDuke = &维肯OstlandetDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.阿克什胡斯Akershus = akershus.CAkershus阿克什胡斯
 	f.阿克什胡斯Akershus.SetParent(f)
-
+	
 	f.西福尔Vestfold = vestfold.CVestfold西福尔
 	f.西福尔Vestfold.SetParent(f)
-
+	
 	f.博胡斯伦Viken = viken.CViken博胡斯伦
 	f.博胡斯伦Viken.SetParent(f)
-
+	
 }

@@ -11,7 +11,7 @@ type 切尔诺贝利ChernobylBarony struct {
 var BChernobyl切尔诺贝利 feud.Barony = &切尔诺贝利ChernobylBarony{}
 
 func init() {
-	f := BChernobyl切尔诺贝利.(*切尔诺贝利ChernobylBarony)
+    f := BChernobyl切尔诺贝利.(*切尔诺贝利ChernobylBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chernobyl",
 		TitleName: "切尔诺贝利",

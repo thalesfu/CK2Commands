@@ -11,7 +11,7 @@ type 沃金WokingBarony struct {
 var BWoking沃金 feud.Barony = &沃金WokingBarony{}
 
 func init() {
-	f := BWoking沃金.(*沃金WokingBarony)
+    f := BWoking沃金.(*沃金WokingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "woking",
 		TitleName: "沃金",

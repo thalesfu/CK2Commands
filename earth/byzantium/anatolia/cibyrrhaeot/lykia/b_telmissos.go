@@ -11,7 +11,7 @@ type 特尔梅索斯TelmissosBarony struct {
 var BTelmissos特尔梅索斯 feud.Barony = &特尔梅索斯TelmissosBarony{}
 
 func init() {
-	f := BTelmissos特尔梅索斯.(*特尔梅索斯TelmissosBarony)
+    f := BTelmissos特尔梅索斯.(*特尔梅索斯TelmissosBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "telmissos",
 		TitleName: "特尔梅索斯",

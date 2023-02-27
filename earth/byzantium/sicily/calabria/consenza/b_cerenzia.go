@@ -11,7 +11,7 @@ type 切伦齐亚CerenziaBarony struct {
 var BCerenzia切伦齐亚 feud.Barony = &切伦齐亚CerenziaBarony{}
 
 func init() {
-	f := BCerenzia切伦齐亚.(*切伦齐亚CerenziaBarony)
+    f := BCerenzia切伦齐亚.(*切伦齐亚CerenziaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cerenzia",
 		TitleName: "切伦齐亚",

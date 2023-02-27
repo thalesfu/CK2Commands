@@ -11,7 +11,7 @@ type 根特迈利GenetemariamBarony struct {
 var BGenetemariam根特迈利 feud.Barony = &根特迈利GenetemariamBarony{}
 
 func init() {
-	f := BGenetemariam根特迈利.(*根特迈利GenetemariamBarony)
+    f := BGenetemariam根特迈利.(*根特迈利GenetemariamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "genetemariam",
 		TitleName: "根特迈利",

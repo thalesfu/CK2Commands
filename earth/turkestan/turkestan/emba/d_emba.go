@@ -7,25 +7,25 @@ import (
 )
 
 type EmbaDuke interface {
-	feud.Duke
-	CEmba恩巴() emba.EmbaCounty
-	CKangly康里() kangly.KanglyCounty
+    feud.Duke
+    CEmba恩巴() 	emba.EmbaCounty
+    CKangly康里() 	kangly.KanglyCounty
 }
 
 type 恩巴EmbaDuke struct {
 	feud.BaseDuke
-	恩巴Emba   emba.EmbaCounty
-	康里Kangly kangly.KanglyCounty
+	恩巴Emba 	emba.EmbaCounty
+	康里Kangly 	kangly.KanglyCounty
 }
 
 func (d *恩巴EmbaDuke) CEmba恩巴() emba.EmbaCounty {
 	return d.恩巴Emba
 }
-
+    
 func (d *恩巴EmbaDuke) CKangly康里() kangly.KanglyCounty {
 	return d.康里Kangly
 }
-
+    
 var DEmba恩巴 EmbaDuke = &恩巴EmbaDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.恩巴Emba = emba.CEmba恩巴
 	f.恩巴Emba.SetParent(f)
-
+	
 	f.康里Kangly = kangly.CKangly康里
 	f.康里Kangly.SetParent(f)
-
+	
 }

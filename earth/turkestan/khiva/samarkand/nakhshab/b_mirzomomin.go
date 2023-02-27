@@ -11,7 +11,7 @@ type 米尔佐莫明MirzomominBarony struct {
 var BMirzomomin米尔佐莫明 feud.Barony = &米尔佐莫明MirzomominBarony{}
 
 func init() {
-	f := BMirzomomin米尔佐莫明.(*米尔佐莫明MirzomominBarony)
+    f := BMirzomomin米尔佐莫明.(*米尔佐莫明MirzomominBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mirzomomin",
 		TitleName: "米尔佐莫明",

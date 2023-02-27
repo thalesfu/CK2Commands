@@ -11,7 +11,7 @@ type 哈拉新镇VillanuevadelajaraBarony struct {
 var BVillanuevadelajara哈拉新镇 feud.Barony = &哈拉新镇VillanuevadelajaraBarony{}
 
 func init() {
-	f := BVillanuevadelajara哈拉新镇.(*哈拉新镇VillanuevadelajaraBarony)
+    f := BVillanuevadelajara哈拉新镇.(*哈拉新镇VillanuevadelajaraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "villanuevadelajara",
 		TitleName: "哈拉新镇",

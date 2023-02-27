@@ -11,7 +11,7 @@ type 切塞纳蒂科CesenaticoBarony struct {
 var BCesenatico切塞纳蒂科 feud.Barony = &切塞纳蒂科CesenaticoBarony{}
 
 func init() {
-	f := BCesenatico切塞纳蒂科.(*切塞纳蒂科CesenaticoBarony)
+    f := BCesenatico切塞纳蒂科.(*切塞纳蒂科CesenaticoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cesenatico",
 		TitleName: "切塞纳蒂科",

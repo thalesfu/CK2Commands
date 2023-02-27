@@ -5,7 +5,7 @@ import (
 )
 
 type NicaeaEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 尼西亚帝国NicaeaEmpire struct {

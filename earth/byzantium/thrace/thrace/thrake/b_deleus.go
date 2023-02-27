@@ -11,7 +11,7 @@ type 蔽日DeleusBarony struct {
 var BDeleus蔽日 feud.Barony = &蔽日DeleusBarony{}
 
 func init() {
-	f := BDeleus蔽日.(*蔽日DeleusBarony)
+    f := BDeleus蔽日.(*蔽日DeleusBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "deleus",
 		TitleName: "蔽日",

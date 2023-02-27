@@ -11,7 +11,7 @@ type 戈桑布GausambeBarony struct {
 var BGausambe戈桑布 feud.Barony = &戈桑布GausambeBarony{}
 
 func init() {
-	f := BGausambe戈桑布.(*戈桑布GausambeBarony)
+    f := BGausambe戈桑布.(*戈桑布GausambeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gausambe",
 		TitleName: "戈桑布",

@@ -11,7 +11,7 @@ type 鸠波KupparBarony struct {
 var BKuppar鸠波 feud.Barony = &鸠波KupparBarony{}
 
 func init() {
-	f := BKuppar鸠波.(*鸠波KupparBarony)
+    f := BKuppar鸠波.(*鸠波KupparBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kuppar",
 		TitleName: "鸠波",

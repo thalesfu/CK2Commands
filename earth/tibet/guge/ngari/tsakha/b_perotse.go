@@ -11,7 +11,7 @@ type 别若则PerotseBarony struct {
 var BPerotse别若则 feud.Barony = &别若则PerotseBarony{}
 
 func init() {
-	f := BPerotse别若则.(*别若则PerotseBarony)
+    f := BPerotse别若则.(*别若则PerotseBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "perotse",
 		TitleName: "别若则",

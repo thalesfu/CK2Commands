@@ -11,7 +11,7 @@ type 耶内GeneBarony struct {
 var BGene耶内 feud.Barony = &耶内GeneBarony{}
 
 func init() {
-	f := BGene耶内.(*耶内GeneBarony)
+    f := BGene耶内.(*耶内GeneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gene",
 		TitleName: "耶内",

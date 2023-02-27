@@ -11,7 +11,7 @@ type 多罗戈布日DorogobyzhBarony struct {
 var BDorogobyzh多罗戈布日 feud.Barony = &多罗戈布日DorogobyzhBarony{}
 
 func init() {
-	f := BDorogobyzh多罗戈布日.(*多罗戈布日DorogobyzhBarony)
+    f := BDorogobyzh多罗戈布日.(*多罗戈布日DorogobyzhBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dorogobyzh",
 		TitleName: "多罗戈布日",

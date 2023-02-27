@@ -11,7 +11,7 @@ type 迦克墩ChalkedonBarony struct {
 var BChalkedon迦克墩 feud.Barony = &迦克墩ChalkedonBarony{}
 
 func init() {
-	f := BChalkedon迦克墩.(*迦克墩ChalkedonBarony)
+    f := BChalkedon迦克墩.(*迦克墩ChalkedonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chalkedon",
 		TitleName: "迦克墩",

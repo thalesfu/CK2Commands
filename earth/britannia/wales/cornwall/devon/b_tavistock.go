@@ -11,7 +11,7 @@ type 塔维斯托克TavistockBarony struct {
 var BTavistock塔维斯托克 feud.Barony = &塔维斯托克TavistockBarony{}
 
 func init() {
-	f := BTavistock塔维斯托克.(*塔维斯托克TavistockBarony)
+    f := BTavistock塔维斯托克.(*塔维斯托克TavistockBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tavistock",
 		TitleName: "塔维斯托克",

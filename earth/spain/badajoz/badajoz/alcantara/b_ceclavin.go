@@ -11,7 +11,7 @@ type 塞克拉温CeclavinBarony struct {
 var BCeclavin塞克拉温 feud.Barony = &塞克拉温CeclavinBarony{}
 
 func init() {
-	f := BCeclavin塞克拉温.(*塞克拉温CeclavinBarony)
+    f := BCeclavin塞克拉温.(*塞克拉温CeclavinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ceclavin",
 		TitleName: "塞克拉温",

@@ -11,7 +11,7 @@ type 赫拉克琉斯HeracleusBarony struct {
 var BHeracleus赫拉克琉斯 feud.Barony = &赫拉克琉斯HeracleusBarony{}
 
 func init() {
-	f := BHeracleus赫拉克琉斯.(*赫拉克琉斯HeracleusBarony)
+    f := BHeracleus赫拉克琉斯.(*赫拉克琉斯HeracleusBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "heracleus",
 		TitleName: "赫拉克琉斯",

@@ -9,37 +9,37 @@ import (
 )
 
 type JejakabhuktiDuke interface {
-	feud.Duke
-	CDamoh佗牟() damoh.DamohCounty
-	CGurgi古卢耆() gurgi.GurgiCounty
-	CKalanjara迦兰阇罗() kalanjara.KalanjaraCounty
-	CMahoba摩呼婆() mahoba.MahobaCounty
+    feud.Duke
+    CDamoh佗牟() 	damoh.DamohCounty
+    CGurgi古卢耆() 	gurgi.GurgiCounty
+    CKalanjara迦兰阇罗() 	kalanjara.KalanjaraCounty
+    CMahoba摩呼婆() 	mahoba.MahobaCounty
 }
 
 type 掷枳陀JejakabhuktiDuke struct {
 	feud.BaseDuke
-	佗牟Damoh       damoh.DamohCounty
-	古卢耆Gurgi      gurgi.GurgiCounty
-	迦兰阇罗Kalanjara kalanjara.KalanjaraCounty
-	摩呼婆Mahoba     mahoba.MahobaCounty
+	佗牟Damoh 	damoh.DamohCounty
+	古卢耆Gurgi 	gurgi.GurgiCounty
+	迦兰阇罗Kalanjara 	kalanjara.KalanjaraCounty
+	摩呼婆Mahoba 	mahoba.MahobaCounty
 }
 
 func (d *掷枳陀JejakabhuktiDuke) CDamoh佗牟() damoh.DamohCounty {
 	return d.佗牟Damoh
 }
-
+    
 func (d *掷枳陀JejakabhuktiDuke) CGurgi古卢耆() gurgi.GurgiCounty {
 	return d.古卢耆Gurgi
 }
-
+    
 func (d *掷枳陀JejakabhuktiDuke) CKalanjara迦兰阇罗() kalanjara.KalanjaraCounty {
 	return d.迦兰阇罗Kalanjara
 }
-
+    
 func (d *掷枳陀JejakabhuktiDuke) CMahoba摩呼婆() mahoba.MahobaCounty {
 	return d.摩呼婆Mahoba
 }
-
+    
 var DJejakabhukti掷枳陀 JejakabhuktiDuke = &掷枳陀JejakabhuktiDuke{}
 
 func init() {
@@ -53,14 +53,14 @@ func init() {
 
 	f.佗牟Damoh = damoh.CDamoh佗牟
 	f.佗牟Damoh.SetParent(f)
-
+	
 	f.古卢耆Gurgi = gurgi.CGurgi古卢耆
 	f.古卢耆Gurgi.SetParent(f)
-
+	
 	f.迦兰阇罗Kalanjara = kalanjara.CKalanjara迦兰阇罗
 	f.迦兰阇罗Kalanjara.SetParent(f)
-
+	
 	f.摩呼婆Mahoba = mahoba.CMahoba摩呼婆
 	f.摩呼婆Mahoba.SetParent(f)
-
+	
 }

@@ -11,7 +11,7 @@ type 煞割令SarkaraBarony struct {
 var BSarkara煞割令 feud.Barony = &煞割令SarkaraBarony{}
 
 func init() {
-	f := BSarkara煞割令.(*煞割令SarkaraBarony)
+    f := BSarkara煞割令.(*煞割令SarkaraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sarkara",
 		TitleName: "煞割令",

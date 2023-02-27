@@ -11,7 +11,7 @@ type 绕木切RamocheBarony struct {
 var BRamoche绕木切 feud.Barony = &绕木切RamocheBarony{}
 
 func init() {
-	f := BRamoche绕木切.(*绕木切RamocheBarony)
+    f := BRamoche绕木切.(*绕木切RamocheBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ramoche",
 		TitleName: "绕木切",

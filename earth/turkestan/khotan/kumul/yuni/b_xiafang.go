@@ -11,7 +11,7 @@ type 狭方XiafangBarony struct {
 var BXiafang狭方 feud.Barony = &狭方XiafangBarony{}
 
 func init() {
-	f := BXiafang狭方.(*狭方XiafangBarony)
+    f := BXiafang狭方.(*狭方XiafangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "xiafang",
 		TitleName: "狭方",

@@ -11,7 +11,7 @@ type 梅德日比日MedjybijBarony struct {
 var BMedjybij梅德日比日 feud.Barony = &梅德日比日MedjybijBarony{}
 
 func init() {
-	f := BMedjybij梅德日比日.(*梅德日比日MedjybijBarony)
+    f := BMedjybij梅德日比日.(*梅德日比日MedjybijBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "medjybij",
 		TitleName: "梅德日比日",

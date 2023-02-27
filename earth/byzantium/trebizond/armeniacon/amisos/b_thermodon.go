@@ -11,7 +11,7 @@ type 忒耳摩冬ThermodonBarony struct {
 var BThermodon忒耳摩冬 feud.Barony = &忒耳摩冬ThermodonBarony{}
 
 func init() {
-	f := BThermodon忒耳摩冬.(*忒耳摩冬ThermodonBarony)
+    f := BThermodon忒耳摩冬.(*忒耳摩冬ThermodonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "thermodon",
 		TitleName: "忒耳摩冬",

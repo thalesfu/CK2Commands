@@ -11,7 +11,7 @@ type 约廖坚YolotenBarony struct {
 var BYoloten约廖坚 feud.Barony = &约廖坚YolotenBarony{}
 
 func init() {
-	f := BYoloten约廖坚.(*约廖坚YolotenBarony)
+    f := BYoloten约廖坚.(*约廖坚YolotenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yoloten",
 		TitleName: "约廖坚",

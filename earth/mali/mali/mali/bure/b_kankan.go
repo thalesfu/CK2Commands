@@ -11,7 +11,7 @@ type 康康KankanBarony struct {
 var BKankan康康 feud.Barony = &康康KankanBarony{}
 
 func init() {
-	f := BKankan康康.(*康康KankanBarony)
+    f := BKankan康康.(*康康KankanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kankan",
 		TitleName: "康康",

@@ -11,7 +11,7 @@ type 颇罗伐地迦PhalavardhikaBarony struct {
 var BPhalavardhika颇罗伐地迦 feud.Barony = &颇罗伐地迦PhalavardhikaBarony{}
 
 func init() {
-	f := BPhalavardhika颇罗伐地迦.(*颇罗伐地迦PhalavardhikaBarony)
+    f := BPhalavardhika颇罗伐地迦.(*颇罗伐地迦PhalavardhikaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "phalavardhika",
 		TitleName: "颇罗伐地迦",

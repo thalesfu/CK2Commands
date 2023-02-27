@@ -11,7 +11,7 @@ type 卡梅里诺CamerinoBarony struct {
 var BCamerino卡梅里诺 feud.Barony = &卡梅里诺CamerinoBarony{}
 
 func init() {
-	f := BCamerino卡梅里诺.(*卡梅里诺CamerinoBarony)
+    f := BCamerino卡梅里诺.(*卡梅里诺CamerinoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "camerino",
 		TitleName: "卡梅里诺",

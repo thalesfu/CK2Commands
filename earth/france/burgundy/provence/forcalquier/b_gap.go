@@ -11,7 +11,7 @@ type 加普GapBarony struct {
 var BGap加普 feud.Barony = &加普GapBarony{}
 
 func init() {
-	f := BGap加普.(*加普GapBarony)
+    f := BGap加普.(*加普GapBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gap",
 		TitleName: "加普",

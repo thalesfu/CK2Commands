@@ -11,7 +11,7 @@ type 的里雅斯特TriesteBarony struct {
 var BTrieste的里雅斯特 feud.Barony = &的里雅斯特TriesteBarony{}
 
 func init() {
-	f := BTrieste的里雅斯特.(*的里雅斯特TriesteBarony)
+    f := BTrieste的里雅斯特.(*的里雅斯特TriesteBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "trieste",
 		TitleName: "的里雅斯特",

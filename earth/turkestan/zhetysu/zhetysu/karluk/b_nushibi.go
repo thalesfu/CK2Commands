@@ -11,7 +11,7 @@ type 弩失毕NushibiBarony struct {
 var BNushibi弩失毕 feud.Barony = &弩失毕NushibiBarony{}
 
 func init() {
-	f := BNushibi弩失毕.(*弩失毕NushibiBarony)
+    f := BNushibi弩失毕.(*弩失毕NushibiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nushibi",
 		TitleName: "弩失毕",

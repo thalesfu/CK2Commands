@@ -11,7 +11,7 @@ type 麻札MazarBarony struct {
 var BMazar麻札 feud.Barony = &麻札MazarBarony{}
 
 func init() {
-	f := BMazar麻札.(*麻札MazarBarony)
+    f := BMazar麻札.(*麻札MazarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mazar",
 		TitleName: "麻札",

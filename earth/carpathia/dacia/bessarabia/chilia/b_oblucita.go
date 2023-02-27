@@ -11,7 +11,7 @@ type 奥布卢奇察OblucitaBarony struct {
 var BOblucita奥布卢奇察 feud.Barony = &奥布卢奇察OblucitaBarony{}
 
 func init() {
-	f := BOblucita奥布卢奇察.(*奥布卢奇察OblucitaBarony)
+    f := BOblucita奥布卢奇察.(*奥布卢奇察OblucitaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "oblucita",
 		TitleName: "奥布卢奇察",

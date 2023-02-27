@@ -11,7 +11,7 @@ type 墨脱MedogBarony struct {
 var BMedog墨脱 feud.Barony = &墨脱MedogBarony{}
 
 func init() {
-	f := BMedog墨脱.(*墨脱MedogBarony)
+    f := BMedog墨脱.(*墨脱MedogBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "medog",
 		TitleName: "墨脱",

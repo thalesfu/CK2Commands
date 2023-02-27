@@ -11,7 +11,7 @@ type 韦勒姆WarehamBarony struct {
 var BWareham韦勒姆 feud.Barony = &韦勒姆WarehamBarony{}
 
 func init() {
-	f := BWareham韦勒姆.(*韦勒姆WarehamBarony)
+    f := BWareham韦勒姆.(*韦勒姆WarehamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wareham",
 		TitleName: "韦勒姆",

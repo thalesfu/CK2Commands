@@ -11,7 +11,7 @@ type 雷扎尔菲亚尔ReydarfjallBarony struct {
 var BReydarfjall雷扎尔菲亚尔 feud.Barony = &雷扎尔菲亚尔ReydarfjallBarony{}
 
 func init() {
-	f := BReydarfjall雷扎尔菲亚尔.(*雷扎尔菲亚尔ReydarfjallBarony)
+    f := BReydarfjall雷扎尔菲亚尔.(*雷扎尔菲亚尔ReydarfjallBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "reydarfjall",
 		TitleName: "雷扎尔菲亚尔",

@@ -8,31 +8,31 @@ import (
 )
 
 type GallowayDuke interface {
-	feud.Duke
-	CCarrick卡里克() carrick.CarrickCounty
-	CClydesdale克莱兹代尔() clydesdale.ClydesdaleCounty
-	CGalloway加洛韦() galloway.GallowayCounty
+    feud.Duke
+    CCarrick卡里克() 	carrick.CarrickCounty
+    CClydesdale克莱兹代尔() 	clydesdale.ClydesdaleCounty
+    CGalloway加洛韦() 	galloway.GallowayCounty
 }
 
 type 加洛韦GallowayDuke struct {
 	feud.BaseDuke
-	卡里克Carrick      carrick.CarrickCounty
-	克莱兹代尔Clydesdale clydesdale.ClydesdaleCounty
-	加洛韦Galloway     galloway.GallowayCounty
+	卡里克Carrick 	carrick.CarrickCounty
+	克莱兹代尔Clydesdale 	clydesdale.ClydesdaleCounty
+	加洛韦Galloway 	galloway.GallowayCounty
 }
 
 func (d *加洛韦GallowayDuke) CCarrick卡里克() carrick.CarrickCounty {
 	return d.卡里克Carrick
 }
-
+    
 func (d *加洛韦GallowayDuke) CClydesdale克莱兹代尔() clydesdale.ClydesdaleCounty {
 	return d.克莱兹代尔Clydesdale
 }
-
+    
 func (d *加洛韦GallowayDuke) CGalloway加洛韦() galloway.GallowayCounty {
 	return d.加洛韦Galloway
 }
-
+    
 var DGalloway加洛韦 GallowayDuke = &加洛韦GallowayDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.卡里克Carrick = carrick.CCarrick卡里克
 	f.卡里克Carrick.SetParent(f)
-
+	
 	f.克莱兹代尔Clydesdale = clydesdale.CClydesdale克莱兹代尔
 	f.克莱兹代尔Clydesdale.SetParent(f)
-
+	
 	f.加洛韦Galloway = galloway.CGalloway加洛韦
 	f.加洛韦Galloway.SetParent(f)
-
+	
 }

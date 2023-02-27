@@ -11,7 +11,7 @@ type 错草沟CuocaogouBarony struct {
 var BCuocaogou错草沟 feud.Barony = &错草沟CuocaogouBarony{}
 
 func init() {
-	f := BCuocaogou错草沟.(*错草沟CuocaogouBarony)
+    f := BCuocaogou错草沟.(*错草沟CuocaogouBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cuocaogou",
 		TitleName: "错草沟",

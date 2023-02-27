@@ -11,7 +11,7 @@ type 末城MochengBarony struct {
 var BMocheng末城 feud.Barony = &末城MochengBarony{}
 
 func init() {
-	f := BMocheng末城.(*末城MochengBarony)
+    f := BMocheng末城.(*末城MochengBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mocheng",
 		TitleName: "末城",

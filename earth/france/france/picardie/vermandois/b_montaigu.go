@@ -11,7 +11,7 @@ type 蒙泰居MontaiguBarony struct {
 var BMontaigu蒙泰居 feud.Barony = &蒙泰居MontaiguBarony{}
 
 func init() {
-	f := BMontaigu蒙泰居.(*蒙泰居MontaiguBarony)
+    f := BMontaigu蒙泰居.(*蒙泰居MontaiguBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "montaigu",
 		TitleName: "蒙泰居",

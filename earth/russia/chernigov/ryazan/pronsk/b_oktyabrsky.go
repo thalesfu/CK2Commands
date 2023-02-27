@@ -11,7 +11,7 @@ type 十月镇OktyabrskyBarony struct {
 var BOktyabrsky十月镇 feud.Barony = &十月镇OktyabrskyBarony{}
 
 func init() {
-	f := BOktyabrsky十月镇.(*十月镇OktyabrskyBarony)
+    f := BOktyabrsky十月镇.(*十月镇OktyabrskyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "oktyabrsky",
 		TitleName: "十月镇",

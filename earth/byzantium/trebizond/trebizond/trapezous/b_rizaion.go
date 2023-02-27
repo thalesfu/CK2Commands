@@ -11,7 +11,7 @@ type 里泽翁RizaionBarony struct {
 var BRizaion里泽翁 feud.Barony = &里泽翁RizaionBarony{}
 
 func init() {
-	f := BRizaion里泽翁.(*里泽翁RizaionBarony)
+    f := BRizaion里泽翁.(*里泽翁RizaionBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rizaion",
 		TitleName: "里泽翁",

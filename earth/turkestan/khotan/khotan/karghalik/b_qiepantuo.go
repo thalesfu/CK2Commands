@@ -11,7 +11,7 @@ type 朅盘陀QiepantuoBarony struct {
 var BQiepantuo朅盘陀 feud.Barony = &朅盘陀QiepantuoBarony{}
 
 func init() {
-	f := BQiepantuo朅盘陀.(*朅盘陀QiepantuoBarony)
+    f := BQiepantuo朅盘陀.(*朅盘陀QiepantuoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "qiepantuo",
 		TitleName: "朅盘陀",

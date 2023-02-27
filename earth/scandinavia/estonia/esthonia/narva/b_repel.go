@@ -11,7 +11,7 @@ type 雷佩尔RepelBarony struct {
 var BRepel雷佩尔 feud.Barony = &雷佩尔RepelBarony{}
 
 func init() {
-	f := BRepel雷佩尔.(*雷佩尔RepelBarony)
+    f := BRepel雷佩尔.(*雷佩尔RepelBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "repel",
 		TitleName: "雷佩尔",

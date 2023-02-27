@@ -11,7 +11,7 @@ type 本哈穆什BenhammouchBarony struct {
 var BBenhammouch本哈穆什 feud.Barony = &本哈穆什BenhammouchBarony{}
 
 func init() {
-	f := BBenhammouch本哈穆什.(*本哈穆什BenhammouchBarony)
+    f := BBenhammouch本哈穆什.(*本哈穆什BenhammouchBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "benhammouch",
 		TitleName: "本哈穆什",

@@ -11,7 +11,7 @@ type 雅典AthensBarony struct {
 var BAthens雅典 feud.Barony = &雅典AthensBarony{}
 
 func init() {
-	f := BAthens雅典.(*雅典AthensBarony)
+    f := BAthens雅典.(*雅典AthensBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "athens",
 		TitleName: "雅典",

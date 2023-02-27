@@ -11,7 +11,7 @@ type 雷普顿ReptonBarony struct {
 var BRepton雷普顿 feud.Barony = &雷普顿ReptonBarony{}
 
 func init() {
-	f := BRepton雷普顿.(*雷普顿ReptonBarony)
+    f := BRepton雷普顿.(*雷普顿ReptonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "repton",
 		TitleName: "雷普顿",

@@ -7,25 +7,25 @@ import (
 )
 
 type SalzburgDuke interface {
-	feud.Duke
-	CPongau蓬高() pongau.PongauCounty
-	CSalzburg萨尔茨堡() salzburg.SalzburgCounty
+    feud.Duke
+    CPongau蓬高() 	pongau.PongauCounty
+    CSalzburg萨尔茨堡() 	salzburg.SalzburgCounty
 }
 
 type 萨尔茨堡SalzburgDuke struct {
 	feud.BaseDuke
-	蓬高Pongau     pongau.PongauCounty
-	萨尔茨堡Salzburg salzburg.SalzburgCounty
+	蓬高Pongau 	pongau.PongauCounty
+	萨尔茨堡Salzburg 	salzburg.SalzburgCounty
 }
 
 func (d *萨尔茨堡SalzburgDuke) CPongau蓬高() pongau.PongauCounty {
 	return d.蓬高Pongau
 }
-
+    
 func (d *萨尔茨堡SalzburgDuke) CSalzburg萨尔茨堡() salzburg.SalzburgCounty {
 	return d.萨尔茨堡Salzburg
 }
-
+    
 var DSalzburg萨尔茨堡 SalzburgDuke = &萨尔茨堡SalzburgDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.蓬高Pongau = pongau.CPongau蓬高
 	f.蓬高Pongau.SetParent(f)
-
+	
 	f.萨尔茨堡Salzburg = salzburg.CSalzburg萨尔茨堡
 	f.萨尔茨堡Salzburg.SetParent(f)
-
+	
 }

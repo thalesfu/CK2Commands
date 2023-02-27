@@ -11,7 +11,7 @@ type 庞蒂弗拉克特PontefractBarony struct {
 var BPontefract庞蒂弗拉克特 feud.Barony = &庞蒂弗拉克特PontefractBarony{}
 
 func init() {
-	f := BPontefract庞蒂弗拉克特.(*庞蒂弗拉克特PontefractBarony)
+    f := BPontefract庞蒂弗拉克特.(*庞蒂弗拉克特PontefractBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pontefract",
 		TitleName: "庞蒂弗拉克特",

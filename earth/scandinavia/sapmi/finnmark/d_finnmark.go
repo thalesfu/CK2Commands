@@ -7,25 +7,25 @@ import (
 )
 
 type FinnmarkDuke interface {
-	feud.Duke
-	CFinnmark芬马克() finnmark.FinnmarkCounty
-	CNordland诺德兰() nordland.NordlandCounty
+    feud.Duke
+    CFinnmark芬马克() 	finnmark.FinnmarkCounty
+    CNordland诺德兰() 	nordland.NordlandCounty
 }
 
 type 芬马克FinnmarkDuke struct {
 	feud.BaseDuke
-	芬马克Finnmark finnmark.FinnmarkCounty
-	诺德兰Nordland nordland.NordlandCounty
+	芬马克Finnmark 	finnmark.FinnmarkCounty
+	诺德兰Nordland 	nordland.NordlandCounty
 }
 
 func (d *芬马克FinnmarkDuke) CFinnmark芬马克() finnmark.FinnmarkCounty {
 	return d.芬马克Finnmark
 }
-
+    
 func (d *芬马克FinnmarkDuke) CNordland诺德兰() nordland.NordlandCounty {
 	return d.诺德兰Nordland
 }
-
+    
 var DFinnmark芬马克 FinnmarkDuke = &芬马克FinnmarkDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.芬马克Finnmark = finnmark.CFinnmark芬马克
 	f.芬马克Finnmark.SetParent(f)
-
+	
 	f.诺德兰Nordland = nordland.CNordland诺德兰
 	f.诺德兰Nordland.SetParent(f)
-
+	
 }

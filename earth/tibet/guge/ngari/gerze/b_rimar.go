@@ -11,7 +11,7 @@ type 日玛RimarBarony struct {
 var BRimar日玛 feud.Barony = &日玛RimarBarony{}
 
 func init() {
-	f := BRimar日玛.(*日玛RimarBarony)
+    f := BRimar日玛.(*日玛RimarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rimar",
 		TitleName: "日玛",

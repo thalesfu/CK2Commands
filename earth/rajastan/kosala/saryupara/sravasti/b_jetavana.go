@@ -11,7 +11,7 @@ type 祇园JetavanaBarony struct {
 var BJetavana祇园 feud.Barony = &祇园JetavanaBarony{}
 
 func init() {
-	f := BJetavana祇园.(*祇园JetavanaBarony)
+    f := BJetavana祇园.(*祇园JetavanaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jetavana",
 		TitleName: "祇园",

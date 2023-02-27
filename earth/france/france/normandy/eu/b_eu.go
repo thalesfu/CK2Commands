@@ -11,7 +11,7 @@ type 厄镇EuBarony struct {
 var BEu厄镇 feud.Barony = &厄镇EuBarony{}
 
 func init() {
-	f := BEu厄镇.(*厄镇EuBarony)
+    f := BEu厄镇.(*厄镇EuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "eu",
 		TitleName: "厄镇",

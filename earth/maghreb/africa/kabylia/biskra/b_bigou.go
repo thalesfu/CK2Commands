@@ -11,7 +11,7 @@ type 比勾BigouBarony struct {
 var BBigou比勾 feud.Barony = &比勾BigouBarony{}
 
 func init() {
-	f := BBigou比勾.(*比勾BigouBarony)
+    f := BBigou比勾.(*比勾BigouBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bigou",
 		TitleName: "比勾",

@@ -11,7 +11,7 @@ type 瞻波CampaBarony struct {
 var BCampa瞻波 feud.Barony = &瞻波CampaBarony{}
 
 func init() {
-	f := BCampa瞻波.(*瞻波CampaBarony)
+    f := BCampa瞻波.(*瞻波CampaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "campa",
 		TitleName: "瞻波",

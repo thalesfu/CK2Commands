@@ -11,7 +11,7 @@ type 摩陀波甘MeddappakkamBarony struct {
 var BMeddappakkam摩陀波甘 feud.Barony = &摩陀波甘MeddappakkamBarony{}
 
 func init() {
-	f := BMeddappakkam摩陀波甘.(*摩陀波甘MeddappakkamBarony)
+    f := BMeddappakkam摩陀波甘.(*摩陀波甘MeddappakkamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "meddappakkam",
 		TitleName: "摩陀波甘",

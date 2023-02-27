@@ -11,7 +11,7 @@ type 圣索沃尔_昂皮赛StsauveurenpuisayeBarony struct {
 var BStsauveurenpuisaye圣索沃尔_昂皮赛 feud.Barony = &圣索沃尔_昂皮赛StsauveurenpuisayeBarony{}
 
 func init() {
-	f := BStsauveurenpuisaye圣索沃尔_昂皮赛.(*圣索沃尔_昂皮赛StsauveurenpuisayeBarony)
+    f := BStsauveurenpuisaye圣索沃尔_昂皮赛.(*圣索沃尔_昂皮赛StsauveurenpuisayeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "stsauveurenpuisaye",
 		TitleName: "圣索沃尔_昂皮赛",

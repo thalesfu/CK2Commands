@@ -11,7 +11,7 @@ type 来多LaiduoBarony struct {
 var BLaiduo来多 feud.Barony = &来多LaiduoBarony{}
 
 func init() {
-	f := BLaiduo来多.(*来多LaiduoBarony)
+    f := BLaiduo来多.(*来多LaiduoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "laiduo",
 		TitleName: "来多",

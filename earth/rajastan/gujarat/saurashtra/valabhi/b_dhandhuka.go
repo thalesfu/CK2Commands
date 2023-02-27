@@ -11,7 +11,7 @@ type 弹度迦DhandhukaBarony struct {
 var BDhandhuka弹度迦 feud.Barony = &弹度迦DhandhukaBarony{}
 
 func init() {
-	f := BDhandhuka弹度迦.(*弹度迦DhandhukaBarony)
+    f := BDhandhuka弹度迦.(*弹度迦DhandhukaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dhandhuka",
 		TitleName: "弹度迦",

@@ -11,7 +11,7 @@ type 湖心坝HuxinbaBarony struct {
 var BHuxinba湖心坝 feud.Barony = &湖心坝HuxinbaBarony{}
 
 func init() {
-	f := BHuxinba湖心坝.(*湖心坝HuxinbaBarony)
+    f := BHuxinba湖心坝.(*湖心坝HuxinbaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "huxinba",
 		TitleName: "湖心坝",

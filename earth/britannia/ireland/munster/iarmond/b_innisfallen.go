@@ -11,7 +11,7 @@ type 因尼斯福伦InnisfallenBarony struct {
 var BInnisfallen因尼斯福伦 feud.Barony = &因尼斯福伦InnisfallenBarony{}
 
 func init() {
-	f := BInnisfallen因尼斯福伦.(*因尼斯福伦InnisfallenBarony)
+    f := BInnisfallen因尼斯福伦.(*因尼斯福伦InnisfallenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "innisfallen",
 		TitleName: "因尼斯福伦",

@@ -11,7 +11,7 @@ type 拉浪RalangBarony struct {
 var BRalang拉浪 feud.Barony = &拉浪RalangBarony{}
 
 func init() {
-	f := BRalang拉浪.(*拉浪RalangBarony)
+    f := BRalang拉浪.(*拉浪RalangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ralang",
 		TitleName: "拉浪",

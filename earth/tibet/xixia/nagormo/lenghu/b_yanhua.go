@@ -11,7 +11,7 @@ type 盐化YanhuaBarony struct {
 var BYanhua盐化 feud.Barony = &盐化YanhuaBarony{}
 
 func init() {
-	f := BYanhua盐化.(*盐化YanhuaBarony)
+    f := BYanhua盐化.(*盐化YanhuaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yanhua",
 		TitleName: "盐化",

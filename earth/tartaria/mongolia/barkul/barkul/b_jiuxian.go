@@ -11,7 +11,7 @@ type 旧县镇JiuxianBarony struct {
 var BJiuxian旧县镇 feud.Barony = &旧县镇JiuxianBarony{}
 
 func init() {
-	f := BJiuxian旧县镇.(*旧县镇JiuxianBarony)
+    f := BJiuxian旧县镇.(*旧县镇JiuxianBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jiuxian",
 		TitleName: "旧县镇",

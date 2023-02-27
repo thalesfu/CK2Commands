@@ -11,7 +11,7 @@ type 坎佩莱QuimperleBarony struct {
 var BQuimperle坎佩莱 feud.Barony = &坎佩莱QuimperleBarony{}
 
 func init() {
-	f := BQuimperle坎佩莱.(*坎佩莱QuimperleBarony)
+    f := BQuimperle坎佩莱.(*坎佩莱QuimperleBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "quimperle",
 		TitleName: "坎佩莱",

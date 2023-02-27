@@ -11,7 +11,7 @@ type 曲下QuxarBarony struct {
 var BQuxar曲下 feud.Barony = &曲下QuxarBarony{}
 
 func init() {
-	f := BQuxar曲下.(*曲下QuxarBarony)
+    f := BQuxar曲下.(*曲下QuxarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "quxar",
 		TitleName: "曲下",

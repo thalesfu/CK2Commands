@@ -11,7 +11,7 @@ type 瓦茨VacBarony struct {
 var BVac瓦茨 feud.Barony = &瓦茨VacBarony{}
 
 func init() {
-	f := BVac瓦茨.(*瓦茨VacBarony)
+    f := BVac瓦茨.(*瓦茨VacBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vac",
 		TitleName: "瓦茨",

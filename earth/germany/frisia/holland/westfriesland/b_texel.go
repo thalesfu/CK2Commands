@@ -11,7 +11,7 @@ type 特塞尔TexelBarony struct {
 var BTexel特塞尔 feud.Barony = &特塞尔TexelBarony{}
 
 func init() {
-	f := BTexel特塞尔.(*特塞尔TexelBarony)
+    f := BTexel特塞尔.(*特塞尔TexelBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "texel",
 		TitleName: "特塞尔",

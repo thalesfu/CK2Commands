@@ -11,7 +11,7 @@ type 惠韦尔WherwellBarony struct {
 var BWherwell惠韦尔 feud.Barony = &惠韦尔WherwellBarony{}
 
 func init() {
-	f := BWherwell惠韦尔.(*惠韦尔WherwellBarony)
+    f := BWherwell惠韦尔.(*惠韦尔WherwellBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wherwell",
 		TitleName: "惠韦尔",

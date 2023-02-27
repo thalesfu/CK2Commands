@@ -11,7 +11,7 @@ type 凯里比QueribusBarony struct {
 var BQueribus凯里比 feud.Barony = &凯里比QueribusBarony{}
 
 func init() {
-	f := BQueribus凯里比.(*凯里比QueribusBarony)
+    f := BQueribus凯里比.(*凯里比QueribusBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "queribus",
 		TitleName: "凯里比",

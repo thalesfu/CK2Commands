@@ -11,7 +11,7 @@ type 列季奇夫LetychivBarony struct {
 var BLetychiv列季奇夫 feud.Barony = &列季奇夫LetychivBarony{}
 
 func init() {
-	f := BLetychiv列季奇夫.(*列季奇夫LetychivBarony)
+    f := BLetychiv列季奇夫.(*列季奇夫LetychivBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "letychiv",
 		TitleName: "列季奇夫",

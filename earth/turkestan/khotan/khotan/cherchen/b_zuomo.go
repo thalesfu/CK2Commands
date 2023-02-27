@@ -11,7 +11,7 @@ type 左末ZuomoBarony struct {
 var BZuomo左末 feud.Barony = &左末ZuomoBarony{}
 
 func init() {
-	f := BZuomo左末.(*左末ZuomoBarony)
+    f := BZuomo左末.(*左末ZuomoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zuomo",
 		TitleName: "左末",

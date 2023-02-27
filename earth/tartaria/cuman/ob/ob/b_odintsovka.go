@@ -11,7 +11,7 @@ type 奥金佐夫卡OdintsovkaBarony struct {
 var BOdintsovka奥金佐夫卡 feud.Barony = &奥金佐夫卡OdintsovkaBarony{}
 
 func init() {
-	f := BOdintsovka奥金佐夫卡.(*奥金佐夫卡OdintsovkaBarony)
+    f := BOdintsovka奥金佐夫卡.(*奥金佐夫卡OdintsovkaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "odintsovka",
 		TitleName: "奥金佐夫卡",

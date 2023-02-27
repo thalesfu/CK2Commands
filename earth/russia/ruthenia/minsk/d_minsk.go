@@ -8,31 +8,31 @@ import (
 )
 
 type MinskDuke interface {
-	feud.Duke
-	CDrutsk德鲁茨克() drutsk.DrutskCounty
-	CMinsk明斯克() minsk.MinskCounty
-	CNovogrodek新格鲁多克() novogrodek.NovogrodekCounty
+    feud.Duke
+    CDrutsk德鲁茨克() 	drutsk.DrutskCounty
+    CMinsk明斯克() 	minsk.MinskCounty
+    CNovogrodek新格鲁多克() 	novogrodek.NovogrodekCounty
 }
 
 type 明斯克MinskDuke struct {
 	feud.BaseDuke
-	德鲁茨克Drutsk      drutsk.DrutskCounty
-	明斯克Minsk        minsk.MinskCounty
-	新格鲁多克Novogrodek novogrodek.NovogrodekCounty
+	德鲁茨克Drutsk 	drutsk.DrutskCounty
+	明斯克Minsk 	minsk.MinskCounty
+	新格鲁多克Novogrodek 	novogrodek.NovogrodekCounty
 }
 
 func (d *明斯克MinskDuke) CDrutsk德鲁茨克() drutsk.DrutskCounty {
 	return d.德鲁茨克Drutsk
 }
-
+    
 func (d *明斯克MinskDuke) CMinsk明斯克() minsk.MinskCounty {
 	return d.明斯克Minsk
 }
-
+    
 func (d *明斯克MinskDuke) CNovogrodek新格鲁多克() novogrodek.NovogrodekCounty {
 	return d.新格鲁多克Novogrodek
 }
-
+    
 var DMinsk明斯克 MinskDuke = &明斯克MinskDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.德鲁茨克Drutsk = drutsk.CDrutsk德鲁茨克
 	f.德鲁茨克Drutsk.SetParent(f)
-
+	
 	f.明斯克Minsk = minsk.CMinsk明斯克
 	f.明斯克Minsk.SetParent(f)
-
+	
 	f.新格鲁多克Novogrodek = novogrodek.CNovogrodek新格鲁多克
 	f.新格鲁多克Novogrodek.SetParent(f)
-
+	
 }

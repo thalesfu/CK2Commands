@@ -11,7 +11,7 @@ type 凯撒利亚KaisereiaBarony struct {
 var BKaisereia凯撒利亚 feud.Barony = &凯撒利亚KaisereiaBarony{}
 
 func init() {
-	f := BKaisereia凯撒利亚.(*凯撒利亚KaisereiaBarony)
+    f := BKaisereia凯撒利亚.(*凯撒利亚KaisereiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kaisereia",
 		TitleName: "凯撒利亚",

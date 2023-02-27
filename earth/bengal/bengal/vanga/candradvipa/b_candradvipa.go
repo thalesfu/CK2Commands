@@ -11,7 +11,7 @@ type 月洲CandradvipaBarony struct {
 var BCandradvipa月洲 feud.Barony = &月洲CandradvipaBarony{}
 
 func init() {
-	f := BCandradvipa月洲.(*月洲CandradvipaBarony)
+    f := BCandradvipa月洲.(*月洲CandradvipaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "candradvipa",
 		TitleName: "月洲",

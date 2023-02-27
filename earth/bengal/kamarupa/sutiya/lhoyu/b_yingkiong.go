@@ -11,7 +11,7 @@ type 因基扬YingkiongBarony struct {
 var BYingkiong因基扬 feud.Barony = &因基扬YingkiongBarony{}
 
 func init() {
-	f := BYingkiong因基扬.(*因基扬YingkiongBarony)
+    f := BYingkiong因基扬.(*因基扬YingkiongBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yingkiong",
 		TitleName: "因基扬",

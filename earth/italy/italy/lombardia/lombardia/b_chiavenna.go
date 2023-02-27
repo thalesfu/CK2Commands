@@ -11,7 +11,7 @@ type 基亚文纳ChiavennaBarony struct {
 var BChiavenna基亚文纳 feud.Barony = &基亚文纳ChiavennaBarony{}
 
 func init() {
-	f := BChiavenna基亚文纳.(*基亚文纳ChiavennaBarony)
+    f := BChiavenna基亚文纳.(*基亚文纳ChiavennaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chiavenna",
 		TitleName: "基亚文纳",

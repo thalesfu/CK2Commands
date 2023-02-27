@@ -11,7 +11,7 @@ type 达利韦尔津捷佩DalverzintepeBarony struct {
 var BDalverzintepe达利韦尔津捷佩 feud.Barony = &达利韦尔津捷佩DalverzintepeBarony{}
 
 func init() {
-	f := BDalverzintepe达利韦尔津捷佩.(*达利韦尔津捷佩DalverzintepeBarony)
+    f := BDalverzintepe达利韦尔津捷佩.(*达利韦尔津捷佩DalverzintepeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dalverzintepe",
 		TitleName: "达利韦尔津捷佩",

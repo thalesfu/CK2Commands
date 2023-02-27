@@ -11,7 +11,7 @@ type 贾尼帕卡姆KanipakamBarony struct {
 var BKanipakam贾尼帕卡姆 feud.Barony = &贾尼帕卡姆KanipakamBarony{}
 
 func init() {
-	f := BKanipakam贾尼帕卡姆.(*贾尼帕卡姆KanipakamBarony)
+    f := BKanipakam贾尼帕卡姆.(*贾尼帕卡姆KanipakamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kanipakam",
 		TitleName: "贾尼帕卡姆",

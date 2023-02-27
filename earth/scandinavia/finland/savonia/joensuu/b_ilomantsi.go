@@ -11,7 +11,7 @@ type 伊洛曼齐IlomantsiBarony struct {
 var BIlomantsi伊洛曼齐 feud.Barony = &伊洛曼齐IlomantsiBarony{}
 
 func init() {
-	f := BIlomantsi伊洛曼齐.(*伊洛曼齐IlomantsiBarony)
+    f := BIlomantsi伊洛曼齐.(*伊洛曼齐IlomantsiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ilomantsi",
 		TitleName: "伊洛曼齐",

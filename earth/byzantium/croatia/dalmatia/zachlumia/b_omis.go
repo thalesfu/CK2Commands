@@ -11,7 +11,7 @@ type 奥米什OmisBarony struct {
 var BOmis奥米什 feud.Barony = &奥米什OmisBarony{}
 
 func init() {
-	f := BOmis奥米什.(*奥米什OmisBarony)
+    f := BOmis奥米什.(*奥米什OmisBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "omis",
 		TitleName: "奥米什",

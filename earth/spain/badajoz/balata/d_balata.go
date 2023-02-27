@@ -7,25 +7,25 @@ import (
 )
 
 type BalataDuke interface {
-	feud.Duke
-	CAlmada阿尔马达() almada.AlmadaCounty
-	CLisboa里斯本() lisboa.LisboaCounty
+    feud.Duke
+    CAlmada阿尔马达() 	almada.AlmadaCounty
+    CLisboa里斯本() 	lisboa.LisboaCounty
 }
 
 type 里斯本BalataDuke struct {
 	feud.BaseDuke
-	阿尔马达Almada almada.AlmadaCounty
-	里斯本Lisboa  lisboa.LisboaCounty
+	阿尔马达Almada 	almada.AlmadaCounty
+	里斯本Lisboa 	lisboa.LisboaCounty
 }
 
 func (d *里斯本BalataDuke) CAlmada阿尔马达() almada.AlmadaCounty {
 	return d.阿尔马达Almada
 }
-
+    
 func (d *里斯本BalataDuke) CLisboa里斯本() lisboa.LisboaCounty {
 	return d.里斯本Lisboa
 }
-
+    
 var DBalata里斯本 BalataDuke = &里斯本BalataDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.阿尔马达Almada = almada.CAlmada阿尔马达
 	f.阿尔马达Almada.SetParent(f)
-
+	
 	f.里斯本Lisboa = lisboa.CLisboa里斯本
 	f.里斯本Lisboa.SetParent(f)
-
+	
 }

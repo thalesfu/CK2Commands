@@ -11,7 +11,7 @@ type 于都斤OtukenBarony struct {
 var BOtuken于都斤 feud.Barony = &于都斤OtukenBarony{}
 
 func init() {
-	f := BOtuken于都斤.(*于都斤OtukenBarony)
+    f := BOtuken于都斤.(*于都斤OtukenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "otuken",
 		TitleName: "于都斤",

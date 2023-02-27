@@ -11,7 +11,7 @@ type 阿尔斯塔海于格AlstahaugBarony struct {
 var BAlstahaug阿尔斯塔海于格 feud.Barony = &阿尔斯塔海于格AlstahaugBarony{}
 
 func init() {
-	f := BAlstahaug阿尔斯塔海于格.(*阿尔斯塔海于格AlstahaugBarony)
+    f := BAlstahaug阿尔斯塔海于格.(*阿尔斯塔海于格AlstahaugBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "alstahaug",
 		TitleName: "阿尔斯塔海于格",

@@ -11,7 +11,7 @@ type 圣雷莫SanremoBarony struct {
 var BSanremo圣雷莫 feud.Barony = &圣雷莫SanremoBarony{}
 
 func init() {
-	f := BSanremo圣雷莫.(*圣雷莫SanremoBarony)
+    f := BSanremo圣雷莫.(*圣雷莫SanremoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sanremo",
 		TitleName: "圣雷莫",

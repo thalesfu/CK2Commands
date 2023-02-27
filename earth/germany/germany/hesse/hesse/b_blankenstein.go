@@ -11,7 +11,7 @@ type 布兰肯施泰因BlankensteinBarony struct {
 var BBlankenstein布兰肯施泰因 feud.Barony = &布兰肯施泰因BlankensteinBarony{}
 
 func init() {
-	f := BBlankenstein布兰肯施泰因.(*布兰肯施泰因BlankensteinBarony)
+    f := BBlankenstein布兰肯施泰因.(*布兰肯施泰因BlankensteinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "blankenstein",
 		TitleName: "布兰肯施泰因",

@@ -11,7 +11,7 @@ type 凯达马KedamaBarony struct {
 var BKedama凯达马 feud.Barony = &凯达马KedamaBarony{}
 
 func init() {
-	f := BKedama凯达马.(*凯达马KedamaBarony)
+    f := BKedama凯达马.(*凯达马KedamaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kedama",
 		TitleName: "凯达马",

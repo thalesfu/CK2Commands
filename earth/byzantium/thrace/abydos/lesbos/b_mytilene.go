@@ -11,7 +11,7 @@ type 米蒂利尼MytileneBarony struct {
 var BMytilene米蒂利尼 feud.Barony = &米蒂利尼MytileneBarony{}
 
 func init() {
-	f := BMytilene米蒂利尼.(*米蒂利尼MytileneBarony)
+    f := BMytilene米蒂利尼.(*米蒂利尼MytileneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mytilene",
 		TitleName: "米蒂利尼",

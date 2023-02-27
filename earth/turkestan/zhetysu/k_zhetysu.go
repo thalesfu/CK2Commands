@@ -8,31 +8,31 @@ import (
 )
 
 type ZhetysuKingdom interface {
-	feud.Kingdom
-	DChuy垂河() chuy.ChuyDuke
-	DIli伊丽() ili.IliDuke
-	DZhetysu七河() zhetysu.ZhetysuDuke
+    feud.Kingdom
+    DChuy垂河() 	chuy.ChuyDuke
+    DIli伊丽() 	ili.IliDuke
+    DZhetysu七河() 	zhetysu.ZhetysuDuke
 }
 
 type 七河ZhetysuKingdom struct {
 	feud.BaseKingdom
-	垂河Chuy    chuy.ChuyDuke
-	伊丽Ili     ili.IliDuke
-	七河Zhetysu zhetysu.ZhetysuDuke
+	垂河Chuy 	chuy.ChuyDuke
+	伊丽Ili 	ili.IliDuke
+	七河Zhetysu 	zhetysu.ZhetysuDuke
 }
 
 func (k *七河ZhetysuKingdom) DChuy垂河() chuy.ChuyDuke {
 	return k.垂河Chuy
 }
-
+    
 func (k *七河ZhetysuKingdom) DIli伊丽() ili.IliDuke {
 	return k.伊丽Ili
 }
-
+    
 func (k *七河ZhetysuKingdom) DZhetysu七河() zhetysu.ZhetysuDuke {
 	return k.七河Zhetysu
 }
-
+    
 var KZhetysu七河 ZhetysuKingdom = &七河ZhetysuKingdom{}
 
 func init() {
@@ -41,16 +41,16 @@ func init() {
 		Title:     "zhetysu",
 		TitleName: "七河",
 		TitleCode: "k_zhetysu",
-		Dukes:     map[string]feud.Duke{},
+		Dukes:  map[string]feud.Duke{},
 	}
 
 	f.垂河Chuy = chuy.DChuy垂河
 	f.垂河Chuy.SetParent(f)
-
+	
 	f.伊丽Ili = ili.DIli伊丽
 	f.伊丽Ili.SetParent(f)
-
+	
 	f.七河Zhetysu = zhetysu.DZhetysu七河
 	f.七河Zhetysu.SetParent(f)
-
+	
 }

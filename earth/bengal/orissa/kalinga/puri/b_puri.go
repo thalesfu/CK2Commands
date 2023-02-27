@@ -11,7 +11,7 @@ type 补梨PuriBarony struct {
 var BPuri补梨 feud.Barony = &补梨PuriBarony{}
 
 func init() {
-	f := BPuri补梨.(*补梨PuriBarony)
+    f := BPuri补梨.(*补梨PuriBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "puri",
 		TitleName: "补梨",

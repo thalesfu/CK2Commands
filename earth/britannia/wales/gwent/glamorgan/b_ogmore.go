@@ -11,7 +11,7 @@ type 奥格莫尔OgmoreBarony struct {
 var BOgmore奥格莫尔 feud.Barony = &奥格莫尔OgmoreBarony{}
 
 func init() {
-	f := BOgmore奥格莫尔.(*奥格莫尔OgmoreBarony)
+    f := BOgmore奥格莫尔.(*奥格莫尔OgmoreBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ogmore",
 		TitleName: "奥格莫尔",

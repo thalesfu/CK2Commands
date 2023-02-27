@@ -11,7 +11,7 @@ type 比朗加BilangaBarony struct {
 var BBilanga比朗加 feud.Barony = &比朗加BilangaBarony{}
 
 func init() {
-	f := BBilanga比朗加.(*比朗加BilangaBarony)
+    f := BBilanga比朗加.(*比朗加BilangaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bilanga",
 		TitleName: "比朗加",

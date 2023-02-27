@@ -11,7 +11,7 @@ type 摩醯因陀罗城MahendranagarBarony struct {
 var BMahendranagar摩醯因陀罗城 feud.Barony = &摩醯因陀罗城MahendranagarBarony{}
 
 func init() {
-	f := BMahendranagar摩醯因陀罗城.(*摩醯因陀罗城MahendranagarBarony)
+    f := BMahendranagar摩醯因陀罗城.(*摩醯因陀罗城MahendranagarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mahendranagar",
 		TitleName: "摩醯因陀罗城",

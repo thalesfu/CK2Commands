@@ -11,7 +11,7 @@ type 玉龙杰赤UrgenchBarony struct {
 var BUrgench玉龙杰赤 feud.Barony = &玉龙杰赤UrgenchBarony{}
 
 func init() {
-	f := BUrgench玉龙杰赤.(*玉龙杰赤UrgenchBarony)
+    f := BUrgench玉龙杰赤.(*玉龙杰赤UrgenchBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "urgench",
 		TitleName: "玉龙杰赤",

@@ -11,7 +11,7 @@ type 奥列夫斯克OlevskBarony struct {
 var BOlevsk奥列夫斯克 feud.Barony = &奥列夫斯克OlevskBarony{}
 
 func init() {
-	f := BOlevsk奥列夫斯克.(*奥列夫斯克OlevskBarony)
+    f := BOlevsk奥列夫斯克.(*奥列夫斯克OlevskBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "olevsk",
 		TitleName: "奥列夫斯克",

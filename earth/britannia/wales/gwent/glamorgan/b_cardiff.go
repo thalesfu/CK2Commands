@@ -11,7 +11,7 @@ type 加的夫CardiffBarony struct {
 var BCardiff加的夫 feud.Barony = &加的夫CardiffBarony{}
 
 func init() {
-	f := BCardiff加的夫.(*加的夫CardiffBarony)
+    f := BCardiff加的夫.(*加的夫CardiffBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cardiff",
 		TitleName: "加的夫",

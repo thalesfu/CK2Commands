@@ -11,7 +11,7 @@ type 克雷基奥CrecchioBarony struct {
 var BCrecchio克雷基奥 feud.Barony = &克雷基奥CrecchioBarony{}
 
 func init() {
-	f := BCrecchio克雷基奥.(*克雷基奥CrecchioBarony)
+    f := BCrecchio克雷基奥.(*克雷基奥CrecchioBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "crecchio",
 		TitleName: "克雷基奥",

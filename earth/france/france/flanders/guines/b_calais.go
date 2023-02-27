@@ -11,7 +11,7 @@ type 加来CalaisBarony struct {
 var BCalais加来 feud.Barony = &加来CalaisBarony{}
 
 func init() {
-	f := BCalais加来.(*加来CalaisBarony)
+    f := BCalais加来.(*加来CalaisBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "calais",
 		TitleName: "加来",

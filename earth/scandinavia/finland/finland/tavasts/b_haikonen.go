@@ -11,7 +11,7 @@ type 海科宁HaikonenBarony struct {
 var BHaikonen海科宁 feud.Barony = &海科宁HaikonenBarony{}
 
 func init() {
-	f := BHaikonen海科宁.(*海科宁HaikonenBarony)
+    f := BHaikonen海科宁.(*海科宁HaikonenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "haikonen",
 		TitleName: "海科宁",

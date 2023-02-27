@@ -11,7 +11,7 @@ type 木垒MoriBarony struct {
 var BMori木垒 feud.Barony = &木垒MoriBarony{}
 
 func init() {
-	f := BMori木垒.(*木垒MoriBarony)
+    f := BMori木垒.(*木垒MoriBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mori",
 		TitleName: "木垒",

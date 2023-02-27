@@ -11,7 +11,7 @@ type 勒宁根LoningenBarony struct {
 var BLoningen勒宁根 feud.Barony = &勒宁根LoningenBarony{}
 
 func init() {
-	f := BLoningen勒宁根.(*勒宁根LoningenBarony)
+    f := BLoningen勒宁根.(*勒宁根LoningenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "loningen",
 		TitleName: "勒宁根",

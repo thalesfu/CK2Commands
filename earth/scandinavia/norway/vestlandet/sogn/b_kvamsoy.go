@@ -11,7 +11,7 @@ type 克瓦姆岛KvamsoyBarony struct {
 var BKvamsoy克瓦姆岛 feud.Barony = &克瓦姆岛KvamsoyBarony{}
 
 func init() {
-	f := BKvamsoy克瓦姆岛.(*克瓦姆岛KvamsoyBarony)
+    f := BKvamsoy克瓦姆岛.(*克瓦姆岛KvamsoyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kvamsoy",
 		TitleName: "克瓦姆岛",

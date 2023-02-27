@@ -11,7 +11,7 @@ type 皮塞吉耶PuisserguierBarony struct {
 var BPuisserguier皮塞吉耶 feud.Barony = &皮塞吉耶PuisserguierBarony{}
 
 func init() {
-	f := BPuisserguier皮塞吉耶.(*皮塞吉耶PuisserguierBarony)
+    f := BPuisserguier皮塞吉耶.(*皮塞吉耶PuisserguierBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "puisserguier",
 		TitleName: "皮塞吉耶",

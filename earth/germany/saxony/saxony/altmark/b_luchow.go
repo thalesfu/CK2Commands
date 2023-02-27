@@ -11,7 +11,7 @@ type 吕肖LuchowBarony struct {
 var BLuchow吕肖 feud.Barony = &吕肖LuchowBarony{}
 
 func init() {
-	f := BLuchow吕肖.(*吕肖LuchowBarony)
+    f := BLuchow吕肖.(*吕肖LuchowBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "luchow",
 		TitleName: "吕肖",

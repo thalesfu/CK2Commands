@@ -11,7 +11,7 @@ type 洪热HungrelBarony struct {
 var BHungrel洪热 feud.Barony = &洪热HungrelBarony{}
 
 func init() {
-	f := BHungrel洪热.(*洪热HungrelBarony)
+    f := BHungrel洪热.(*洪热HungrelBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "hungrel",
 		TitleName: "洪热",

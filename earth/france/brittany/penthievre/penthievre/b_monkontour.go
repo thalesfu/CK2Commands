@@ -11,7 +11,7 @@ type 蒙孔图尔MonkontourBarony struct {
 var BMonkontour蒙孔图尔 feud.Barony = &蒙孔图尔MonkontourBarony{}
 
 func init() {
-	f := BMonkontour蒙孔图尔.(*蒙孔图尔MonkontourBarony)
+    f := BMonkontour蒙孔图尔.(*蒙孔图尔MonkontourBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "monkontour",
 		TitleName: "蒙孔图尔",

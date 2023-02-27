@@ -5,7 +5,7 @@ import (
 )
 
 type SunniEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 逊尼派哈里发国SunniEmpire struct {

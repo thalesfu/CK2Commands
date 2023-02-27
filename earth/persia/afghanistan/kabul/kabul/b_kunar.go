@@ -11,7 +11,7 @@ type 库纳尔KunarBarony struct {
 var BKunar库纳尔 feud.Barony = &库纳尔KunarBarony{}
 
 func init() {
-	f := BKunar库纳尔.(*库纳尔KunarBarony)
+    f := BKunar库纳尔.(*库纳尔KunarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kunar",
 		TitleName: "库纳尔",

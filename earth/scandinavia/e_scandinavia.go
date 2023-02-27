@@ -11,49 +11,49 @@ import (
 )
 
 type ScandinaviaEmpire interface {
-	feud.Empire
-	KDenmark丹麦() denmark.DenmarkKingdom
-	KEstonia爱沙尼亚() estonia.EstoniaKingdom
-	KFinland芬兰() finland.FinlandKingdom
-	KNorway挪威() norway.NorwayKingdom
-	KSapmi拉普兰() sapmi.SapmiKingdom
-	KSweden瑞典() sweden.SwedenKingdom
+    feud.Empire
+    KDenmark丹麦() 	denmark.DenmarkKingdom
+    KEstonia爱沙尼亚() 	estonia.EstoniaKingdom
+    KFinland芬兰() 	finland.FinlandKingdom
+    KNorway挪威() 	norway.NorwayKingdom
+    KSapmi拉普兰() 	sapmi.SapmiKingdom
+    KSweden瑞典() 	sweden.SwedenKingdom
 }
 
 type 斯堪的纳维亚ScandinaviaEmpire struct {
 	feud.BaseEmpire
-	丹麦Denmark   denmark.DenmarkKingdom
-	爱沙尼亚Estonia estonia.EstoniaKingdom
-	芬兰Finland   finland.FinlandKingdom
-	挪威Norway    norway.NorwayKingdom
-	拉普兰Sapmi    sapmi.SapmiKingdom
-	瑞典Sweden    sweden.SwedenKingdom
+	丹麦Denmark 	denmark.DenmarkKingdom
+	爱沙尼亚Estonia 	estonia.EstoniaKingdom
+	芬兰Finland 	finland.FinlandKingdom
+	挪威Norway 	norway.NorwayKingdom
+	拉普兰Sapmi 	sapmi.SapmiKingdom
+	瑞典Sweden 	sweden.SwedenKingdom
 }
 
 func (e *斯堪的纳维亚ScandinaviaEmpire) KDenmark丹麦() denmark.DenmarkKingdom {
 	return e.丹麦Denmark
 }
-
+    
 func (e *斯堪的纳维亚ScandinaviaEmpire) KEstonia爱沙尼亚() estonia.EstoniaKingdom {
 	return e.爱沙尼亚Estonia
 }
-
+    
 func (e *斯堪的纳维亚ScandinaviaEmpire) KFinland芬兰() finland.FinlandKingdom {
 	return e.芬兰Finland
 }
-
+    
 func (e *斯堪的纳维亚ScandinaviaEmpire) KNorway挪威() norway.NorwayKingdom {
 	return e.挪威Norway
 }
-
+    
 func (e *斯堪的纳维亚ScandinaviaEmpire) KSapmi拉普兰() sapmi.SapmiKingdom {
 	return e.拉普兰Sapmi
 }
-
+    
 func (e *斯堪的纳维亚ScandinaviaEmpire) KSweden瑞典() sweden.SwedenKingdom {
 	return e.瑞典Sweden
 }
-
+    
 var EScandinavia斯堪的纳维亚 ScandinaviaEmpire = &斯堪的纳维亚ScandinaviaEmpire{}
 
 func init() {

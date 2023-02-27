@@ -11,7 +11,7 @@ type 卡拉夫律塔KalavrytaBarony struct {
 var BKalavryta卡拉夫律塔 feud.Barony = &卡拉夫律塔KalavrytaBarony{}
 
 func init() {
-	f := BKalavryta卡拉夫律塔.(*卡拉夫律塔KalavrytaBarony)
+    f := BKalavryta卡拉夫律塔.(*卡拉夫律塔KalavrytaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kalavryta",
 		TitleName: "卡拉夫律塔",

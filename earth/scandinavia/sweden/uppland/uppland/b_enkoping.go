@@ -11,7 +11,7 @@ type 恩雪平EnkopingBarony struct {
 var BEnkoping恩雪平 feud.Barony = &恩雪平EnkopingBarony{}
 
 func init() {
-	f := BEnkoping恩雪平.(*恩雪平EnkopingBarony)
+    f := BEnkoping恩雪平.(*恩雪平EnkopingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "enkoping",
 		TitleName: "恩雪平",

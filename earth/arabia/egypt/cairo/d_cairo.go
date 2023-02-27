@@ -9,37 +9,37 @@ import (
 )
 
 type CairoDuke interface {
-	feud.Duke
-	CAkhmim阿赫明() akhmim.AkhmimCounty
-	CCairo开罗() cairo.CairoCounty
-	CKolzum科勒祖姆() kolzum.KolzumCounty
-	CSarqihya比勒拜斯() sarqihya.SarqihyaCounty
+    feud.Duke
+    CAkhmim阿赫明() 	akhmim.AkhmimCounty
+    CCairo开罗() 	cairo.CairoCounty
+    CKolzum科勒祖姆() 	kolzum.KolzumCounty
+    CSarqihya比勒拜斯() 	sarqihya.SarqihyaCounty
 }
 
 type 开罗CairoDuke struct {
 	feud.BaseDuke
-	阿赫明Akhmim    akhmim.AkhmimCounty
-	开罗Cairo      cairo.CairoCounty
-	科勒祖姆Kolzum   kolzum.KolzumCounty
-	比勒拜斯Sarqihya sarqihya.SarqihyaCounty
+	阿赫明Akhmim 	akhmim.AkhmimCounty
+	开罗Cairo 	cairo.CairoCounty
+	科勒祖姆Kolzum 	kolzum.KolzumCounty
+	比勒拜斯Sarqihya 	sarqihya.SarqihyaCounty
 }
 
 func (d *开罗CairoDuke) CAkhmim阿赫明() akhmim.AkhmimCounty {
 	return d.阿赫明Akhmim
 }
-
+    
 func (d *开罗CairoDuke) CCairo开罗() cairo.CairoCounty {
 	return d.开罗Cairo
 }
-
+    
 func (d *开罗CairoDuke) CKolzum科勒祖姆() kolzum.KolzumCounty {
 	return d.科勒祖姆Kolzum
 }
-
+    
 func (d *开罗CairoDuke) CSarqihya比勒拜斯() sarqihya.SarqihyaCounty {
 	return d.比勒拜斯Sarqihya
 }
-
+    
 var DCairo开罗 CairoDuke = &开罗CairoDuke{}
 
 func init() {
@@ -53,14 +53,14 @@ func init() {
 
 	f.阿赫明Akhmim = akhmim.CAkhmim阿赫明
 	f.阿赫明Akhmim.SetParent(f)
-
+	
 	f.开罗Cairo = cairo.CCairo开罗
 	f.开罗Cairo.SetParent(f)
-
+	
 	f.科勒祖姆Kolzum = kolzum.CKolzum科勒祖姆
 	f.科勒祖姆Kolzum.SetParent(f)
-
+	
 	f.比勒拜斯Sarqihya = sarqihya.CSarqihya比勒拜斯
 	f.比勒拜斯Sarqihya.SetParent(f)
-
+	
 }

@@ -11,7 +11,7 @@ type 干邑CognacBarony struct {
 var BCognac干邑 feud.Barony = &干邑CognacBarony{}
 
 func init() {
-	f := BCognac干邑.(*干邑CognacBarony)
+    f := BCognac干邑.(*干邑CognacBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cognac",
 		TitleName: "干邑",

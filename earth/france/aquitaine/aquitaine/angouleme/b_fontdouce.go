@@ -11,7 +11,7 @@ type 丰杜斯FontdouceBarony struct {
 var BFontdouce丰杜斯 feud.Barony = &丰杜斯FontdouceBarony{}
 
 func init() {
-	f := BFontdouce丰杜斯.(*丰杜斯FontdouceBarony)
+    f := BFontdouce丰杜斯.(*丰杜斯FontdouceBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "fontdouce",
 		TitleName: "丰杜斯",

@@ -11,7 +11,7 @@ type 孔东CondomBarony struct {
 var BCondom孔东 feud.Barony = &孔东CondomBarony{}
 
 func init() {
-	f := BCondom孔东.(*孔东CondomBarony)
+    f := BCondom孔东.(*孔东CondomBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "condom",
 		TitleName: "孔东",

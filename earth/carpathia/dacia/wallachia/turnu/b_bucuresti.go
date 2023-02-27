@@ -11,7 +11,7 @@ type 布加勒斯特BucurestiBarony struct {
 var BBucuresti布加勒斯特 feud.Barony = &布加勒斯特BucurestiBarony{}
 
 func init() {
-	f := BBucuresti布加勒斯特.(*布加勒斯特BucurestiBarony)
+    f := BBucuresti布加勒斯特.(*布加勒斯特BucurestiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bucuresti",
 		TitleName: "布加勒斯特",

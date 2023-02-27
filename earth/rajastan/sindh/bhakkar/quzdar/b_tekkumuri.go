@@ -11,7 +11,7 @@ type 嫡鸠牟利TekkumuriBarony struct {
 var BTekkumuri嫡鸠牟利 feud.Barony = &嫡鸠牟利TekkumuriBarony{}
 
 func init() {
-	f := BTekkumuri嫡鸠牟利.(*嫡鸠牟利TekkumuriBarony)
+    f := BTekkumuri嫡鸠牟利.(*嫡鸠牟利TekkumuriBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tekkumuri",
 		TitleName: "嫡鸠牟利",

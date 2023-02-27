@@ -11,7 +11,7 @@ type 格孟GemengBarony struct {
 var BGemeng格孟 feud.Barony = &格孟GemengBarony{}
 
 func init() {
-	f := BGemeng格孟.(*格孟GemengBarony)
+    f := BGemeng格孟.(*格孟GemengBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gemeng",
 		TitleName: "格孟",

@@ -11,7 +11,7 @@ type 屈恩灵KuenringBarony struct {
 var BKuenring屈恩灵 feud.Barony = &屈恩灵KuenringBarony{}
 
 func init() {
-	f := BKuenring屈恩灵.(*屈恩灵KuenringBarony)
+    f := BKuenring屈恩灵.(*屈恩灵KuenringBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kuenring",
 		TitleName: "屈恩灵",

@@ -11,7 +11,7 @@ type 络多末知RaktamrittikaBarony struct {
 var BRaktamrittika络多末知 feud.Barony = &络多末知RaktamrittikaBarony{}
 
 func init() {
-	f := BRaktamrittika络多末知.(*络多末知RaktamrittikaBarony)
+    f := BRaktamrittika络多末知.(*络多末知RaktamrittikaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "raktamrittika",
 		TitleName: "络多末知",

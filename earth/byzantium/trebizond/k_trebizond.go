@@ -8,31 +8,31 @@ import (
 )
 
 type TrebizondKingdom interface {
-	feud.Kingdom
-	DArmeniacon亚美尼亚坎() armeniacon.ArmeniaconDuke
-	DPaphlagonia帕夫拉戈尼亚() paphlagonia.PaphlagoniaDuke
-	DTrebizond特拉比松() trebizond.TrebizondDuke
+    feud.Kingdom
+    DArmeniacon亚美尼亚坎() 	armeniacon.ArmeniaconDuke
+    DPaphlagonia帕夫拉戈尼亚() 	paphlagonia.PaphlagoniaDuke
+    DTrebizond特拉比松() 	trebizond.TrebizondDuke
 }
 
 type 特拉比松TrebizondKingdom struct {
 	feud.BaseKingdom
-	亚美尼亚坎Armeniacon   armeniacon.ArmeniaconDuke
-	帕夫拉戈尼亚Paphlagonia paphlagonia.PaphlagoniaDuke
-	特拉比松Trebizond     trebizond.TrebizondDuke
+	亚美尼亚坎Armeniacon 	armeniacon.ArmeniaconDuke
+	帕夫拉戈尼亚Paphlagonia 	paphlagonia.PaphlagoniaDuke
+	特拉比松Trebizond 	trebizond.TrebizondDuke
 }
 
 func (k *特拉比松TrebizondKingdom) DArmeniacon亚美尼亚坎() armeniacon.ArmeniaconDuke {
 	return k.亚美尼亚坎Armeniacon
 }
-
+    
 func (k *特拉比松TrebizondKingdom) DPaphlagonia帕夫拉戈尼亚() paphlagonia.PaphlagoniaDuke {
 	return k.帕夫拉戈尼亚Paphlagonia
 }
-
+    
 func (k *特拉比松TrebizondKingdom) DTrebizond特拉比松() trebizond.TrebizondDuke {
 	return k.特拉比松Trebizond
 }
-
+    
 var KTrebizond特拉比松 TrebizondKingdom = &特拉比松TrebizondKingdom{}
 
 func init() {
@@ -41,16 +41,16 @@ func init() {
 		Title:     "trebizond",
 		TitleName: "特拉比松",
 		TitleCode: "k_trebizond",
-		Dukes:     map[string]feud.Duke{},
+		Dukes:  map[string]feud.Duke{},
 	}
 
 	f.亚美尼亚坎Armeniacon = armeniacon.DArmeniacon亚美尼亚坎
 	f.亚美尼亚坎Armeniacon.SetParent(f)
-
+	
 	f.帕夫拉戈尼亚Paphlagonia = paphlagonia.DPaphlagonia帕夫拉戈尼亚
 	f.帕夫拉戈尼亚Paphlagonia.SetParent(f)
-
+	
 	f.特拉比松Trebizond = trebizond.DTrebizond特拉比松
 	f.特拉比松Trebizond.SetParent(f)
-
+	
 }

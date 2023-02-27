@@ -11,7 +11,7 @@ type 科哈依托QohaitoBarony struct {
 var BQohaito科哈依托 feud.Barony = &科哈依托QohaitoBarony{}
 
 func init() {
-	f := BQohaito科哈依托.(*科哈依托QohaitoBarony)
+    f := BQohaito科哈依托.(*科哈依托QohaitoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "qohaito",
 		TitleName: "科哈依托",

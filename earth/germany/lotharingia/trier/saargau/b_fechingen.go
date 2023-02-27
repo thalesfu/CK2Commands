@@ -11,7 +11,7 @@ type 费兴根FechingenBarony struct {
 var BFechingen费兴根 feud.Barony = &费兴根FechingenBarony{}
 
 func init() {
-	f := BFechingen费兴根.(*费兴根FechingenBarony)
+    f := BFechingen费兴根.(*费兴根FechingenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "fechingen",
 		TitleName: "费兴根",

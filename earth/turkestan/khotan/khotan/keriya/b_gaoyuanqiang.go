@@ -11,7 +11,7 @@ type 高院墙GaoyuanqiangBarony struct {
 var BGaoyuanqiang高院墙 feud.Barony = &高院墙GaoyuanqiangBarony{}
 
 func init() {
-	f := BGaoyuanqiang高院墙.(*高院墙GaoyuanqiangBarony)
+    f := BGaoyuanqiang高院墙.(*高院墙GaoyuanqiangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gaoyuanqiang",
 		TitleName: "高院墙",

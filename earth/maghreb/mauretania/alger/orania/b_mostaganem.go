@@ -11,7 +11,7 @@ type 莫斯塔加纳姆MostaganemBarony struct {
 var BMostaganem莫斯塔加纳姆 feud.Barony = &莫斯塔加纳姆MostaganemBarony{}
 
 func init() {
-	f := BMostaganem莫斯塔加纳姆.(*莫斯塔加纳姆MostaganemBarony)
+    f := BMostaganem莫斯塔加纳姆.(*莫斯塔加纳姆MostaganemBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mostaganem",
 		TitleName: "莫斯塔加纳姆",

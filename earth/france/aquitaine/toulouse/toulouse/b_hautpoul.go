@@ -11,7 +11,7 @@ type 欧特普尔HautpoulBarony struct {
 var BHautpoul欧特普尔 feud.Barony = &欧特普尔HautpoulBarony{}
 
 func init() {
-	f := BHautpoul欧特普尔.(*欧特普尔HautpoulBarony)
+    f := BHautpoul欧特普尔.(*欧特普尔HautpoulBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "hautpoul",
 		TitleName: "欧特普尔",

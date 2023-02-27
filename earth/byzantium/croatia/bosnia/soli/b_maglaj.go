@@ -11,7 +11,7 @@ type 马格拉伊MaglajBarony struct {
 var BMaglaj马格拉伊 feud.Barony = &马格拉伊MaglajBarony{}
 
 func init() {
-	f := BMaglaj马格拉伊.(*马格拉伊MaglajBarony)
+    f := BMaglaj马格拉伊.(*马格拉伊MaglajBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "maglaj",
 		TitleName: "马格拉伊",

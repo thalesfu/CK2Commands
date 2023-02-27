@@ -11,7 +11,7 @@ type 索索SosoBarony struct {
 var BSoso索索 feud.Barony = &索索SosoBarony{}
 
 func init() {
-	f := BSoso索索.(*索索SosoBarony)
+    f := BSoso索索.(*索索SosoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "soso",
 		TitleName: "索索",

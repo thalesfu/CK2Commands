@@ -11,7 +11,7 @@ type 策勒CelleBarony struct {
 var BCelle策勒 feud.Barony = &策勒CelleBarony{}
 
 func init() {
-	f := BCelle策勒.(*策勒CelleBarony)
+    f := BCelle策勒.(*策勒CelleBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "celle",
 		TitleName: "策勒",

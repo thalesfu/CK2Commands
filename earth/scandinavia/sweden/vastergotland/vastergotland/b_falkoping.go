@@ -11,7 +11,7 @@ type 法尔雪平FalkopingBarony struct {
 var BFalkoping法尔雪平 feud.Barony = &法尔雪平FalkopingBarony{}
 
 func init() {
-	f := BFalkoping法尔雪平.(*法尔雪平FalkopingBarony)
+    f := BFalkoping法尔雪平.(*法尔雪平FalkopingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "falkoping",
 		TitleName: "法尔雪平",

@@ -11,7 +11,7 @@ type 室罗伐拿白泽ShravanabelagolaBarony struct {
 var BShravanabelagola室罗伐拿白泽 feud.Barony = &室罗伐拿白泽ShravanabelagolaBarony{}
 
 func init() {
-	f := BShravanabelagola室罗伐拿白泽.(*室罗伐拿白泽ShravanabelagolaBarony)
+    f := BShravanabelagola室罗伐拿白泽.(*室罗伐拿白泽ShravanabelagolaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "shravanabelagola",
 		TitleName: "室罗伐拿白泽",

@@ -11,7 +11,7 @@ type 乌烈昆UlkunBarony struct {
 var BUlkun乌烈昆 feud.Barony = &乌烈昆UlkunBarony{}
 
 func init() {
-	f := BUlkun乌烈昆.(*乌烈昆UlkunBarony)
+    f := BUlkun乌烈昆.(*乌烈昆UlkunBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ulkun",
 		TitleName: "乌烈昆",

@@ -11,7 +11,7 @@ type 叙侈波ZuchhipBarony struct {
 var BZuchhip叙侈波 feud.Barony = &叙侈波ZuchhipBarony{}
 
 func init() {
-	f := BZuchhip叙侈波.(*叙侈波ZuchhipBarony)
+    f := BZuchhip叙侈波.(*叙侈波ZuchhipBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zuchhip",
 		TitleName: "叙侈波",

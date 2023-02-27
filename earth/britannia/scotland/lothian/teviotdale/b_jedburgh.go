@@ -11,7 +11,7 @@ type 杰德堡JedburghBarony struct {
 var BJedburgh杰德堡 feud.Barony = &杰德堡JedburghBarony{}
 
 func init() {
-	f := BJedburgh杰德堡.(*杰德堡JedburghBarony)
+    f := BJedburgh杰德堡.(*杰德堡JedburghBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jedburgh",
 		TitleName: "杰德堡",

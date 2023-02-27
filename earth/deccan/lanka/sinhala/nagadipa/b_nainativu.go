@@ -11,7 +11,7 @@ type 奈纳岛NainativuBarony struct {
 var BNainativu奈纳岛 feud.Barony = &奈纳岛NainativuBarony{}
 
 func init() {
-	f := BNainativu奈纳岛.(*奈纳岛NainativuBarony)
+    f := BNainativu奈纳岛.(*奈纳岛NainativuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nainativu",
 		TitleName: "奈纳岛",

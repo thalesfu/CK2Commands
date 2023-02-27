@@ -11,7 +11,7 @@ type 斯泰因沃格SteinvagBarony struct {
 var BSteinvag斯泰因沃格 feud.Barony = &斯泰因沃格SteinvagBarony{}
 
 func init() {
-	f := BSteinvag斯泰因沃格.(*斯泰因沃格SteinvagBarony)
+    f := BSteinvag斯泰因沃格.(*斯泰因沃格SteinvagBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "steinvag",
 		TitleName: "斯泰因沃格",

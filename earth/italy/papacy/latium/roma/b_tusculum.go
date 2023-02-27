@@ -11,7 +11,7 @@ type 图斯库卢姆TusculumBarony struct {
 var BTusculum图斯库卢姆 feud.Barony = &图斯库卢姆TusculumBarony{}
 
 func init() {
-	f := BTusculum图斯库卢姆.(*图斯库卢姆TusculumBarony)
+    f := BTusculum图斯库卢姆.(*图斯库卢姆TusculumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tusculum",
 		TitleName: "图斯库卢姆",

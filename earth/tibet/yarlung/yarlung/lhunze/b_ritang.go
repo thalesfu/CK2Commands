@@ -11,7 +11,7 @@ type 日当RitangBarony struct {
 var BRitang日当 feud.Barony = &日当RitangBarony{}
 
 func init() {
-	f := BRitang日当.(*日当RitangBarony)
+    f := BRitang日当.(*日当RitangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ritang",
 		TitleName: "日当",

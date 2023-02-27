@@ -11,7 +11,7 @@ type 阇耶陀城ZaidpurBarony struct {
 var BZaidpur阇耶陀城 feud.Barony = &阇耶陀城ZaidpurBarony{}
 
 func init() {
-	f := BZaidpur阇耶陀城.(*阇耶陀城ZaidpurBarony)
+    f := BZaidpur阇耶陀城.(*阇耶陀城ZaidpurBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zaidpur",
 		TitleName: "阇耶陀城",

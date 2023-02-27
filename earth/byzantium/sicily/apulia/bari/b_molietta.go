@@ -11,7 +11,7 @@ type 莫列塔MoliettaBarony struct {
 var BMolietta莫列塔 feud.Barony = &莫列塔MoliettaBarony{}
 
 func init() {
-	f := BMolietta莫列塔.(*莫列塔MoliettaBarony)
+    f := BMolietta莫列塔.(*莫列塔MoliettaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "molietta",
 		TitleName: "莫列塔",

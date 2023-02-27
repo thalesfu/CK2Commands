@@ -11,7 +11,7 @@ type 老底嘉LaodikeiaBarony struct {
 var BLaodikeia老底嘉 feud.Barony = &老底嘉LaodikeiaBarony{}
 
 func init() {
-	f := BLaodikeia老底嘉.(*老底嘉LaodikeiaBarony)
+    f := BLaodikeia老底嘉.(*老底嘉LaodikeiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "laodikeia",
 		TitleName: "老底嘉",

@@ -11,7 +11,7 @@ type 克里克豪威尔CrickhowellBarony struct {
 var BCrickhowell克里克豪威尔 feud.Barony = &克里克豪威尔CrickhowellBarony{}
 
 func init() {
-	f := BCrickhowell克里克豪威尔.(*克里克豪威尔CrickhowellBarony)
+    f := BCrickhowell克里克豪威尔.(*克里克豪威尔CrickhowellBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "crickhowell",
 		TitleName: "克里克豪威尔",

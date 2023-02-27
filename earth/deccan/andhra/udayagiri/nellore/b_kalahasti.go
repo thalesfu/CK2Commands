@@ -11,7 +11,7 @@ type 迦罗诃悉帝KalahastiBarony struct {
 var BKalahasti迦罗诃悉帝 feud.Barony = &迦罗诃悉帝KalahastiBarony{}
 
 func init() {
-	f := BKalahasti迦罗诃悉帝.(*迦罗诃悉帝KalahastiBarony)
+    f := BKalahasti迦罗诃悉帝.(*迦罗诃悉帝KalahastiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kalahasti",
 		TitleName: "迦罗诃悉帝",

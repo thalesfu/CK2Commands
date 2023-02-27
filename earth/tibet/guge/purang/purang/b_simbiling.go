@@ -11,7 +11,7 @@ type 贤柏林SimbilingBarony struct {
 var BSimbiling贤柏林 feud.Barony = &贤柏林SimbilingBarony{}
 
 func init() {
-	f := BSimbiling贤柏林.(*贤柏林SimbilingBarony)
+    f := BSimbiling贤柏林.(*贤柏林SimbilingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "simbiling",
 		TitleName: "贤柏林",

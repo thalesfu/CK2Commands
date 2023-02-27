@@ -11,7 +11,7 @@ type 奥朗热OrangeBarony struct {
 var BOrange奥朗热 feud.Barony = &奥朗热OrangeBarony{}
 
 func init() {
-	f := BOrange奥朗热.(*奥朗热OrangeBarony)
+    f := BOrange奥朗热.(*奥朗热OrangeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "orange",
 		TitleName: "奥朗热",

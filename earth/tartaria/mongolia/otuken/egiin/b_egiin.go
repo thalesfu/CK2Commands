@@ -11,7 +11,7 @@ type 额金EgiinBarony struct {
 var BEgiin额金 feud.Barony = &额金EgiinBarony{}
 
 func init() {
-	f := BEgiin额金.(*额金EgiinBarony)
+    f := BEgiin额金.(*额金EgiinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "egiin",
 		TitleName: "额金",

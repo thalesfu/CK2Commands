@@ -11,7 +11,7 @@ type 科莫蒂尼KomotiniBarony struct {
 var BKomotini科莫蒂尼 feud.Barony = &科莫蒂尼KomotiniBarony{}
 
 func init() {
-	f := BKomotini科莫蒂尼.(*科莫蒂尼KomotiniBarony)
+    f := BKomotini科莫蒂尼.(*科莫蒂尼KomotiniBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "komotini",
 		TitleName: "科莫蒂尼",

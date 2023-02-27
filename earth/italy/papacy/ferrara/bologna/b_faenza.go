@@ -11,7 +11,7 @@ type 法恩扎FaenzaBarony struct {
 var BFaenza法恩扎 feud.Barony = &法恩扎FaenzaBarony{}
 
 func init() {
-	f := BFaenza法恩扎.(*法恩扎FaenzaBarony)
+    f := BFaenza法恩扎.(*法恩扎FaenzaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "faenza",
 		TitleName: "法恩扎",

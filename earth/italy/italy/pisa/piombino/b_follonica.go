@@ -11,7 +11,7 @@ type 福洛尼卡FollonicaBarony struct {
 var BFollonica福洛尼卡 feud.Barony = &福洛尼卡FollonicaBarony{}
 
 func init() {
-	f := BFollonica福洛尼卡.(*福洛尼卡FollonicaBarony)
+    f := BFollonica福洛尼卡.(*福洛尼卡FollonicaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "follonica",
 		TitleName: "福洛尼卡",

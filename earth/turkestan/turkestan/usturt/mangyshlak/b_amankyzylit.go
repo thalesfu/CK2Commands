@@ -11,7 +11,7 @@ type 阿曼克孜利特AmankyzylitBarony struct {
 var BAmankyzylit阿曼克孜利特 feud.Barony = &阿曼克孜利特AmankyzylitBarony{}
 
 func init() {
-	f := BAmankyzylit阿曼克孜利特.(*阿曼克孜利特AmankyzylitBarony)
+    f := BAmankyzylit阿曼克孜利特.(*阿曼克孜利特AmankyzylitBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "amankyzylit",
 		TitleName: "阿曼克孜利特",

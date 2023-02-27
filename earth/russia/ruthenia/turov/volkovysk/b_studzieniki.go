@@ -11,7 +11,7 @@ type 斯图泽尼采StudzienikiBarony struct {
 var BStudzieniki斯图泽尼采 feud.Barony = &斯图泽尼采StudzienikiBarony{}
 
 func init() {
-	f := BStudzieniki斯图泽尼采.(*斯图泽尼采StudzienikiBarony)
+    f := BStudzieniki斯图泽尼采.(*斯图泽尼采StudzienikiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "studzieniki",
 		TitleName: "斯图泽尼采",

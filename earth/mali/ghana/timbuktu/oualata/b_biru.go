@@ -11,7 +11,7 @@ type 比如BiruBarony struct {
 var BBiru比如 feud.Barony = &比如BiruBarony{}
 
 func init() {
-	f := BBiru比如.(*比如BiruBarony)
+    f := BBiru比如.(*比如BiruBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "biru",
 		TitleName: "比如",

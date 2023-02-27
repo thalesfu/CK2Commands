@@ -11,7 +11,7 @@ type 加苏莱斯堡AlcaladelosgazulesBarony struct {
 var BAlcaladelosgazules加苏莱斯堡 feud.Barony = &加苏莱斯堡AlcaladelosgazulesBarony{}
 
 func init() {
-	f := BAlcaladelosgazules加苏莱斯堡.(*加苏莱斯堡AlcaladelosgazulesBarony)
+    f := BAlcaladelosgazules加苏莱斯堡.(*加苏莱斯堡AlcaladelosgazulesBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "alcaladelosgazules",
 		TitleName: "加苏莱斯堡",

@@ -11,7 +11,7 @@ type 伽蓝婆俱提KarambakkudiBarony struct {
 var BKarambakkudi伽蓝婆俱提 feud.Barony = &伽蓝婆俱提KarambakkudiBarony{}
 
 func init() {
-	f := BKarambakkudi伽蓝婆俱提.(*伽蓝婆俱提KarambakkudiBarony)
+    f := BKarambakkudi伽蓝婆俱提.(*伽蓝婆俱提KarambakkudiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "karambakkudi",
 		TitleName: "伽蓝婆俱提",

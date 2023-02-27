@@ -11,7 +11,7 @@ type 洛克米内LocmineBarony struct {
 var BLocmine洛克米内 feud.Barony = &洛克米内LocmineBarony{}
 
 func init() {
-	f := BLocmine洛克米内.(*洛克米内LocmineBarony)
+    f := BLocmine洛克米内.(*洛克米内LocmineBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "locmine",
 		TitleName: "洛克米内",

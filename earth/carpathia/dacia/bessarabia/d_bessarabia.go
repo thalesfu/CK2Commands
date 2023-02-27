@@ -9,37 +9,37 @@ import (
 )
 
 type BessarabiaDuke interface {
-	feud.Duke
-	CBelgorod别尔哥罗德() belgorod.BelgorodCounty
-	CBirlad伯尔拉德() birlad.BirladCounty
-	CChilia基利亚() chilia.ChiliaCounty
-	CGalaz加拉茨() galaz.GalazCounty
+    feud.Duke
+    CBelgorod别尔哥罗德() 	belgorod.BelgorodCounty
+    CBirlad伯尔拉德() 	birlad.BirladCounty
+    CChilia基利亚() 	chilia.ChiliaCounty
+    CGalaz加拉茨() 	galaz.GalazCounty
 }
 
 type 比萨拉比亚BessarabiaDuke struct {
 	feud.BaseDuke
-	别尔哥罗德Belgorod belgorod.BelgorodCounty
-	伯尔拉德Birlad    birlad.BirladCounty
-	基利亚Chilia     chilia.ChiliaCounty
-	加拉茨Galaz      galaz.GalazCounty
+	别尔哥罗德Belgorod 	belgorod.BelgorodCounty
+	伯尔拉德Birlad 	birlad.BirladCounty
+	基利亚Chilia 	chilia.ChiliaCounty
+	加拉茨Galaz 	galaz.GalazCounty
 }
 
 func (d *比萨拉比亚BessarabiaDuke) CBelgorod别尔哥罗德() belgorod.BelgorodCounty {
 	return d.别尔哥罗德Belgorod
 }
-
+    
 func (d *比萨拉比亚BessarabiaDuke) CBirlad伯尔拉德() birlad.BirladCounty {
 	return d.伯尔拉德Birlad
 }
-
+    
 func (d *比萨拉比亚BessarabiaDuke) CChilia基利亚() chilia.ChiliaCounty {
 	return d.基利亚Chilia
 }
-
+    
 func (d *比萨拉比亚BessarabiaDuke) CGalaz加拉茨() galaz.GalazCounty {
 	return d.加拉茨Galaz
 }
-
+    
 var DBessarabia比萨拉比亚 BessarabiaDuke = &比萨拉比亚BessarabiaDuke{}
 
 func init() {
@@ -53,14 +53,14 @@ func init() {
 
 	f.别尔哥罗德Belgorod = belgorod.CBelgorod别尔哥罗德
 	f.别尔哥罗德Belgorod.SetParent(f)
-
+	
 	f.伯尔拉德Birlad = birlad.CBirlad伯尔拉德
 	f.伯尔拉德Birlad.SetParent(f)
-
+	
 	f.基利亚Chilia = chilia.CChilia基利亚
 	f.基利亚Chilia.SetParent(f)
-
+	
 	f.加拉茨Galaz = galaz.CGalaz加拉茨
 	f.加拉茨Galaz.SetParent(f)
-
+	
 }

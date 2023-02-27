@@ -11,7 +11,7 @@ type 栋夫龙DomfrontBarony struct {
 var BDomfront栋夫龙 feud.Barony = &栋夫龙DomfrontBarony{}
 
 func init() {
-	f := BDomfront栋夫龙.(*栋夫龙DomfrontBarony)
+    f := BDomfront栋夫龙.(*栋夫龙DomfrontBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "domfront",
 		TitleName: "栋夫龙",

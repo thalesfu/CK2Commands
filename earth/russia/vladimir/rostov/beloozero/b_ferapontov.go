@@ -11,7 +11,7 @@ type 费拉蓬托夫FerapontovBarony struct {
 var BFerapontov费拉蓬托夫 feud.Barony = &费拉蓬托夫FerapontovBarony{}
 
 func init() {
-	f := BFerapontov费拉蓬托夫.(*费拉蓬托夫FerapontovBarony)
+    f := BFerapontov费拉蓬托夫.(*费拉蓬托夫FerapontovBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ferapontov",
 		TitleName: "费拉蓬托夫",

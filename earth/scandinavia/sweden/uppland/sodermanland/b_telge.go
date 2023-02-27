@@ -11,7 +11,7 @@ type 特尔赫TelgeBarony struct {
 var BTelge特尔赫 feud.Barony = &特尔赫TelgeBarony{}
 
 func init() {
-	f := BTelge特尔赫.(*特尔赫TelgeBarony)
+    f := BTelge特尔赫.(*特尔赫TelgeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "telge",
 		TitleName: "特尔赫",

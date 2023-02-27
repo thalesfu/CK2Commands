@@ -11,7 +11,7 @@ type 雍仲林YungdrunglingBarony struct {
 var BYungdrungling雍仲林 feud.Barony = &雍仲林YungdrunglingBarony{}
 
 func init() {
-	f := BYungdrungling雍仲林.(*雍仲林YungdrunglingBarony)
+    f := BYungdrungling雍仲林.(*雍仲林YungdrunglingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yungdrungling",
 		TitleName: "雍仲林",

@@ -11,7 +11,7 @@ type 瓦勒古约WalguyoBarony struct {
 var BWalguyo瓦勒古约 feud.Barony = &瓦勒古约WalguyoBarony{}
 
 func init() {
-	f := BWalguyo瓦勒古约.(*瓦勒古约WalguyoBarony)
+    f := BWalguyo瓦勒古约.(*瓦勒古约WalguyoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "walguyo",
 		TitleName: "瓦勒古约",

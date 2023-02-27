@@ -11,7 +11,7 @@ type 瓦格拉姆WagramBarony struct {
 var BWagram瓦格拉姆 feud.Barony = &瓦格拉姆WagramBarony{}
 
 func init() {
-	f := BWagram瓦格拉姆.(*瓦格拉姆WagramBarony)
+    f := BWagram瓦格拉姆.(*瓦格拉姆WagramBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wagram",
 		TitleName: "瓦格拉姆",

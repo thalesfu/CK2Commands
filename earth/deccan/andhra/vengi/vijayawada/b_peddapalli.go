@@ -11,7 +11,7 @@ type 佩达帕尔利PeddapalliBarony struct {
 var BPeddapalli佩达帕尔利 feud.Barony = &佩达帕尔利PeddapalliBarony{}
 
 func init() {
-	f := BPeddapalli佩达帕尔利.(*佩达帕尔利PeddapalliBarony)
+    f := BPeddapalli佩达帕尔利.(*佩达帕尔利PeddapalliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "peddapalli",
 		TitleName: "佩达帕尔利",

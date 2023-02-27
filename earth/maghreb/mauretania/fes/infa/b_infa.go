@@ -11,7 +11,7 @@ type 安法InfaBarony struct {
 var BInfa安法 feud.Barony = &安法InfaBarony{}
 
 func init() {
-	f := BInfa安法.(*安法InfaBarony)
+    f := BInfa安法.(*安法InfaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "infa",
 		TitleName: "安法",

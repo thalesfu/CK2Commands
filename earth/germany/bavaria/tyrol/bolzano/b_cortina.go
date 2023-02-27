@@ -11,7 +11,7 @@ type 科尔蒂纳CortinaBarony struct {
 var BCortina科尔蒂纳 feud.Barony = &科尔蒂纳CortinaBarony{}
 
 func init() {
-	f := BCortina科尔蒂纳.(*科尔蒂纳CortinaBarony)
+    f := BCortina科尔蒂纳.(*科尔蒂纳CortinaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cortina",
 		TitleName: "科尔蒂纳",

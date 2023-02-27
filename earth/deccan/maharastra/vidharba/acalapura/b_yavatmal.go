@@ -11,7 +11,7 @@ type 亚瓦特马尔YavatmalBarony struct {
 var BYavatmal亚瓦特马尔 feud.Barony = &亚瓦特马尔YavatmalBarony{}
 
 func init() {
-	f := BYavatmal亚瓦特马尔.(*亚瓦特马尔YavatmalBarony)
+    f := BYavatmal亚瓦特马尔.(*亚瓦特马尔YavatmalBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yavatmal",
 		TitleName: "亚瓦特马尔",

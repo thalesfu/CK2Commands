@@ -11,7 +11,7 @@ type 韦里亚VeriaBarony struct {
 var BVeria韦里亚 feud.Barony = &韦里亚VeriaBarony{}
 
 func init() {
-	f := BVeria韦里亚.(*韦里亚VeriaBarony)
+    f := BVeria韦里亚.(*韦里亚VeriaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "veria",
 		TitleName: "韦里亚",

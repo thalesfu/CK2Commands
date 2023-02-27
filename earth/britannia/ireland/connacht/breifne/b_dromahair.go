@@ -11,7 +11,7 @@ type 德罗马黑尔DromahairBarony struct {
 var BDromahair德罗马黑尔 feud.Barony = &德罗马黑尔DromahairBarony{}
 
 func init() {
-	f := BDromahair德罗马黑尔.(*德罗马黑尔DromahairBarony)
+    f := BDromahair德罗马黑尔.(*德罗马黑尔DromahairBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dromahair",
 		TitleName: "德罗马黑尔",

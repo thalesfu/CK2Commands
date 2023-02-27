@@ -11,7 +11,7 @@ type 弗罗卡VrakaBarony struct {
 var BVraka弗罗卡 feud.Barony = &弗罗卡VrakaBarony{}
 
 func init() {
-	f := BVraka弗罗卡.(*弗罗卡VrakaBarony)
+    f := BVraka弗罗卡.(*弗罗卡VrakaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vraka",
 		TitleName: "弗罗卡",

@@ -11,7 +11,7 @@ type 封佉伽摩PunkhagamaBarony struct {
 var BPunkhagama封佉伽摩 feud.Barony = &封佉伽摩PunkhagamaBarony{}
 
 func init() {
-	f := BPunkhagama封佉伽摩.(*封佉伽摩PunkhagamaBarony)
+    f := BPunkhagama封佉伽摩.(*封佉伽摩PunkhagamaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "punkhagama",
 		TitleName: "封佉伽摩",

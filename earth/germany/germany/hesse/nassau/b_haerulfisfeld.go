@@ -11,7 +11,7 @@ type 海鲁尔菲斯费尔德HaerulfisfeldBarony struct {
 var BHaerulfisfeld海鲁尔菲斯费尔德 feud.Barony = &海鲁尔菲斯费尔德HaerulfisfeldBarony{}
 
 func init() {
-	f := BHaerulfisfeld海鲁尔菲斯费尔德.(*海鲁尔菲斯费尔德HaerulfisfeldBarony)
+    f := BHaerulfisfeld海鲁尔菲斯费尔德.(*海鲁尔菲斯费尔德HaerulfisfeldBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "haerulfisfeld",
 		TitleName: "海鲁尔菲斯费尔德",

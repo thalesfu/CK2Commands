@@ -11,7 +11,7 @@ type 多西米翁DocimiumBarony struct {
 var BDocimium多西米翁 feud.Barony = &多西米翁DocimiumBarony{}
 
 func init() {
-	f := BDocimium多西米翁.(*多西米翁DocimiumBarony)
+    f := BDocimium多西米翁.(*多西米翁DocimiumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "docimium",
 		TitleName: "多西米翁",

@@ -11,7 +11,7 @@ type 佩洛皮亚PelopiaBarony struct {
 var BPelopia佩洛皮亚 feud.Barony = &佩洛皮亚PelopiaBarony{}
 
 func init() {
-	f := BPelopia佩洛皮亚.(*佩洛皮亚PelopiaBarony)
+    f := BPelopia佩洛皮亚.(*佩洛皮亚PelopiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pelopia",
 		TitleName: "佩洛皮亚",

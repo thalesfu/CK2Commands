@@ -11,7 +11,7 @@ type 约格佩雷JogoperaBarony struct {
 var BJogopera约格佩雷 feud.Barony = &约格佩雷JogoperaBarony{}
 
 func init() {
-	f := BJogopera约格佩雷.(*约格佩雷JogoperaBarony)
+    f := BJogopera约格佩雷.(*约格佩雷JogoperaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jogopera",
 		TitleName: "约格佩雷",

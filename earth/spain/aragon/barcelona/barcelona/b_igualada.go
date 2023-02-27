@@ -11,7 +11,7 @@ type 伊瓜拉达IgualadaBarony struct {
 var BIgualada伊瓜拉达 feud.Barony = &伊瓜拉达IgualadaBarony{}
 
 func init() {
-	f := BIgualada伊瓜拉达.(*伊瓜拉达IgualadaBarony)
+    f := BIgualada伊瓜拉达.(*伊瓜拉达IgualadaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "igualada",
 		TitleName: "伊瓜拉达",

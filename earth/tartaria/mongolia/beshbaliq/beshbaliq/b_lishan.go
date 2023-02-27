@@ -11,7 +11,7 @@ type 骊山LishanBarony struct {
 var BLishan骊山 feud.Barony = &骊山LishanBarony{}
 
 func init() {
-	f := BLishan骊山.(*骊山LishanBarony)
+    f := BLishan骊山.(*骊山LishanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lishan",
 		TitleName: "骊山",

@@ -11,7 +11,7 @@ type 梅勒MelleBarony struct {
 var BMelle梅勒 feud.Barony = &梅勒MelleBarony{}
 
 func init() {
-	f := BMelle梅勒.(*梅勒MelleBarony)
+    f := BMelle梅勒.(*梅勒MelleBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "melle",
 		TitleName: "梅勒",

@@ -11,7 +11,7 @@ type 利斯比约LisbjergBarony struct {
 var BLisbjerg利斯比约 feud.Barony = &利斯比约LisbjergBarony{}
 
 func init() {
-	f := BLisbjerg利斯比约.(*利斯比约LisbjergBarony)
+    f := BLisbjerg利斯比约.(*利斯比约LisbjergBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lisbjerg",
 		TitleName: "利斯比约",

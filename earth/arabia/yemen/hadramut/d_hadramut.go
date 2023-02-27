@@ -8,31 +8,31 @@ import (
 )
 
 type HadramutDuke interface {
-	feud.Duke
-	CDhofar佐法尔() dhofar.DhofarCounty
-	CKathiri卡迪里() kathiri.KathiriCounty
-	CMahra马哈拉() mahra.MahraCounty
+    feud.Duke
+    CDhofar佐法尔() 	dhofar.DhofarCounty
+    CKathiri卡迪里() 	kathiri.KathiriCounty
+    CMahra马哈拉() 	mahra.MahraCounty
 }
 
 type 哈得拉姆HadramutDuke struct {
 	feud.BaseDuke
-	佐法尔Dhofar  dhofar.DhofarCounty
-	卡迪里Kathiri kathiri.KathiriCounty
-	马哈拉Mahra   mahra.MahraCounty
+	佐法尔Dhofar 	dhofar.DhofarCounty
+	卡迪里Kathiri 	kathiri.KathiriCounty
+	马哈拉Mahra 	mahra.MahraCounty
 }
 
 func (d *哈得拉姆HadramutDuke) CDhofar佐法尔() dhofar.DhofarCounty {
 	return d.佐法尔Dhofar
 }
-
+    
 func (d *哈得拉姆HadramutDuke) CKathiri卡迪里() kathiri.KathiriCounty {
 	return d.卡迪里Kathiri
 }
-
+    
 func (d *哈得拉姆HadramutDuke) CMahra马哈拉() mahra.MahraCounty {
 	return d.马哈拉Mahra
 }
-
+    
 var DHadramut哈得拉姆 HadramutDuke = &哈得拉姆HadramutDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.佐法尔Dhofar = dhofar.CDhofar佐法尔
 	f.佐法尔Dhofar.SetParent(f)
-
+	
 	f.卡迪里Kathiri = kathiri.CKathiri卡迪里
 	f.卡迪里Kathiri.SetParent(f)
-
+	
 	f.马哈拉Mahra = mahra.CMahra马哈拉
 	f.马哈拉Mahra.SetParent(f)
-
+	
 }

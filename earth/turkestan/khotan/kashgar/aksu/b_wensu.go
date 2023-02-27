@@ -11,7 +11,7 @@ type 温宿WensuBarony struct {
 var BWensu温宿 feud.Barony = &温宿WensuBarony{}
 
 func init() {
-	f := BWensu温宿.(*温宿WensuBarony)
+    f := BWensu温宿.(*温宿WensuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wensu",
 		TitleName: "温宿",

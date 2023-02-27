@@ -11,7 +11,7 @@ type 泽菲洛波利ZephyropoliBarony struct {
 var BZephyropoli泽菲洛波利 feud.Barony = &泽菲洛波利ZephyropoliBarony{}
 
 func init() {
-	f := BZephyropoli泽菲洛波利.(*泽菲洛波利ZephyropoliBarony)
+    f := BZephyropoli泽菲洛波利.(*泽菲洛波利ZephyropoliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zephyropoli",
 		TitleName: "泽菲洛波利",

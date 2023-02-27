@@ -11,7 +11,7 @@ type 利明卡LiminkaBarony struct {
 var BLiminka利明卡 feud.Barony = &利明卡LiminkaBarony{}
 
 func init() {
-	f := BLiminka利明卡.(*利明卡LiminkaBarony)
+    f := BLiminka利明卡.(*利明卡LiminkaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "liminka",
 		TitleName: "利明卡",

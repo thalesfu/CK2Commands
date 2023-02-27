@@ -11,7 +11,7 @@ type 特拉武尼亚TravuniaBarony struct {
 var BTravunia特拉武尼亚 feud.Barony = &特拉武尼亚TravuniaBarony{}
 
 func init() {
-	f := BTravunia特拉武尼亚.(*特拉武尼亚TravuniaBarony)
+    f := BTravunia特拉武尼亚.(*特拉武尼亚TravuniaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "travunia",
 		TitleName: "特拉武尼亚",

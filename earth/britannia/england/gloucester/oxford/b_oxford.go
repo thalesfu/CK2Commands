@@ -11,7 +11,7 @@ type 牛津OxfordBarony struct {
 var BOxford牛津 feud.Barony = &牛津OxfordBarony{}
 
 func init() {
-	f := BOxford牛津.(*牛津OxfordBarony)
+    f := BOxford牛津.(*牛津OxfordBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "oxford",
 		TitleName: "牛津",

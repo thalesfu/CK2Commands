@@ -11,7 +11,7 @@ type 灵克宾RingkobingBarony struct {
 var BRingkobing灵克宾 feud.Barony = &灵克宾RingkobingBarony{}
 
 func init() {
-	f := BRingkobing灵克宾.(*灵克宾RingkobingBarony)
+    f := BRingkobing灵克宾.(*灵克宾RingkobingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ringkobing",
 		TitleName: "灵克宾",

@@ -11,7 +11,7 @@ type 瑙力NauliBarony struct {
 var BNauli瑙力 feud.Barony = &瑙力NauliBarony{}
 
 func init() {
-	f := BNauli瑙力.(*瑙力NauliBarony)
+    f := BNauli瑙力.(*瑙力NauliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nauli",
 		TitleName: "瑙力",

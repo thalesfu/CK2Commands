@@ -11,7 +11,7 @@ type 毛科MakoBarony struct {
 var BMako毛科 feud.Barony = &毛科MakoBarony{}
 
 func init() {
-	f := BMako毛科.(*毛科MakoBarony)
+    f := BMako毛科.(*毛科MakoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mako",
 		TitleName: "毛科",

@@ -11,7 +11,7 @@ type 薄多伽罗摩BhaktagramaBarony struct {
 var BBhaktagrama薄多伽罗摩 feud.Barony = &薄多伽罗摩BhaktagramaBarony{}
 
 func init() {
-	f := BBhaktagrama薄多伽罗摩.(*薄多伽罗摩BhaktagramaBarony)
+    f := BBhaktagrama薄多伽罗摩.(*薄多伽罗摩BhaktagramaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bhaktagrama",
 		TitleName: "薄多伽罗摩",

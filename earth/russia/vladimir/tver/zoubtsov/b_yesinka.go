@@ -11,7 +11,7 @@ type 叶辛卡YesinkaBarony struct {
 var BYesinka叶辛卡 feud.Barony = &叶辛卡YesinkaBarony{}
 
 func init() {
-	f := BYesinka叶辛卡.(*叶辛卡YesinkaBarony)
+    f := BYesinka叶辛卡.(*叶辛卡YesinkaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yesinka",
 		TitleName: "叶辛卡",

@@ -11,7 +11,7 @@ type 万塔VantaaBarony struct {
 var BVantaa万塔 feud.Barony = &万塔VantaaBarony{}
 
 func init() {
-	f := BVantaa万塔.(*万塔VantaaBarony)
+    f := BVantaa万塔.(*万塔VantaaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vantaa",
 		TitleName: "万塔",

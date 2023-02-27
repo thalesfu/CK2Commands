@@ -8,31 +8,31 @@ import (
 )
 
 type YugraDuke interface {
-	feud.Duke
-	CKhantia汉特() khantia.KhantiaCounty
-	CMansia曼西() mansia.MansiaCounty
-	CYamalia亚马利亚() yamalia.YamaliaCounty
+    feud.Duke
+    CKhantia汉特() 	khantia.KhantiaCounty
+    CMansia曼西() 	mansia.MansiaCounty
+    CYamalia亚马利亚() 	yamalia.YamaliaCounty
 }
 
 type 尤格拉YugraDuke struct {
 	feud.BaseDuke
-	汉特Khantia   khantia.KhantiaCounty
-	曼西Mansia    mansia.MansiaCounty
-	亚马利亚Yamalia yamalia.YamaliaCounty
+	汉特Khantia 	khantia.KhantiaCounty
+	曼西Mansia 	mansia.MansiaCounty
+	亚马利亚Yamalia 	yamalia.YamaliaCounty
 }
 
 func (d *尤格拉YugraDuke) CKhantia汉特() khantia.KhantiaCounty {
 	return d.汉特Khantia
 }
-
+    
 func (d *尤格拉YugraDuke) CMansia曼西() mansia.MansiaCounty {
 	return d.曼西Mansia
 }
-
+    
 func (d *尤格拉YugraDuke) CYamalia亚马利亚() yamalia.YamaliaCounty {
 	return d.亚马利亚Yamalia
 }
-
+    
 var DYugra尤格拉 YugraDuke = &尤格拉YugraDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.汉特Khantia = khantia.CKhantia汉特
 	f.汉特Khantia.SetParent(f)
-
+	
 	f.曼西Mansia = mansia.CMansia曼西
 	f.曼西Mansia.SetParent(f)
-
+	
 	f.亚马利亚Yamalia = yamalia.CYamalia亚马利亚
 	f.亚马利亚Yamalia.SetParent(f)
-
+	
 }

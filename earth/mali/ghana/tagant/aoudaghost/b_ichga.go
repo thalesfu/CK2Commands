@@ -11,7 +11,7 @@ type 伊希加IchgaBarony struct {
 var BIchga伊希加 feud.Barony = &伊希加IchgaBarony{}
 
 func init() {
-	f := BIchga伊希加.(*伊希加IchgaBarony)
+    f := BIchga伊希加.(*伊希加IchgaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ichga",
 		TitleName: "伊希加",

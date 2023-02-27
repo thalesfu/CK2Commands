@@ -11,7 +11,7 @@ type 伽那奥提KanaoudiBarony struct {
 var BKanaoudi伽那奥提 feud.Barony = &伽那奥提KanaoudiBarony{}
 
 func init() {
-	f := BKanaoudi伽那奥提.(*伽那奥提KanaoudiBarony)
+    f := BKanaoudi伽那奥提.(*伽那奥提KanaoudiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kanaoudi",
 		TitleName: "伽那奥提",

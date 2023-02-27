@@ -11,7 +11,7 @@ type 特雷比涅TrebinjeBarony struct {
 var BTrebinje特雷比涅 feud.Barony = &特雷比涅TrebinjeBarony{}
 
 func init() {
-	f := BTrebinje特雷比涅.(*特雷比涅TrebinjeBarony)
+    f := BTrebinje特雷比涅.(*特雷比涅TrebinjeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "trebinje",
 		TitleName: "特雷比涅",

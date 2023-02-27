@@ -11,7 +11,7 @@ type 吉隆KeylongBarony struct {
 var BKeylong吉隆 feud.Barony = &吉隆KeylongBarony{}
 
 func init() {
-	f := BKeylong吉隆.(*吉隆KeylongBarony)
+    f := BKeylong吉隆.(*吉隆KeylongBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "keylong",
 		TitleName: "吉隆",

@@ -11,7 +11,7 @@ type 瓦斯采利纳VastseliinaBarony struct {
 var BVastseliina瓦斯采利纳 feud.Barony = &瓦斯采利纳VastseliinaBarony{}
 
 func init() {
-	f := BVastseliina瓦斯采利纳.(*瓦斯采利纳VastseliinaBarony)
+    f := BVastseliina瓦斯采利纳.(*瓦斯采利纳VastseliinaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vastseliina",
 		TitleName: "瓦斯采利纳",

@@ -11,7 +11,7 @@ type 德吉DiskitBarony struct {
 var BDiskit德吉 feud.Barony = &德吉DiskitBarony{}
 
 func init() {
-	f := BDiskit德吉.(*德吉DiskitBarony)
+    f := BDiskit德吉.(*德吉DiskitBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "diskit",
 		TitleName: "德吉",

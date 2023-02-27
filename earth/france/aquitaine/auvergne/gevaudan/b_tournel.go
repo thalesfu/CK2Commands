@@ -11,7 +11,7 @@ type 图尔内尔TournelBarony struct {
 var BTournel图尔内尔 feud.Barony = &图尔内尔TournelBarony{}
 
 func init() {
-	f := BTournel图尔内尔.(*图尔内尔TournelBarony)
+    f := BTournel图尔内尔.(*图尔内尔TournelBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tournel",
 		TitleName: "图尔内尔",

@@ -11,7 +11,7 @@ type 布拉格BuraqBarony struct {
 var BBuraq布拉格 feud.Barony = &布拉格BuraqBarony{}
 
 func init() {
-	f := BBuraq布拉格.(*布拉格BuraqBarony)
+    f := BBuraq布拉格.(*布拉格BuraqBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "buraq",
 		TitleName: "布拉格",

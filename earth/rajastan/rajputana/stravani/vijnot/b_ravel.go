@@ -11,7 +11,7 @@ type 罗婆RavelBarony struct {
 var BRavel罗婆 feud.Barony = &罗婆RavelBarony{}
 
 func init() {
-	f := BRavel罗婆.(*罗婆RavelBarony)
+    f := BRavel罗婆.(*罗婆RavelBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ravel",
 		TitleName: "罗婆",

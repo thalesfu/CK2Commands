@@ -11,7 +11,7 @@ type 圣多明各德拉卡尔萨达SantodomingodelacalzadaBarony struct {
 var BSantodomingodelacalzada圣多明各德拉卡尔萨达 feud.Barony = &圣多明各德拉卡尔萨达SantodomingodelacalzadaBarony{}
 
 func init() {
-	f := BSantodomingodelacalzada圣多明各德拉卡尔萨达.(*圣多明各德拉卡尔萨达SantodomingodelacalzadaBarony)
+    f := BSantodomingodelacalzada圣多明各德拉卡尔萨达.(*圣多明各德拉卡尔萨达SantodomingodelacalzadaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "santodomingodelacalzada",
 		TitleName: "圣多明各德拉卡尔萨达",

@@ -11,7 +11,7 @@ type 阿尔托帕肖AltopascioBarony struct {
 var BAltopascio阿尔托帕肖 feud.Barony = &阿尔托帕肖AltopascioBarony{}
 
 func init() {
-	f := BAltopascio阿尔托帕肖.(*阿尔托帕肖AltopascioBarony)
+    f := BAltopascio阿尔托帕肖.(*阿尔托帕肖AltopascioBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "altopascio",
 		TitleName: "阿尔托帕肖",

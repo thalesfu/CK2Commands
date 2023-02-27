@@ -11,7 +11,7 @@ type 半挐契吒ParnakhetaBarony struct {
 var BParnakheta半挐契吒 feud.Barony = &半挐契吒ParnakhetaBarony{}
 
 func init() {
-	f := BParnakheta半挐契吒.(*半挐契吒ParnakhetaBarony)
+    f := BParnakheta半挐契吒.(*半挐契吒ParnakhetaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "parnakheta",
 		TitleName: "半挐契吒",

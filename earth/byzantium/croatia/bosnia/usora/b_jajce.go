@@ -11,7 +11,7 @@ type 亚伊采JajceBarony struct {
 var BJajce亚伊采 feud.Barony = &亚伊采JajceBarony{}
 
 func init() {
-	f := BJajce亚伊采.(*亚伊采JajceBarony)
+    f := BJajce亚伊采.(*亚伊采JajceBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jajce",
 		TitleName: "亚伊采",

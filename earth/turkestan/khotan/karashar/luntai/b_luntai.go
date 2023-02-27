@@ -11,7 +11,7 @@ type 轮台LuntaiBarony struct {
 var BLuntai轮台 feud.Barony = &轮台LuntaiBarony{}
 
 func init() {
-	f := BLuntai轮台.(*轮台LuntaiBarony)
+    f := BLuntai轮台.(*轮台LuntaiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "luntai",
 		TitleName: "轮台",

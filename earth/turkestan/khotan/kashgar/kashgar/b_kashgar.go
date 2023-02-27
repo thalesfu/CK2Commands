@@ -11,7 +11,7 @@ type 可失合儿KashgarBarony struct {
 var BKashgar可失合儿 feud.Barony = &可失合儿KashgarBarony{}
 
 func init() {
-	f := BKashgar可失合儿.(*可失合儿KashgarBarony)
+    f := BKashgar可失合儿.(*可失合儿KashgarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kashgar",
 		TitleName: "可失合儿",

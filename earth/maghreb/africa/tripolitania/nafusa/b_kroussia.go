@@ -11,7 +11,7 @@ type 克鲁西亚KroussiaBarony struct {
 var BKroussia克鲁西亚 feud.Barony = &克鲁西亚KroussiaBarony{}
 
 func init() {
-	f := BKroussia克鲁西亚.(*克鲁西亚KroussiaBarony)
+    f := BKroussia克鲁西亚.(*克鲁西亚KroussiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kroussia",
 		TitleName: "克鲁西亚",

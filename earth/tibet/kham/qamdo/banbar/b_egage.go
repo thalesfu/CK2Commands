@@ -11,7 +11,7 @@ type 俄嘎格EgageBarony struct {
 var BEgage俄嘎格 feud.Barony = &俄嘎格EgageBarony{}
 
 func init() {
-	f := BEgage俄嘎格.(*俄嘎格EgageBarony)
+    f := BEgage俄嘎格.(*俄嘎格EgageBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "egage",
 		TitleName: "俄嘎格",

@@ -11,7 +11,7 @@ type 埃特罗波莱EtropoleBarony struct {
 var BEtropole埃特罗波莱 feud.Barony = &埃特罗波莱EtropoleBarony{}
 
 func init() {
-	f := BEtropole埃特罗波莱.(*埃特罗波莱EtropoleBarony)
+    f := BEtropole埃特罗波莱.(*埃特罗波莱EtropoleBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "etropole",
 		TitleName: "埃特罗波莱",

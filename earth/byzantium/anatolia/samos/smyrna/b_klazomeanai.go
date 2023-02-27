@@ -11,7 +11,7 @@ type 克莱索美奈KlazomeanaiBarony struct {
 var BKlazomeanai克莱索美奈 feud.Barony = &克莱索美奈KlazomeanaiBarony{}
 
 func init() {
-	f := BKlazomeanai克莱索美奈.(*克莱索美奈KlazomeanaiBarony)
+    f := BKlazomeanai克莱索美奈.(*克莱索美奈KlazomeanaiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "klazomeanai",
 		TitleName: "克莱索美奈",

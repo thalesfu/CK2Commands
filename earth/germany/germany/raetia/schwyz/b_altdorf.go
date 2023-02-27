@@ -11,7 +11,7 @@ type 阿尔特多夫AltdorfBarony struct {
 var BAltdorf阿尔特多夫 feud.Barony = &阿尔特多夫AltdorfBarony{}
 
 func init() {
-	f := BAltdorf阿尔特多夫.(*阿尔特多夫AltdorfBarony)
+    f := BAltdorf阿尔特多夫.(*阿尔特多夫AltdorfBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "altdorf",
 		TitleName: "阿尔特多夫",

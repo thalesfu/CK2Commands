@@ -11,7 +11,7 @@ type 切普斯托ChepstowBarony struct {
 var BChepstow切普斯托 feud.Barony = &切普斯托ChepstowBarony{}
 
 func init() {
-	f := BChepstow切普斯托.(*切普斯托ChepstowBarony)
+    f := BChepstow切普斯托.(*切普斯托ChepstowBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chepstow",
 		TitleName: "切普斯托",

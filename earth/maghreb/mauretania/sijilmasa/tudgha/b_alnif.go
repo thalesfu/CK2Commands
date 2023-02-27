@@ -11,7 +11,7 @@ type 艾勒尼夫AlnifBarony struct {
 var BAlnif艾勒尼夫 feud.Barony = &艾勒尼夫AlnifBarony{}
 
 func init() {
-	f := BAlnif艾勒尼夫.(*艾勒尼夫AlnifBarony)
+    f := BAlnif艾勒尼夫.(*艾勒尼夫AlnifBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "alnif",
 		TitleName: "艾勒尼夫",

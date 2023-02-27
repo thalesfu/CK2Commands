@@ -11,7 +11,7 @@ type 巴喀法BaqofahBarony struct {
 var BBaqofah巴喀法 feud.Barony = &巴喀法BaqofahBarony{}
 
 func init() {
-	f := BBaqofah巴喀法.(*巴喀法BaqofahBarony)
+    f := BBaqofah巴喀法.(*巴喀法BaqofahBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "baqofah",
 		TitleName: "巴喀法",

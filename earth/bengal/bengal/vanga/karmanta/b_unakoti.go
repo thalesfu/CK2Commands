@@ -11,7 +11,7 @@ type 优那拘胝UnakotiBarony struct {
 var BUnakoti优那拘胝 feud.Barony = &优那拘胝UnakotiBarony{}
 
 func init() {
-	f := BUnakoti优那拘胝.(*优那拘胝UnakotiBarony)
+    f := BUnakoti优那拘胝.(*优那拘胝UnakotiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "unakoti",
 		TitleName: "优那拘胝",

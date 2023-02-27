@@ -11,7 +11,7 @@ type 奥潘OpanBarony struct {
 var BOpan奥潘 feud.Barony = &奥潘OpanBarony{}
 
 func init() {
-	f := BOpan奥潘.(*奥潘OpanBarony)
+    f := BOpan奥潘.(*奥潘OpanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "opan",
 		TitleName: "奥潘",

@@ -11,7 +11,7 @@ type 的黎波里SyrtripoliBarony struct {
 var BSyrtripoli的黎波里 feud.Barony = &的黎波里SyrtripoliBarony{}
 
 func init() {
-	f := BSyrtripoli的黎波里.(*的黎波里SyrtripoliBarony)
+    f := BSyrtripoli的黎波里.(*的黎波里SyrtripoliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "syrtripoli",
 		TitleName: "的黎波里",

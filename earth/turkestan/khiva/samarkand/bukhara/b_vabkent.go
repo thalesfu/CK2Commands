@@ -11,7 +11,7 @@ type 恰什肯特VabkentBarony struct {
 var BVabkent恰什肯特 feud.Barony = &恰什肯特VabkentBarony{}
 
 func init() {
-	f := BVabkent恰什肯特.(*恰什肯特VabkentBarony)
+    f := BVabkent恰什肯特.(*恰什肯特VabkentBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vabkent",
 		TitleName: "恰什肯特",

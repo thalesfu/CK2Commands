@@ -11,7 +11,7 @@ type 耶陀耆厘矩吒YadagiriguttaBarony struct {
 var BYadagirigutta耶陀耆厘矩吒 feud.Barony = &耶陀耆厘矩吒YadagiriguttaBarony{}
 
 func init() {
-	f := BYadagirigutta耶陀耆厘矩吒.(*耶陀耆厘矩吒YadagiriguttaBarony)
+    f := BYadagirigutta耶陀耆厘矩吒.(*耶陀耆厘矩吒YadagiriguttaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yadagirigutta",
 		TitleName: "耶陀耆厘矩吒",

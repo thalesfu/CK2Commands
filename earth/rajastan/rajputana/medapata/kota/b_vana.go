@@ -11,7 +11,7 @@ type 婆那VanaBarony struct {
 var BVana婆那 feud.Barony = &婆那VanaBarony{}
 
 func init() {
-	f := BVana婆那.(*婆那VanaBarony)
+    f := BVana婆那.(*婆那VanaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vana",
 		TitleName: "婆那",

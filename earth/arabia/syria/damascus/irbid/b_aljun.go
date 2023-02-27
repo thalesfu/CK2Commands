@@ -11,7 +11,7 @@ type 阿杰隆AljunBarony struct {
 var BAljun阿杰隆 feud.Barony = &阿杰隆AljunBarony{}
 
 func init() {
-	f := BAljun阿杰隆.(*阿杰隆AljunBarony)
+    f := BAljun阿杰隆.(*阿杰隆AljunBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "aljun",
 		TitleName: "阿杰隆",

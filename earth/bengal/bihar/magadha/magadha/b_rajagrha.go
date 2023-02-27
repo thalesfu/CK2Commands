@@ -11,7 +11,7 @@ type 王舍城RajagrhaBarony struct {
 var BRajagrha王舍城 feud.Barony = &王舍城RajagrhaBarony{}
 
 func init() {
-	f := BRajagrha王舍城.(*王舍城RajagrhaBarony)
+    f := BRajagrha王舍城.(*王舍城RajagrhaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rajagrha",
 		TitleName: "王舍城",

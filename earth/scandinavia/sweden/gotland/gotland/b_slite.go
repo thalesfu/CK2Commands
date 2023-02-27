@@ -11,7 +11,7 @@ type 斯利特SliteBarony struct {
 var BSlite斯利特 feud.Barony = &斯利特SliteBarony{}
 
 func init() {
-	f := BSlite斯利特.(*斯利特SliteBarony)
+    f := BSlite斯利特.(*斯利特SliteBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "slite",
 		TitleName: "斯利特",

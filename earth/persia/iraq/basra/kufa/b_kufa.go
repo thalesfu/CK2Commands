@@ -11,7 +11,7 @@ type 库法KufaBarony struct {
 var BKufa库法 feud.Barony = &库法KufaBarony{}
 
 func init() {
-	f := BKufa库法.(*库法KufaBarony)
+    f := BKufa库法.(*库法KufaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kufa",
 		TitleName: "库法",

@@ -11,7 +11,7 @@ type 别列若克BerezhokBarony struct {
 var BBerezhok别列若克 feud.Barony = &别列若克BerezhokBarony{}
 
 func init() {
-	f := BBerezhok别列若克.(*别列若克BerezhokBarony)
+    f := BBerezhok别列若克.(*别列若克BerezhokBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "berezhok",
 		TitleName: "别列若克",

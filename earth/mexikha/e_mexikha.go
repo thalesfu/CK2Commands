@@ -5,7 +5,7 @@ import (
 )
 
 type MexikhaEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 阿兹特克帝国MexikhaEmpire struct {

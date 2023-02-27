@@ -11,7 +11,7 @@ type 佩赫基内林纳NoteborgBarony struct {
 var BNoteborg佩赫基内林纳 feud.Barony = &佩赫基内林纳NoteborgBarony{}
 
 func init() {
-	f := BNoteborg佩赫基内林纳.(*佩赫基内林纳NoteborgBarony)
+    f := BNoteborg佩赫基内林纳.(*佩赫基内林纳NoteborgBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "noteborg",
 		TitleName: "佩赫基内林纳",

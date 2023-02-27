@@ -11,7 +11,7 @@ type 策尔京ZelkingBarony struct {
 var BZelking策尔京 feud.Barony = &策尔京ZelkingBarony{}
 
 func init() {
-	f := BZelking策尔京.(*策尔京ZelkingBarony)
+    f := BZelking策尔京.(*策尔京ZelkingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zelking",
 		TitleName: "策尔京",

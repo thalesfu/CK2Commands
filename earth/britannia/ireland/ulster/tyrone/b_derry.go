@@ -11,7 +11,7 @@ type 德里DerryBarony struct {
 var BDerry德里 feud.Barony = &德里DerryBarony{}
 
 func init() {
-	f := BDerry德里.(*德里DerryBarony)
+    f := BDerry德里.(*德里DerryBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "derry",
 		TitleName: "德里",

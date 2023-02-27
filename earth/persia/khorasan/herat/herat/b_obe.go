@@ -11,7 +11,7 @@ type 奥比ObeBarony struct {
 var BObe奥比 feud.Barony = &奥比ObeBarony{}
 
 func init() {
-	f := BObe奥比.(*奥比ObeBarony)
+    f := BObe奥比.(*奥比ObeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "obe",
 		TitleName: "奥比",

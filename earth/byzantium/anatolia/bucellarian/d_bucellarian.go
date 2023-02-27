@@ -7,25 +7,25 @@ import (
 )
 
 type BucellarianDuke interface {
-	feud.Duke
-	CAnkyra安居拉() ankyra.AnkyraCounty
-	CClaudiopolis克劳狄奥波利斯() claudiopolis.ClaudiopolisCounty
+    feud.Duke
+    CAnkyra安居拉() 	ankyra.AnkyraCounty
+    CClaudiopolis克劳狄奥波利斯() 	claudiopolis.ClaudiopolisCounty
 }
 
 type 布凯拉里翁BucellarianDuke struct {
 	feud.BaseDuke
-	安居拉Ankyra           ankyra.AnkyraCounty
-	克劳狄奥波利斯Claudiopolis claudiopolis.ClaudiopolisCounty
+	安居拉Ankyra 	ankyra.AnkyraCounty
+	克劳狄奥波利斯Claudiopolis 	claudiopolis.ClaudiopolisCounty
 }
 
 func (d *布凯拉里翁BucellarianDuke) CAnkyra安居拉() ankyra.AnkyraCounty {
 	return d.安居拉Ankyra
 }
-
+    
 func (d *布凯拉里翁BucellarianDuke) CClaudiopolis克劳狄奥波利斯() claudiopolis.ClaudiopolisCounty {
 	return d.克劳狄奥波利斯Claudiopolis
 }
-
+    
 var DBucellarian布凯拉里翁 BucellarianDuke = &布凯拉里翁BucellarianDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.安居拉Ankyra = ankyra.CAnkyra安居拉
 	f.安居拉Ankyra.SetParent(f)
-
+	
 	f.克劳狄奥波利斯Claudiopolis = claudiopolis.CClaudiopolis克劳狄奥波利斯
 	f.克劳狄奥波利斯Claudiopolis.SetParent(f)
-
+	
 }

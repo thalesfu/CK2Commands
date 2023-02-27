@@ -11,7 +11,7 @@ type 军陀KundaBarony struct {
 var BKunda军陀 feud.Barony = &军陀KundaBarony{}
 
 func init() {
-	f := BKunda军陀.(*军陀KundaBarony)
+    f := BKunda军陀.(*军陀KundaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kunda",
 		TitleName: "军陀",

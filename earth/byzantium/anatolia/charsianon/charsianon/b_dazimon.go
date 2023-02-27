@@ -11,7 +11,7 @@ type 德治文DazimonBarony struct {
 var BDazimon德治文 feud.Barony = &德治文DazimonBarony{}
 
 func init() {
-	f := BDazimon德治文.(*德治文DazimonBarony)
+    f := BDazimon德治文.(*德治文DazimonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dazimon",
 		TitleName: "德治文",

@@ -11,7 +11,7 @@ type 热水ReshuiBarony struct {
 var BReshui热水 feud.Barony = &热水ReshuiBarony{}
 
 func init() {
-	f := BReshui热水.(*热水ReshuiBarony)
+    f := BReshui热水.(*热水ReshuiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "reshui",
 		TitleName: "热水",

@@ -11,7 +11,7 @@ type 延雪平JonkopingBarony struct {
 var BJonkoping延雪平 feud.Barony = &延雪平JonkopingBarony{}
 
 func init() {
-	f := BJonkoping延雪平.(*延雪平JonkopingBarony)
+    f := BJonkoping延雪平.(*延雪平JonkopingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jonkoping",
 		TitleName: "延雪平",

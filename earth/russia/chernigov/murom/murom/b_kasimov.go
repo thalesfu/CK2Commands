@@ -11,7 +11,7 @@ type 卡西莫夫KasimovBarony struct {
 var BKasimov卡西莫夫 feud.Barony = &卡西莫夫KasimovBarony{}
 
 func init() {
-	f := BKasimov卡西莫夫.(*卡西莫夫KasimovBarony)
+    f := BKasimov卡西莫夫.(*卡西莫夫KasimovBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kasimov",
 		TitleName: "卡西莫夫",

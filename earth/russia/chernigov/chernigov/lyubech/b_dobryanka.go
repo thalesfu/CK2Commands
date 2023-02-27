@@ -11,7 +11,7 @@ type 多布良卡DobryankaBarony struct {
 var BDobryanka多布良卡 feud.Barony = &多布良卡DobryankaBarony{}
 
 func init() {
-	f := BDobryanka多布良卡.(*多布良卡DobryankaBarony)
+    f := BDobryanka多布良卡.(*多布良卡DobryankaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dobryanka",
 		TitleName: "多布良卡",

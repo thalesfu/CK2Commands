@@ -11,7 +11,7 @@ type 库发彻拉KurfacheleBarony struct {
 var BKurfachele库发彻拉 feud.Barony = &库发彻拉KurfacheleBarony{}
 
 func init() {
-	f := BKurfachele库发彻拉.(*库发彻拉KurfacheleBarony)
+    f := BKurfachele库发彻拉.(*库发彻拉KurfacheleBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kurfachele",
 		TitleName: "库发彻拉",

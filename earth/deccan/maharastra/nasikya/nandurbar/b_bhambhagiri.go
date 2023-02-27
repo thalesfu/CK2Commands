@@ -11,7 +11,7 @@ type 梵婆耆厘BhambhagiriBarony struct {
 var BBhambhagiri梵婆耆厘 feud.Barony = &梵婆耆厘BhambhagiriBarony{}
 
 func init() {
-	f := BBhambhagiri梵婆耆厘.(*梵婆耆厘BhambhagiriBarony)
+    f := BBhambhagiri梵婆耆厘.(*梵婆耆厘BhambhagiriBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bhambhagiri",
 		TitleName: "梵婆耆厘",

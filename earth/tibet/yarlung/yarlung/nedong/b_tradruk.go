@@ -11,7 +11,7 @@ type 昌珠TradrukBarony struct {
 var BTradruk昌珠 feud.Barony = &昌珠TradrukBarony{}
 
 func init() {
-	f := BTradruk昌珠.(*昌珠TradrukBarony)
+    f := BTradruk昌珠.(*昌珠TradrukBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tradruk",
 		TitleName: "昌珠",

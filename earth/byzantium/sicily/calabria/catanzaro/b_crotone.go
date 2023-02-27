@@ -11,7 +11,7 @@ type 克罗托内CrotoneBarony struct {
 var BCrotone克罗托内 feud.Barony = &克罗托内CrotoneBarony{}
 
 func init() {
-	f := BCrotone克罗托内.(*克罗托内CrotoneBarony)
+    f := BCrotone克罗托内.(*克罗托内CrotoneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "crotone",
 		TitleName: "克罗托内",

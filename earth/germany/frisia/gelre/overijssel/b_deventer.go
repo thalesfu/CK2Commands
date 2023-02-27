@@ -11,7 +11,7 @@ type 代芬特尔DeventerBarony struct {
 var BDeventer代芬特尔 feud.Barony = &代芬特尔DeventerBarony{}
 
 func init() {
-	f := BDeventer代芬特尔.(*代芬特尔DeventerBarony)
+    f := BDeventer代芬特尔.(*代芬特尔DeventerBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "deventer",
 		TitleName: "代芬特尔",

@@ -8,31 +8,31 @@ import (
 )
 
 type NavarraDuke interface {
-	feud.Duke
-	CNajera纳赫拉() najera.NajeraCounty
-	CNavarra纳瓦拉() navarra.NavarraCounty
-	CViscaya比斯开() viscaya.ViscayaCounty
+    feud.Duke
+    CNajera纳赫拉() 	najera.NajeraCounty
+    CNavarra纳瓦拉() 	navarra.NavarraCounty
+    CViscaya比斯开() 	viscaya.ViscayaCounty
 }
 
 type 纳瓦拉NavarraDuke struct {
 	feud.BaseDuke
-	纳赫拉Najera  najera.NajeraCounty
-	纳瓦拉Navarra navarra.NavarraCounty
-	比斯开Viscaya viscaya.ViscayaCounty
+	纳赫拉Najera 	najera.NajeraCounty
+	纳瓦拉Navarra 	navarra.NavarraCounty
+	比斯开Viscaya 	viscaya.ViscayaCounty
 }
 
 func (d *纳瓦拉NavarraDuke) CNajera纳赫拉() najera.NajeraCounty {
 	return d.纳赫拉Najera
 }
-
+    
 func (d *纳瓦拉NavarraDuke) CNavarra纳瓦拉() navarra.NavarraCounty {
 	return d.纳瓦拉Navarra
 }
-
+    
 func (d *纳瓦拉NavarraDuke) CViscaya比斯开() viscaya.ViscayaCounty {
 	return d.比斯开Viscaya
 }
-
+    
 var DNavarra纳瓦拉 NavarraDuke = &纳瓦拉NavarraDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.纳赫拉Najera = najera.CNajera纳赫拉
 	f.纳赫拉Najera.SetParent(f)
-
+	
 	f.纳瓦拉Navarra = navarra.CNavarra纳瓦拉
 	f.纳瓦拉Navarra.SetParent(f)
-
+	
 	f.比斯开Viscaya = viscaya.CViscaya比斯开
 	f.比斯开Viscaya.SetParent(f)
-
+	
 }

@@ -11,7 +11,7 @@ type 奥尔套OrtauBarony struct {
 var BOrtau奥尔套 feud.Barony = &奥尔套OrtauBarony{}
 
 func init() {
-	f := BOrtau奥尔套.(*奥尔套OrtauBarony)
+    f := BOrtau奥尔套.(*奥尔套OrtauBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ortau",
 		TitleName: "奥尔套",

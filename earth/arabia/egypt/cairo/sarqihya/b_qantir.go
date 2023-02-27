@@ -11,7 +11,7 @@ type 坎提尔QantirBarony struct {
 var BQantir坎提尔 feud.Barony = &坎提尔QantirBarony{}
 
 func init() {
-	f := BQantir坎提尔.(*坎提尔QantirBarony)
+    f := BQantir坎提尔.(*坎提尔QantirBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "qantir",
 		TitleName: "坎提尔",

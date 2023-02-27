@@ -11,7 +11,7 @@ type 旃陀罗计都姞利呬ChandraketugarhBarony struct {
 var BChandraketugarh旃陀罗计都姞利呬 feud.Barony = &旃陀罗计都姞利呬ChandraketugarhBarony{}
 
 func init() {
-	f := BChandraketugarh旃陀罗计都姞利呬.(*旃陀罗计都姞利呬ChandraketugarhBarony)
+    f := BChandraketugarh旃陀罗计都姞利呬.(*旃陀罗计都姞利呬ChandraketugarhBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chandraketugarh",
 		TitleName: "旃陀罗计都姞利呬",

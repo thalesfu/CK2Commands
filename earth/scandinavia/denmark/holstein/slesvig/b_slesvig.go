@@ -11,7 +11,7 @@ type 石勒苏益格SlesvigBarony struct {
 var BSlesvig石勒苏益格 feud.Barony = &石勒苏益格SlesvigBarony{}
 
 func init() {
-	f := BSlesvig石勒苏益格.(*石勒苏益格SlesvigBarony)
+    f := BSlesvig石勒苏益格.(*石勒苏益格SlesvigBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "slesvig",
 		TitleName: "石勒苏益格",

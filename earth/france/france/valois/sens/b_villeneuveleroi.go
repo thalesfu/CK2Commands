@@ -11,7 +11,7 @@ type 鲁瓦新城VilleneuveleroiBarony struct {
 var BVilleneuveleroi鲁瓦新城 feud.Barony = &鲁瓦新城VilleneuveleroiBarony{}
 
 func init() {
-	f := BVilleneuveleroi鲁瓦新城.(*鲁瓦新城VilleneuveleroiBarony)
+    f := BVilleneuveleroi鲁瓦新城.(*鲁瓦新城VilleneuveleroiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "villeneuveleroi",
 		TitleName: "鲁瓦新城",

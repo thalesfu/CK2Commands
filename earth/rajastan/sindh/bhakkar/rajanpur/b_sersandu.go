@@ -11,7 +11,7 @@ type 瑟桑堵SersanduBarony struct {
 var BSersandu瑟桑堵 feud.Barony = &瑟桑堵SersanduBarony{}
 
 func init() {
-	f := BSersandu瑟桑堵.(*瑟桑堵SersanduBarony)
+    f := BSersandu瑟桑堵.(*瑟桑堵SersanduBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sersandu",
 		TitleName: "瑟桑堵",

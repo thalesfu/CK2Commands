@@ -11,7 +11,7 @@ type 朗代韦内克LandevennecBarony struct {
 var BLandevennec朗代韦内克 feud.Barony = &朗代韦内克LandevennecBarony{}
 
 func init() {
-	f := BLandevennec朗代韦内克.(*朗代韦内克LandevennecBarony)
+    f := BLandevennec朗代韦内克.(*朗代韦内克LandevennecBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "landevennec",
 		TitleName: "朗代韦内克",

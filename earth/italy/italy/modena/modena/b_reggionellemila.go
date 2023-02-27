@@ -11,7 +11,7 @@ type 雷焦埃米利亚ReggionellemilaBarony struct {
 var BReggionellemila雷焦埃米利亚 feud.Barony = &雷焦埃米利亚ReggionellemilaBarony{}
 
 func init() {
-	f := BReggionellemila雷焦埃米利亚.(*雷焦埃米利亚ReggionellemilaBarony)
+    f := BReggionellemila雷焦埃米利亚.(*雷焦埃米利亚ReggionellemilaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "reggionellemila",
 		TitleName: "雷焦埃米利亚",

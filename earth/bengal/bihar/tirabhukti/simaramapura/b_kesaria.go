@@ -11,7 +11,7 @@ type 计舍梨耶KesariaBarony struct {
 var BKesaria计舍梨耶 feud.Barony = &计舍梨耶KesariaBarony{}
 
 func init() {
-	f := BKesaria计舍梨耶.(*计舍梨耶KesariaBarony)
+    f := BKesaria计舍梨耶.(*计舍梨耶KesariaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kesaria",
 		TitleName: "计舍梨耶",

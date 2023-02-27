@@ -11,7 +11,7 @@ type 长青LongchingBarony struct {
 var BLongching长青 feud.Barony = &长青LongchingBarony{}
 
 func init() {
-	f := BLongching长青.(*长青LongchingBarony)
+    f := BLongching长青.(*长青LongchingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "longching",
 		TitleName: "长青",

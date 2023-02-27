@@ -11,7 +11,7 @@ type 卡尔塔吉罗内CaltagironeBarony struct {
 var BCaltagirone卡尔塔吉罗内 feud.Barony = &卡尔塔吉罗内CaltagironeBarony{}
 
 func init() {
-	f := BCaltagirone卡尔塔吉罗内.(*卡尔塔吉罗内CaltagironeBarony)
+    f := BCaltagirone卡尔塔吉罗内.(*卡尔塔吉罗内CaltagironeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "caltagirone",
 		TitleName: "卡尔塔吉罗内",

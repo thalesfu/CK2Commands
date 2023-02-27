@@ -11,7 +11,7 @@ type 丰萨利达FuensalidaBarony struct {
 var BFuensalida丰萨利达 feud.Barony = &丰萨利达FuensalidaBarony{}
 
 func init() {
-	f := BFuensalida丰萨利达.(*丰萨利达FuensalidaBarony)
+    f := BFuensalida丰萨利达.(*丰萨利达FuensalidaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "fuensalida",
 		TitleName: "丰萨利达",

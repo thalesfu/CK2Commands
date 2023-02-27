@@ -11,7 +11,7 @@ type 法希FachiBarony struct {
 var BFachi法希 feud.Barony = &法希FachiBarony{}
 
 func init() {
-	f := BFachi法希.(*法希FachiBarony)
+    f := BFachi法希.(*法希FachiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "fachi",
 		TitleName: "法希",

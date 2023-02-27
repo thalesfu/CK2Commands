@@ -11,7 +11,7 @@ type 牌楼下PailouxiaBarony struct {
 var BPailouxia牌楼下 feud.Barony = &牌楼下PailouxiaBarony{}
 
 func init() {
-	f := BPailouxia牌楼下.(*牌楼下PailouxiaBarony)
+    f := BPailouxia牌楼下.(*牌楼下PailouxiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pailouxia",
 		TitleName: "牌楼下",

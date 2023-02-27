@@ -11,7 +11,7 @@ type 拘罗支KolachiBarony struct {
 var BKolachi拘罗支 feud.Barony = &拘罗支KolachiBarony{}
 
 func init() {
-	f := BKolachi拘罗支.(*拘罗支KolachiBarony)
+    f := BKolachi拘罗支.(*拘罗支KolachiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kolachi",
 		TitleName: "拘罗支",

@@ -11,7 +11,7 @@ type 莱希特格明德LechtgemundBarony struct {
 var BLechtgemund莱希特格明德 feud.Barony = &莱希特格明德LechtgemundBarony{}
 
 func init() {
-	f := BLechtgemund莱希特格明德.(*莱希特格明德LechtgemundBarony)
+    f := BLechtgemund莱希特格明德.(*莱希特格明德LechtgemundBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lechtgemund",
 		TitleName: "莱希特格明德",

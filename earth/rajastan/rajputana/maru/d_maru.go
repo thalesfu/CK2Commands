@@ -8,31 +8,31 @@ import (
 )
 
 type MaruDuke interface {
-	feud.Duke
-	CGodwad乔荼婆荼() godwad.GodwadCounty
-	CMandavyapura曼荼毗耶补罗() mandavyapura.MandavyapuraCounty
-	CMedantaka迷檀多迦() medantaka.MedantakaCounty
+    feud.Duke
+    CGodwad乔荼婆荼() 	godwad.GodwadCounty
+    CMandavyapura曼荼毗耶补罗() 	mandavyapura.MandavyapuraCounty
+    CMedantaka迷檀多迦() 	medantaka.MedantakaCounty
 }
 
 type 摩楼MaruDuke struct {
 	feud.BaseDuke
-	乔荼婆荼Godwad         godwad.GodwadCounty
-	曼荼毗耶补罗Mandavyapura mandavyapura.MandavyapuraCounty
-	迷檀多迦Medantaka      medantaka.MedantakaCounty
+	乔荼婆荼Godwad 	godwad.GodwadCounty
+	曼荼毗耶补罗Mandavyapura 	mandavyapura.MandavyapuraCounty
+	迷檀多迦Medantaka 	medantaka.MedantakaCounty
 }
 
 func (d *摩楼MaruDuke) CGodwad乔荼婆荼() godwad.GodwadCounty {
 	return d.乔荼婆荼Godwad
 }
-
+    
 func (d *摩楼MaruDuke) CMandavyapura曼荼毗耶补罗() mandavyapura.MandavyapuraCounty {
 	return d.曼荼毗耶补罗Mandavyapura
 }
-
+    
 func (d *摩楼MaruDuke) CMedantaka迷檀多迦() medantaka.MedantakaCounty {
 	return d.迷檀多迦Medantaka
 }
-
+    
 var DMaru摩楼 MaruDuke = &摩楼MaruDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.乔荼婆荼Godwad = godwad.CGodwad乔荼婆荼
 	f.乔荼婆荼Godwad.SetParent(f)
-
+	
 	f.曼荼毗耶补罗Mandavyapura = mandavyapura.CMandavyapura曼荼毗耶补罗
 	f.曼荼毗耶补罗Mandavyapura.SetParent(f)
-
+	
 	f.迷檀多迦Medantaka = medantaka.CMedantaka迷檀多迦
 	f.迷檀多迦Medantaka.SetParent(f)
-
+	
 }

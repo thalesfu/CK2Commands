@@ -11,7 +11,7 @@ type 瓦拉格凡克VaragavankBarony struct {
 var BVaragavank瓦拉格凡克 feud.Barony = &瓦拉格凡克VaragavankBarony{}
 
 func init() {
-	f := BVaragavank瓦拉格凡克.(*瓦拉格凡克VaragavankBarony)
+    f := BVaragavank瓦拉格凡克.(*瓦拉格凡克VaragavankBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "varagavank",
 		TitleName: "瓦拉格凡克",

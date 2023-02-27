@@ -11,7 +11,7 @@ type 瓜代拉堡AlcaladeguadairaBarony struct {
 var BAlcaladeguadaira瓜代拉堡 feud.Barony = &瓜代拉堡AlcaladeguadairaBarony{}
 
 func init() {
-	f := BAlcaladeguadaira瓜代拉堡.(*瓜代拉堡AlcaladeguadairaBarony)
+    f := BAlcaladeguadaira瓜代拉堡.(*瓜代拉堡AlcaladeguadairaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "alcaladeguadaira",
 		TitleName: "瓜代拉堡",

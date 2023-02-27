@@ -11,7 +11,7 @@ type 瑟姆贝SembelBarony struct {
 var BSembel瑟姆贝 feud.Barony = &瑟姆贝SembelBarony{}
 
 func init() {
-	f := BSembel瑟姆贝.(*瑟姆贝SembelBarony)
+    f := BSembel瑟姆贝.(*瑟姆贝SembelBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sembel",
 		TitleName: "瑟姆贝",

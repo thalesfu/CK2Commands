@@ -11,7 +11,7 @@ type 贡德伯莱KondapalliBarony struct {
 var BKondapalli贡德伯莱 feud.Barony = &贡德伯莱KondapalliBarony{}
 
 func init() {
-	f := BKondapalli贡德伯莱.(*贡德伯莱KondapalliBarony)
+    f := BKondapalli贡德伯莱.(*贡德伯莱KondapalliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kondapalli",
 		TitleName: "贡德伯莱",

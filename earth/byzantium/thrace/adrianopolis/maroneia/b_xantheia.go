@@ -11,7 +11,7 @@ type 桑德雅XantheiaBarony struct {
 var BXantheia桑德雅 feud.Barony = &桑德雅XantheiaBarony{}
 
 func init() {
-	f := BXantheia桑德雅.(*桑德雅XantheiaBarony)
+    f := BXantheia桑德雅.(*桑德雅XantheiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "xantheia",
 		TitleName: "桑德雅",

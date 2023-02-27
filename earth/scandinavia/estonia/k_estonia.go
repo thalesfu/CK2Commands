@@ -7,25 +7,25 @@ import (
 )
 
 type EstoniaKingdom interface {
-	feud.Kingdom
-	DEsthonia爱沙尼亚() esthonia.EsthoniaDuke
-	DSakala萨卡拉() sakala.SakalaDuke
+    feud.Kingdom
+    DEsthonia爱沙尼亚() 	esthonia.EsthoniaDuke
+    DSakala萨卡拉() 	sakala.SakalaDuke
 }
 
 type 爱沙尼亚EstoniaKingdom struct {
 	feud.BaseKingdom
-	爱沙尼亚Esthonia esthonia.EsthoniaDuke
-	萨卡拉Sakala    sakala.SakalaDuke
+	爱沙尼亚Esthonia 	esthonia.EsthoniaDuke
+	萨卡拉Sakala 	sakala.SakalaDuke
 }
 
 func (k *爱沙尼亚EstoniaKingdom) DEsthonia爱沙尼亚() esthonia.EsthoniaDuke {
 	return k.爱沙尼亚Esthonia
 }
-
+    
 func (k *爱沙尼亚EstoniaKingdom) DSakala萨卡拉() sakala.SakalaDuke {
 	return k.萨卡拉Sakala
 }
-
+    
 var KEstonia爱沙尼亚 EstoniaKingdom = &爱沙尼亚EstoniaKingdom{}
 
 func init() {
@@ -34,13 +34,13 @@ func init() {
 		Title:     "estonia",
 		TitleName: "爱沙尼亚",
 		TitleCode: "k_estonia",
-		Dukes:     map[string]feud.Duke{},
+		Dukes:  map[string]feud.Duke{},
 	}
 
 	f.爱沙尼亚Esthonia = esthonia.DEsthonia爱沙尼亚
 	f.爱沙尼亚Esthonia.SetParent(f)
-
+	
 	f.萨卡拉Sakala = sakala.DSakala萨卡拉
 	f.萨卡拉Sakala.SetParent(f)
-
+	
 }

@@ -8,31 +8,31 @@ import (
 )
 
 type HreEmpire interface {
-	feud.Empire
-	KFranconia法兰克尼亚() franconia.FranconiaKingdom
-	KSaxon萨克森() saxon.SaxonKingdom
-	KSwabia施瓦本() swabia.SwabiaKingdom
+    feud.Empire
+    KFranconia法兰克尼亚() 	franconia.FranconiaKingdom
+    KSaxon萨克森() 	saxon.SaxonKingdom
+    KSwabia施瓦本() 	swabia.SwabiaKingdom
 }
 
 type 神圣罗马帝国HreEmpire struct {
 	feud.BaseEmpire
-	法兰克尼亚Franconia franconia.FranconiaKingdom
-	萨克森Saxon       saxon.SaxonKingdom
-	施瓦本Swabia      swabia.SwabiaKingdom
+	法兰克尼亚Franconia 	franconia.FranconiaKingdom
+	萨克森Saxon 	saxon.SaxonKingdom
+	施瓦本Swabia 	swabia.SwabiaKingdom
 }
 
 func (e *神圣罗马帝国HreEmpire) KFranconia法兰克尼亚() franconia.FranconiaKingdom {
 	return e.法兰克尼亚Franconia
 }
-
+    
 func (e *神圣罗马帝国HreEmpire) KSaxon萨克森() saxon.SaxonKingdom {
 	return e.萨克森Saxon
 }
-
+    
 func (e *神圣罗马帝国HreEmpire) KSwabia施瓦本() swabia.SwabiaKingdom {
 	return e.施瓦本Swabia
 }
-
+    
 var EHre神圣罗马帝国 HreEmpire = &神圣罗马帝国HreEmpire{}
 
 func init() {

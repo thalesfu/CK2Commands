@@ -11,7 +11,7 @@ type 达孜TaktseBarony struct {
 var BTaktse达孜 feud.Barony = &达孜TaktseBarony{}
 
 func init() {
-	f := BTaktse达孜.(*达孜TaktseBarony)
+    f := BTaktse达孜.(*达孜TaktseBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "taktse",
 		TitleName: "达孜",

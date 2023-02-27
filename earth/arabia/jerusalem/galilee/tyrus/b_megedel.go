@@ -11,7 +11,7 @@ type 米格德尔MegedelBarony struct {
 var BMegedel米格德尔 feud.Barony = &米格德尔MegedelBarony{}
 
 func init() {
-	f := BMegedel米格德尔.(*米格德尔MegedelBarony)
+    f := BMegedel米格德尔.(*米格德尔MegedelBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "megedel",
 		TitleName: "米格德尔",

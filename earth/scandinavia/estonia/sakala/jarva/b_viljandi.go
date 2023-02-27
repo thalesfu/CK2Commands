@@ -11,7 +11,7 @@ type 维尔扬迪ViljandiBarony struct {
 var BViljandi维尔扬迪 feud.Barony = &维尔扬迪ViljandiBarony{}
 
 func init() {
-	f := BViljandi维尔扬迪.(*维尔扬迪ViljandiBarony)
+    f := BViljandi维尔扬迪.(*维尔扬迪ViljandiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "viljandi",
 		TitleName: "维尔扬迪",

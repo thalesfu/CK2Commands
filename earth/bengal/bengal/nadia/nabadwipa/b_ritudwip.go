@@ -11,7 +11,7 @@ type 利堵洲RitudwipBarony struct {
 var BRitudwip利堵洲 feud.Barony = &利堵洲RitudwipBarony{}
 
 func init() {
-	f := BRitudwip利堵洲.(*利堵洲RitudwipBarony)
+    f := BRitudwip利堵洲.(*利堵洲RitudwipBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ritudwip",
 		TitleName: "利堵洲",

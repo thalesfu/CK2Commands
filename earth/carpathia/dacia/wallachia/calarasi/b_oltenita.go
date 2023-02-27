@@ -11,7 +11,7 @@ type 奥尔泰尼察OltenitaBarony struct {
 var BOltenita奥尔泰尼察 feud.Barony = &奥尔泰尼察OltenitaBarony{}
 
 func init() {
-	f := BOltenita奥尔泰尼察.(*奥尔泰尼察OltenitaBarony)
+    f := BOltenita奥尔泰尼察.(*奥尔泰尼察OltenitaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "oltenita",
 		TitleName: "奥尔泰尼察",

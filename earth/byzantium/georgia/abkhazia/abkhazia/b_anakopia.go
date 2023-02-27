@@ -11,7 +11,7 @@ type 阿纳科皮亚AnakopiaBarony struct {
 var BAnakopia阿纳科皮亚 feud.Barony = &阿纳科皮亚AnakopiaBarony{}
 
 func init() {
-	f := BAnakopia阿纳科皮亚.(*阿纳科皮亚AnakopiaBarony)
+    f := BAnakopia阿纳科皮亚.(*阿纳科皮亚AnakopiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "anakopia",
 		TitleName: "阿纳科皮亚",

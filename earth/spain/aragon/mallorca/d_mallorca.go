@@ -7,25 +7,25 @@ import (
 )
 
 type MallorcaDuke interface {
-	feud.Duke
-	CMallorca马略卡() mallorca.MallorcaCounty
-	CMenorca梅诺卡() menorca.MenorcaCounty
+    feud.Duke
+    CMallorca马略卡() 	mallorca.MallorcaCounty
+    CMenorca梅诺卡() 	menorca.MenorcaCounty
 }
 
 type 马略卡MallorcaDuke struct {
 	feud.BaseDuke
-	马略卡Mallorca mallorca.MallorcaCounty
-	梅诺卡Menorca  menorca.MenorcaCounty
+	马略卡Mallorca 	mallorca.MallorcaCounty
+	梅诺卡Menorca 	menorca.MenorcaCounty
 }
 
 func (d *马略卡MallorcaDuke) CMallorca马略卡() mallorca.MallorcaCounty {
 	return d.马略卡Mallorca
 }
-
+    
 func (d *马略卡MallorcaDuke) CMenorca梅诺卡() menorca.MenorcaCounty {
 	return d.梅诺卡Menorca
 }
-
+    
 var DMallorca马略卡 MallorcaDuke = &马略卡MallorcaDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.马略卡Mallorca = mallorca.CMallorca马略卡
 	f.马略卡Mallorca.SetParent(f)
-
+	
 	f.梅诺卡Menorca = menorca.CMenorca梅诺卡
 	f.梅诺卡Menorca.SetParent(f)
-
+	
 }

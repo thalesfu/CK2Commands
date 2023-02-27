@@ -11,7 +11,7 @@ type 锡克索SzikszoBarony struct {
 var BSzikszo锡克索 feud.Barony = &锡克索SzikszoBarony{}
 
 func init() {
-	f := BSzikszo锡克索.(*锡克索SzikszoBarony)
+    f := BSzikszo锡克索.(*锡克索SzikszoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "szikszo",
 		TitleName: "锡克索",

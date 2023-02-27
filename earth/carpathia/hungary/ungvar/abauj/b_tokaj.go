@@ -11,7 +11,7 @@ type 托考伊TokajBarony struct {
 var BTokaj托考伊 feud.Barony = &托考伊TokajBarony{}
 
 func init() {
-	f := BTokaj托考伊.(*托考伊TokajBarony)
+    f := BTokaj托考伊.(*托考伊TokajBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tokaj",
 		TitleName: "托考伊",

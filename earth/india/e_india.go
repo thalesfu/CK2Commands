@@ -5,7 +5,7 @@ import (
 )
 
 type IndiaEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 印度IndiaEmpire struct {

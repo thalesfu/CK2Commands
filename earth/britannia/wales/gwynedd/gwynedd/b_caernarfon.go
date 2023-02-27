@@ -11,7 +11,7 @@ type 卡那封CaernarfonBarony struct {
 var BCaernarfon卡那封 feud.Barony = &卡那封CaernarfonBarony{}
 
 func init() {
-	f := BCaernarfon卡那封.(*卡那封CaernarfonBarony)
+    f := BCaernarfon卡那封.(*卡那封CaernarfonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "caernarfon",
 		TitleName: "卡那封",

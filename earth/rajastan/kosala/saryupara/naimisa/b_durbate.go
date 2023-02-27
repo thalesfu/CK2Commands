@@ -11,7 +11,7 @@ type 补婆谛DurbateBarony struct {
 var BDurbate补婆谛 feud.Barony = &补婆谛DurbateBarony{}
 
 func init() {
-	f := BDurbate补婆谛.(*补婆谛DurbateBarony)
+    f := BDurbate补婆谛.(*补婆谛DurbateBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "durbate",
 		TitleName: "补婆谛",

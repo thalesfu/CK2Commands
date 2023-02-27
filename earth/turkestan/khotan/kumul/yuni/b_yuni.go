@@ -11,7 +11,7 @@ type 扜泥YuniBarony struct {
 var BYuni扜泥 feud.Barony = &扜泥YuniBarony{}
 
 func init() {
-	f := BYuni扜泥.(*扜泥YuniBarony)
+    f := BYuni扜泥.(*扜泥YuniBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yuni",
 		TitleName: "扜泥",

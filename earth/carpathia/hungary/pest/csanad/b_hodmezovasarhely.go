@@ -11,7 +11,7 @@ type 霍德迈泽瓦沙尔海伊HodmezovasarhelyBarony struct {
 var BHodmezovasarhely霍德迈泽瓦沙尔海伊 feud.Barony = &霍德迈泽瓦沙尔海伊HodmezovasarhelyBarony{}
 
 func init() {
-	f := BHodmezovasarhely霍德迈泽瓦沙尔海伊.(*霍德迈泽瓦沙尔海伊HodmezovasarhelyBarony)
+    f := BHodmezovasarhely霍德迈泽瓦沙尔海伊.(*霍德迈泽瓦沙尔海伊HodmezovasarhelyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "hodmezovasarhely",
 		TitleName: "霍德迈泽瓦沙尔海伊",

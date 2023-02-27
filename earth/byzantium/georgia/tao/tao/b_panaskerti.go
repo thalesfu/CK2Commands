@@ -11,7 +11,7 @@ type 帕纳斯克尔蒂PanaskertiBarony struct {
 var BPanaskerti帕纳斯克尔蒂 feud.Barony = &帕纳斯克尔蒂PanaskertiBarony{}
 
 func init() {
-	f := BPanaskerti帕纳斯克尔蒂.(*帕纳斯克尔蒂PanaskertiBarony)
+    f := BPanaskerti帕纳斯克尔蒂.(*帕纳斯克尔蒂PanaskertiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "panaskerti",
 		TitleName: "帕纳斯克尔蒂",

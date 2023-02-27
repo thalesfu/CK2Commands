@@ -6,19 +6,19 @@ import (
 )
 
 type SocotraDuke interface {
-	feud.Duke
-	CSocotra索科特拉() socotra.SocotraCounty
+    feud.Duke
+    CSocotra索科特拉() 	socotra.SocotraCounty
 }
 
 type 索科特拉SocotraDuke struct {
 	feud.BaseDuke
-	索科特拉Socotra socotra.SocotraCounty
+	索科特拉Socotra 	socotra.SocotraCounty
 }
 
 func (d *索科特拉SocotraDuke) CSocotra索科特拉() socotra.SocotraCounty {
 	return d.索科特拉Socotra
 }
-
+    
 var DSocotra索科特拉 SocotraDuke = &索科特拉SocotraDuke{}
 
 func init() {
@@ -32,5 +32,5 @@ func init() {
 
 	f.索科特拉Socotra = socotra.CSocotra索科特拉
 	f.索科特拉Socotra.SetParent(f)
-
+	
 }

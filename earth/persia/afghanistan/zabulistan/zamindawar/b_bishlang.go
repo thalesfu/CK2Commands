@@ -11,7 +11,7 @@ type 比什朗格BishlangBarony struct {
 var BBishlang比什朗格 feud.Barony = &比什朗格BishlangBarony{}
 
 func init() {
-	f := BBishlang比什朗格.(*比什朗格BishlangBarony)
+    f := BBishlang比什朗格.(*比什朗格BishlangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bishlang",
 		TitleName: "比什朗格",

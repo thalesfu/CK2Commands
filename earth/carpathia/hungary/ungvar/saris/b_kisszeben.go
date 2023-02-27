@@ -11,7 +11,7 @@ type 基什塞本KisszebenBarony struct {
 var BKisszeben基什塞本 feud.Barony = &基什塞本KisszebenBarony{}
 
 func init() {
-	f := BKisszeben基什塞本.(*基什塞本KisszebenBarony)
+    f := BKisszeben基什塞本.(*基什塞本KisszebenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kisszeben",
 		TitleName: "基什塞本",

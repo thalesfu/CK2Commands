@@ -11,7 +11,7 @@ type 埃尔萨谷口ColledievaldelsaBarony struct {
 var BColledievaldelsa埃尔萨谷口 feud.Barony = &埃尔萨谷口ColledievaldelsaBarony{}
 
 func init() {
-	f := BColledievaldelsa埃尔萨谷口.(*埃尔萨谷口ColledievaldelsaBarony)
+    f := BColledievaldelsa埃尔萨谷口.(*埃尔萨谷口ColledievaldelsaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "colledievaldelsa",
 		TitleName: "埃尔萨谷口",

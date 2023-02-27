@@ -11,7 +11,7 @@ type 永比LjungbyBarony struct {
 var BLjungby永比 feud.Barony = &永比LjungbyBarony{}
 
 func init() {
-	f := BLjungby永比.(*永比LjungbyBarony)
+    f := BLjungby永比.(*永比LjungbyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ljungby",
 		TitleName: "永比",

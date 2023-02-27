@@ -11,7 +11,7 @@ type 库夫施泰因KufsteinBarony struct {
 var BKufstein库夫施泰因 feud.Barony = &库夫施泰因KufsteinBarony{}
 
 func init() {
-	f := BKufstein库夫施泰因.(*库夫施泰因KufsteinBarony)
+    f := BKufstein库夫施泰因.(*库夫施泰因KufsteinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kufstein",
 		TitleName: "库夫施泰因",

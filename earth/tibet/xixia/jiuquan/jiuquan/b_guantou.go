@@ -11,7 +11,7 @@ type 观头GuantouBarony struct {
 var BGuantou观头 feud.Barony = &观头GuantouBarony{}
 
 func init() {
-	f := BGuantou观头.(*观头GuantouBarony)
+    f := BGuantou观头.(*观头GuantouBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "guantou",
 		TitleName: "观头",

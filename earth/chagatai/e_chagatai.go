@@ -5,7 +5,7 @@ import (
 )
 
 type ChagataiEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 察合台ChagataiEmpire struct {

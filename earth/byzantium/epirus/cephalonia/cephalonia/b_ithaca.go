@@ -11,7 +11,7 @@ type 伊萨卡IthacaBarony struct {
 var BIthaca伊萨卡 feud.Barony = &伊萨卡IthacaBarony{}
 
 func init() {
-	f := BIthaca伊萨卡.(*伊萨卡IthacaBarony)
+    f := BIthaca伊萨卡.(*伊萨卡IthacaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ithaca",
 		TitleName: "伊萨卡",

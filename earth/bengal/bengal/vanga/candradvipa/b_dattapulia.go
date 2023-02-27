@@ -11,7 +11,7 @@ type 陀怛多补梨DattapuliaBarony struct {
 var BDattapulia陀怛多补梨 feud.Barony = &陀怛多补梨DattapuliaBarony{}
 
 func init() {
-	f := BDattapulia陀怛多补梨.(*陀怛多补梨DattapuliaBarony)
+    f := BDattapulia陀怛多补梨.(*陀怛多补梨DattapuliaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dattapulia",
 		TitleName: "陀怛多补梨",

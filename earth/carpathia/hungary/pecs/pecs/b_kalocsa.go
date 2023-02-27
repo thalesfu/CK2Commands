@@ -11,7 +11,7 @@ type 考洛乔KalocsaBarony struct {
 var BKalocsa考洛乔 feud.Barony = &考洛乔KalocsaBarony{}
 
 func init() {
-	f := BKalocsa考洛乔.(*考洛乔KalocsaBarony)
+    f := BKalocsa考洛乔.(*考洛乔KalocsaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kalocsa",
 		TitleName: "考洛乔",

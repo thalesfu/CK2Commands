@@ -11,7 +11,7 @@ type 多摩梨帝TamraliptiBarony struct {
 var BTamralipti多摩梨帝 feud.Barony = &多摩梨帝TamraliptiBarony{}
 
 func init() {
-	f := BTamralipti多摩梨帝.(*多摩梨帝TamraliptiBarony)
+    f := BTamralipti多摩梨帝.(*多摩梨帝TamraliptiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tamralipti",
 		TitleName: "多摩梨帝",

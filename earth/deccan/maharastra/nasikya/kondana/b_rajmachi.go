@@ -11,7 +11,7 @@ type 罗阇摩支RajmachiBarony struct {
 var BRajmachi罗阇摩支 feud.Barony = &罗阇摩支RajmachiBarony{}
 
 func init() {
-	f := BRajmachi罗阇摩支.(*罗阇摩支RajmachiBarony)
+    f := BRajmachi罗阇摩支.(*罗阇摩支RajmachiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rajmachi",
 		TitleName: "罗阇摩支",

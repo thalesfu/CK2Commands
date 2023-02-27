@@ -11,7 +11,7 @@ type 阿斯科利AscoliBarony struct {
 var BAscoli阿斯科利 feud.Barony = &阿斯科利AscoliBarony{}
 
 func init() {
-	f := BAscoli阿斯科利.(*阿斯科利AscoliBarony)
+    f := BAscoli阿斯科利.(*阿斯科利AscoliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ascoli",
 		TitleName: "阿斯科利",

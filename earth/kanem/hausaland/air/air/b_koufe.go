@@ -11,7 +11,7 @@ type 库费KoufeBarony struct {
 var BKoufe库费 feud.Barony = &库费KoufeBarony{}
 
 func init() {
-	f := BKoufe库费.(*库费KoufeBarony)
+    f := BKoufe库费.(*库费KoufeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "koufe",
 		TitleName: "库费",

@@ -11,7 +11,7 @@ type 仁多RingtorBarony struct {
 var BRingtor仁多 feud.Barony = &仁多RingtorBarony{}
 
 func init() {
-	f := BRingtor仁多.(*仁多RingtorBarony)
+    f := BRingtor仁多.(*仁多RingtorBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ringtor",
 		TitleName: "仁多",

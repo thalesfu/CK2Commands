@@ -11,7 +11,7 @@ type 罗瓦涅米RovaniemiBarony struct {
 var BRovaniemi罗瓦涅米 feud.Barony = &罗瓦涅米RovaniemiBarony{}
 
 func init() {
-	f := BRovaniemi罗瓦涅米.(*罗瓦涅米RovaniemiBarony)
+    f := BRovaniemi罗瓦涅米.(*罗瓦涅米RovaniemiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rovaniemi",
 		TitleName: "罗瓦涅米",

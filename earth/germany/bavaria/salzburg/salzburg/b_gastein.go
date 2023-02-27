@@ -11,7 +11,7 @@ type 加斯泰因GasteinBarony struct {
 var BGastein加斯泰因 feud.Barony = &加斯泰因GasteinBarony{}
 
 func init() {
-	f := BGastein加斯泰因.(*加斯泰因GasteinBarony)
+    f := BGastein加斯泰因.(*加斯泰因GasteinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gastein",
 		TitleName: "加斯泰因",

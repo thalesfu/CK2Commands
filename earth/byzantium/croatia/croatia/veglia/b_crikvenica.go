@@ -11,7 +11,7 @@ type 茨里克韦尼察CrikvenicaBarony struct {
 var BCrikvenica茨里克韦尼察 feud.Barony = &茨里克韦尼察CrikvenicaBarony{}
 
 func init() {
-	f := BCrikvenica茨里克韦尼察.(*茨里克韦尼察CrikvenicaBarony)
+    f := BCrikvenica茨里克韦尼察.(*茨里克韦尼察CrikvenicaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "crikvenica",
 		TitleName: "茨里克韦尼察",

@@ -11,7 +11,7 @@ type 奥内利亚OnegliaBarony struct {
 var BOneglia奥内利亚 feud.Barony = &奥内利亚OnegliaBarony{}
 
 func init() {
-	f := BOneglia奥内利亚.(*奥内利亚OnegliaBarony)
+    f := BOneglia奥内利亚.(*奥内利亚OnegliaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "oneglia",
 		TitleName: "奥内利亚",

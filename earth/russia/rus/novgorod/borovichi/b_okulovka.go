@@ -11,7 +11,7 @@ type 奥库洛夫卡OkulovkaBarony struct {
 var BOkulovka奥库洛夫卡 feud.Barony = &奥库洛夫卡OkulovkaBarony{}
 
 func init() {
-	f := BOkulovka奥库洛夫卡.(*奥库洛夫卡OkulovkaBarony)
+    f := BOkulovka奥库洛夫卡.(*奥库洛夫卡OkulovkaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "okulovka",
 		TitleName: "奥库洛夫卡",

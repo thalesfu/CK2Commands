@@ -11,7 +11,7 @@ type 尼赫底NehardeaBarony struct {
 var BNehardea尼赫底 feud.Barony = &尼赫底NehardeaBarony{}
 
 func init() {
-	f := BNehardea尼赫底.(*尼赫底NehardeaBarony)
+    f := BNehardea尼赫底.(*尼赫底NehardeaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nehardea",
 		TitleName: "尼赫底",

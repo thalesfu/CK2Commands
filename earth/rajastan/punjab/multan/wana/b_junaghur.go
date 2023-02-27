@@ -11,7 +11,7 @@ type 周拿古JunaghurBarony struct {
 var BJunaghur周拿古 feud.Barony = &周拿古JunaghurBarony{}
 
 func init() {
-	f := BJunaghur周拿古.(*周拿古JunaghurBarony)
+    f := BJunaghur周拿古.(*周拿古JunaghurBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "junaghur",
 		TitleName: "周拿古",

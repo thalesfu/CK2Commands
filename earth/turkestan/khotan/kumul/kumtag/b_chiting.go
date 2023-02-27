@@ -11,7 +11,7 @@ type 赤亭ChitingBarony struct {
 var BChiting赤亭 feud.Barony = &赤亭ChitingBarony{}
 
 func init() {
-	f := BChiting赤亭.(*赤亭ChitingBarony)
+    f := BChiting赤亭.(*赤亭ChitingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chiting",
 		TitleName: "赤亭",

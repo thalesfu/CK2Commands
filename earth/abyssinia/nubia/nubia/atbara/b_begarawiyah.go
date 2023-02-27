@@ -11,7 +11,7 @@ type 比格拉维亚BegarawiyahBarony struct {
 var BBegarawiyah比格拉维亚 feud.Barony = &比格拉维亚BegarawiyahBarony{}
 
 func init() {
-	f := BBegarawiyah比格拉维亚.(*比格拉维亚BegarawiyahBarony)
+    f := BBegarawiyah比格拉维亚.(*比格拉维亚BegarawiyahBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "begarawiyah",
 		TitleName: "比格拉维亚",

@@ -11,7 +11,7 @@ type 罗叉摩那伐底LaksmanavatiBarony struct {
 var BLaksmanavati罗叉摩那伐底 feud.Barony = &罗叉摩那伐底LaksmanavatiBarony{}
 
 func init() {
-	f := BLaksmanavati罗叉摩那伐底.(*罗叉摩那伐底LaksmanavatiBarony)
+    f := BLaksmanavati罗叉摩那伐底.(*罗叉摩那伐底LaksmanavatiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "laksmanavati",
 		TitleName: "罗叉摩那伐底",

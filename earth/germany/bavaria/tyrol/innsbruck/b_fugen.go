@@ -11,7 +11,7 @@ type 菲根FugenBarony struct {
 var BFugen菲根 feud.Barony = &菲根FugenBarony{}
 
 func init() {
-	f := BFugen菲根.(*菲根FugenBarony)
+    f := BFugen菲根.(*菲根FugenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "fugen",
 		TitleName: "菲根",

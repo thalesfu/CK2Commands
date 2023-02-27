@@ -11,7 +11,7 @@ type 科罗伐那加拉KoravangalaBarony struct {
 var BKoravangala科罗伐那加拉 feud.Barony = &科罗伐那加拉KoravangalaBarony{}
 
 func init() {
-	f := BKoravangala科罗伐那加拉.(*科罗伐那加拉KoravangalaBarony)
+    f := BKoravangala科罗伐那加拉.(*科罗伐那加拉KoravangalaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "koravangala",
 		TitleName: "科罗伐那加拉",

@@ -11,7 +11,7 @@ type 大勒采NagyroceBarony struct {
 var BNagyroce大勒采 feud.Barony = &大勒采NagyroceBarony{}
 
 func init() {
-	f := BNagyroce大勒采.(*大勒采NagyroceBarony)
+    f := BNagyroce大勒采.(*大勒采NagyroceBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nagyroce",
 		TitleName: "大勒采",

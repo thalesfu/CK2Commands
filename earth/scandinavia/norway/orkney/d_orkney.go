@@ -8,31 +8,31 @@ import (
 )
 
 type OrkneyDuke interface {
-	feud.Duke
-	CFaereyar法伊雷亚尔() faereyar.FaereyarCounty
-	COrkney奥克尼() orkney.OrkneyCounty
-	CShetland设得兰() shetland.ShetlandCounty
+    feud.Duke
+    CFaereyar法伊雷亚尔() 	faereyar.FaereyarCounty
+    COrkney奥克尼() 	orkney.OrkneyCounty
+    CShetland设得兰() 	shetland.ShetlandCounty
 }
 
 type 奥克尼OrkneyDuke struct {
 	feud.BaseDuke
-	法伊雷亚尔Faereyar faereyar.FaereyarCounty
-	奥克尼Orkney     orkney.OrkneyCounty
-	设得兰Shetland   shetland.ShetlandCounty
+	法伊雷亚尔Faereyar 	faereyar.FaereyarCounty
+	奥克尼Orkney 	orkney.OrkneyCounty
+	设得兰Shetland 	shetland.ShetlandCounty
 }
 
 func (d *奥克尼OrkneyDuke) CFaereyar法伊雷亚尔() faereyar.FaereyarCounty {
 	return d.法伊雷亚尔Faereyar
 }
-
+    
 func (d *奥克尼OrkneyDuke) COrkney奥克尼() orkney.OrkneyCounty {
 	return d.奥克尼Orkney
 }
-
+    
 func (d *奥克尼OrkneyDuke) CShetland设得兰() shetland.ShetlandCounty {
 	return d.设得兰Shetland
 }
-
+    
 var DOrkney奥克尼 OrkneyDuke = &奥克尼OrkneyDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.法伊雷亚尔Faereyar = faereyar.CFaereyar法伊雷亚尔
 	f.法伊雷亚尔Faereyar.SetParent(f)
-
+	
 	f.奥克尼Orkney = orkney.COrkney奥克尼
 	f.奥克尼Orkney.SetParent(f)
-
+	
 	f.设得兰Shetland = shetland.CShetland设得兰
 	f.设得兰Shetland.SetParent(f)
-
+	
 }

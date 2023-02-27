@@ -11,7 +11,7 @@ type 奴摩梨堡NumaligarhBarony struct {
 var BNumaligarh奴摩梨堡 feud.Barony = &奴摩梨堡NumaligarhBarony{}
 
 func init() {
-	f := BNumaligarh奴摩梨堡.(*奴摩梨堡NumaligarhBarony)
+    f := BNumaligarh奴摩梨堡.(*奴摩梨堡NumaligarhBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "numaligarh",
 		TitleName: "奴摩梨堡",

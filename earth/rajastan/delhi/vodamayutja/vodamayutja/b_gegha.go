@@ -11,7 +11,7 @@ type 祇伽GeghaBarony struct {
 var BGegha祇伽 feud.Barony = &祇伽GeghaBarony{}
 
 func init() {
-	f := BGegha祇伽.(*祇伽GeghaBarony)
+    f := BGegha祇伽.(*祇伽GeghaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gegha",
 		TitleName: "祇伽",

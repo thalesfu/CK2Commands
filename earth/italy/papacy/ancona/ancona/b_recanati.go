@@ -11,7 +11,7 @@ type 雷卡纳蒂RecanatiBarony struct {
 var BRecanati雷卡纳蒂 feud.Barony = &雷卡纳蒂RecanatiBarony{}
 
 func init() {
-	f := BRecanati雷卡纳蒂.(*雷卡纳蒂RecanatiBarony)
+    f := BRecanati雷卡纳蒂.(*雷卡纳蒂RecanatiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "recanati",
 		TitleName: "雷卡纳蒂",

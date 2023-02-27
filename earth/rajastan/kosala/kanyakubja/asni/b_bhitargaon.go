@@ -11,7 +11,7 @@ type 内村BhitargaonBarony struct {
 var BBhitargaon内村 feud.Barony = &内村BhitargaonBarony{}
 
 func init() {
-	f := BBhitargaon内村.(*内村BhitargaonBarony)
+    f := BBhitargaon内村.(*内村BhitargaonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bhitargaon",
 		TitleName: "内村",

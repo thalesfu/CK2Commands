@@ -11,7 +11,7 @@ type 当拉DanglaBarony struct {
 var BDangla当拉 feud.Barony = &当拉DanglaBarony{}
 
 func init() {
-	f := BDangla当拉.(*当拉DanglaBarony)
+    f := BDangla当拉.(*当拉DanglaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dangla",
 		TitleName: "当拉",

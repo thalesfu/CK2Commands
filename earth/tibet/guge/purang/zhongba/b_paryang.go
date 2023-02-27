@@ -11,7 +11,7 @@ type 帕羊ParyangBarony struct {
 var BParyang帕羊 feud.Barony = &帕羊ParyangBarony{}
 
 func init() {
-	f := BParyang帕羊.(*帕羊ParyangBarony)
+    f := BParyang帕羊.(*帕羊ParyangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "paryang",
 		TitleName: "帕羊",

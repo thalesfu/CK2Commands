@@ -11,7 +11,7 @@ type 托普利采TopliceBarony struct {
 var BToplice托普利采 feud.Barony = &托普利采TopliceBarony{}
 
 func init() {
-	f := BToplice托普利采.(*托普利采TopliceBarony)
+    f := BToplice托普利采.(*托普利采TopliceBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "toplice",
 		TitleName: "托普利采",

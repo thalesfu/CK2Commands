@@ -11,7 +11,7 @@ type 三安曲林SangngagqoilingBarony struct {
 var BSangngagqoiling三安曲林 feud.Barony = &三安曲林SangngagqoilingBarony{}
 
 func init() {
-	f := BSangngagqoiling三安曲林.(*三安曲林SangngagqoilingBarony)
+    f := BSangngagqoiling三安曲林.(*三安曲林SangngagqoilingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sangngagqoiling",
 		TitleName: "三安曲林",

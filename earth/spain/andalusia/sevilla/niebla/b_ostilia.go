@@ -11,7 +11,7 @@ type 奥斯蒂利亚OstiliaBarony struct {
 var BOstilia奥斯蒂利亚 feud.Barony = &奥斯蒂利亚OstiliaBarony{}
 
 func init() {
-	f := BOstilia奥斯蒂利亚.(*奥斯蒂利亚OstiliaBarony)
+    f := BOstilia奥斯蒂利亚.(*奥斯蒂利亚OstiliaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ostilia",
 		TitleName: "奥斯蒂利亚",

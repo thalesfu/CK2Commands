@@ -11,7 +11,7 @@ type 贡迦KunjahBarony struct {
 var BKunjah贡迦 feud.Barony = &贡迦KunjahBarony{}
 
 func init() {
-	f := BKunjah贡迦.(*贡迦KunjahBarony)
+    f := BKunjah贡迦.(*贡迦KunjahBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kunjah",
 		TitleName: "贡迦",

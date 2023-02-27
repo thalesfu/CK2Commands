@@ -11,7 +11,7 @@ type 左贡ZogongBarony struct {
 var BZogong左贡 feud.Barony = &左贡ZogongBarony{}
 
 func init() {
-	f := BZogong左贡.(*左贡ZogongBarony)
+    f := BZogong左贡.(*左贡ZogongBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zogong",
 		TitleName: "左贡",

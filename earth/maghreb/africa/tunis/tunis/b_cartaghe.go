@@ -11,7 +11,7 @@ type 迦太基CartagheBarony struct {
 var BCartaghe迦太基 feud.Barony = &迦太基CartagheBarony{}
 
 func init() {
-	f := BCartaghe迦太基.(*迦太基CartagheBarony)
+    f := BCartaghe迦太基.(*迦太基CartagheBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cartaghe",
 		TitleName: "迦太基",

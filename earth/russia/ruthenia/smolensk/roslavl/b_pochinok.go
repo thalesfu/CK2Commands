@@ -11,7 +11,7 @@ type 波奇诺克PochinokBarony struct {
 var BPochinok波奇诺克 feud.Barony = &波奇诺克PochinokBarony{}
 
 func init() {
-	f := BPochinok波奇诺克.(*波奇诺克PochinokBarony)
+    f := BPochinok波奇诺克.(*波奇诺克PochinokBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pochinok",
 		TitleName: "波奇诺克",

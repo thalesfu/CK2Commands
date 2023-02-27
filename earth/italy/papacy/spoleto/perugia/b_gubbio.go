@@ -11,7 +11,7 @@ type 古比奥GubbioBarony struct {
 var BGubbio古比奥 feud.Barony = &古比奥GubbioBarony{}
 
 func init() {
-	f := BGubbio古比奥.(*古比奥GubbioBarony)
+    f := BGubbio古比奥.(*古比奥GubbioBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gubbio",
 		TitleName: "古比奥",

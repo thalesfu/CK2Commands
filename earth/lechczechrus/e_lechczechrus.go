@@ -5,7 +5,7 @@ import (
 )
 
 type LechczechrusEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 斯拉夫联盟LechczechrusEmpire struct {

@@ -11,7 +11,7 @@ type 甘冈GuingampBarony struct {
 var BGuingamp甘冈 feud.Barony = &甘冈GuingampBarony{}
 
 func init() {
-	f := BGuingamp甘冈.(*甘冈GuingampBarony)
+    f := BGuingamp甘冈.(*甘冈GuingampBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "guingamp",
 		TitleName: "甘冈",

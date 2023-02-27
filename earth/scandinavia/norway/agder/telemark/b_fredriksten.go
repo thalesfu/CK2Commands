@@ -11,7 +11,7 @@ type 费德克斯腾FredrikstenBarony struct {
 var BFredriksten费德克斯腾 feud.Barony = &费德克斯腾FredrikstenBarony{}
 
 func init() {
-	f := BFredriksten费德克斯腾.(*费德克斯腾FredrikstenBarony)
+    f := BFredriksten费德克斯腾.(*费德克斯腾FredrikstenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "fredriksten",
 		TitleName: "费德克斯腾",

@@ -11,7 +11,7 @@ type 基拉卢KillaloeBarony struct {
 var BKillaloe基拉卢 feud.Barony = &基拉卢KillaloeBarony{}
 
 func init() {
-	f := BKillaloe基拉卢.(*基拉卢KillaloeBarony)
+    f := BKillaloe基拉卢.(*基拉卢KillaloeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "killaloe",
 		TitleName: "基拉卢",

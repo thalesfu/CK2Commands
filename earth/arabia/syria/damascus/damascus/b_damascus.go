@@ -11,7 +11,7 @@ type 大马士革DamascusBarony struct {
 var BDamascus大马士革 feud.Barony = &大马士革DamascusBarony{}
 
 func init() {
-	f := BDamascus大马士革.(*大马士革DamascusBarony)
+    f := BDamascus大马士革.(*大马士革DamascusBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "damascus",
 		TitleName: "大马士革",

@@ -11,7 +11,7 @@ type 约灵HjorringBarony struct {
 var BHjorring约灵 feud.Barony = &约灵HjorringBarony{}
 
 func init() {
-	f := BHjorring约灵.(*约灵HjorringBarony)
+    f := BHjorring约灵.(*约灵HjorringBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "hjorring",
 		TitleName: "约灵",

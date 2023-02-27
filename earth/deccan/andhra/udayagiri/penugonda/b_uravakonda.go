@@ -11,7 +11,7 @@ type 优罗婆军荼UravakondaBarony struct {
 var BUravakonda优罗婆军荼 feud.Barony = &优罗婆军荼UravakondaBarony{}
 
 func init() {
-	f := BUravakonda优罗婆军荼.(*优罗婆军荼UravakondaBarony)
+    f := BUravakonda优罗婆军荼.(*优罗婆军荼UravakondaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "uravakonda",
 		TitleName: "优罗婆军荼",

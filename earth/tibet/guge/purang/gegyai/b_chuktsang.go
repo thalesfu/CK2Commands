@@ -11,7 +11,7 @@ type 却藏ChuktsangBarony struct {
 var BChuktsang却藏 feud.Barony = &却藏ChuktsangBarony{}
 
 func init() {
-	f := BChuktsang却藏.(*却藏ChuktsangBarony)
+    f := BChuktsang却藏.(*却藏ChuktsangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chuktsang",
 		TitleName: "却藏",

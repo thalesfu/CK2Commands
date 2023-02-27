@@ -8,31 +8,31 @@ import (
 )
 
 type TartariaEmpire interface {
-	feud.Empire
-	KCuman库曼() cuman.CumanKingdom
-	KMongolia蒙古() mongolia.MongoliaKingdom
-	KSibir失必儿() sibir.SibirKingdom
+    feud.Empire
+    KCuman库曼() 	cuman.CumanKingdom
+    KMongolia蒙古() 	mongolia.MongoliaKingdom
+    KSibir失必儿() 	sibir.SibirKingdom
 }
 
 type 鞑靼TartariaEmpire struct {
 	feud.BaseEmpire
-	库曼Cuman    cuman.CumanKingdom
-	蒙古Mongolia mongolia.MongoliaKingdom
-	失必儿Sibir   sibir.SibirKingdom
+	库曼Cuman 	cuman.CumanKingdom
+	蒙古Mongolia 	mongolia.MongoliaKingdom
+	失必儿Sibir 	sibir.SibirKingdom
 }
 
 func (e *鞑靼TartariaEmpire) KCuman库曼() cuman.CumanKingdom {
 	return e.库曼Cuman
 }
-
+    
 func (e *鞑靼TartariaEmpire) KMongolia蒙古() mongolia.MongoliaKingdom {
 	return e.蒙古Mongolia
 }
-
+    
 func (e *鞑靼TartariaEmpire) KSibir失必儿() sibir.SibirKingdom {
 	return e.失必儿Sibir
 }
-
+    
 var ETartaria鞑靼 TartariaEmpire = &鞑靼TartariaEmpire{}
 
 func init() {

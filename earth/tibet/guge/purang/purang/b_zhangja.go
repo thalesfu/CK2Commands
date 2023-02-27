@@ -11,7 +11,7 @@ type 生结ZhangjaBarony struct {
 var BZhangja生结 feud.Barony = &生结ZhangjaBarony{}
 
 func init() {
-	f := BZhangja生结.(*生结ZhangjaBarony)
+    f := BZhangja生结.(*生结ZhangjaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zhangja",
 		TitleName: "生结",

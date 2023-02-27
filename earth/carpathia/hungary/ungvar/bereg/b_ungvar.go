@@ -11,7 +11,7 @@ type 温格瓦尔UngvarBarony struct {
 var BUngvar温格瓦尔 feud.Barony = &温格瓦尔UngvarBarony{}
 
 func init() {
-	f := BUngvar温格瓦尔.(*温格瓦尔UngvarBarony)
+    f := BUngvar温格瓦尔.(*温格瓦尔UngvarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ungvar",
 		TitleName: "温格瓦尔",

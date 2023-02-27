@@ -11,7 +11,7 @@ type 吉尔真蒂AgricentoBarony struct {
 var BAgricento吉尔真蒂 feud.Barony = &吉尔真蒂AgricentoBarony{}
 
 func init() {
-	f := BAgricento吉尔真蒂.(*吉尔真蒂AgricentoBarony)
+    f := BAgricento吉尔真蒂.(*吉尔真蒂AgricentoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "agricento",
 		TitleName: "吉尔真蒂",

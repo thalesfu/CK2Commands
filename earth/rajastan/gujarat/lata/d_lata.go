@@ -8,31 +8,31 @@ import (
 )
 
 type LataDuke interface {
-	feud.Duke
-	CDaman陀曼那() daman.DamanCounty
-	CNavasarika那婆萨利迦() navasarika.NavasarikaCounty
-	CVadodara婆度陀罗() vadodara.VadodaraCounty
+    feud.Duke
+    CDaman陀曼那() 	daman.DamanCounty
+    CNavasarika那婆萨利迦() 	navasarika.NavasarikaCounty
+    CVadodara婆度陀罗() 	vadodara.VadodaraCounty
 }
 
 type 罗吒LataDuke struct {
 	feud.BaseDuke
-	陀曼那Daman        daman.DamanCounty
-	那婆萨利迦Navasarika navasarika.NavasarikaCounty
-	婆度陀罗Vadodara    vadodara.VadodaraCounty
+	陀曼那Daman 	daman.DamanCounty
+	那婆萨利迦Navasarika 	navasarika.NavasarikaCounty
+	婆度陀罗Vadodara 	vadodara.VadodaraCounty
 }
 
 func (d *罗吒LataDuke) CDaman陀曼那() daman.DamanCounty {
 	return d.陀曼那Daman
 }
-
+    
 func (d *罗吒LataDuke) CNavasarika那婆萨利迦() navasarika.NavasarikaCounty {
 	return d.那婆萨利迦Navasarika
 }
-
+    
 func (d *罗吒LataDuke) CVadodara婆度陀罗() vadodara.VadodaraCounty {
 	return d.婆度陀罗Vadodara
 }
-
+    
 var DLata罗吒 LataDuke = &罗吒LataDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.陀曼那Daman = daman.CDaman陀曼那
 	f.陀曼那Daman.SetParent(f)
-
+	
 	f.那婆萨利迦Navasarika = navasarika.CNavasarika那婆萨利迦
 	f.那婆萨利迦Navasarika.SetParent(f)
-
+	
 	f.婆度陀罗Vadodara = vadodara.CVadodara婆度陀罗
 	f.婆度陀罗Vadodara.SetParent(f)
-
+	
 }

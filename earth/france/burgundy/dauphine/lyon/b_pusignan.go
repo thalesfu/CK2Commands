@@ -11,7 +11,7 @@ type 普西尼昂PusignanBarony struct {
 var BPusignan普西尼昂 feud.Barony = &普西尼昂PusignanBarony{}
 
 func init() {
-	f := BPusignan普西尼昂.(*普西尼昂PusignanBarony)
+    f := BPusignan普西尼昂.(*普西尼昂PusignanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pusignan",
 		TitleName: "普西尼昂",

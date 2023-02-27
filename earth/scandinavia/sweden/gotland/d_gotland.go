@@ -6,19 +6,19 @@ import (
 )
 
 type GotlandDuke interface {
-	feud.Duke
-	CGotland哥特兰() gotland.GotlandCounty
+    feud.Duke
+    CGotland哥特兰() 	gotland.GotlandCounty
 }
 
 type 哥特兰GotlandDuke struct {
 	feud.BaseDuke
-	哥特兰Gotland gotland.GotlandCounty
+	哥特兰Gotland 	gotland.GotlandCounty
 }
 
 func (d *哥特兰GotlandDuke) CGotland哥特兰() gotland.GotlandCounty {
 	return d.哥特兰Gotland
 }
-
+    
 var DGotland哥特兰 GotlandDuke = &哥特兰GotlandDuke{}
 
 func init() {
@@ -32,5 +32,5 @@ func init() {
 
 	f.哥特兰Gotland = gotland.CGotland哥特兰
 	f.哥特兰Gotland.SetParent(f)
-
+	
 }

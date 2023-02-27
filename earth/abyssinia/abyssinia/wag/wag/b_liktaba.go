@@ -11,7 +11,7 @@ type 利克塔巴LiktabaBarony struct {
 var BLiktaba利克塔巴 feud.Barony = &利克塔巴LiktabaBarony{}
 
 func init() {
-	f := BLiktaba利克塔巴.(*利克塔巴LiktabaBarony)
+    f := BLiktaba利克塔巴.(*利克塔巴LiktabaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "liktaba",
 		TitleName: "利克塔巴",

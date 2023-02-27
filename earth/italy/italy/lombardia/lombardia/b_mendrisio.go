@@ -11,7 +11,7 @@ type 门德里西奥MendrisioBarony struct {
 var BMendrisio门德里西奥 feud.Barony = &门德里西奥MendrisioBarony{}
 
 func init() {
-	f := BMendrisio门德里西奥.(*门德里西奥MendrisioBarony)
+    f := BMendrisio门德里西奥.(*门德里西奥MendrisioBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mendrisio",
 		TitleName: "门德里西奥",

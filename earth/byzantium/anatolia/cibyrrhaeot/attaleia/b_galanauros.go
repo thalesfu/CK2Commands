@@ -11,7 +11,7 @@ type 贾拉纳罗斯GalanaurosBarony struct {
 var BGalanauros贾拉纳罗斯 feud.Barony = &贾拉纳罗斯GalanaurosBarony{}
 
 func init() {
-	f := BGalanauros贾拉纳罗斯.(*贾拉纳罗斯GalanaurosBarony)
+    f := BGalanauros贾拉纳罗斯.(*贾拉纳罗斯GalanaurosBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "galanauros",
 		TitleName: "贾拉纳罗斯",

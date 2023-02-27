@@ -11,7 +11,7 @@ type 君和居JunhejuBarony struct {
 var BJunheju君和居 feud.Barony = &君和居JunhejuBarony{}
 
 func init() {
-	f := BJunheju君和居.(*君和居JunhejuBarony)
+    f := BJunheju君和居.(*君和居JunhejuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "junheju",
 		TitleName: "君和居",

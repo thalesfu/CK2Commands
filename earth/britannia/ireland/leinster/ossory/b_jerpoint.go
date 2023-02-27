@@ -11,7 +11,7 @@ type 杰洛因JerpointBarony struct {
 var BJerpoint杰洛因 feud.Barony = &杰洛因JerpointBarony{}
 
 func init() {
-	f := BJerpoint杰洛因.(*杰洛因JerpointBarony)
+    f := BJerpoint杰洛因.(*杰洛因JerpointBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jerpoint",
 		TitleName: "杰洛因",

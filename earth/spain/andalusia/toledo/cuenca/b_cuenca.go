@@ -11,7 +11,7 @@ type 昆卡CuencaBarony struct {
 var BCuenca昆卡 feud.Barony = &昆卡CuencaBarony{}
 
 func init() {
-	f := BCuenca昆卡.(*昆卡CuencaBarony)
+    f := BCuenca昆卡.(*昆卡CuencaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cuenca",
 		TitleName: "昆卡",

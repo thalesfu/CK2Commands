@@ -11,7 +11,7 @@ type 尼玛江热NyimajangraBarony struct {
 var BNyimajangra尼玛江热 feud.Barony = &尼玛江热NyimajangraBarony{}
 
 func init() {
-	f := BNyimajangra尼玛江热.(*尼玛江热NyimajangraBarony)
+    f := BNyimajangra尼玛江热.(*尼玛江热NyimajangraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nyimajangra",
 		TitleName: "尼玛江热",

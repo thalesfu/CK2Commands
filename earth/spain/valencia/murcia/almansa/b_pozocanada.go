@@ -11,7 +11,7 @@ type 波索卡尼亚达PozocanadaBarony struct {
 var BPozocanada波索卡尼亚达 feud.Barony = &波索卡尼亚达PozocanadaBarony{}
 
 func init() {
-	f := BPozocanada波索卡尼亚达.(*波索卡尼亚达PozocanadaBarony)
+    f := BPozocanada波索卡尼亚达.(*波索卡尼亚达PozocanadaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pozocanada",
 		TitleName: "波索卡尼亚达",

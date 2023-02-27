@@ -11,7 +11,7 @@ type 贡迪亚GondiaBarony struct {
 var BGondia贡迪亚 feud.Barony = &贡迪亚GondiaBarony{}
 
 func init() {
-	f := BGondia贡迪亚.(*贡迪亚GondiaBarony)
+    f := BGondia贡迪亚.(*贡迪亚GondiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gondia",
 		TitleName: "贡迪亚",

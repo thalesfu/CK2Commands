@@ -11,7 +11,7 @@ type 格平根GoppingenBarony struct {
 var BGoppingen格平根 feud.Barony = &格平根GoppingenBarony{}
 
 func init() {
-	f := BGoppingen格平根.(*格平根GoppingenBarony)
+    f := BGoppingen格平根.(*格平根GoppingenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "goppingen",
 		TitleName: "格平根",

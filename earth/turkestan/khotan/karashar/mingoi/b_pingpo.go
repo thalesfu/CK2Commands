@@ -11,7 +11,7 @@ type 平坡PingpoBarony struct {
 var BPingpo平坡 feud.Barony = &平坡PingpoBarony{}
 
 func init() {
-	f := BPingpo平坡.(*平坡PingpoBarony)
+    f := BPingpo平坡.(*平坡PingpoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pingpo",
 		TitleName: "平坡",

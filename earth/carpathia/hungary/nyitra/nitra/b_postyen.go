@@ -11,7 +11,7 @@ type 珀什真PostyenBarony struct {
 var BPostyen珀什真 feud.Barony = &珀什真PostyenBarony{}
 
 func init() {
-	f := BPostyen珀什真.(*珀什真PostyenBarony)
+    f := BPostyen珀什真.(*珀什真PostyenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "postyen",
 		TitleName: "珀什真",

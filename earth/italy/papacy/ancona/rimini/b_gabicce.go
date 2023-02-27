@@ -11,7 +11,7 @@ type 加比切GabicceBarony struct {
 var BGabicce加比切 feud.Barony = &加比切GabicceBarony{}
 
 func init() {
-	f := BGabicce加比切.(*加比切GabicceBarony)
+    f := BGabicce加比切.(*加比切GabicceBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gabicce",
 		TitleName: "加比切",

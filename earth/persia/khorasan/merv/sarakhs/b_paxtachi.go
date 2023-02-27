@@ -11,7 +11,7 @@ type 帕赫塔基PaxtachiBarony struct {
 var BPaxtachi帕赫塔基 feud.Barony = &帕赫塔基PaxtachiBarony{}
 
 func init() {
-	f := BPaxtachi帕赫塔基.(*帕赫塔基PaxtachiBarony)
+    f := BPaxtachi帕赫塔基.(*帕赫塔基PaxtachiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "paxtachi",
 		TitleName: "帕赫塔基",

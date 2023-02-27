@@ -11,7 +11,7 @@ type 柯科迪KirkcaldyBarony struct {
 var BKirkcaldy柯科迪 feud.Barony = &柯科迪KirkcaldyBarony{}
 
 func init() {
-	f := BKirkcaldy柯科迪.(*柯科迪KirkcaldyBarony)
+    f := BKirkcaldy柯科迪.(*柯科迪KirkcaldyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kirkcaldy",
 		TitleName: "柯科迪",

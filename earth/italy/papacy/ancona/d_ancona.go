@@ -8,31 +8,31 @@ import (
 )
 
 type AnconaDuke interface {
-	feud.Duke
-	CAncona安科纳() ancona.AnconaCounty
-	CRimini里米尼() rimini.RiminiCounty
-	CUrbino乌尔比诺() urbino.UrbinoCounty
+    feud.Duke
+    CAncona安科纳() 	ancona.AnconaCounty
+    CRimini里米尼() 	rimini.RiminiCounty
+    CUrbino乌尔比诺() 	urbino.UrbinoCounty
 }
 
 type 安科纳AnconaDuke struct {
 	feud.BaseDuke
-	安科纳Ancona  ancona.AnconaCounty
-	里米尼Rimini  rimini.RiminiCounty
-	乌尔比诺Urbino urbino.UrbinoCounty
+	安科纳Ancona 	ancona.AnconaCounty
+	里米尼Rimini 	rimini.RiminiCounty
+	乌尔比诺Urbino 	urbino.UrbinoCounty
 }
 
 func (d *安科纳AnconaDuke) CAncona安科纳() ancona.AnconaCounty {
 	return d.安科纳Ancona
 }
-
+    
 func (d *安科纳AnconaDuke) CRimini里米尼() rimini.RiminiCounty {
 	return d.里米尼Rimini
 }
-
+    
 func (d *安科纳AnconaDuke) CUrbino乌尔比诺() urbino.UrbinoCounty {
 	return d.乌尔比诺Urbino
 }
-
+    
 var DAncona安科纳 AnconaDuke = &安科纳AnconaDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.安科纳Ancona = ancona.CAncona安科纳
 	f.安科纳Ancona.SetParent(f)
-
+	
 	f.里米尼Rimini = rimini.CRimini里米尼
 	f.里米尼Rimini.SetParent(f)
-
+	
 	f.乌尔比诺Urbino = urbino.CUrbino乌尔比诺
 	f.乌尔比诺Urbino.SetParent(f)
-
+	
 }

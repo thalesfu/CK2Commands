@@ -11,7 +11,7 @@ type 波多叉拏BadakhshanBarony struct {
 var BBadakhshan波多叉拏 feud.Barony = &波多叉拏BadakhshanBarony{}
 
 func init() {
-	f := BBadakhshan波多叉拏.(*波多叉拏BadakhshanBarony)
+    f := BBadakhshan波多叉拏.(*波多叉拏BadakhshanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "badakhshan",
 		TitleName: "波多叉拏",

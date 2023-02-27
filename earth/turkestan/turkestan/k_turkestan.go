@@ -2,37 +2,44 @@ package turkestan
 
 import (
 	"github.com/thalesfu/CK2Commands/earth/turkestan/turkestan/emba"
+	"github.com/thalesfu/CK2Commands/earth/turkestan/turkestan/syr_darya"
 	"github.com/thalesfu/CK2Commands/earth/turkestan/turkestan/turkestan"
 	"github.com/thalesfu/CK2Commands/earth/turkestan/turkestan/usturt"
 	"github.com/thalesfu/paradoxtools/CK2/feud"
 )
 
 type TurkestanKingdom interface {
-	feud.Kingdom
-	DEmba恩巴() emba.EmbaDuke
-	DTurkestan阿拉尔() turkestan.TurkestanDuke
-	DUsturt乌斯秋尔特() usturt.UsturtDuke
+    feud.Kingdom
+    DEmba恩巴() 	emba.EmbaDuke
+    DSyr_darya锡尔河() 	syr_darya.Syr_daryaDuke
+    DTurkestan阿拉尔() 	turkestan.TurkestanDuke
+    DUsturt乌斯秋尔特() 	usturt.UsturtDuke
 }
 
 type 乌古斯TurkestanKingdom struct {
 	feud.BaseKingdom
-	恩巴Emba       emba.EmbaDuke
-	阿拉尔Turkestan turkestan.TurkestanDuke
-	乌斯秋尔特Usturt  usturt.UsturtDuke
+	恩巴Emba 	emba.EmbaDuke
+	锡尔河Syr_darya 	syr_darya.Syr_daryaDuke
+	阿拉尔Turkestan 	turkestan.TurkestanDuke
+	乌斯秋尔特Usturt 	usturt.UsturtDuke
 }
 
 func (k *乌古斯TurkestanKingdom) DEmba恩巴() emba.EmbaDuke {
 	return k.恩巴Emba
 }
-
+    
+func (k *乌古斯TurkestanKingdom) DSyr_darya锡尔河() syr_darya.Syr_daryaDuke {
+	return k.锡尔河Syr_darya
+}
+    
 func (k *乌古斯TurkestanKingdom) DTurkestan阿拉尔() turkestan.TurkestanDuke {
 	return k.阿拉尔Turkestan
 }
-
+    
 func (k *乌古斯TurkestanKingdom) DUsturt乌斯秋尔特() usturt.UsturtDuke {
 	return k.乌斯秋尔特Usturt
 }
-
+    
 var KTurkestan乌古斯 TurkestanKingdom = &乌古斯TurkestanKingdom{}
 
 func init() {
@@ -41,16 +48,19 @@ func init() {
 		Title:     "turkestan",
 		TitleName: "乌古斯",
 		TitleCode: "k_turkestan",
-		Dukes:     map[string]feud.Duke{},
+		Dukes:  map[string]feud.Duke{},
 	}
 
 	f.恩巴Emba = emba.DEmba恩巴
 	f.恩巴Emba.SetParent(f)
-
+	
+	f.锡尔河Syr_darya = syr_darya.DSyr_darya锡尔河
+	f.锡尔河Syr_darya.SetParent(f)
+	
 	f.阿拉尔Turkestan = turkestan.DTurkestan阿拉尔
 	f.阿拉尔Turkestan.SetParent(f)
-
+	
 	f.乌斯秋尔特Usturt = usturt.DUsturt乌斯秋尔特
 	f.乌斯秋尔特Usturt.SetParent(f)
-
+	
 }

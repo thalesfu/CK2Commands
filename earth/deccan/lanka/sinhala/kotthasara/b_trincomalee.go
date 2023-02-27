@@ -11,7 +11,7 @@ type 亭可马里TrincomaleeBarony struct {
 var BTrincomalee亭可马里 feud.Barony = &亭可马里TrincomaleeBarony{}
 
 func init() {
-	f := BTrincomalee亭可马里.(*亭可马里TrincomaleeBarony)
+    f := BTrincomalee亭可马里.(*亭可马里TrincomaleeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "trincomalee",
 		TitleName: "亭可马里",

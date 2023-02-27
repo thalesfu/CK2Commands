@@ -7,25 +7,25 @@ import (
 )
 
 type SyrmiaDuke interface {
-	feud.Duke
-	CSyrmia叙尔米亚() syrmia.SyrmiaCounty
-	CVukovar武科瓦尔() vukovar.VukovarCounty
+    feud.Duke
+    CSyrmia叙尔米亚() 	syrmia.SyrmiaCounty
+    CVukovar武科瓦尔() 	vukovar.VukovarCounty
 }
 
 type 叙尔米亚SyrmiaDuke struct {
 	feud.BaseDuke
-	叙尔米亚Syrmia  syrmia.SyrmiaCounty
-	武科瓦尔Vukovar vukovar.VukovarCounty
+	叙尔米亚Syrmia 	syrmia.SyrmiaCounty
+	武科瓦尔Vukovar 	vukovar.VukovarCounty
 }
 
 func (d *叙尔米亚SyrmiaDuke) CSyrmia叙尔米亚() syrmia.SyrmiaCounty {
 	return d.叙尔米亚Syrmia
 }
-
+    
 func (d *叙尔米亚SyrmiaDuke) CVukovar武科瓦尔() vukovar.VukovarCounty {
 	return d.武科瓦尔Vukovar
 }
-
+    
 var DSyrmia叙尔米亚 SyrmiaDuke = &叙尔米亚SyrmiaDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.叙尔米亚Syrmia = syrmia.CSyrmia叙尔米亚
 	f.叙尔米亚Syrmia.SetParent(f)
-
+	
 	f.武科瓦尔Vukovar = vukovar.CVukovar武科瓦尔
 	f.武科瓦尔Vukovar.SetParent(f)
-
+	
 }

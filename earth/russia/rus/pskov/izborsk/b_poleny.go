@@ -11,7 +11,7 @@ type 波列内PolenyBarony struct {
 var BPoleny波列内 feud.Barony = &波列内PolenyBarony{}
 
 func init() {
-	f := BPoleny波列内.(*波列内PolenyBarony)
+    f := BPoleny波列内.(*波列内PolenyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "poleny",
 		TitleName: "波列内",

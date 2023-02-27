@@ -11,7 +11,7 @@ type 科都尼CordueneBarony struct {
 var BCorduene科都尼 feud.Barony = &科都尼CordueneBarony{}
 
 func init() {
-	f := BCorduene科都尼.(*科都尼CordueneBarony)
+    f := BCorduene科都尼.(*科都尼CordueneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "corduene",
 		TitleName: "科都尼",

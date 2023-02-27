@@ -11,7 +11,7 @@ type 梅夫塔MeftahBarony struct {
 var BMeftah梅夫塔 feud.Barony = &梅夫塔MeftahBarony{}
 
 func init() {
-	f := BMeftah梅夫塔.(*梅夫塔MeftahBarony)
+    f := BMeftah梅夫塔.(*梅夫塔MeftahBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "meftah",
 		TitleName: "梅夫塔",

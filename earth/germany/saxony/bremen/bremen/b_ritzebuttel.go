@@ -11,7 +11,7 @@ type 里策比特尔RitzebuttelBarony struct {
 var BRitzebuttel里策比特尔 feud.Barony = &里策比特尔RitzebuttelBarony{}
 
 func init() {
-	f := BRitzebuttel里策比特尔.(*里策比特尔RitzebuttelBarony)
+    f := BRitzebuttel里策比特尔.(*里策比特尔RitzebuttelBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ritzebuttel",
 		TitleName: "里策比特尔",

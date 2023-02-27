@@ -11,7 +11,7 @@ type 毗蓝钵胝VairampattiBarony struct {
 var BVairampatti毗蓝钵胝 feud.Barony = &毗蓝钵胝VairampattiBarony{}
 
 func init() {
-	f := BVairampatti毗蓝钵胝.(*毗蓝钵胝VairampattiBarony)
+    f := BVairampatti毗蓝钵胝.(*毗蓝钵胝VairampattiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vairampatti",
 		TitleName: "毗蓝钵胝",

@@ -11,7 +11,7 @@ type 蒂沃利TivoliBarony struct {
 var BTivoli蒂沃利 feud.Barony = &蒂沃利TivoliBarony{}
 
 func init() {
-	f := BTivoli蒂沃利.(*蒂沃利TivoliBarony)
+    f := BTivoli蒂沃利.(*蒂沃利TivoliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tivoli",
 		TitleName: "蒂沃利",

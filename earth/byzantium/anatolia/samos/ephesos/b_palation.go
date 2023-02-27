@@ -11,7 +11,7 @@ type 帕拉提翁PalationBarony struct {
 var BPalation帕拉提翁 feud.Barony = &帕拉提翁PalationBarony{}
 
 func init() {
-	f := BPalation帕拉提翁.(*帕拉提翁PalationBarony)
+    f := BPalation帕拉提翁.(*帕拉提翁PalationBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "palation",
 		TitleName: "帕拉提翁",

@@ -11,7 +11,7 @@ type 泥弥沙NaimisaBarony struct {
 var BNaimisa泥弥沙 feud.Barony = &泥弥沙NaimisaBarony{}
 
 func init() {
-	f := BNaimisa泥弥沙.(*泥弥沙NaimisaBarony)
+    f := BNaimisa泥弥沙.(*泥弥沙NaimisaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "naimisa",
 		TitleName: "泥弥沙",

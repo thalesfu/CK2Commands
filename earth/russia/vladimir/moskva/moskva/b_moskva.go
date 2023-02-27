@@ -11,7 +11,7 @@ type 莫斯科MoskvaBarony struct {
 var BMoskva莫斯科 feud.Barony = &莫斯科MoskvaBarony{}
 
 func init() {
-	f := BMoskva莫斯科.(*莫斯科MoskvaBarony)
+    f := BMoskva莫斯科.(*莫斯科MoskvaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "moskva",
 		TitleName: "莫斯科",

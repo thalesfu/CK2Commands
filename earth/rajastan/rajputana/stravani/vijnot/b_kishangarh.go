@@ -11,7 +11,7 @@ type 计霜姞利呬KishangarhBarony struct {
 var BKishangarh计霜姞利呬 feud.Barony = &计霜姞利呬KishangarhBarony{}
 
 func init() {
-	f := BKishangarh计霜姞利呬.(*计霜姞利呬KishangarhBarony)
+    f := BKishangarh计霜姞利呬.(*计霜姞利呬KishangarhBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kishangarh",
 		TitleName: "计霜姞利呬",

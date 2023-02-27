@@ -11,7 +11,7 @@ type 平格尔BhingarBarony struct {
 var BBhingar平格尔 feud.Barony = &平格尔BhingarBarony{}
 
 func init() {
-	f := BBhingar平格尔.(*平格尔BhingarBarony)
+    f := BBhingar平格尔.(*平格尔BhingarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bhingar",
 		TitleName: "平格尔",

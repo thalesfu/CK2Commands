@@ -11,7 +11,7 @@ type 沃罗涅日VoronejBarony struct {
 var BVoronej沃罗涅日 feud.Barony = &沃罗涅日VoronejBarony{}
 
 func init() {
-	f := BVoronej沃罗涅日.(*沃罗涅日VoronejBarony)
+    f := BVoronej沃罗涅日.(*沃罗涅日VoronejBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "voronej",
 		TitleName: "沃罗涅日",

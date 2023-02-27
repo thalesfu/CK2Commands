@@ -11,7 +11,7 @@ type 方盘FangpanBarony struct {
 var BFangpan方盘 feud.Barony = &方盘FangpanBarony{}
 
 func init() {
-	f := BFangpan方盘.(*方盘FangpanBarony)
+    f := BFangpan方盘.(*方盘FangpanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "fangpan",
 		TitleName: "方盘",

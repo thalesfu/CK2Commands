@@ -11,7 +11,7 @@ type 格赖芬堡GreifenburgBarony struct {
 var BGreifenburg格赖芬堡 feud.Barony = &格赖芬堡GreifenburgBarony{}
 
 func init() {
-	f := BGreifenburg格赖芬堡.(*格赖芬堡GreifenburgBarony)
+    f := BGreifenburg格赖芬堡.(*格赖芬堡GreifenburgBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "greifenburg",
 		TitleName: "格赖芬堡",

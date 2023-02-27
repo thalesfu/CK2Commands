@@ -11,7 +11,7 @@ type 强贝JambayBarony struct {
 var BJambay强贝 feud.Barony = &强贝JambayBarony{}
 
 func init() {
-	f := BJambay强贝.(*强贝JambayBarony)
+    f := BJambay强贝.(*强贝JambayBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jambay",
 		TitleName: "强贝",

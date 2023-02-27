@@ -11,7 +11,7 @@ type 南赛NamsaiBarony struct {
 var BNamsai南赛 feud.Barony = &南赛NamsaiBarony{}
 
 func init() {
-	f := BNamsai南赛.(*南赛NamsaiBarony)
+    f := BNamsai南赛.(*南赛NamsaiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "namsai",
 		TitleName: "南赛",

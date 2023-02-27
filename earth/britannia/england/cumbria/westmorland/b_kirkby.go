@@ -11,7 +11,7 @@ type 柯比KirkbyBarony struct {
 var BKirkby柯比 feud.Barony = &柯比KirkbyBarony{}
 
 func init() {
-	f := BKirkby柯比.(*柯比KirkbyBarony)
+    f := BKirkby柯比.(*柯比KirkbyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kirkby",
 		TitleName: "柯比",

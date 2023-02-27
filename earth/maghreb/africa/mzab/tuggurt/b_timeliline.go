@@ -11,7 +11,7 @@ type 蒂梅利林TimelilineBarony struct {
 var BTimeliline蒂梅利林 feud.Barony = &蒂梅利林TimelilineBarony{}
 
 func init() {
-	f := BTimeliline蒂梅利林.(*蒂梅利林TimelilineBarony)
+    f := BTimeliline蒂梅利林.(*蒂梅利林TimelilineBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "timeliline",
 		TitleName: "蒂梅利林",

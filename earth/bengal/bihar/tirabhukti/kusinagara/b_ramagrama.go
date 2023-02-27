@@ -11,7 +11,7 @@ type 罗摩伽RamagramaBarony struct {
 var BRamagrama罗摩伽 feud.Barony = &罗摩伽RamagramaBarony{}
 
 func init() {
-	f := BRamagrama罗摩伽.(*罗摩伽RamagramaBarony)
+    f := BRamagrama罗摩伽.(*罗摩伽RamagramaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ramagrama",
 		TitleName: "罗摩伽",

@@ -7,25 +7,25 @@ import (
 )
 
 type KurdistanDuke interface {
-	feud.Duke
-	CKurdistan库尔德斯坦() kurdistan.KurdistanCounty
-	CShahrazur沙赫拉祖尔() shahrazur.ShahrazurCounty
+    feud.Duke
+    CKurdistan库尔德斯坦() 	kurdistan.KurdistanCounty
+    CShahrazur沙赫拉祖尔() 	shahrazur.ShahrazurCounty
 }
 
 type 库尔德斯坦KurdistanDuke struct {
 	feud.BaseDuke
-	库尔德斯坦Kurdistan kurdistan.KurdistanCounty
-	沙赫拉祖尔Shahrazur shahrazur.ShahrazurCounty
+	库尔德斯坦Kurdistan 	kurdistan.KurdistanCounty
+	沙赫拉祖尔Shahrazur 	shahrazur.ShahrazurCounty
 }
 
 func (d *库尔德斯坦KurdistanDuke) CKurdistan库尔德斯坦() kurdistan.KurdistanCounty {
 	return d.库尔德斯坦Kurdistan
 }
-
+    
 func (d *库尔德斯坦KurdistanDuke) CShahrazur沙赫拉祖尔() shahrazur.ShahrazurCounty {
 	return d.沙赫拉祖尔Shahrazur
 }
-
+    
 var DKurdistan库尔德斯坦 KurdistanDuke = &库尔德斯坦KurdistanDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.库尔德斯坦Kurdistan = kurdistan.CKurdistan库尔德斯坦
 	f.库尔德斯坦Kurdistan.SetParent(f)
-
+	
 	f.沙赫拉祖尔Shahrazur = shahrazur.CShahrazur沙赫拉祖尔
 	f.沙赫拉祖尔Shahrazur.SetParent(f)
-
+	
 }

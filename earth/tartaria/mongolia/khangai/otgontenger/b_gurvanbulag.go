@@ -11,7 +11,7 @@ type 古尔班布拉格GurvanbulagBarony struct {
 var BGurvanbulag古尔班布拉格 feud.Barony = &古尔班布拉格GurvanbulagBarony{}
 
 func init() {
-	f := BGurvanbulag古尔班布拉格.(*古尔班布拉格GurvanbulagBarony)
+    f := BGurvanbulag古尔班布拉格.(*古尔班布拉格GurvanbulagBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gurvanbulag",
 		TitleName: "古尔班布拉格",

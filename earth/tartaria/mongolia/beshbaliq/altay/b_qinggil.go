@@ -11,7 +11,7 @@ type 青格里QinggilBarony struct {
 var BQinggil青格里 feud.Barony = &青格里QinggilBarony{}
 
 func init() {
-	f := BQinggil青格里.(*青格里QinggilBarony)
+    f := BQinggil青格里.(*青格里QinggilBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "qinggil",
 		TitleName: "青格里",

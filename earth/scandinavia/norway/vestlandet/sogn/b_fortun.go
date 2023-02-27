@@ -11,7 +11,7 @@ type 福通FortunBarony struct {
 var BFortun福通 feud.Barony = &福通FortunBarony{}
 
 func init() {
-	f := BFortun福通.(*福通FortunBarony)
+    f := BFortun福通.(*福通FortunBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "fortun",
 		TitleName: "福通",

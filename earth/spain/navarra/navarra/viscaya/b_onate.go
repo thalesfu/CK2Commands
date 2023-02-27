@@ -11,7 +11,7 @@ type 奥尼亚蒂OnateBarony struct {
 var BOnate奥尼亚蒂 feud.Barony = &奥尼亚蒂OnateBarony{}
 
 func init() {
-	f := BOnate奥尼亚蒂.(*奥尼亚蒂OnateBarony)
+    f := BOnate奥尼亚蒂.(*奥尼亚蒂OnateBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "onate",
 		TitleName: "奥尼亚蒂",

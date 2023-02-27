@@ -11,7 +11,7 @@ type 奥利特OliteBarony struct {
 var BOlite奥利特 feud.Barony = &奥利特OliteBarony{}
 
 func init() {
-	f := BOlite奥利特.(*奥利特OliteBarony)
+    f := BOlite奥利特.(*奥利特OliteBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "olite",
 		TitleName: "奥利特",

@@ -11,7 +11,7 @@ type 先吉尔_库姆SengirkumBarony struct {
 var BSengirkum先吉尔_库姆 feud.Barony = &先吉尔_库姆SengirkumBarony{}
 
 func init() {
-	f := BSengirkum先吉尔_库姆.(*先吉尔_库姆SengirkumBarony)
+    f := BSengirkum先吉尔_库姆.(*先吉尔_库姆SengirkumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sengirkum",
 		TitleName: "先吉尔_库姆",

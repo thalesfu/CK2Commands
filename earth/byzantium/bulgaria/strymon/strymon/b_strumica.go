@@ -11,7 +11,7 @@ type 斯特鲁米察StrumicaBarony struct {
 var BStrumica斯特鲁米察 feud.Barony = &斯特鲁米察StrumicaBarony{}
 
 func init() {
-	f := BStrumica斯特鲁米察.(*斯特鲁米察StrumicaBarony)
+    f := BStrumica斯特鲁米察.(*斯特鲁米察StrumicaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "strumica",
 		TitleName: "斯特鲁米察",

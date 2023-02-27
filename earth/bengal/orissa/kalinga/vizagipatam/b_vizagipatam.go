@@ -11,7 +11,7 @@ type 毗舍佉波吒南VizagipatamBarony struct {
 var BVizagipatam毗舍佉波吒南 feud.Barony = &毗舍佉波吒南VizagipatamBarony{}
 
 func init() {
-	f := BVizagipatam毗舍佉波吒南.(*毗舍佉波吒南VizagipatamBarony)
+    f := BVizagipatam毗舍佉波吒南.(*毗舍佉波吒南VizagipatamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vizagipatam",
 		TitleName: "毗舍佉波吒南",

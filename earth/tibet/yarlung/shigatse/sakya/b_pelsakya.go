@@ -11,7 +11,7 @@ type 吉祥萨迦PelsakyaBarony struct {
 var BPelsakya吉祥萨迦 feud.Barony = &吉祥萨迦PelsakyaBarony{}
 
 func init() {
-	f := BPelsakya吉祥萨迦.(*吉祥萨迦PelsakyaBarony)
+    f := BPelsakya吉祥萨迦.(*吉祥萨迦PelsakyaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pelsakya",
 		TitleName: "吉祥萨迦",

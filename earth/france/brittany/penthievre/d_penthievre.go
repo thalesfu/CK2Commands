@@ -7,25 +7,25 @@ import (
 )
 
 type PenthievreDuke interface {
-	feud.Duke
-	CPenthievre庞蒂耶夫尔() penthievre.PenthievreCounty
-	CTregor特雷戈尔() tregor.TregorCounty
+    feud.Duke
+    CPenthievre庞蒂耶夫尔() 	penthievre.PenthievreCounty
+    CTregor特雷戈尔() 	tregor.TregorCounty
 }
 
 type 庞蒂耶夫尔PenthievreDuke struct {
 	feud.BaseDuke
-	庞蒂耶夫尔Penthievre penthievre.PenthievreCounty
-	特雷戈尔Tregor      tregor.TregorCounty
+	庞蒂耶夫尔Penthievre 	penthievre.PenthievreCounty
+	特雷戈尔Tregor 	tregor.TregorCounty
 }
 
 func (d *庞蒂耶夫尔PenthievreDuke) CPenthievre庞蒂耶夫尔() penthievre.PenthievreCounty {
 	return d.庞蒂耶夫尔Penthievre
 }
-
+    
 func (d *庞蒂耶夫尔PenthievreDuke) CTregor特雷戈尔() tregor.TregorCounty {
 	return d.特雷戈尔Tregor
 }
-
+    
 var DPenthievre庞蒂耶夫尔 PenthievreDuke = &庞蒂耶夫尔PenthievreDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.庞蒂耶夫尔Penthievre = penthievre.CPenthievre庞蒂耶夫尔
 	f.庞蒂耶夫尔Penthievre.SetParent(f)
-
+	
 	f.特雷戈尔Tregor = tregor.CTregor特雷戈尔
 	f.特雷戈尔Tregor.SetParent(f)
-
+	
 }

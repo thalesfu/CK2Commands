@@ -11,7 +11,7 @@ type 盖拉菲加GhalafiqaBarony struct {
 var BGhalafiqa盖拉菲加 feud.Barony = &盖拉菲加GhalafiqaBarony{}
 
 func init() {
-	f := BGhalafiqa盖拉菲加.(*盖拉菲加GhalafiqaBarony)
+    f := BGhalafiqa盖拉菲加.(*盖拉菲加GhalafiqaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ghalafiqa",
 		TitleName: "盖拉菲加",

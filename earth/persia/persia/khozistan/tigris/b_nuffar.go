@@ -11,7 +11,7 @@ type 努法尔NuffarBarony struct {
 var BNuffar努法尔 feud.Barony = &努法尔NuffarBarony{}
 
 func init() {
-	f := BNuffar努法尔.(*努法尔NuffarBarony)
+    f := BNuffar努法尔.(*努法尔NuffarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nuffar",
 		TitleName: "努法尔",

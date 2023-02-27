@@ -11,7 +11,7 @@ type 什利谢利堡ChlisselbourgBarony struct {
 var BChlisselbourg什利谢利堡 feud.Barony = &什利谢利堡ChlisselbourgBarony{}
 
 func init() {
-	f := BChlisselbourg什利谢利堡.(*什利谢利堡ChlisselbourgBarony)
+    f := BChlisselbourg什利谢利堡.(*什利谢利堡ChlisselbourgBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chlisselbourg",
 		TitleName: "什利谢利堡",

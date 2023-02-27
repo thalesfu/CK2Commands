@@ -11,7 +11,7 @@ type 大金DajinBarony struct {
 var BDajin大金 feud.Barony = &大金DajinBarony{}
 
 func init() {
-	f := BDajin大金.(*大金DajinBarony)
+    f := BDajin大金.(*大金DajinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dajin",
 		TitleName: "大金",

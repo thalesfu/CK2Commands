@@ -11,7 +11,7 @@ type 雷ReBarony struct {
 var BRe雷 feud.Barony = &雷ReBarony{}
 
 func init() {
-	f := BRe雷.(*雷ReBarony)
+    f := BRe雷.(*雷ReBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "re",
 		TitleName: "雷",

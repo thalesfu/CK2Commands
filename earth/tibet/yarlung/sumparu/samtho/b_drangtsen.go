@@ -11,7 +11,7 @@ type 长颈DrangtsenBarony struct {
 var BDrangtsen长颈 feud.Barony = &长颈DrangtsenBarony{}
 
 func init() {
-	f := BDrangtsen长颈.(*长颈DrangtsenBarony)
+    f := BDrangtsen长颈.(*长颈DrangtsenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "drangtsen",
 		TitleName: "长颈",

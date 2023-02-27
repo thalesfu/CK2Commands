@@ -11,7 +11,7 @@ type 伊格利德IqlidBarony struct {
 var BIqlid伊格利德 feud.Barony = &伊格利德IqlidBarony{}
 
 func init() {
-	f := BIqlid伊格利德.(*伊格利德IqlidBarony)
+    f := BIqlid伊格利德.(*伊格利德IqlidBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "iqlid",
 		TitleName: "伊格利德",

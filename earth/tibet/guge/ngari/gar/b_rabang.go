@@ -11,7 +11,7 @@ type 热帮RabangBarony struct {
 var BRabang热帮 feud.Barony = &热帮RabangBarony{}
 
 func init() {
-	f := BRabang热帮.(*热帮RabangBarony)
+    f := BRabang热帮.(*热帮RabangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rabang",
 		TitleName: "热帮",

@@ -11,7 +11,7 @@ type 朗格波RangpoBarony struct {
 var BRangpo朗格波 feud.Barony = &朗格波RangpoBarony{}
 
 func init() {
-	f := BRangpo朗格波.(*朗格波RangpoBarony)
+    f := BRangpo朗格波.(*朗格波RangpoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rangpo",
 		TitleName: "朗格波",

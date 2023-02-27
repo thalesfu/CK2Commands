@@ -11,7 +11,7 @@ type 利特里姆LeitrimBarony struct {
 var BLeitrim利特里姆 feud.Barony = &利特里姆LeitrimBarony{}
 
 func init() {
-	f := BLeitrim利特里姆.(*利特里姆LeitrimBarony)
+    f := BLeitrim利特里姆.(*利特里姆LeitrimBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "leitrim",
 		TitleName: "利特里姆",

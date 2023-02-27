@@ -11,7 +11,7 @@ type 老付田LaofutianBarony struct {
 var BLaofutian老付田 feud.Barony = &老付田LaofutianBarony{}
 
 func init() {
-	f := BLaofutian老付田.(*老付田LaofutianBarony)
+    f := BLaofutian老付田.(*老付田LaofutianBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "laofutian",
 		TitleName: "老付田",

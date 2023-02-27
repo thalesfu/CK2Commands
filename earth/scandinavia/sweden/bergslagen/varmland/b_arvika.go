@@ -11,7 +11,7 @@ type 阿尔维卡ArvikaBarony struct {
 var BArvika阿尔维卡 feud.Barony = &阿尔维卡ArvikaBarony{}
 
 func init() {
-	f := BArvika阿尔维卡.(*阿尔维卡ArvikaBarony)
+    f := BArvika阿尔维卡.(*阿尔维卡ArvikaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "arvika",
 		TitleName: "阿尔维卡",

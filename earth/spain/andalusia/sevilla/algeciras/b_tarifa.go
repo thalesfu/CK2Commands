@@ -11,7 +11,7 @@ type 塔里法TarifaBarony struct {
 var BTarifa塔里法 feud.Barony = &塔里法TarifaBarony{}
 
 func init() {
-	f := BTarifa塔里法.(*塔里法TarifaBarony)
+    f := BTarifa塔里法.(*塔里法TarifaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tarifa",
 		TitleName: "塔里法",

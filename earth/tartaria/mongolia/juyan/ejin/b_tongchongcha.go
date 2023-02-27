@@ -11,7 +11,7 @@ type 桐冲岔TongchongchaBarony struct {
 var BTongchongcha桐冲岔 feud.Barony = &桐冲岔TongchongchaBarony{}
 
 func init() {
-	f := BTongchongcha桐冲岔.(*桐冲岔TongchongchaBarony)
+    f := BTongchongcha桐冲岔.(*桐冲岔TongchongchaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tongchongcha",
 		TitleName: "桐冲岔",

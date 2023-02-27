@@ -11,7 +11,7 @@ type 石纽ShiniuBarony struct {
 var BShiniu石纽 feud.Barony = &石纽ShiniuBarony{}
 
 func init() {
-	f := BShiniu石纽.(*石纽ShiniuBarony)
+    f := BShiniu石纽.(*石纽ShiniuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "shiniu",
 		TitleName: "石纽",

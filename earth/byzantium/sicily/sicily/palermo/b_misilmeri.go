@@ -11,7 +11,7 @@ type 米西尔梅里MisilmeriBarony struct {
 var BMisilmeri米西尔梅里 feud.Barony = &米西尔梅里MisilmeriBarony{}
 
 func init() {
-	f := BMisilmeri米西尔梅里.(*米西尔梅里MisilmeriBarony)
+    f := BMisilmeri米西尔梅里.(*米西尔梅里MisilmeriBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "misilmeri",
 		TitleName: "米西尔梅里",

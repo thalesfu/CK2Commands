@@ -11,7 +11,7 @@ type 基萨里宗CitharizumBarony struct {
 var BCitharizum基萨里宗 feud.Barony = &基萨里宗CitharizumBarony{}
 
 func init() {
-	f := BCitharizum基萨里宗.(*基萨里宗CitharizumBarony)
+    f := BCitharizum基萨里宗.(*基萨里宗CitharizumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "citharizum",
 		TitleName: "基萨里宗",

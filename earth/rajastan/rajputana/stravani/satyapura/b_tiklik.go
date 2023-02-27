@@ -11,7 +11,7 @@ type 置力TiklikBarony struct {
 var BTiklik置力 feud.Barony = &置力TiklikBarony{}
 
 func init() {
-	f := BTiklik置力.(*置力TiklikBarony)
+    f := BTiklik置力.(*置力TiklikBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tiklik",
 		TitleName: "置力",

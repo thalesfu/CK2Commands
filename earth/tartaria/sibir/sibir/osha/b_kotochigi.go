@@ -11,7 +11,7 @@ type 科托奇吉KotochigiBarony struct {
 var BKotochigi科托奇吉 feud.Barony = &科托奇吉KotochigiBarony{}
 
 func init() {
-	f := BKotochigi科托奇吉.(*科托奇吉KotochigiBarony)
+    f := BKotochigi科托奇吉.(*科托奇吉KotochigiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kotochigi",
 		TitleName: "科托奇吉",

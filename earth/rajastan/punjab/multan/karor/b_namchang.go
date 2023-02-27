@@ -11,7 +11,7 @@ type 南旃俱NamchangBarony struct {
 var BNamchang南旃俱 feud.Barony = &南旃俱NamchangBarony{}
 
 func init() {
-	f := BNamchang南旃俱.(*南旃俱NamchangBarony)
+    f := BNamchang南旃俱.(*南旃俱NamchangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "namchang",
 		TitleName: "南旃俱",

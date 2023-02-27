@@ -11,7 +11,7 @@ type 皮海湖PyhaselkaBarony struct {
 var BPyhaselka皮海湖 feud.Barony = &皮海湖PyhaselkaBarony{}
 
 func init() {
-	f := BPyhaselka皮海湖.(*皮海湖PyhaselkaBarony)
+    f := BPyhaselka皮海湖.(*皮海湖PyhaselkaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pyhaselka",
 		TitleName: "皮海湖",

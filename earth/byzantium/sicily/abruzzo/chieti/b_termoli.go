@@ -11,7 +11,7 @@ type 泰尔莫利TermoliBarony struct {
 var BTermoli泰尔莫利 feud.Barony = &泰尔莫利TermoliBarony{}
 
 func init() {
-	f := BTermoli泰尔莫利.(*泰尔莫利TermoliBarony)
+    f := BTermoli泰尔莫利.(*泰尔莫利TermoliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "termoli",
 		TitleName: "泰尔莫利",

@@ -11,7 +11,7 @@ type 奥法基姆OfakimBarony struct {
 var BOfakim奥法基姆 feud.Barony = &奥法基姆OfakimBarony{}
 
 func init() {
-	f := BOfakim奥法基姆.(*奥法基姆OfakimBarony)
+    f := BOfakim奥法基姆.(*奥法基姆OfakimBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ofakim",
 		TitleName: "奥法基姆",

@@ -11,7 +11,7 @@ type 拘罗弗多KoraputBarony struct {
 var BKoraput拘罗弗多 feud.Barony = &拘罗弗多KoraputBarony{}
 
 func init() {
-	f := BKoraput拘罗弗多.(*拘罗弗多KoraputBarony)
+    f := BKoraput拘罗弗多.(*拘罗弗多KoraputBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "koraput",
 		TitleName: "拘罗弗多",

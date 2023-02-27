@@ -7,25 +7,25 @@ import (
 )
 
 type CarpathiaEmpire interface {
-	feud.Empire
-	KDacia瓦拉吉亚() dacia.DaciaKingdom
-	KHungary匈牙利() hungary.HungaryKingdom
+    feud.Empire
+    KDacia瓦拉吉亚() 	dacia.DaciaKingdom
+    KHungary匈牙利() 	hungary.HungaryKingdom
 }
 
 type 喀尔巴阡CarpathiaEmpire struct {
 	feud.BaseEmpire
-	瓦拉吉亚Dacia  dacia.DaciaKingdom
-	匈牙利Hungary hungary.HungaryKingdom
+	瓦拉吉亚Dacia 	dacia.DaciaKingdom
+	匈牙利Hungary 	hungary.HungaryKingdom
 }
 
 func (e *喀尔巴阡CarpathiaEmpire) KDacia瓦拉吉亚() dacia.DaciaKingdom {
 	return e.瓦拉吉亚Dacia
 }
-
+    
 func (e *喀尔巴阡CarpathiaEmpire) KHungary匈牙利() hungary.HungaryKingdom {
 	return e.匈牙利Hungary
 }
-
+    
 var ECarpathia喀尔巴阡 CarpathiaEmpire = &喀尔巴阡CarpathiaEmpire{}
 
 func init() {

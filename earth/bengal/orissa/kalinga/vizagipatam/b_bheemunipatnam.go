@@ -11,7 +11,7 @@ type 吠夷牟尼跋南BheemunipatnamBarony struct {
 var BBheemunipatnam吠夷牟尼跋南 feud.Barony = &吠夷牟尼跋南BheemunipatnamBarony{}
 
 func init() {
-	f := BBheemunipatnam吠夷牟尼跋南.(*吠夷牟尼跋南BheemunipatnamBarony)
+    f := BBheemunipatnam吠夷牟尼跋南.(*吠夷牟尼跋南BheemunipatnamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bheemunipatnam",
 		TitleName: "吠夷牟尼跋南",

@@ -11,7 +11,7 @@ type 法蒂森PhadisaneBarony struct {
 var BPhadisane法蒂森 feud.Barony = &法蒂森PhadisaneBarony{}
 
 func init() {
-	f := BPhadisane法蒂森.(*法蒂森PhadisaneBarony)
+    f := BPhadisane法蒂森.(*法蒂森PhadisaneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "phadisane",
 		TitleName: "法蒂森",

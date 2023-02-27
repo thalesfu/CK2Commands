@@ -11,7 +11,7 @@ type 库巴QubaBarony struct {
 var BQuba库巴 feud.Barony = &库巴QubaBarony{}
 
 func init() {
-	f := BQuba库巴.(*库巴QubaBarony)
+    f := BQuba库巴.(*库巴QubaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "quba",
 		TitleName: "库巴",

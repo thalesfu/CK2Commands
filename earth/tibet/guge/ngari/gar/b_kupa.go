@@ -11,7 +11,7 @@ type 过巴KupaBarony struct {
 var BKupa过巴 feud.Barony = &过巴KupaBarony{}
 
 func init() {
-	f := BKupa过巴.(*过巴KupaBarony)
+    f := BKupa过巴.(*过巴KupaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kupa",
 		TitleName: "过巴",

@@ -11,7 +11,7 @@ type 诺维格勒NovigradBarony struct {
 var BNovigrad诺维格勒 feud.Barony = &诺维格勒NovigradBarony{}
 
 func init() {
-	f := BNovigrad诺维格勒.(*诺维格勒NovigradBarony)
+    f := BNovigrad诺维格勒.(*诺维格勒NovigradBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "novigrad",
 		TitleName: "诺维格勒",

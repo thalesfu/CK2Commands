@@ -11,7 +11,7 @@ type 潘科夫卡PankovkaBarony struct {
 var BPankovka潘科夫卡 feud.Barony = &潘科夫卡PankovkaBarony{}
 
 func init() {
-	f := BPankovka潘科夫卡.(*潘科夫卡PankovkaBarony)
+    f := BPankovka潘科夫卡.(*潘科夫卡PankovkaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pankovka",
 		TitleName: "潘科夫卡",

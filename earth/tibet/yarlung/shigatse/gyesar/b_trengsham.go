@@ -11,7 +11,7 @@ type 惩香TrengshamBarony struct {
 var BTrengsham惩香 feud.Barony = &惩香TrengshamBarony{}
 
 func init() {
-	f := BTrengsham惩香.(*惩香TrengshamBarony)
+    f := BTrengsham惩香.(*惩香TrengshamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "trengsham",
 		TitleName: "惩香",

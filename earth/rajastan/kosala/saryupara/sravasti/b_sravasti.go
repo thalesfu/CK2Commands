@@ -11,7 +11,7 @@ type 舍卫城SravastiBarony struct {
 var BSravasti舍卫城 feud.Barony = &舍卫城SravastiBarony{}
 
 func init() {
-	f := BSravasti舍卫城.(*舍卫城SravastiBarony)
+    f := BSravasti舍卫城.(*舍卫城SravastiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sravasti",
 		TitleName: "舍卫城",

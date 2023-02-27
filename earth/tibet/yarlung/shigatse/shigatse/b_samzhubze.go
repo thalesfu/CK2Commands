@@ -11,7 +11,7 @@ type 三竹节SamzhubzeBarony struct {
 var BSamzhubze三竹节 feud.Barony = &三竹节SamzhubzeBarony{}
 
 func init() {
-	f := BSamzhubze三竹节.(*三竹节SamzhubzeBarony)
+    f := BSamzhubze三竹节.(*三竹节SamzhubzeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "samzhubze",
 		TitleName: "三竹节",

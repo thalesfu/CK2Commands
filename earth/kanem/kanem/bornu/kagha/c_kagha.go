@@ -5,43 +5,55 @@ import (
 )
 
 type KaghaCounty interface {
-	feud.County
-	BAmcaka阿姆察卡() feud.Barony
-	BAtemaga阿特马加() feud.Barony
-	BBauni包尼() feud.Barony
-	BKotoko科托科() feud.Barony
-	BNgala恩加拉() feud.Barony
+    feud.County
+    BAmcaka阿姆察卡() 	feud.Barony
+    BAtemaga阿特马加() 	feud.Barony
+    BBauni包尼() 	feud.Barony
+    BGidan_taka吉丹塔卡() 	feud.Barony
+    BIkot_obio_nsu伊科特奥比奥恩苏() 	feud.Barony
+    BKotoko科托科() 	feud.Barony
+    BNgala恩加拉() 	feud.Barony
 }
 
 type 卡加KaghaCounty struct {
 	feud.BaseCounty
-	阿姆察卡Amcaka  feud.Barony
-	阿特马加Atemaga feud.Barony
-	包尼Bauni     feud.Barony
-	科托科Kotoko   feud.Barony
-	恩加拉Ngala    feud.Barony
+	阿姆察卡Amcaka 	feud.Barony
+	阿特马加Atemaga 	feud.Barony
+	包尼Bauni 	feud.Barony
+	吉丹塔卡Gidan_taka 	feud.Barony
+	伊科特奥比奥恩苏Ikot_obio_nsu 	feud.Barony
+	科托科Kotoko 	feud.Barony
+	恩加拉Ngala 	feud.Barony
 }
 
 func (c *卡加KaghaCounty) BAmcaka阿姆察卡() feud.Barony {
 	return c.阿姆察卡Amcaka
 }
-
+    
 func (c *卡加KaghaCounty) BAtemaga阿特马加() feud.Barony {
 	return c.阿特马加Atemaga
 }
-
+    
 func (c *卡加KaghaCounty) BBauni包尼() feud.Barony {
 	return c.包尼Bauni
 }
-
+    
+func (c *卡加KaghaCounty) BGidan_taka吉丹塔卡() feud.Barony {
+	return c.吉丹塔卡Gidan_taka
+}
+    
+func (c *卡加KaghaCounty) BIkot_obio_nsu伊科特奥比奥恩苏() feud.Barony {
+	return c.伊科特奥比奥恩苏Ikot_obio_nsu
+}
+    
 func (c *卡加KaghaCounty) BKotoko科托科() feud.Barony {
 	return c.科托科Kotoko
 }
-
+    
 func (c *卡加KaghaCounty) BNgala恩加拉() feud.Barony {
 	return c.恩加拉Ngala
 }
-
+    
 var CKagha卡加 KaghaCounty = &卡加KaghaCounty{}
 
 func init() {
@@ -56,17 +68,23 @@ func init() {
 
 	f.阿姆察卡Amcaka = BAmcaka阿姆察卡
 	f.阿姆察卡Amcaka.SetParent(f)
-
+	
 	f.阿特马加Atemaga = BAtemaga阿特马加
 	f.阿特马加Atemaga.SetParent(f)
-
+	
 	f.包尼Bauni = BBauni包尼
 	f.包尼Bauni.SetParent(f)
-
+	
+	f.吉丹塔卡Gidan_taka = BGidan_taka吉丹塔卡
+	f.吉丹塔卡Gidan_taka.SetParent(f)
+	
+	f.伊科特奥比奥恩苏Ikot_obio_nsu = BIkot_obio_nsu伊科特奥比奥恩苏
+	f.伊科特奥比奥恩苏Ikot_obio_nsu.SetParent(f)
+	
 	f.科托科Kotoko = BKotoko科托科
 	f.科托科Kotoko.SetParent(f)
-
+	
 	f.恩加拉Ngala = BNgala恩加拉
 	f.恩加拉Ngala.SetParent(f)
-
+	
 }

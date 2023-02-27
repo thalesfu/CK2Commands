@@ -11,7 +11,7 @@ type 瑟底痕IshtikhonBarony struct {
 var BIshtikhon瑟底痕 feud.Barony = &瑟底痕IshtikhonBarony{}
 
 func init() {
-	f := BIshtikhon瑟底痕.(*瑟底痕IshtikhonBarony)
+    f := BIshtikhon瑟底痕.(*瑟底痕IshtikhonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ishtikhon",
 		TitleName: "瑟底痕",

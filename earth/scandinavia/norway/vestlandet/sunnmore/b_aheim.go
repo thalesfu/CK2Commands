@@ -11,7 +11,7 @@ type 奥海姆AheimBarony struct {
 var BAheim奥海姆 feud.Barony = &奥海姆AheimBarony{}
 
 func init() {
-	f := BAheim奥海姆.(*奥海姆AheimBarony)
+    f := BAheim奥海姆.(*奥海姆AheimBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "aheim",
 		TitleName: "奥海姆",

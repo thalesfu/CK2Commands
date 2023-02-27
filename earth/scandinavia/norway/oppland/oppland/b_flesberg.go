@@ -11,7 +11,7 @@ type 弗莱斯贝格FlesbergBarony struct {
 var BFlesberg弗莱斯贝格 feud.Barony = &弗莱斯贝格FlesbergBarony{}
 
 func init() {
-	f := BFlesberg弗莱斯贝格.(*弗莱斯贝格FlesbergBarony)
+    f := BFlesberg弗莱斯贝格.(*弗莱斯贝格FlesbergBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "flesberg",
 		TitleName: "弗莱斯贝格",

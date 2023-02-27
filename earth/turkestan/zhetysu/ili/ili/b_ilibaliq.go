@@ -11,7 +11,7 @@ type 亦力把里IlibaliqBarony struct {
 var BIlibaliq亦力把里 feud.Barony = &亦力把里IlibaliqBarony{}
 
 func init() {
-	f := BIlibaliq亦力把里.(*亦力把里IlibaliqBarony)
+    f := BIlibaliq亦力把里.(*亦力把里IlibaliqBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ilibaliq",
 		TitleName: "亦力把里",

@@ -11,7 +11,7 @@ type 白居PalchoBarony struct {
 var BPalcho白居 feud.Barony = &白居PalchoBarony{}
 
 func init() {
-	f := BPalcho白居.(*白居PalchoBarony)
+    f := BPalcho白居.(*白居PalchoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "palcho",
 		TitleName: "白居",

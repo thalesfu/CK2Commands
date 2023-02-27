@@ -7,25 +7,25 @@ import (
 )
 
 type BremenDuke interface {
-	feud.Duke
-	CBremen哈德尔恩() bremen.BremenCounty
-	CCelle不来梅() celle.CelleCounty
+    feud.Duke
+    CBremen哈德尔恩() 	bremen.BremenCounty
+    CCelle不来梅() 	celle.CelleCounty
 }
 
 type 不来梅BremenDuke struct {
 	feud.BaseDuke
-	哈德尔恩Bremen bremen.BremenCounty
-	不来梅Celle   celle.CelleCounty
+	哈德尔恩Bremen 	bremen.BremenCounty
+	不来梅Celle 	celle.CelleCounty
 }
 
 func (d *不来梅BremenDuke) CBremen哈德尔恩() bremen.BremenCounty {
 	return d.哈德尔恩Bremen
 }
-
+    
 func (d *不来梅BremenDuke) CCelle不来梅() celle.CelleCounty {
 	return d.不来梅Celle
 }
-
+    
 var DBremen不来梅 BremenDuke = &不来梅BremenDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.哈德尔恩Bremen = bremen.CBremen哈德尔恩
 	f.哈德尔恩Bremen.SetParent(f)
-
+	
 	f.不来梅Celle = celle.CCelle不来梅
 	f.不来梅Celle.SetParent(f)
-
+	
 }

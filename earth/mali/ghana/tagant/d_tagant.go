@@ -7,25 +7,25 @@ import (
 )
 
 type TagantDuke interface {
-	feud.Duke
-	CAoudaghost奥达戈斯特() aoudaghost.AoudaghostCounty
-	CTagant塔甘特() tagant.TagantCounty
+    feud.Duke
+    CAoudaghost奥达戈斯特() 	aoudaghost.AoudaghostCounty
+    CTagant塔甘特() 	tagant.TagantCounty
 }
 
 type 塔甘特TagantDuke struct {
 	feud.BaseDuke
-	奥达戈斯特Aoudaghost aoudaghost.AoudaghostCounty
-	塔甘特Tagant       tagant.TagantCounty
+	奥达戈斯特Aoudaghost 	aoudaghost.AoudaghostCounty
+	塔甘特Tagant 	tagant.TagantCounty
 }
 
 func (d *塔甘特TagantDuke) CAoudaghost奥达戈斯特() aoudaghost.AoudaghostCounty {
 	return d.奥达戈斯特Aoudaghost
 }
-
+    
 func (d *塔甘特TagantDuke) CTagant塔甘特() tagant.TagantCounty {
 	return d.塔甘特Tagant
 }
-
+    
 var DTagant塔甘特 TagantDuke = &塔甘特TagantDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.奥达戈斯特Aoudaghost = aoudaghost.CAoudaghost奥达戈斯特
 	f.奥达戈斯特Aoudaghost.SetParent(f)
-
+	
 	f.塔甘特Tagant = tagant.CTagant塔甘特
 	f.塔甘特Tagant.SetParent(f)
-
+	
 }

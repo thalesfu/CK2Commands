@@ -11,7 +11,7 @@ type 小锅峪XiaoguoyuBarony struct {
 var BXiaoguoyu小锅峪 feud.Barony = &小锅峪XiaoguoyuBarony{}
 
 func init() {
-	f := BXiaoguoyu小锅峪.(*小锅峪XiaoguoyuBarony)
+    f := BXiaoguoyu小锅峪.(*小锅峪XiaoguoyuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "xiaoguoyu",
 		TitleName: "小锅峪",

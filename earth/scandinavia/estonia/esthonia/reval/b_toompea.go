@@ -11,7 +11,7 @@ type 座堂山ToompeaBarony struct {
 var BToompea座堂山 feud.Barony = &座堂山ToompeaBarony{}
 
 func init() {
-	f := BToompea座堂山.(*座堂山ToompeaBarony)
+    f := BToompea座堂山.(*座堂山ToompeaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "toompea",
 		TitleName: "座堂山",

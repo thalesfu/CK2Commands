@@ -11,7 +11,7 @@ type 第比利斯TbilisiBarony struct {
 var BTbilisi第比利斯 feud.Barony = &第比利斯TbilisiBarony{}
 
 func init() {
-	f := BTbilisi第比利斯.(*第比利斯TbilisiBarony)
+    f := BTbilisi第比利斯.(*第比利斯TbilisiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tbilisi",
 		TitleName: "第比利斯",

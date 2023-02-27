@@ -11,7 +11,7 @@ type 丕林PerimBarony struct {
 var BPerim丕林 feud.Barony = &丕林PerimBarony{}
 
 func init() {
-	f := BPerim丕林.(*丕林PerimBarony)
+    f := BPerim丕林.(*丕林PerimBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "perim",
 		TitleName: "丕林",

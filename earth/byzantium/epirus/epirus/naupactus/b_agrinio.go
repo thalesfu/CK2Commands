@@ -11,7 +11,7 @@ type 阿格里尼翁AgrinioBarony struct {
 var BAgrinio阿格里尼翁 feud.Barony = &阿格里尼翁AgrinioBarony{}
 
 func init() {
-	f := BAgrinio阿格里尼翁.(*阿格里尼翁AgrinioBarony)
+    f := BAgrinio阿格里尼翁.(*阿格里尼翁AgrinioBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "agrinio",
 		TitleName: "阿格里尼翁",

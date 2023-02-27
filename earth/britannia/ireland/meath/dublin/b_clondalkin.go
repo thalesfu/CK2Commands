@@ -11,7 +11,7 @@ type 克朗多金ClondalkinBarony struct {
 var BClondalkin克朗多金 feud.Barony = &克朗多金ClondalkinBarony{}
 
 func init() {
-	f := BClondalkin克朗多金.(*克朗多金ClondalkinBarony)
+    f := BClondalkin克朗多金.(*克朗多金ClondalkinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "clondalkin",
 		TitleName: "克朗多金",

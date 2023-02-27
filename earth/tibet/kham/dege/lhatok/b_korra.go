@@ -11,7 +11,7 @@ type 扩达KorraBarony struct {
 var BKorra扩达 feud.Barony = &扩达KorraBarony{}
 
 func init() {
-	f := BKorra扩达.(*扩达KorraBarony)
+    f := BKorra扩达.(*扩达KorraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "korra",
 		TitleName: "扩达",

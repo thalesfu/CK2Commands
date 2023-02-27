@@ -11,7 +11,7 @@ type 休达CuetaBarony struct {
 var BCueta休达 feud.Barony = &休达CuetaBarony{}
 
 func init() {
-	f := BCueta休达.(*休达CuetaBarony)
+    f := BCueta休达.(*休达CuetaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cueta",
 		TitleName: "休达",

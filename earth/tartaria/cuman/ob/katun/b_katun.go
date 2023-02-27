@@ -11,7 +11,7 @@ type 卡通KatunBarony struct {
 var BKatun卡通 feud.Barony = &卡通KatunBarony{}
 
 func init() {
-	f := BKatun卡通.(*卡通KatunBarony)
+    f := BKatun卡通.(*卡通KatunBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "katun",
 		TitleName: "卡通",

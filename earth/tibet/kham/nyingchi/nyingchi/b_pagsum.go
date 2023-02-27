@@ -11,7 +11,7 @@ type 八松PagsumBarony struct {
 var BPagsum八松 feud.Barony = &八松PagsumBarony{}
 
 func init() {
-	f := BPagsum八松.(*八松PagsumBarony)
+    f := BPagsum八松.(*八松PagsumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pagsum",
 		TitleName: "八松",

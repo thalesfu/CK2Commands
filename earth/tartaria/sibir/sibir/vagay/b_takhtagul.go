@@ -11,7 +11,7 @@ type 塔赫塔古尔TakhtagulBarony struct {
 var BTakhtagul塔赫塔古尔 feud.Barony = &塔赫塔古尔TakhtagulBarony{}
 
 func init() {
-	f := BTakhtagul塔赫塔古尔.(*塔赫塔古尔TakhtagulBarony)
+    f := BTakhtagul塔赫塔古尔.(*塔赫塔古尔TakhtagulBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "takhtagul",
 		TitleName: "塔赫塔古尔",

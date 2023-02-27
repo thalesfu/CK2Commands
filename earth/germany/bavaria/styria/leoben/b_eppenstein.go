@@ -11,7 +11,7 @@ type 埃彭施泰因EppensteinBarony struct {
 var BEppenstein埃彭施泰因 feud.Barony = &埃彭施泰因EppensteinBarony{}
 
 func init() {
-	f := BEppenstein埃彭施泰因.(*埃彭施泰因EppensteinBarony)
+    f := BEppenstein埃彭施泰因.(*埃彭施泰因EppensteinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "eppenstein",
 		TitleName: "埃彭施泰因",

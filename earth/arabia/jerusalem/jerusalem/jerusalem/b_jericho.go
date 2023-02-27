@@ -11,7 +11,7 @@ type 杰里科JerichoBarony struct {
 var BJericho杰里科 feud.Barony = &杰里科JerichoBarony{}
 
 func init() {
-	f := BJericho杰里科.(*杰里科JerichoBarony)
+    f := BJericho杰里科.(*杰里科JerichoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jericho",
 		TitleName: "杰里科",

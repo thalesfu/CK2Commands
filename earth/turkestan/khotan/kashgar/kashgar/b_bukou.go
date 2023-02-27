@@ -11,7 +11,7 @@ type 埠口BukouBarony struct {
 var BBukou埠口 feud.Barony = &埠口BukouBarony{}
 
 func init() {
-	f := BBukou埠口.(*埠口BukouBarony)
+    f := BBukou埠口.(*埠口BukouBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bukou",
 		TitleName: "埠口",

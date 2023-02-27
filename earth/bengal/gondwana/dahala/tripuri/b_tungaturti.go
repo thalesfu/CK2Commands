@@ -11,7 +11,7 @@ type 东伽咄帝TungaturtiBarony struct {
 var BTungaturti东伽咄帝 feud.Barony = &东伽咄帝TungaturtiBarony{}
 
 func init() {
-	f := BTungaturti东伽咄帝.(*东伽咄帝TungaturtiBarony)
+    f := BTungaturti东伽咄帝.(*东伽咄帝TungaturtiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tungaturti",
 		TitleName: "东伽咄帝",

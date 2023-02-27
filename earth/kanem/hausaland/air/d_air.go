@@ -7,25 +7,25 @@ import (
 )
 
 type AirDuke interface {
-	feud.Duke
-	CAir艾尔() air.AirCounty
-	CFachi法希() fachi.FachiCounty
+    feud.Duke
+    CAir艾尔() 	air.AirCounty
+    CFachi法希() 	fachi.FachiCounty
 }
 
 type 艾尔AirDuke struct {
 	feud.BaseDuke
-	艾尔Air   air.AirCounty
-	法希Fachi fachi.FachiCounty
+	艾尔Air 	air.AirCounty
+	法希Fachi 	fachi.FachiCounty
 }
 
 func (d *艾尔AirDuke) CAir艾尔() air.AirCounty {
 	return d.艾尔Air
 }
-
+    
 func (d *艾尔AirDuke) CFachi法希() fachi.FachiCounty {
 	return d.法希Fachi
 }
-
+    
 var DAir艾尔 AirDuke = &艾尔AirDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.艾尔Air = air.CAir艾尔
 	f.艾尔Air.SetParent(f)
-
+	
 	f.法希Fachi = fachi.CFachi法希
 	f.法希Fachi.SetParent(f)
-
+	
 }

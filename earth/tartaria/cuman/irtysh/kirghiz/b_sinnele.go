@@ -11,7 +11,7 @@ type 辛涅列SinneleBarony struct {
 var BSinnele辛涅列 feud.Barony = &辛涅列SinneleBarony{}
 
 func init() {
-	f := BSinnele辛涅列.(*辛涅列SinneleBarony)
+    f := BSinnele辛涅列.(*辛涅列SinneleBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sinnele",
 		TitleName: "辛涅列",

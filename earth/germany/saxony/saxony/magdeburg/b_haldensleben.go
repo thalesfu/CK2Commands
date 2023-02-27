@@ -11,7 +11,7 @@ type 哈尔登斯莱本HaldenslebenBarony struct {
 var BHaldensleben哈尔登斯莱本 feud.Barony = &哈尔登斯莱本HaldenslebenBarony{}
 
 func init() {
-	f := BHaldensleben哈尔登斯莱本.(*哈尔登斯莱本HaldenslebenBarony)
+    f := BHaldensleben哈尔登斯莱本.(*哈尔登斯莱本HaldenslebenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "haldensleben",
 		TitleName: "哈尔登斯莱本",

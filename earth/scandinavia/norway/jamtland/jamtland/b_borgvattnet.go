@@ -11,7 +11,7 @@ type 博里瓦特讷BorgvattnetBarony struct {
 var BBorgvattnet博里瓦特讷 feud.Barony = &博里瓦特讷BorgvattnetBarony{}
 
 func init() {
-	f := BBorgvattnet博里瓦特讷.(*博里瓦特讷BorgvattnetBarony)
+    f := BBorgvattnet博里瓦特讷.(*博里瓦特讷BorgvattnetBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "borgvattnet",
 		TitleName: "博里瓦特讷",

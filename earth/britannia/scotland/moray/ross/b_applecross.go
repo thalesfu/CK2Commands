@@ -11,7 +11,7 @@ type 阿普尔克罗斯ApplecrossBarony struct {
 var BApplecross阿普尔克罗斯 feud.Barony = &阿普尔克罗斯ApplecrossBarony{}
 
 func init() {
-	f := BApplecross阿普尔克罗斯.(*阿普尔克罗斯ApplecrossBarony)
+    f := BApplecross阿普尔克罗斯.(*阿普尔克罗斯ApplecrossBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "applecross",
 		TitleName: "阿普尔克罗斯",

@@ -3,36 +3,43 @@ package herat
 import (
 	"github.com/thalesfu/CK2Commands/earth/persia/khorasan/herat/badghis"
 	"github.com/thalesfu/CK2Commands/earth/persia/khorasan/herat/herat"
+	"github.com/thalesfu/CK2Commands/earth/persia/khorasan/herat/kanj_rustaq"
 	"github.com/thalesfu/CK2Commands/earth/persia/khorasan/herat/mandesh"
 	"github.com/thalesfu/paradoxtools/CK2/feud"
 )
 
 type HeratDuke interface {
-	feud.Duke
-	CBadghis巴德吉斯() badghis.BadghisCounty
-	CHerat亦鲁() herat.HeratCounty
-	CMandesh曼德什() mandesh.MandeshCounty
+    feud.Duke
+    CBadghis巴德吉斯() 	badghis.BadghisCounty
+    CHerat亦鲁() 	herat.HeratCounty
+    CKanj_rustaq坎吉鲁斯塔克() 	kanj_rustaq.Kanj_rustaqCounty
+    CMandesh曼德什() 	mandesh.MandeshCounty
 }
 
 type 亦鲁HeratDuke struct {
 	feud.BaseDuke
-	巴德吉斯Badghis badghis.BadghisCounty
-	亦鲁Herat     herat.HeratCounty
-	曼德什Mandesh  mandesh.MandeshCounty
+	巴德吉斯Badghis 	badghis.BadghisCounty
+	亦鲁Herat 	herat.HeratCounty
+	坎吉鲁斯塔克Kanj_rustaq 	kanj_rustaq.Kanj_rustaqCounty
+	曼德什Mandesh 	mandesh.MandeshCounty
 }
 
 func (d *亦鲁HeratDuke) CBadghis巴德吉斯() badghis.BadghisCounty {
 	return d.巴德吉斯Badghis
 }
-
+    
 func (d *亦鲁HeratDuke) CHerat亦鲁() herat.HeratCounty {
 	return d.亦鲁Herat
 }
-
+    
+func (d *亦鲁HeratDuke) CKanj_rustaq坎吉鲁斯塔克() kanj_rustaq.Kanj_rustaqCounty {
+	return d.坎吉鲁斯塔克Kanj_rustaq
+}
+    
 func (d *亦鲁HeratDuke) CMandesh曼德什() mandesh.MandeshCounty {
 	return d.曼德什Mandesh
 }
-
+    
 var DHerat亦鲁 HeratDuke = &亦鲁HeratDuke{}
 
 func init() {
@@ -46,11 +53,14 @@ func init() {
 
 	f.巴德吉斯Badghis = badghis.CBadghis巴德吉斯
 	f.巴德吉斯Badghis.SetParent(f)
-
+	
 	f.亦鲁Herat = herat.CHerat亦鲁
 	f.亦鲁Herat.SetParent(f)
-
+	
+	f.坎吉鲁斯塔克Kanj_rustaq = kanj_rustaq.CKanj_rustaq坎吉鲁斯塔克
+	f.坎吉鲁斯塔克Kanj_rustaq.SetParent(f)
+	
 	f.曼德什Mandesh = mandesh.CMandesh曼德什
 	f.曼德什Mandesh.SetParent(f)
-
+	
 }

@@ -11,7 +11,7 @@ type 尼池NyingchiBarony struct {
 var BNyingchi尼池 feud.Barony = &尼池NyingchiBarony{}
 
 func init() {
-	f := BNyingchi尼池.(*尼池NyingchiBarony)
+    f := BNyingchi尼池.(*尼池NyingchiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nyingchi",
 		TitleName: "尼池",

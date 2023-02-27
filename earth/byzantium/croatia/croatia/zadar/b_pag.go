@@ -11,7 +11,7 @@ type 帕格PagBarony struct {
 var BPag帕格 feud.Barony = &帕格PagBarony{}
 
 func init() {
-	f := BPag帕格.(*帕格PagBarony)
+    f := BPag帕格.(*帕格PagBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pag",
 		TitleName: "帕格",

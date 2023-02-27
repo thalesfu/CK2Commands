@@ -11,7 +11,7 @@ type 斯提拉德维耶马德雷萨SittiradviyyemadrasaBarony struct {
 var BSittiradviyyemadrasa斯提拉德维耶马德雷萨 feud.Barony = &斯提拉德维耶马德雷萨SittiradviyyemadrasaBarony{}
 
 func init() {
-	f := BSittiradviyyemadrasa斯提拉德维耶马德雷萨.(*斯提拉德维耶马德雷萨SittiradviyyemadrasaBarony)
+    f := BSittiradviyyemadrasa斯提拉德维耶马德雷萨.(*斯提拉德维耶马德雷萨SittiradviyyemadrasaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sittiradviyyemadrasa",
 		TitleName: "斯提拉德维耶马德雷萨",

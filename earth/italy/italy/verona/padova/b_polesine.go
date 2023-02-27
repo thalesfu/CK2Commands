@@ -11,7 +11,7 @@ type 波莱西内PolesineBarony struct {
 var BPolesine波莱西内 feud.Barony = &波莱西内PolesineBarony{}
 
 func init() {
-	f := BPolesine波莱西内.(*波莱西内PolesineBarony)
+    f := BPolesine波莱西内.(*波莱西内PolesineBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "polesine",
 		TitleName: "波莱西内",

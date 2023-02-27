@@ -11,7 +11,7 @@ type 奥莱梯古斯AulaeitichusBarony struct {
 var BAulaeitichus奥莱梯古斯 feud.Barony = &奥莱梯古斯AulaeitichusBarony{}
 
 func init() {
-	f := BAulaeitichus奥莱梯古斯.(*奥莱梯古斯AulaeitichusBarony)
+    f := BAulaeitichus奥莱梯古斯.(*奥莱梯古斯AulaeitichusBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "aulaeitichus",
 		TitleName: "奥莱梯古斯",

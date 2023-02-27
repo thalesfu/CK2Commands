@@ -11,7 +11,7 @@ type 奥博利ObolBarony struct {
 var BObol奥博利 feud.Barony = &奥博利ObolBarony{}
 
 func init() {
-	f := BObol奥博利.(*奥博利ObolBarony)
+    f := BObol奥博利.(*奥博利ObolBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "obol",
 		TitleName: "奥博利",

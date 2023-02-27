@@ -11,7 +11,7 @@ type 列奇察RechytsaBarony struct {
 var BRechytsa列奇察 feud.Barony = &列奇察RechytsaBarony{}
 
 func init() {
-	f := BRechytsa列奇察.(*列奇察RechytsaBarony)
+    f := BRechytsa列奇察.(*列奇察RechytsaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rechytsa",
 		TitleName: "列奇察",

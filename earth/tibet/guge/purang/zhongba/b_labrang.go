@@ -11,7 +11,7 @@ type 拉让LabrangBarony struct {
 var BLabrang拉让 feud.Barony = &拉让LabrangBarony{}
 
 func init() {
-	f := BLabrang拉让.(*拉让LabrangBarony)
+    f := BLabrang拉让.(*拉让LabrangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "labrang",
 		TitleName: "拉让",

@@ -11,7 +11,7 @@ type 圣宁法SantaninfaBarony struct {
 var BSantaninfa圣宁法 feud.Barony = &圣宁法SantaninfaBarony{}
 
 func init() {
-	f := BSantaninfa圣宁法.(*圣宁法SantaninfaBarony)
+    f := BSantaninfa圣宁法.(*圣宁法SantaninfaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "santaninfa",
 		TitleName: "圣宁法",

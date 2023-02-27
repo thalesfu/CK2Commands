@@ -11,7 +11,7 @@ type 雷丁ReadingBarony struct {
 var BReading雷丁 feud.Barony = &雷丁ReadingBarony{}
 
 func init() {
-	f := BReading雷丁.(*雷丁ReadingBarony)
+    f := BReading雷丁.(*雷丁ReadingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "reading",
 		TitleName: "雷丁",

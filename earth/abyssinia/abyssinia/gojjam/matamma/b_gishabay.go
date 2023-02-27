@@ -11,7 +11,7 @@ type 吉什阿拜GishabayBarony struct {
 var BGishabay吉什阿拜 feud.Barony = &吉什阿拜GishabayBarony{}
 
 func init() {
-	f := BGishabay吉什阿拜.(*吉什阿拜GishabayBarony)
+    f := BGishabay吉什阿拜.(*吉什阿拜GishabayBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gishabay",
 		TitleName: "吉什阿拜",

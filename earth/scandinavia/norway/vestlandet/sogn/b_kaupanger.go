@@ -11,7 +11,7 @@ type 凯于庞厄尔KaupangerBarony struct {
 var BKaupanger凯于庞厄尔 feud.Barony = &凯于庞厄尔KaupangerBarony{}
 
 func init() {
-	f := BKaupanger凯于庞厄尔.(*凯于庞厄尔KaupangerBarony)
+    f := BKaupanger凯于庞厄尔.(*凯于庞厄尔KaupangerBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kaupanger",
 		TitleName: "凯于庞厄尔",

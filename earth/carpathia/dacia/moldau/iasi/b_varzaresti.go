@@ -11,7 +11,7 @@ type 沃尔泽雷什蒂VarzarestiBarony struct {
 var BVarzaresti沃尔泽雷什蒂 feud.Barony = &沃尔泽雷什蒂VarzarestiBarony{}
 
 func init() {
-	f := BVarzaresti沃尔泽雷什蒂.(*沃尔泽雷什蒂VarzarestiBarony)
+    f := BVarzaresti沃尔泽雷什蒂.(*沃尔泽雷什蒂VarzarestiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "varzaresti",
 		TitleName: "沃尔泽雷什蒂",

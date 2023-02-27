@@ -11,7 +11,7 @@ type 喷赤PanjBarony struct {
 var BPanj喷赤 feud.Barony = &喷赤PanjBarony{}
 
 func init() {
-	f := BPanj喷赤.(*喷赤PanjBarony)
+    f := BPanj喷赤.(*喷赤PanjBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "panj",
 		TitleName: "喷赤",

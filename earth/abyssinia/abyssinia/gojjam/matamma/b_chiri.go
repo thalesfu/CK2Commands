@@ -11,7 +11,7 @@ type 奇利基ChiriBarony struct {
 var BChiri奇利基 feud.Barony = &奇利基ChiriBarony{}
 
 func init() {
-	f := BChiri奇利基.(*奇利基ChiriBarony)
+    f := BChiri奇利基.(*奇利基ChiriBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chiri",
 		TitleName: "奇利基",

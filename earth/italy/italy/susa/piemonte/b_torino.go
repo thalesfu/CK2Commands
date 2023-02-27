@@ -11,7 +11,7 @@ type 都灵TorinoBarony struct {
 var BTorino都灵 feud.Barony = &都灵TorinoBarony{}
 
 func init() {
-	f := BTorino都灵.(*都灵TorinoBarony)
+    f := BTorino都灵.(*都灵TorinoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "torino",
 		TitleName: "都灵",

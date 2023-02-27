@@ -11,7 +11,7 @@ type 代莱克DailekhBarony struct {
 var BDailekh代莱克 feud.Barony = &代莱克DailekhBarony{}
 
 func init() {
-	f := BDailekh代莱克.(*代莱克DailekhBarony)
+    f := BDailekh代莱克.(*代莱克DailekhBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dailekh",
 		TitleName: "代莱克",

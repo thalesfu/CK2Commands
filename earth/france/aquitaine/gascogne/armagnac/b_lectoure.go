@@ -11,7 +11,7 @@ type 莱克图尔LectoureBarony struct {
 var BLectoure莱克图尔 feud.Barony = &莱克图尔LectoureBarony{}
 
 func init() {
-	f := BLectoure莱克图尔.(*莱克图尔LectoureBarony)
+    f := BLectoure莱克图尔.(*莱克图尔LectoureBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lectoure",
 		TitleName: "莱克图尔",

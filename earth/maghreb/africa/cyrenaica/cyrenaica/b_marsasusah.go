@@ -11,7 +11,7 @@ type 苏塞港MarsasusahBarony struct {
 var BMarsasusah苏塞港 feud.Barony = &苏塞港MarsasusahBarony{}
 
 func init() {
-	f := BMarsasusah苏塞港.(*苏塞港MarsasusahBarony)
+    f := BMarsasusah苏塞港.(*苏塞港MarsasusahBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "marsasusah",
 		TitleName: "苏塞港",

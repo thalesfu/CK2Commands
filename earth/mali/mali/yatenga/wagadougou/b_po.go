@@ -11,7 +11,7 @@ type 波PoBarony struct {
 var BPo波 feud.Barony = &波PoBarony{}
 
 func init() {
-	f := BPo波.(*波PoBarony)
+    f := BPo波.(*波PoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "po",
 		TitleName: "波",

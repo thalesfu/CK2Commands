@@ -11,7 +11,7 @@ type 辛特拉SintraBarony struct {
 var BSintra辛特拉 feud.Barony = &辛特拉SintraBarony{}
 
 func init() {
-	f := BSintra辛特拉.(*辛特拉SintraBarony)
+    f := BSintra辛特拉.(*辛特拉SintraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sintra",
 		TitleName: "辛特拉",

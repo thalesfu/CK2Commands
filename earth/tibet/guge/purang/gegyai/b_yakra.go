@@ -11,7 +11,7 @@ type 亚热YakraBarony struct {
 var BYakra亚热 feud.Barony = &亚热YakraBarony{}
 
 func init() {
-	f := BYakra亚热.(*亚热YakraBarony)
+    f := BYakra亚热.(*亚热YakraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yakra",
 		TitleName: "亚热",

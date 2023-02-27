@@ -11,7 +11,7 @@ type 沙托劳尔尧乌伊海伊SatoraljaujhelyBarony struct {
 var BSatoraljaujhely沙托劳尔尧乌伊海伊 feud.Barony = &沙托劳尔尧乌伊海伊SatoraljaujhelyBarony{}
 
 func init() {
-	f := BSatoraljaujhely沙托劳尔尧乌伊海伊.(*沙托劳尔尧乌伊海伊SatoraljaujhelyBarony)
+    f := BSatoraljaujhely沙托劳尔尧乌伊海伊.(*沙托劳尔尧乌伊海伊SatoraljaujhelyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "satoraljaujhely",
 		TitleName: "沙托劳尔尧乌伊海伊",

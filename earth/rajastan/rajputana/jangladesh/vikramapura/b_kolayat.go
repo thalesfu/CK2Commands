@@ -11,7 +11,7 @@ type 拘罗耶多KolayatBarony struct {
 var BKolayat拘罗耶多 feud.Barony = &拘罗耶多KolayatBarony{}
 
 func init() {
-	f := BKolayat拘罗耶多.(*拘罗耶多KolayatBarony)
+    f := BKolayat拘罗耶多.(*拘罗耶多KolayatBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kolayat",
 		TitleName: "拘罗耶多",

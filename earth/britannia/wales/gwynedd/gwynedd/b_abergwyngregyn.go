@@ -11,7 +11,7 @@ type 阿伯古因格雷金AbergwyngregynBarony struct {
 var BAbergwyngregyn阿伯古因格雷金 feud.Barony = &阿伯古因格雷金AbergwyngregynBarony{}
 
 func init() {
-	f := BAbergwyngregyn阿伯古因格雷金.(*阿伯古因格雷金AbergwyngregynBarony)
+    f := BAbergwyngregyn阿伯古因格雷金.(*阿伯古因格雷金AbergwyngregynBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "abergwyngregyn",
 		TitleName: "阿伯古因格雷金",

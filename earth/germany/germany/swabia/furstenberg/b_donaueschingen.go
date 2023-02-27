@@ -11,7 +11,7 @@ type 多瑙埃兴根DonaueschingenBarony struct {
 var BDonaueschingen多瑙埃兴根 feud.Barony = &多瑙埃兴根DonaueschingenBarony{}
 
 func init() {
-	f := BDonaueschingen多瑙埃兴根.(*多瑙埃兴根DonaueschingenBarony)
+    f := BDonaueschingen多瑙埃兴根.(*多瑙埃兴根DonaueschingenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "donaueschingen",
 		TitleName: "多瑙埃兴根",

@@ -11,7 +11,7 @@ type 莫德里查ModricaBarony struct {
 var BModrica莫德里查 feud.Barony = &莫德里查ModricaBarony{}
 
 func init() {
-	f := BModrica莫德里查.(*莫德里查ModricaBarony)
+    f := BModrica莫德里查.(*莫德里查ModricaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "modrica",
 		TitleName: "莫德里查",

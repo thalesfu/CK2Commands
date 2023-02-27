@@ -11,7 +11,7 @@ type 虎穴TaktshangBarony struct {
 var BTaktshang虎穴 feud.Barony = &虎穴TaktshangBarony{}
 
 func init() {
-	f := BTaktshang虎穴.(*虎穴TaktshangBarony)
+    f := BTaktshang虎穴.(*虎穴TaktshangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "taktshang",
 		TitleName: "虎穴",

@@ -11,7 +11,7 @@ type 罗马RomaBarony struct {
 var BRoma罗马 feud.Barony = &罗马RomaBarony{}
 
 func init() {
-	f := BRoma罗马.(*罗马RomaBarony)
+    f := BRoma罗马.(*罗马RomaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "roma",
 		TitleName: "罗马",

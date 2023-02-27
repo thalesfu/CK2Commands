@@ -11,7 +11,7 @@ type 八邦PalpungBarony struct {
 var BPalpung八邦 feud.Barony = &八邦PalpungBarony{}
 
 func init() {
-	f := BPalpung八邦.(*八邦PalpungBarony)
+    f := BPalpung八邦.(*八邦PalpungBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "palpung",
 		TitleName: "八邦",

@@ -11,7 +11,7 @@ type 凯特林KetteringBarony struct {
 var BKettering凯特林 feud.Barony = &凯特林KetteringBarony{}
 
 func init() {
-	f := BKettering凯特林.(*凯特林KetteringBarony)
+    f := BKettering凯特林.(*凯特林KetteringBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kettering",
 		TitleName: "凯特林",

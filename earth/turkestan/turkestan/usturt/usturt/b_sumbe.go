@@ -11,7 +11,7 @@ type 孙别SumbeBarony struct {
 var BSumbe孙别 feud.Barony = &孙别SumbeBarony{}
 
 func init() {
-	f := BSumbe孙别.(*孙别SumbeBarony)
+    f := BSumbe孙别.(*孙别SumbeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sumbe",
 		TitleName: "孙别",

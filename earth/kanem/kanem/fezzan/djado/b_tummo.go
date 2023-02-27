@@ -11,7 +11,7 @@ type 图莫TummoBarony struct {
 var BTummo图莫 feud.Barony = &图莫TummoBarony{}
 
 func init() {
-	f := BTummo图莫.(*图莫TummoBarony)
+    f := BTummo图莫.(*图莫TummoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tummo",
 		TitleName: "图莫",

@@ -11,7 +11,7 @@ type 吐峪沟ToyuqBarony struct {
 var BToyuq吐峪沟 feud.Barony = &吐峪沟ToyuqBarony{}
 
 func init() {
-	f := BToyuq吐峪沟.(*吐峪沟ToyuqBarony)
+    f := BToyuq吐峪沟.(*吐峪沟ToyuqBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "toyuq",
 		TitleName: "吐峪沟",

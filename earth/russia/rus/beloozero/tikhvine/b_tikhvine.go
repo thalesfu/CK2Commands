@@ -11,7 +11,7 @@ type 季赫温TikhvineBarony struct {
 var BTikhvine季赫温 feud.Barony = &季赫温TikhvineBarony{}
 
 func init() {
-	f := BTikhvine季赫温.(*季赫温TikhvineBarony)
+    f := BTikhvine季赫温.(*季赫温TikhvineBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tikhvine",
 		TitleName: "季赫温",

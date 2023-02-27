@@ -11,7 +11,7 @@ type 雷焦ReggioBarony struct {
 var BReggio雷焦 feud.Barony = &雷焦ReggioBarony{}
 
 func init() {
-	f := BReggio雷焦.(*雷焦ReggioBarony)
+    f := BReggio雷焦.(*雷焦ReggioBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "reggio",
 		TitleName: "雷焦",

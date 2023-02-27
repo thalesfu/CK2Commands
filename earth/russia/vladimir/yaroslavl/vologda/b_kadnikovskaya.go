@@ -11,7 +11,7 @@ type 卡德尼科夫斯卡亚KadnikovskayaBarony struct {
 var BKadnikovskaya卡德尼科夫斯卡亚 feud.Barony = &卡德尼科夫斯卡亚KadnikovskayaBarony{}
 
 func init() {
-	f := BKadnikovskaya卡德尼科夫斯卡亚.(*卡德尼科夫斯卡亚KadnikovskayaBarony)
+    f := BKadnikovskaya卡德尼科夫斯卡亚.(*卡德尼科夫斯卡亚KadnikovskayaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kadnikovskaya",
 		TitleName: "卡德尼科夫斯卡亚",

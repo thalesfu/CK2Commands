@@ -11,7 +11,7 @@ type 厄斯克门OskemenBarony struct {
 var BOskemen厄斯克门 feud.Barony = &厄斯克门OskemenBarony{}
 
 func init() {
-	f := BOskemen厄斯克门.(*厄斯克门OskemenBarony)
+    f := BOskemen厄斯克门.(*厄斯克门OskemenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "oskemen",
 		TitleName: "厄斯克门",

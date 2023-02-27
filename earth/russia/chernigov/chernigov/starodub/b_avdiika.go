@@ -11,7 +11,7 @@ type 阿夫迪夫卡AvdiikaBarony struct {
 var BAvdiika阿夫迪夫卡 feud.Barony = &阿夫迪夫卡AvdiikaBarony{}
 
 func init() {
-	f := BAvdiika阿夫迪夫卡.(*阿夫迪夫卡AvdiikaBarony)
+    f := BAvdiika阿夫迪夫卡.(*阿夫迪夫卡AvdiikaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "avdiika",
 		TitleName: "阿夫迪夫卡",

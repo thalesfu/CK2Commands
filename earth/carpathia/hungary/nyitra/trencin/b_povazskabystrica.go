@@ -11,7 +11,7 @@ type 瓦赫河畔比斯特里察PovazskabystricaBarony struct {
 var BPovazskabystrica瓦赫河畔比斯特里察 feud.Barony = &瓦赫河畔比斯特里察PovazskabystricaBarony{}
 
 func init() {
-	f := BPovazskabystrica瓦赫河畔比斯特里察.(*瓦赫河畔比斯特里察PovazskabystricaBarony)
+    f := BPovazskabystrica瓦赫河畔比斯特里察.(*瓦赫河畔比斯特里察PovazskabystricaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "povazskabystrica",
 		TitleName: "瓦赫河畔比斯特里察",

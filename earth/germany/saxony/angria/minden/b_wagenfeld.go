@@ -11,7 +11,7 @@ type 瓦根费尔德WagenfeldBarony struct {
 var BWagenfeld瓦根费尔德 feud.Barony = &瓦根费尔德WagenfeldBarony{}
 
 func init() {
-	f := BWagenfeld瓦根费尔德.(*瓦根费尔德WagenfeldBarony)
+    f := BWagenfeld瓦根费尔德.(*瓦根费尔德WagenfeldBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wagenfeld",
 		TitleName: "瓦根费尔德",

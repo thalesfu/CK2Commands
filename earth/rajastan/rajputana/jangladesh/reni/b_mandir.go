@@ -11,7 +11,7 @@ type 寺庙MandirBarony struct {
 var BMandir寺庙 feud.Barony = &寺庙MandirBarony{}
 
 func init() {
-	f := BMandir寺庙.(*寺庙MandirBarony)
+    f := BMandir寺庙.(*寺庙MandirBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mandir",
 		TitleName: "寺庙",

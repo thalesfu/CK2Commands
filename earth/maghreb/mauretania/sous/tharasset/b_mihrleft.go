@@ -11,7 +11,7 @@ type 米勒福特MihrleftBarony struct {
 var BMihrleft米勒福特 feud.Barony = &米勒福特MihrleftBarony{}
 
 func init() {
-	f := BMihrleft米勒福特.(*米勒福特MihrleftBarony)
+    f := BMihrleft米勒福特.(*米勒福特MihrleftBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mihrleft",
 		TitleName: "米勒福特",

@@ -11,7 +11,7 @@ type 皮亚琴察PiacenzaBarony struct {
 var BPiacenza皮亚琴察 feud.Barony = &皮亚琴察PiacenzaBarony{}
 
 func init() {
-	f := BPiacenza皮亚琴察.(*皮亚琴察PiacenzaBarony)
+    f := BPiacenza皮亚琴察.(*皮亚琴察PiacenzaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "piacenza",
 		TitleName: "皮亚琴察",

@@ -11,7 +11,7 @@ type 伐迦利VaghliBarony struct {
 var BVaghli伐迦利 feud.Barony = &伐迦利VaghliBarony{}
 
 func init() {
-	f := BVaghli伐迦利.(*伐迦利VaghliBarony)
+    f := BVaghli伐迦利.(*伐迦利VaghliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vaghli",
 		TitleName: "伐迦利",

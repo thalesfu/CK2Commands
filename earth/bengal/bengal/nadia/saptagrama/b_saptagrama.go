@@ -11,7 +11,7 @@ type 七村SaptagramaBarony struct {
 var BSaptagrama七村 feud.Barony = &七村SaptagramaBarony{}
 
 func init() {
-	f := BSaptagrama七村.(*七村SaptagramaBarony)
+    f := BSaptagrama七村.(*七村SaptagramaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "saptagrama",
 		TitleName: "七村",

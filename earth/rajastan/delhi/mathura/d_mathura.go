@@ -8,31 +8,31 @@ import (
 )
 
 type MathuraDuke interface {
-	feud.Duke
-	CKol拘罗() kol.KolCounty
-	CMathura秣菟罗() mathura.MathuraCounty
-	CSripatha室利波他() sripatha.SripathaCounty
+    feud.Duke
+    CKol拘罗() 	kol.KolCounty
+    CMathura秣菟罗() 	mathura.MathuraCounty
+    CSripatha室利波他() 	sripatha.SripathaCounty
 }
 
 type 秣菟罗MathuraDuke struct {
 	feud.BaseDuke
-	拘罗Kol        kol.KolCounty
-	秣菟罗Mathura   mathura.MathuraCounty
-	室利波他Sripatha sripatha.SripathaCounty
+	拘罗Kol 	kol.KolCounty
+	秣菟罗Mathura 	mathura.MathuraCounty
+	室利波他Sripatha 	sripatha.SripathaCounty
 }
 
 func (d *秣菟罗MathuraDuke) CKol拘罗() kol.KolCounty {
 	return d.拘罗Kol
 }
-
+    
 func (d *秣菟罗MathuraDuke) CMathura秣菟罗() mathura.MathuraCounty {
 	return d.秣菟罗Mathura
 }
-
+    
 func (d *秣菟罗MathuraDuke) CSripatha室利波他() sripatha.SripathaCounty {
 	return d.室利波他Sripatha
 }
-
+    
 var DMathura秣菟罗 MathuraDuke = &秣菟罗MathuraDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.拘罗Kol = kol.CKol拘罗
 	f.拘罗Kol.SetParent(f)
-
+	
 	f.秣菟罗Mathura = mathura.CMathura秣菟罗
 	f.秣菟罗Mathura.SetParent(f)
-
+	
 	f.室利波他Sripatha = sripatha.CSripatha室利波他
 	f.室利波他Sripatha.SetParent(f)
-
+	
 }

@@ -11,7 +11,7 @@ type 韦图罗尼亚VetuloniaBarony struct {
 var BVetulonia韦图罗尼亚 feud.Barony = &韦图罗尼亚VetuloniaBarony{}
 
 func init() {
-	f := BVetulonia韦图罗尼亚.(*韦图罗尼亚VetuloniaBarony)
+    f := BVetulonia韦图罗尼亚.(*韦图罗尼亚VetuloniaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vetulonia",
 		TitleName: "韦图罗尼亚",

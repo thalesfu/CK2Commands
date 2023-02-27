@@ -11,7 +11,7 @@ type 温泉WenquanBarony struct {
 var BWenquan温泉 feud.Barony = &温泉WenquanBarony{}
 
 func init() {
-	f := BWenquan温泉.(*温泉WenquanBarony)
+    f := BWenquan温泉.(*温泉WenquanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wenquan",
 		TitleName: "温泉",

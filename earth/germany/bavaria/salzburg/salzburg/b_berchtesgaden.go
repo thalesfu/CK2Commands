@@ -11,7 +11,7 @@ type 贝希特斯加登BerchtesgadenBarony struct {
 var BBerchtesgaden贝希特斯加登 feud.Barony = &贝希特斯加登BerchtesgadenBarony{}
 
 func init() {
-	f := BBerchtesgaden贝希特斯加登.(*贝希特斯加登BerchtesgadenBarony)
+    f := BBerchtesgaden贝希特斯加登.(*贝希特斯加登BerchtesgadenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "berchtesgaden",
 		TitleName: "贝希特斯加登",

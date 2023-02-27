@@ -11,7 +11,7 @@ type 佩琴加PechengaBarony struct {
 var BPechenga佩琴加 feud.Barony = &佩琴加PechengaBarony{}
 
 func init() {
-	f := BPechenga佩琴加.(*佩琴加PechengaBarony)
+    f := BPechenga佩琴加.(*佩琴加PechengaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pechenga",
 		TitleName: "佩琴加",

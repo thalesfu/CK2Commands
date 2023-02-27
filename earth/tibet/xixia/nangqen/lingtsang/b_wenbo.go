@@ -11,7 +11,7 @@ type 温波WenboBarony struct {
 var BWenbo温波 feud.Barony = &温波WenboBarony{}
 
 func init() {
-	f := BWenbo温波.(*温波WenboBarony)
+    f := BWenbo温波.(*温波WenboBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wenbo",
 		TitleName: "温波",

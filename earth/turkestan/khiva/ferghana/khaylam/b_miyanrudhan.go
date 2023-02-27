@@ -11,7 +11,7 @@ type 米岩鲁汉MiyanrudhanBarony struct {
 var BMiyanrudhan米岩鲁汉 feud.Barony = &米岩鲁汉MiyanrudhanBarony{}
 
 func init() {
-	f := BMiyanrudhan米岩鲁汉.(*米岩鲁汉MiyanrudhanBarony)
+    f := BMiyanrudhan米岩鲁汉.(*米岩鲁汉MiyanrudhanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "miyanrudhan",
 		TitleName: "米岩鲁汉",

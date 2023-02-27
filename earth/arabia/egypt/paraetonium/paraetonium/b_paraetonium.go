@@ -11,7 +11,7 @@ type 帕莱托尼翁ParaetoniumBarony struct {
 var BParaetonium帕莱托尼翁 feud.Barony = &帕莱托尼翁ParaetoniumBarony{}
 
 func init() {
-	f := BParaetonium帕莱托尼翁.(*帕莱托尼翁ParaetoniumBarony)
+    f := BParaetonium帕莱托尼翁.(*帕莱托尼翁ParaetoniumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "paraetonium",
 		TitleName: "帕莱托尼翁",

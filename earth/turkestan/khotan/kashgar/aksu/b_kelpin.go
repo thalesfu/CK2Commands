@@ -11,7 +11,7 @@ type 柯坪KelpinBarony struct {
 var BKelpin柯坪 feud.Barony = &柯坪KelpinBarony{}
 
 func init() {
-	f := BKelpin柯坪.(*柯坪KelpinBarony)
+    f := BKelpin柯坪.(*柯坪KelpinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kelpin",
 		TitleName: "柯坪",

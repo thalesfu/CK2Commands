@@ -11,7 +11,7 @@ type 拉亚德加姆RayadurgamBarony struct {
 var BRayadurgam拉亚德加姆 feud.Barony = &拉亚德加姆RayadurgamBarony{}
 
 func init() {
-	f := BRayadurgam拉亚德加姆.(*拉亚德加姆RayadurgamBarony)
+    f := BRayadurgam拉亚德加姆.(*拉亚德加姆RayadurgamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rayadurgam",
 		TitleName: "拉亚德加姆",

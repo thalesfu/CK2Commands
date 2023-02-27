@@ -11,7 +11,7 @@ type 巴拉尼夫卡BaranivkaBarony struct {
 var BBaranivka巴拉尼夫卡 feud.Barony = &巴拉尼夫卡BaranivkaBarony{}
 
 func init() {
-	f := BBaranivka巴拉尼夫卡.(*巴拉尼夫卡BaranivkaBarony)
+    f := BBaranivka巴拉尼夫卡.(*巴拉尼夫卡BaranivkaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "baranivka",
 		TitleName: "巴拉尼夫卡",

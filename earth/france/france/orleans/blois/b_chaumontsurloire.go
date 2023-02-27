@@ -11,7 +11,7 @@ type 卢瓦尔河畔肖蒙ChaumontsurloireBarony struct {
 var BChaumontsurloire卢瓦尔河畔肖蒙 feud.Barony = &卢瓦尔河畔肖蒙ChaumontsurloireBarony{}
 
 func init() {
-	f := BChaumontsurloire卢瓦尔河畔肖蒙.(*卢瓦尔河畔肖蒙ChaumontsurloireBarony)
+    f := BChaumontsurloire卢瓦尔河畔肖蒙.(*卢瓦尔河畔肖蒙ChaumontsurloireBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chaumontsurloire",
 		TitleName: "卢瓦尔河畔肖蒙",

@@ -11,7 +11,7 @@ type 纳克斯考NacascoghBarony struct {
 var BNacascogh纳克斯考 feud.Barony = &纳克斯考NacascoghBarony{}
 
 func init() {
-	f := BNacascogh纳克斯考.(*纳克斯考NacascoghBarony)
+    f := BNacascogh纳克斯考.(*纳克斯考NacascoghBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nacascogh",
 		TitleName: "纳克斯考",

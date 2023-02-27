@@ -11,7 +11,7 @@ type 伊吉利兹IgillizBarony struct {
 var BIgilliz伊吉利兹 feud.Barony = &伊吉利兹IgillizBarony{}
 
 func init() {
-	f := BIgilliz伊吉利兹.(*伊吉利兹IgillizBarony)
+    f := BIgilliz伊吉利兹.(*伊吉利兹IgillizBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "igilliz",
 		TitleName: "伊吉利兹",

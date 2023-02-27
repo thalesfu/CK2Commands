@@ -11,7 +11,7 @@ type 格雷南GrennanBarony struct {
 var BGrennan格雷南 feud.Barony = &格雷南GrennanBarony{}
 
 func init() {
-	f := BGrennan格雷南.(*格雷南GrennanBarony)
+    f := BGrennan格雷南.(*格雷南GrennanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "grennan",
 		TitleName: "格雷南",

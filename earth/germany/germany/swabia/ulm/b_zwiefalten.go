@@ -11,7 +11,7 @@ type 茨维法尔滕ZwiefaltenBarony struct {
 var BZwiefalten茨维法尔滕 feud.Barony = &茨维法尔滕ZwiefaltenBarony{}
 
 func init() {
-	f := BZwiefalten茨维法尔滕.(*茨维法尔滕ZwiefaltenBarony)
+    f := BZwiefalten茨维法尔滕.(*茨维法尔滕ZwiefaltenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zwiefalten",
 		TitleName: "茨维法尔滕",

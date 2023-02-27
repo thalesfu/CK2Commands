@@ -11,7 +11,7 @@ type 盖古GeguBarony struct {
 var BGegu盖古 feud.Barony = &盖古GeguBarony{}
 
 func init() {
-	f := BGegu盖古.(*盖古GeguBarony)
+    f := BGegu盖古.(*盖古GeguBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gegu",
 		TitleName: "盖古",

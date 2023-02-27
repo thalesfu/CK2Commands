@@ -11,7 +11,7 @@ type 纳瓦吉奥NavagioBarony struct {
 var BNavagio纳瓦吉奥 feud.Barony = &纳瓦吉奥NavagioBarony{}
 
 func init() {
-	f := BNavagio纳瓦吉奥.(*纳瓦吉奥NavagioBarony)
+    f := BNavagio纳瓦吉奥.(*纳瓦吉奥NavagioBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "navagio",
 		TitleName: "纳瓦吉奥",

@@ -8,31 +8,31 @@ import (
 )
 
 type FezzanDuke interface {
-	feud.Duke
-	CDjado贾多() djado.DjadoCounty
-	CMurzuk迈尔祖格() murzuk.MurzukCounty
-	CZawila宰维莱() zawila.ZawilaCounty
+    feud.Duke
+    CDjado贾多() 	djado.DjadoCounty
+    CMurzuk迈尔祖格() 	murzuk.MurzukCounty
+    CZawila宰维莱() 	zawila.ZawilaCounty
 }
 
 type 费赞FezzanDuke struct {
 	feud.BaseDuke
-	贾多Djado    djado.DjadoCounty
-	迈尔祖格Murzuk murzuk.MurzukCounty
-	宰维莱Zawila  zawila.ZawilaCounty
+	贾多Djado 	djado.DjadoCounty
+	迈尔祖格Murzuk 	murzuk.MurzukCounty
+	宰维莱Zawila 	zawila.ZawilaCounty
 }
 
 func (d *费赞FezzanDuke) CDjado贾多() djado.DjadoCounty {
 	return d.贾多Djado
 }
-
+    
 func (d *费赞FezzanDuke) CMurzuk迈尔祖格() murzuk.MurzukCounty {
 	return d.迈尔祖格Murzuk
 }
-
+    
 func (d *费赞FezzanDuke) CZawila宰维莱() zawila.ZawilaCounty {
 	return d.宰维莱Zawila
 }
-
+    
 var DFezzan费赞 FezzanDuke = &费赞FezzanDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.贾多Djado = djado.CDjado贾多
 	f.贾多Djado.SetParent(f)
-
+	
 	f.迈尔祖格Murzuk = murzuk.CMurzuk迈尔祖格
 	f.迈尔祖格Murzuk.SetParent(f)
-
+	
 	f.宰维莱Zawila = zawila.CZawila宰维莱
 	f.宰维莱Zawila.SetParent(f)
-
+	
 }

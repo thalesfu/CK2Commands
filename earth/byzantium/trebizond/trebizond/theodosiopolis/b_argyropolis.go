@@ -11,7 +11,7 @@ type 安古洛波利斯ArgyropolisBarony struct {
 var BArgyropolis安古洛波利斯 feud.Barony = &安古洛波利斯ArgyropolisBarony{}
 
 func init() {
-	f := BArgyropolis安古洛波利斯.(*安古洛波利斯ArgyropolisBarony)
+    f := BArgyropolis安古洛波利斯.(*安古洛波利斯ArgyropolisBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "argyropolis",
 		TitleName: "安古洛波利斯",

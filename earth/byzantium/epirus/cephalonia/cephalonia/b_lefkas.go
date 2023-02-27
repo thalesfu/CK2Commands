@@ -11,7 +11,7 @@ type 莱夫卡斯LefkasBarony struct {
 var BLefkas莱夫卡斯 feud.Barony = &莱夫卡斯LefkasBarony{}
 
 func init() {
-	f := BLefkas莱夫卡斯.(*莱夫卡斯LefkasBarony)
+    f := BLefkas莱夫卡斯.(*莱夫卡斯LefkasBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lefkas",
 		TitleName: "莱夫卡斯",

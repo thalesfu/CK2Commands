@@ -11,7 +11,7 @@ type 媲摩PimoBarony struct {
 var BPimo媲摩 feud.Barony = &媲摩PimoBarony{}
 
 func init() {
-	f := BPimo媲摩.(*媲摩PimoBarony)
+    f := BPimo媲摩.(*媲摩PimoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pimo",
 		TitleName: "媲摩",

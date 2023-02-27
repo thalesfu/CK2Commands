@@ -11,7 +11,7 @@ type 斯海尔托亨博思ShertogenboschBarony struct {
 var BShertogenbosch斯海尔托亨博思 feud.Barony = &斯海尔托亨博思ShertogenboschBarony{}
 
 func init() {
-	f := BShertogenbosch斯海尔托亨博思.(*斯海尔托亨博思ShertogenboschBarony)
+    f := BShertogenbosch斯海尔托亨博思.(*斯海尔托亨博思ShertogenboschBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "shertogenbosch",
 		TitleName: "斯海尔托亨博思",

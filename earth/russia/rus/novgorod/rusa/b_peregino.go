@@ -11,7 +11,7 @@ type 佩列吉诺PereginoBarony struct {
 var BPeregino佩列吉诺 feud.Barony = &佩列吉诺PereginoBarony{}
 
 func init() {
-	f := BPeregino佩列吉诺.(*佩列吉诺PereginoBarony)
+    f := BPeregino佩列吉诺.(*佩列吉诺PereginoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "peregino",
 		TitleName: "佩列吉诺",

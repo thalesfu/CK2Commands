@@ -11,7 +11,7 @@ type 乌贪訾离WutanziliBarony struct {
 var BWutanzili乌贪訾离 feud.Barony = &乌贪訾离WutanziliBarony{}
 
 func init() {
-	f := BWutanzili乌贪訾离.(*乌贪訾离WutanziliBarony)
+    f := BWutanzili乌贪訾离.(*乌贪訾离WutanziliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wutanzili",
 		TitleName: "乌贪訾离",

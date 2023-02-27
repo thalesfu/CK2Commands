@@ -11,7 +11,7 @@ type 纳夫普利翁NauplionBarony struct {
 var BNauplion纳夫普利翁 feud.Barony = &纳夫普利翁NauplionBarony{}
 
 func init() {
-	f := BNauplion纳夫普利翁.(*纳夫普利翁NauplionBarony)
+    f := BNauplion纳夫普利翁.(*纳夫普利翁NauplionBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nauplion",
 		TitleName: "纳夫普利翁",

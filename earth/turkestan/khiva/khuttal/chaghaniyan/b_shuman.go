@@ -11,7 +11,7 @@ type 数瞒ShumanBarony struct {
 var BShuman数瞒 feud.Barony = &数瞒ShumanBarony{}
 
 func init() {
-	f := BShuman数瞒.(*数瞒ShumanBarony)
+    f := BShuman数瞒.(*数瞒ShumanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "shuman",
 		TitleName: "数瞒",

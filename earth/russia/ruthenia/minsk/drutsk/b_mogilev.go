@@ -11,7 +11,7 @@ type 莫吉廖夫MogilevBarony struct {
 var BMogilev莫吉廖夫 feud.Barony = &莫吉廖夫MogilevBarony{}
 
 func init() {
-	f := BMogilev莫吉廖夫.(*莫吉廖夫MogilevBarony)
+    f := BMogilev莫吉廖夫.(*莫吉廖夫MogilevBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mogilev",
 		TitleName: "莫吉廖夫",

@@ -11,7 +11,7 @@ type 舍本SherburnBarony struct {
 var BSherburn舍本 feud.Barony = &舍本SherburnBarony{}
 
 func init() {
-	f := BSherburn舍本.(*舍本SherburnBarony)
+    f := BSherburn舍本.(*舍本SherburnBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sherburn",
 		TitleName: "舍本",

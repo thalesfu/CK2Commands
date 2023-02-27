@@ -11,7 +11,7 @@ type 营盘YingpanBarony struct {
 var BYingpan营盘 feud.Barony = &营盘YingpanBarony{}
 
 func init() {
-	f := BYingpan营盘.(*营盘YingpanBarony)
+    f := BYingpan营盘.(*营盘YingpanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yingpan",
 		TitleName: "营盘",

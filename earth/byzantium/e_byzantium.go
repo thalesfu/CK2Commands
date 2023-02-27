@@ -29,157 +29,157 @@ import (
 )
 
 type ByzantiumEmpire interface {
-	feud.Empire
-	KAmalfi阿马尔菲() amalfi.AmalfiKingdom
-	KAnatolia安纳托利亚() anatolia.AnatoliaKingdom
-	KArmenia亚美尼亚() armenia.ArmeniaKingdom
-	KAydin艾登() aydin.AydinKingdom
-	KBulgaria保加利亚() bulgaria.BulgariaKingdom
-	KByzantium希腊() byzantium.ByzantiumKingdom
-	KCandar钱达尔() candar.CandarKingdom
-	KCroatia克罗地亚() croatia.CroatiaKingdom
-	KCyprus塞浦路斯() cyprus.CyprusKingdom
-	KEpirus伊庇鲁斯() epirus.EpirusKingdom
-	KEretnid埃雷特纳() eretnid.EretnidKingdom
-	KGeorgia格鲁吉亚() georgia.GeorgiaKingdom
-	KGermiyan格尔米扬() germiyan.GermiyanKingdom
-	KKaraman卡拉曼() karaman.KaramanKingdom
-	KMentese门泰谢() mentese.MenteseKingdom
-	KOttoman奥斯曼() ottoman.OttomanKingdom
-	KRum罗姆() rum.RumKingdom
-	KSaruhan萨鲁汗() saruhan.SaruhanKingdom
-	KSerbia塞尔维亚() serbia.SerbiaKingdom
-	KSicily西西里() sicily.SicilyKingdom
-	KTekke泰凯() tekke.TekkeKingdom
-	KThrace色雷斯() thrace.ThraceKingdom
-	KTrebizond特拉比松() trebizond.TrebizondKingdom
-	KTrinacria特里纳克里亚() trinacria.TrinacriaKingdom
+    feud.Empire
+    KAmalfi阿马尔菲() 	amalfi.AmalfiKingdom
+    KAnatolia安纳托利亚() 	anatolia.AnatoliaKingdom
+    KArmenia亚美尼亚() 	armenia.ArmeniaKingdom
+    KAydin艾登() 	aydin.AydinKingdom
+    KBulgaria保加利亚() 	bulgaria.BulgariaKingdom
+    KByzantium希腊() 	byzantium.ByzantiumKingdom
+    KCandar钱达尔() 	candar.CandarKingdom
+    KCroatia克罗地亚() 	croatia.CroatiaKingdom
+    KCyprus塞浦路斯() 	cyprus.CyprusKingdom
+    KEpirus伊庇鲁斯() 	epirus.EpirusKingdom
+    KEretnid埃雷特纳() 	eretnid.EretnidKingdom
+    KGeorgia格鲁吉亚() 	georgia.GeorgiaKingdom
+    KGermiyan格尔米扬() 	germiyan.GermiyanKingdom
+    KKaraman卡拉曼() 	karaman.KaramanKingdom
+    KMentese门泰谢() 	mentese.MenteseKingdom
+    KOttoman奥斯曼() 	ottoman.OttomanKingdom
+    KRum罗姆() 	rum.RumKingdom
+    KSaruhan萨鲁汗() 	saruhan.SaruhanKingdom
+    KSerbia塞尔维亚() 	serbia.SerbiaKingdom
+    KSicily西西里() 	sicily.SicilyKingdom
+    KTekke泰凯() 	tekke.TekkeKingdom
+    KThrace色雷斯() 	thrace.ThraceKingdom
+    KTrebizond特拉比松() 	trebizond.TrebizondKingdom
+    KTrinacria特里纳克里亚() 	trinacria.TrinacriaKingdom
 }
 
 type 拜占庭帝国ByzantiumEmpire struct {
 	feud.BaseEmpire
-	阿马尔菲Amalfi      amalfi.AmalfiKingdom
-	安纳托利亚Anatolia   anatolia.AnatoliaKingdom
-	亚美尼亚Armenia     armenia.ArmeniaKingdom
-	艾登Aydin         aydin.AydinKingdom
-	保加利亚Bulgaria    bulgaria.BulgariaKingdom
-	希腊Byzantium     byzantium.ByzantiumKingdom
-	钱达尔Candar       candar.CandarKingdom
-	克罗地亚Croatia     croatia.CroatiaKingdom
-	塞浦路斯Cyprus      cyprus.CyprusKingdom
-	伊庇鲁斯Epirus      epirus.EpirusKingdom
-	埃雷特纳Eretnid     eretnid.EretnidKingdom
-	格鲁吉亚Georgia     georgia.GeorgiaKingdom
-	格尔米扬Germiyan    germiyan.GermiyanKingdom
-	卡拉曼Karaman      karaman.KaramanKingdom
-	门泰谢Mentese      mentese.MenteseKingdom
-	奥斯曼Ottoman      ottoman.OttomanKingdom
-	罗姆Rum           rum.RumKingdom
-	萨鲁汗Saruhan      saruhan.SaruhanKingdom
-	塞尔维亚Serbia      serbia.SerbiaKingdom
-	西西里Sicily       sicily.SicilyKingdom
-	泰凯Tekke         tekke.TekkeKingdom
-	色雷斯Thrace       thrace.ThraceKingdom
-	特拉比松Trebizond   trebizond.TrebizondKingdom
-	特里纳克里亚Trinacria trinacria.TrinacriaKingdom
+	阿马尔菲Amalfi 	amalfi.AmalfiKingdom
+	安纳托利亚Anatolia 	anatolia.AnatoliaKingdom
+	亚美尼亚Armenia 	armenia.ArmeniaKingdom
+	艾登Aydin 	aydin.AydinKingdom
+	保加利亚Bulgaria 	bulgaria.BulgariaKingdom
+	希腊Byzantium 	byzantium.ByzantiumKingdom
+	钱达尔Candar 	candar.CandarKingdom
+	克罗地亚Croatia 	croatia.CroatiaKingdom
+	塞浦路斯Cyprus 	cyprus.CyprusKingdom
+	伊庇鲁斯Epirus 	epirus.EpirusKingdom
+	埃雷特纳Eretnid 	eretnid.EretnidKingdom
+	格鲁吉亚Georgia 	georgia.GeorgiaKingdom
+	格尔米扬Germiyan 	germiyan.GermiyanKingdom
+	卡拉曼Karaman 	karaman.KaramanKingdom
+	门泰谢Mentese 	mentese.MenteseKingdom
+	奥斯曼Ottoman 	ottoman.OttomanKingdom
+	罗姆Rum 	rum.RumKingdom
+	萨鲁汗Saruhan 	saruhan.SaruhanKingdom
+	塞尔维亚Serbia 	serbia.SerbiaKingdom
+	西西里Sicily 	sicily.SicilyKingdom
+	泰凯Tekke 	tekke.TekkeKingdom
+	色雷斯Thrace 	thrace.ThraceKingdom
+	特拉比松Trebizond 	trebizond.TrebizondKingdom
+	特里纳克里亚Trinacria 	trinacria.TrinacriaKingdom
 }
 
 func (e *拜占庭帝国ByzantiumEmpire) KAmalfi阿马尔菲() amalfi.AmalfiKingdom {
 	return e.阿马尔菲Amalfi
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KAnatolia安纳托利亚() anatolia.AnatoliaKingdom {
 	return e.安纳托利亚Anatolia
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KArmenia亚美尼亚() armenia.ArmeniaKingdom {
 	return e.亚美尼亚Armenia
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KAydin艾登() aydin.AydinKingdom {
 	return e.艾登Aydin
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KBulgaria保加利亚() bulgaria.BulgariaKingdom {
 	return e.保加利亚Bulgaria
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KByzantium希腊() byzantium.ByzantiumKingdom {
 	return e.希腊Byzantium
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KCandar钱达尔() candar.CandarKingdom {
 	return e.钱达尔Candar
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KCroatia克罗地亚() croatia.CroatiaKingdom {
 	return e.克罗地亚Croatia
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KCyprus塞浦路斯() cyprus.CyprusKingdom {
 	return e.塞浦路斯Cyprus
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KEpirus伊庇鲁斯() epirus.EpirusKingdom {
 	return e.伊庇鲁斯Epirus
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KEretnid埃雷特纳() eretnid.EretnidKingdom {
 	return e.埃雷特纳Eretnid
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KGeorgia格鲁吉亚() georgia.GeorgiaKingdom {
 	return e.格鲁吉亚Georgia
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KGermiyan格尔米扬() germiyan.GermiyanKingdom {
 	return e.格尔米扬Germiyan
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KKaraman卡拉曼() karaman.KaramanKingdom {
 	return e.卡拉曼Karaman
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KMentese门泰谢() mentese.MenteseKingdom {
 	return e.门泰谢Mentese
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KOttoman奥斯曼() ottoman.OttomanKingdom {
 	return e.奥斯曼Ottoman
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KRum罗姆() rum.RumKingdom {
 	return e.罗姆Rum
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KSaruhan萨鲁汗() saruhan.SaruhanKingdom {
 	return e.萨鲁汗Saruhan
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KSerbia塞尔维亚() serbia.SerbiaKingdom {
 	return e.塞尔维亚Serbia
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KSicily西西里() sicily.SicilyKingdom {
 	return e.西西里Sicily
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KTekke泰凯() tekke.TekkeKingdom {
 	return e.泰凯Tekke
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KThrace色雷斯() thrace.ThraceKingdom {
 	return e.色雷斯Thrace
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KTrebizond特拉比松() trebizond.TrebizondKingdom {
 	return e.特拉比松Trebizond
 }
-
+    
 func (e *拜占庭帝国ByzantiumEmpire) KTrinacria特里纳克里亚() trinacria.TrinacriaKingdom {
 	return e.特里纳克里亚Trinacria
 }
-
+    
 var EByzantium拜占庭帝国 ByzantiumEmpire = &拜占庭帝国ByzantiumEmpire{}
 
 func init() {

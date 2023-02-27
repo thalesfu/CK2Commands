@@ -11,7 +11,7 @@ type 加埃塔GaetaBarony struct {
 var BGaeta加埃塔 feud.Barony = &加埃塔GaetaBarony{}
 
 func init() {
-	f := BGaeta加埃塔.(*加埃塔GaetaBarony)
+    f := BGaeta加埃塔.(*加埃塔GaetaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gaeta",
 		TitleName: "加埃塔",

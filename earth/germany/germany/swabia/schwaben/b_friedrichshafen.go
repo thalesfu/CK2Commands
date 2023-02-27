@@ -11,7 +11,7 @@ type 腓特烈港FriedrichshafenBarony struct {
 var BFriedrichshafen腓特烈港 feud.Barony = &腓特烈港FriedrichshafenBarony{}
 
 func init() {
-	f := BFriedrichshafen腓特烈港.(*腓特烈港FriedrichshafenBarony)
+    f := BFriedrichshafen腓特烈港.(*腓特烈港FriedrichshafenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "friedrichshafen",
 		TitleName: "腓特烈港",

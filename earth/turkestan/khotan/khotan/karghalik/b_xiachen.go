@@ -11,7 +11,7 @@ type 夏臣XiachenBarony struct {
 var BXiachen夏臣 feud.Barony = &夏臣XiachenBarony{}
 
 func init() {
-	f := BXiachen夏臣.(*夏臣XiachenBarony)
+    f := BXiachen夏臣.(*夏臣XiachenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "xiachen",
 		TitleName: "夏臣",

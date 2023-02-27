@@ -11,7 +11,7 @@ type 吉夫特QiftBarony struct {
 var BQift吉夫特 feud.Barony = &吉夫特QiftBarony{}
 
 func init() {
-	f := BQift吉夫特.(*吉夫特QiftBarony)
+    f := BQift吉夫特.(*吉夫特QiftBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "qift",
 		TitleName: "吉夫特",

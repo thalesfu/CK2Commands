@@ -11,7 +11,7 @@ type 温特图尔WinterthurBarony struct {
 var BWinterthur温特图尔 feud.Barony = &温特图尔WinterthurBarony{}
 
 func init() {
-	f := BWinterthur温特图尔.(*温特图尔WinterthurBarony)
+    f := BWinterthur温特图尔.(*温特图尔WinterthurBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "winterthur",
 		TitleName: "温特图尔",

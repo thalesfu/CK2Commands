@@ -11,7 +11,7 @@ type 涅列赫塔NerekthaBarony struct {
 var BNerektha涅列赫塔 feud.Barony = &涅列赫塔NerekthaBarony{}
 
 func init() {
-	f := BNerektha涅列赫塔.(*涅列赫塔NerekthaBarony)
+    f := BNerektha涅列赫塔.(*涅列赫塔NerekthaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nerektha",
 		TitleName: "涅列赫塔",

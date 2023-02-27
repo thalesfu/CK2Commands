@@ -11,7 +11,7 @@ type 柳城IteaBarony struct {
 var BItea柳城 feud.Barony = &柳城IteaBarony{}
 
 func init() {
-	f := BItea柳城.(*柳城IteaBarony)
+    f := BItea柳城.(*柳城IteaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "itea",
 		TitleName: "柳城",

@@ -11,7 +11,7 @@ type 甘地科塔GandikotaBarony struct {
 var BGandikota甘地科塔 feud.Barony = &甘地科塔GandikotaBarony{}
 
 func init() {
-	f := BGandikota甘地科塔.(*甘地科塔GandikotaBarony)
+    f := BGandikota甘地科塔.(*甘地科塔GandikotaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gandikota",
 		TitleName: "甘地科塔",

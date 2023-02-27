@@ -11,7 +11,7 @@ type 奇纳尔卡CinarcaBarony struct {
 var BCinarca奇纳尔卡 feud.Barony = &奇纳尔卡CinarcaBarony{}
 
 func init() {
-	f := BCinarca奇纳尔卡.(*奇纳尔卡CinarcaBarony)
+    f := BCinarca奇纳尔卡.(*奇纳尔卡CinarcaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cinarca",
 		TitleName: "奇纳尔卡",

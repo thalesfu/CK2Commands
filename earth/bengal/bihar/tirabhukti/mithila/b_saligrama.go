@@ -11,7 +11,7 @@ type 舍利伽罗摩SaligramaBarony struct {
 var BSaligrama舍利伽罗摩 feud.Barony = &舍利伽罗摩SaligramaBarony{}
 
 func init() {
-	f := BSaligrama舍利伽罗摩.(*舍利伽罗摩SaligramaBarony)
+    f := BSaligrama舍利伽罗摩.(*舍利伽罗摩SaligramaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "saligrama",
 		TitleName: "舍利伽罗摩",

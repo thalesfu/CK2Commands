@@ -11,7 +11,7 @@ type 波尔诺瓦特_沃日PolnovatvozhBarony struct {
 var BPolnovatvozh波尔诺瓦特_沃日 feud.Barony = &波尔诺瓦特_沃日PolnovatvozhBarony{}
 
 func init() {
-	f := BPolnovatvozh波尔诺瓦特_沃日.(*波尔诺瓦特_沃日PolnovatvozhBarony)
+    f := BPolnovatvozh波尔诺瓦特_沃日.(*波尔诺瓦特_沃日PolnovatvozhBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "polnovatvozh",
 		TitleName: "波尔诺瓦特_沃日",

@@ -11,7 +11,7 @@ type 奥夸罗OkuaroBarony struct {
 var BOkuaro奥夸罗 feud.Barony = &奥夸罗OkuaroBarony{}
 
 func init() {
-	f := BOkuaro奥夸罗.(*奥夸罗OkuaroBarony)
+    f := BOkuaro奥夸罗.(*奥夸罗OkuaroBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "okuaro",
 		TitleName: "奥夸罗",

@@ -11,7 +11,7 @@ type 克拉图CratoBarony struct {
 var BCrato克拉图 feud.Barony = &克拉图CratoBarony{}
 
 func init() {
-	f := BCrato克拉图.(*克拉图CratoBarony)
+    f := BCrato克拉图.(*克拉图CratoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "crato",
 		TitleName: "克拉图",

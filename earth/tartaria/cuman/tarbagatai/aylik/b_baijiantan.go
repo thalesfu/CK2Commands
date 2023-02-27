@@ -11,7 +11,7 @@ type 白碱滩BaijiantanBarony struct {
 var BBaijiantan白碱滩 feud.Barony = &白碱滩BaijiantanBarony{}
 
 func init() {
-	f := BBaijiantan白碱滩.(*白碱滩BaijiantanBarony)
+    f := BBaijiantan白碱滩.(*白碱滩BaijiantanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "baijiantan",
 		TitleName: "白碱滩",

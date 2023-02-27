@@ -11,7 +11,7 @@ type 弗瑞林姆FramlinghamBarony struct {
 var BFramlingham弗瑞林姆 feud.Barony = &弗瑞林姆FramlinghamBarony{}
 
 func init() {
-	f := BFramlingham弗瑞林姆.(*弗瑞林姆FramlinghamBarony)
+    f := BFramlingham弗瑞林姆.(*弗瑞林姆FramlinghamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "framlingham",
 		TitleName: "弗瑞林姆",

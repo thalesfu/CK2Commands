@@ -11,7 +11,7 @@ type 木斯岛MuztauBarony struct {
 var BMuztau木斯岛 feud.Barony = &木斯岛MuztauBarony{}
 
 func init() {
-	f := BMuztau木斯岛.(*木斯岛MuztauBarony)
+    f := BMuztau木斯岛.(*木斯岛MuztauBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "muztau",
 		TitleName: "木斯岛",

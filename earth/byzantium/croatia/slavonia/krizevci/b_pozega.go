@@ -11,7 +11,7 @@ type 波热加PozegaBarony struct {
 var BPozega波热加 feud.Barony = &波热加PozegaBarony{}
 
 func init() {
-	f := BPozega波热加.(*波热加PozegaBarony)
+    f := BPozega波热加.(*波热加PozegaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pozega",
 		TitleName: "波热加",

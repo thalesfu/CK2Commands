@@ -11,7 +11,7 @@ type 春堆CodoiBarony struct {
 var BCodoi春堆 feud.Barony = &春堆CodoiBarony{}
 
 func init() {
-	f := BCodoi春堆.(*春堆CodoiBarony)
+    f := BCodoi春堆.(*春堆CodoiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "codoi",
 		TitleName: "春堆",

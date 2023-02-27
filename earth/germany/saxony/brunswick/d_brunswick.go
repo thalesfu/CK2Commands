@@ -5,7 +5,7 @@ import (
 )
 
 type BrunswickDuke interface {
-	feud.Duke
+    feud.Duke
 }
 
 type 布伦瑞克BrunswickDuke struct {

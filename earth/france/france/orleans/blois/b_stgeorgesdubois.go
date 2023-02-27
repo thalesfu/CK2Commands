@@ -11,7 +11,7 @@ type 圣乔治迪布瓦StgeorgesduboisBarony struct {
 var BStgeorgesdubois圣乔治迪布瓦 feud.Barony = &圣乔治迪布瓦StgeorgesduboisBarony{}
 
 func init() {
-	f := BStgeorgesdubois圣乔治迪布瓦.(*圣乔治迪布瓦StgeorgesduboisBarony)
+    f := BStgeorgesdubois圣乔治迪布瓦.(*圣乔治迪布瓦StgeorgesduboisBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "stgeorgesdubois",
 		TitleName: "圣乔治迪布瓦",

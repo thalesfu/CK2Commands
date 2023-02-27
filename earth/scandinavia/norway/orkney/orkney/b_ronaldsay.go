@@ -11,7 +11,7 @@ type 罗纳德赛RonaldsayBarony struct {
 var BRonaldsay罗纳德赛 feud.Barony = &罗纳德赛RonaldsayBarony{}
 
 func init() {
-	f := BRonaldsay罗纳德赛.(*罗纳德赛RonaldsayBarony)
+    f := BRonaldsay罗纳德赛.(*罗纳德赛RonaldsayBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ronaldsay",
 		TitleName: "罗纳德赛",

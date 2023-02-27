@@ -11,7 +11,7 @@ type 基洛夫卡KirovkaBarony struct {
 var BKirovka基洛夫卡 feud.Barony = &基洛夫卡KirovkaBarony{}
 
 func init() {
-	f := BKirovka基洛夫卡.(*基洛夫卡KirovkaBarony)
+    f := BKirovka基洛夫卡.(*基洛夫卡KirovkaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kirovka",
 		TitleName: "基洛夫卡",

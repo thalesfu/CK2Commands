@@ -11,7 +11,7 @@ type 佩斯基耶拉PeschieraBarony struct {
 var BPeschiera佩斯基耶拉 feud.Barony = &佩斯基耶拉PeschieraBarony{}
 
 func init() {
-	f := BPeschiera佩斯基耶拉.(*佩斯基耶拉PeschieraBarony)
+    f := BPeschiera佩斯基耶拉.(*佩斯基耶拉PeschieraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "peschiera",
 		TitleName: "佩斯基耶拉",

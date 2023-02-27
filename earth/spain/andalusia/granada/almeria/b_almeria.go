@@ -11,7 +11,7 @@ type 阿尔梅里亚AlmeriaBarony struct {
 var BAlmeria阿尔梅里亚 feud.Barony = &阿尔梅里亚AlmeriaBarony{}
 
 func init() {
-	f := BAlmeria阿尔梅里亚.(*阿尔梅里亚AlmeriaBarony)
+    f := BAlmeria阿尔梅里亚.(*阿尔梅里亚AlmeriaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "almeria",
 		TitleName: "阿尔梅里亚",

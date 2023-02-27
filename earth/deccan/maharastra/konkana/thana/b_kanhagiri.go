@@ -11,7 +11,7 @@ type 建诃耆厘KanhagiriBarony struct {
 var BKanhagiri建诃耆厘 feud.Barony = &建诃耆厘KanhagiriBarony{}
 
 func init() {
-	f := BKanhagiri建诃耆厘.(*建诃耆厘KanhagiriBarony)
+    f := BKanhagiri建诃耆厘.(*建诃耆厘KanhagiriBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kanhagiri",
 		TitleName: "建诃耆厘",

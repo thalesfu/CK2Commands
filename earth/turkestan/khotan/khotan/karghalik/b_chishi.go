@@ -11,7 +11,7 @@ type 赤石ChishiBarony struct {
 var BChishi赤石 feud.Barony = &赤石ChishiBarony{}
 
 func init() {
-	f := BChishi赤石.(*赤石ChishiBarony)
+    f := BChishi赤石.(*赤石ChishiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chishi",
 		TitleName: "赤石",

@@ -11,7 +11,7 @@ type 米尔普瓦MirepoixBarony struct {
 var BMirepoix米尔普瓦 feud.Barony = &米尔普瓦MirepoixBarony{}
 
 func init() {
-	f := BMirepoix米尔普瓦.(*米尔普瓦MirepoixBarony)
+    f := BMirepoix米尔普瓦.(*米尔普瓦MirepoixBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mirepoix",
 		TitleName: "米尔普瓦",

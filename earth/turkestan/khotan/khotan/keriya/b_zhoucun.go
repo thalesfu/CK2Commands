@@ -11,7 +11,7 @@ type 周村ZhoucunBarony struct {
 var BZhoucun周村 feud.Barony = &周村ZhoucunBarony{}
 
 func init() {
-	f := BZhoucun周村.(*周村ZhoucunBarony)
+    f := BZhoucun周村.(*周村ZhoucunBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zhoucun",
 		TitleName: "周村",

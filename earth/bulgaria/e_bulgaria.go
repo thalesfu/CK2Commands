@@ -5,7 +5,7 @@ import (
 )
 
 type BulgariaEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 保加利亚BulgariaEmpire struct {

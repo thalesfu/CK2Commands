@@ -11,7 +11,7 @@ type 库尔塔托内CurtatoneBarony struct {
 var BCurtatone库尔塔托内 feud.Barony = &库尔塔托内CurtatoneBarony{}
 
 func init() {
-	f := BCurtatone库尔塔托内.(*库尔塔托内CurtatoneBarony)
+    f := BCurtatone库尔塔托内.(*库尔塔托内CurtatoneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "curtatone",
 		TitleName: "库尔塔托内",

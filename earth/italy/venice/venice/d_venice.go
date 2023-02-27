@@ -6,19 +6,19 @@ import (
 )
 
 type VeniceDuke interface {
-	feud.Duke
-	CVenezia威尼斯() venezia.VeneziaCounty
+    feud.Duke
+    CVenezia威尼斯() 	venezia.VeneziaCounty
 }
 
 type 威尼斯VeniceDuke struct {
 	feud.BaseDuke
-	威尼斯Venezia venezia.VeneziaCounty
+	威尼斯Venezia 	venezia.VeneziaCounty
 }
 
 func (d *威尼斯VeniceDuke) CVenezia威尼斯() venezia.VeneziaCounty {
 	return d.威尼斯Venezia
 }
-
+    
 var DVenice威尼斯 VeniceDuke = &威尼斯VeniceDuke{}
 
 func init() {
@@ -32,5 +32,5 @@ func init() {
 
 	f.威尼斯Venezia = venezia.CVenezia威尼斯
 	f.威尼斯Venezia.SetParent(f)
-
+	
 }

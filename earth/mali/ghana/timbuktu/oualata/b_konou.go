@@ -11,7 +11,7 @@ type 科努KonouBarony struct {
 var BKonou科努 feud.Barony = &科努KonouBarony{}
 
 func init() {
-	f := BKonou科努.(*科努KonouBarony)
+    f := BKonou科努.(*科努KonouBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "konou",
 		TitleName: "科努",

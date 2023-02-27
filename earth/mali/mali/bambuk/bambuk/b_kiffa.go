@@ -11,7 +11,7 @@ type 基法KiffaBarony struct {
 var BKiffa基法 feud.Barony = &基法KiffaBarony{}
 
 func init() {
-	f := BKiffa基法.(*基法KiffaBarony)
+    f := BKiffa基法.(*基法KiffaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kiffa",
 		TitleName: "基法",

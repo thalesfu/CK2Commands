@@ -7,25 +7,25 @@ import (
 )
 
 type TemesDuke interface {
-	feud.Duke
-	CBacs巴奇() bacs.BacsCounty
-	CTemes泰梅什() temes.TemesCounty
+    feud.Duke
+    CBacs巴奇() 	bacs.BacsCounty
+    CTemes泰梅什() 	temes.TemesCounty
 }
 
 type 泰梅什TemesDuke struct {
 	feud.BaseDuke
-	巴奇Bacs   bacs.BacsCounty
-	泰梅什Temes temes.TemesCounty
+	巴奇Bacs 	bacs.BacsCounty
+	泰梅什Temes 	temes.TemesCounty
 }
 
 func (d *泰梅什TemesDuke) CBacs巴奇() bacs.BacsCounty {
 	return d.巴奇Bacs
 }
-
+    
 func (d *泰梅什TemesDuke) CTemes泰梅什() temes.TemesCounty {
 	return d.泰梅什Temes
 }
-
+    
 var DTemes泰梅什 TemesDuke = &泰梅什TemesDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.巴奇Bacs = bacs.CBacs巴奇
 	f.巴奇Bacs.SetParent(f)
-
+	
 	f.泰梅什Temes = temes.CTemes泰梅什
 	f.泰梅什Temes.SetParent(f)
-
+	
 }

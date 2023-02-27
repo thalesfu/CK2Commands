@@ -11,7 +11,7 @@ type 菲莱雅PhokaiaBarony struct {
 var BPhokaia菲莱雅 feud.Barony = &菲莱雅PhokaiaBarony{}
 
 func init() {
-	f := BPhokaia菲莱雅.(*菲莱雅PhokaiaBarony)
+    f := BPhokaia菲莱雅.(*菲莱雅PhokaiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "phokaia",
 		TitleName: "菲莱雅",

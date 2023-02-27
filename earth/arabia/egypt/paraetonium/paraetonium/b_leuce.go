@@ -11,7 +11,7 @@ type 琉刻LeuceBarony struct {
 var BLeuce琉刻 feud.Barony = &琉刻LeuceBarony{}
 
 func init() {
-	f := BLeuce琉刻.(*琉刻LeuceBarony)
+    f := BLeuce琉刻.(*琉刻LeuceBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "leuce",
 		TitleName: "琉刻",

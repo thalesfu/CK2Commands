@@ -11,7 +11,7 @@ type 康斯坦察ConstantiaBarony struct {
 var BConstantia康斯坦察 feud.Barony = &康斯坦察ConstantiaBarony{}
 
 func init() {
-	f := BConstantia康斯坦察.(*康斯坦察ConstantiaBarony)
+    f := BConstantia康斯坦察.(*康斯坦察ConstantiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "constantia",
 		TitleName: "康斯坦察",

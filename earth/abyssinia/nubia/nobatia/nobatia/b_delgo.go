@@ -11,7 +11,7 @@ type 代勒古DelgoBarony struct {
 var BDelgo代勒古 feud.Barony = &代勒古DelgoBarony{}
 
 func init() {
-	f := BDelgo代勒古.(*代勒古DelgoBarony)
+    f := BDelgo代勒古.(*代勒古DelgoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "delgo",
 		TitleName: "代勒古",

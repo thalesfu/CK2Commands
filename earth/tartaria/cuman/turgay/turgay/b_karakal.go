@@ -11,7 +11,7 @@ type 卡拉卡尔KarakalBarony struct {
 var BKarakal卡拉卡尔 feud.Barony = &卡拉卡尔KarakalBarony{}
 
 func init() {
-	f := BKarakal卡拉卡尔.(*卡拉卡尔KarakalBarony)
+    f := BKarakal卡拉卡尔.(*卡拉卡尔KarakalBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "karakal",
 		TitleName: "卡拉卡尔",

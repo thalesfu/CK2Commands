@@ -11,7 +11,7 @@ type 库藏CouzanBarony struct {
 var BCouzan库藏 feud.Barony = &库藏CouzanBarony{}
 
 func init() {
-	f := BCouzan库藏.(*库藏CouzanBarony)
+    f := BCouzan库藏.(*库藏CouzanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "couzan",
 		TitleName: "库藏",

@@ -11,7 +11,7 @@ type 科斯特罗马KostromaBarony struct {
 var BKostroma科斯特罗马 feud.Barony = &科斯特罗马KostromaBarony{}
 
 func init() {
-	f := BKostroma科斯特罗马.(*科斯特罗马KostromaBarony)
+    f := BKostroma科斯特罗马.(*科斯特罗马KostromaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kostroma",
 		TitleName: "科斯特罗马",

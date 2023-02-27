@@ -11,7 +11,7 @@ type 尼科西亚NikosiaBarony struct {
 var BNikosia尼科西亚 feud.Barony = &尼科西亚NikosiaBarony{}
 
 func init() {
-	f := BNikosia尼科西亚.(*尼科西亚NikosiaBarony)
+    f := BNikosia尼科西亚.(*尼科西亚NikosiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nikosia",
 		TitleName: "尼科西亚",

@@ -11,7 +11,7 @@ type 卡利尼克尤姆KallinikosBarony struct {
 var BKallinikos卡利尼克尤姆 feud.Barony = &卡利尼克尤姆KallinikosBarony{}
 
 func init() {
-	f := BKallinikos卡利尼克尤姆.(*卡利尼克尤姆KallinikosBarony)
+    f := BKallinikos卡利尼克尤姆.(*卡利尼克尤姆KallinikosBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kallinikos",
 		TitleName: "卡利尼克尤姆",

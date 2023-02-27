@@ -11,7 +11,7 @@ type 章JhangBarony struct {
 var BJhang章 feud.Barony = &章JhangBarony{}
 
 func init() {
-	f := BJhang章.(*章JhangBarony)
+    f := BJhang章.(*章JhangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jhang",
 		TitleName: "章",

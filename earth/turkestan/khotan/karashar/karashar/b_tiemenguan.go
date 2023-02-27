@@ -11,7 +11,7 @@ type 铁门关TiemenguanBarony struct {
 var BTiemenguan铁门关 feud.Barony = &铁门关TiemenguanBarony{}
 
 func init() {
-	f := BTiemenguan铁门关.(*铁门关TiemenguanBarony)
+    f := BTiemenguan铁门关.(*铁门关TiemenguanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tiemenguan",
 		TitleName: "铁门关",

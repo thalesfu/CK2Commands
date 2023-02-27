@@ -6,19 +6,19 @@ import (
 )
 
 type MuromDuke interface {
-	feud.Duke
-	CMurom穆罗姆() murom.MuromCounty
+    feud.Duke
+    CMurom穆罗姆() 	murom.MuromCounty
 }
 
 type 穆罗姆MuromDuke struct {
 	feud.BaseDuke
-	穆罗姆Murom murom.MuromCounty
+	穆罗姆Murom 	murom.MuromCounty
 }
 
 func (d *穆罗姆MuromDuke) CMurom穆罗姆() murom.MuromCounty {
 	return d.穆罗姆Murom
 }
-
+    
 var DMurom穆罗姆 MuromDuke = &穆罗姆MuromDuke{}
 
 func init() {
@@ -32,5 +32,5 @@ func init() {
 
 	f.穆罗姆Murom = murom.CMurom穆罗姆
 	f.穆罗姆Murom.SetParent(f)
-
+	
 }

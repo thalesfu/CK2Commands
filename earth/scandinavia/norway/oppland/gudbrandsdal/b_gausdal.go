@@ -11,7 +11,7 @@ type 盖于斯达尔GausdalBarony struct {
 var BGausdal盖于斯达尔 feud.Barony = &盖于斯达尔GausdalBarony{}
 
 func init() {
-	f := BGausdal盖于斯达尔.(*盖于斯达尔GausdalBarony)
+    f := BGausdal盖于斯达尔.(*盖于斯达尔GausdalBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gausdal",
 		TitleName: "盖于斯达尔",

@@ -11,7 +11,7 @@ type 扎通ZatonBarony struct {
 var BZaton扎通 feud.Barony = &扎通ZatonBarony{}
 
 func init() {
-	f := BZaton扎通.(*扎通ZatonBarony)
+    f := BZaton扎通.(*扎通ZatonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zaton",
 		TitleName: "扎通",

@@ -11,7 +11,7 @@ type 巴尔萨_克尔梅斯BarsakelmosBarony struct {
 var BBarsakelmos巴尔萨_克尔梅斯 feud.Barony = &巴尔萨_克尔梅斯BarsakelmosBarony{}
 
 func init() {
-	f := BBarsakelmos巴尔萨_克尔梅斯.(*巴尔萨_克尔梅斯BarsakelmosBarony)
+    f := BBarsakelmos巴尔萨_克尔梅斯.(*巴尔萨_克尔梅斯BarsakelmosBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "barsakelmos",
 		TitleName: "巴尔萨_克尔梅斯",

@@ -11,7 +11,7 @@ type 哈罗HarrowBarony struct {
 var BHarrow哈罗 feud.Barony = &哈罗HarrowBarony{}
 
 func init() {
-	f := BHarrow哈罗.(*哈罗HarrowBarony)
+    f := BHarrow哈罗.(*哈罗HarrowBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "harrow",
 		TitleName: "哈罗",

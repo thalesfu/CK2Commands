@@ -11,7 +11,7 @@ type 基奥斯KiosBarony struct {
 var BKios基奥斯 feud.Barony = &基奥斯KiosBarony{}
 
 func init() {
-	f := BKios基奥斯.(*基奥斯KiosBarony)
+    f := BKios基奥斯.(*基奥斯KiosBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kios",
 		TitleName: "基奥斯",

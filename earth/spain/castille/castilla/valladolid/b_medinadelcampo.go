@@ -11,7 +11,7 @@ type 坎波城MedinadelcampoBarony struct {
 var BMedinadelcampo坎波城 feud.Barony = &坎波城MedinadelcampoBarony{}
 
 func init() {
-	f := BMedinadelcampo坎波城.(*坎波城MedinadelcampoBarony)
+    f := BMedinadelcampo坎波城.(*坎波城MedinadelcampoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "medinadelcampo",
 		TitleName: "坎波城",

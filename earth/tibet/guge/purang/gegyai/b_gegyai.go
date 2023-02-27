@@ -11,7 +11,7 @@ type 革吉GegyaiBarony struct {
 var BGegyai革吉 feud.Barony = &革吉GegyaiBarony{}
 
 func init() {
-	f := BGegyai革吉.(*革吉GegyaiBarony)
+    f := BGegyai革吉.(*革吉GegyaiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gegyai",
 		TitleName: "革吉",

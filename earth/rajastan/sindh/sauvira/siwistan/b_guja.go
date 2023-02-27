@@ -11,7 +11,7 @@ type 古奢GujaBarony struct {
 var BGuja古奢 feud.Barony = &古奢GujaBarony{}
 
 func init() {
-	f := BGuja古奢.(*古奢GujaBarony)
+    f := BGuja古奢.(*古奢GujaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "guja",
 		TitleName: "古奢",

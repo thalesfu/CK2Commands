@@ -11,7 +11,7 @@ type 诺沃西利NovosilBarony struct {
 var BNovosil诺沃西利 feud.Barony = &诺沃西利NovosilBarony{}
 
 func init() {
-	f := BNovosil诺沃西利.(*诺沃西利NovosilBarony)
+    f := BNovosil诺沃西利.(*诺沃西利NovosilBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "novosil",
 		TitleName: "诺沃西利",

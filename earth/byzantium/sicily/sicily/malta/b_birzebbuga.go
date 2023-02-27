@@ -11,7 +11,7 @@ type 奇塔代拉BirzebbugaBarony struct {
 var BBirzebbuga奇塔代拉 feud.Barony = &奇塔代拉BirzebbugaBarony{}
 
 func init() {
-	f := BBirzebbuga奇塔代拉.(*奇塔代拉BirzebbugaBarony)
+    f := BBirzebbuga奇塔代拉.(*奇塔代拉BirzebbugaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "birzebbuga",
 		TitleName: "奇塔代拉",

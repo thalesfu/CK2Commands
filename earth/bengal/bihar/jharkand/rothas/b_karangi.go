@@ -11,7 +11,7 @@ type 伽蓝耆KarangiBarony struct {
 var BKarangi伽蓝耆 feud.Barony = &伽蓝耆KarangiBarony{}
 
 func init() {
-	f := BKarangi伽蓝耆.(*伽蓝耆KarangiBarony)
+    f := BKarangi伽蓝耆.(*伽蓝耆KarangiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "karangi",
 		TitleName: "伽蓝耆",

@@ -11,7 +11,7 @@ type 泪眼KatasrajBarony struct {
 var BKatasraj泪眼 feud.Barony = &泪眼KatasrajBarony{}
 
 func init() {
-	f := BKatasraj泪眼.(*泪眼KatasrajBarony)
+    f := BKatasraj泪眼.(*泪眼KatasrajBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "katasraj",
 		TitleName: "泪眼",

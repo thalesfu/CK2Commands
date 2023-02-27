@@ -11,7 +11,7 @@ type 吐蕃之门DaritubatBarony struct {
 var BDaritubat吐蕃之门 feud.Barony = &吐蕃之门DaritubatBarony{}
 
 func init() {
-	f := BDaritubat吐蕃之门.(*吐蕃之门DaritubatBarony)
+    f := BDaritubat吐蕃之门.(*吐蕃之门DaritubatBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "daritubat",
 		TitleName: "吐蕃之门",

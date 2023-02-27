@@ -11,7 +11,7 @@ type 查莱碉CharaideoBarony struct {
 var BCharaideo查莱碉 feud.Barony = &查莱碉CharaideoBarony{}
 
 func init() {
-	f := BCharaideo查莱碉.(*查莱碉CharaideoBarony)
+    f := BCharaideo查莱碉.(*查莱碉CharaideoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "charaideo",
 		TitleName: "查莱碉",

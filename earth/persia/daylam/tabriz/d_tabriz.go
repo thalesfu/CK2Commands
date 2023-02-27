@@ -7,25 +7,25 @@ import (
 )
 
 type TabrizDuke interface {
-	feud.Duke
-	CMaragha蔑剌哈() maragha.MaraghaCounty
-	CTabriz大不里士() tabriz.TabrizCounty
+    feud.Duke
+    CMaragha蔑剌哈() 	maragha.MaraghaCounty
+    CTabriz大不里士() 	tabriz.TabrizCounty
 }
 
 type 大不里士TabrizDuke struct {
 	feud.BaseDuke
-	蔑剌哈Maragha maragha.MaraghaCounty
-	大不里士Tabriz tabriz.TabrizCounty
+	蔑剌哈Maragha 	maragha.MaraghaCounty
+	大不里士Tabriz 	tabriz.TabrizCounty
 }
 
 func (d *大不里士TabrizDuke) CMaragha蔑剌哈() maragha.MaraghaCounty {
 	return d.蔑剌哈Maragha
 }
-
+    
 func (d *大不里士TabrizDuke) CTabriz大不里士() tabriz.TabrizCounty {
 	return d.大不里士Tabriz
 }
-
+    
 var DTabriz大不里士 TabrizDuke = &大不里士TabrizDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.蔑剌哈Maragha = maragha.CMaragha蔑剌哈
 	f.蔑剌哈Maragha.SetParent(f)
-
+	
 	f.大不里士Tabriz = tabriz.CTabriz大不里士
 	f.大不里士Tabriz.SetParent(f)
-
+	
 }

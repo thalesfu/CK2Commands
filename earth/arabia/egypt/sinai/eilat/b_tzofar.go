@@ -11,7 +11,7 @@ type 琐法TzofarBarony struct {
 var BTzofar琐法 feud.Barony = &琐法TzofarBarony{}
 
 func init() {
-	f := BTzofar琐法.(*琐法TzofarBarony)
+    f := BTzofar琐法.(*琐法TzofarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tzofar",
 		TitleName: "琐法",

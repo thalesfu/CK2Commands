@@ -11,7 +11,7 @@ type 特利维ThreaveBarony struct {
 var BThreave特利维 feud.Barony = &特利维ThreaveBarony{}
 
 func init() {
-	f := BThreave特利维.(*特利维ThreaveBarony)
+    f := BThreave特利维.(*特利维ThreaveBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "threave",
 		TitleName: "特利维",

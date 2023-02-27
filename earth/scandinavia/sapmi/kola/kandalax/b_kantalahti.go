@@ -11,7 +11,7 @@ type 坎塔拉赫蒂KantalahtiBarony struct {
 var BKantalahti坎塔拉赫蒂 feud.Barony = &坎塔拉赫蒂KantalahtiBarony{}
 
 func init() {
-	f := BKantalahti坎塔拉赫蒂.(*坎塔拉赫蒂KantalahtiBarony)
+    f := BKantalahti坎塔拉赫蒂.(*坎塔拉赫蒂KantalahtiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kantalahti",
 		TitleName: "坎塔拉赫蒂",

@@ -9,37 +9,37 @@ import (
 )
 
 type AthensDuke interface {
-	feud.Duke
-	CAtheniai雅典() atheniai.AtheniaiCounty
-	CDemetrias德米特里阿斯() demetrias.DemetriasCounty
-	CHellas底比斯() hellas.HellasCounty
-	CThessalia色萨利() thessalia.ThessaliaCounty
+    feud.Duke
+    CAtheniai雅典() 	atheniai.AtheniaiCounty
+    CDemetrias德米特里阿斯() 	demetrias.DemetriasCounty
+    CHellas底比斯() 	hellas.HellasCounty
+    CThessalia色萨利() 	thessalia.ThessaliaCounty
 }
 
 type 希腊AthensDuke struct {
 	feud.BaseDuke
-	雅典Atheniai      atheniai.AtheniaiCounty
-	德米特里阿斯Demetrias demetrias.DemetriasCounty
-	底比斯Hellas       hellas.HellasCounty
-	色萨利Thessalia    thessalia.ThessaliaCounty
+	雅典Atheniai 	atheniai.AtheniaiCounty
+	德米特里阿斯Demetrias 	demetrias.DemetriasCounty
+	底比斯Hellas 	hellas.HellasCounty
+	色萨利Thessalia 	thessalia.ThessaliaCounty
 }
 
 func (d *希腊AthensDuke) CAtheniai雅典() atheniai.AtheniaiCounty {
 	return d.雅典Atheniai
 }
-
+    
 func (d *希腊AthensDuke) CDemetrias德米特里阿斯() demetrias.DemetriasCounty {
 	return d.德米特里阿斯Demetrias
 }
-
+    
 func (d *希腊AthensDuke) CHellas底比斯() hellas.HellasCounty {
 	return d.底比斯Hellas
 }
-
+    
 func (d *希腊AthensDuke) CThessalia色萨利() thessalia.ThessaliaCounty {
 	return d.色萨利Thessalia
 }
-
+    
 var DAthens希腊 AthensDuke = &希腊AthensDuke{}
 
 func init() {
@@ -53,14 +53,14 @@ func init() {
 
 	f.雅典Atheniai = atheniai.CAtheniai雅典
 	f.雅典Atheniai.SetParent(f)
-
+	
 	f.德米特里阿斯Demetrias = demetrias.CDemetrias德米特里阿斯
 	f.德米特里阿斯Demetrias.SetParent(f)
-
+	
 	f.底比斯Hellas = hellas.CHellas底比斯
 	f.底比斯Hellas.SetParent(f)
-
+	
 	f.色萨利Thessalia = thessalia.CThessalia色萨利
 	f.色萨利Thessalia.SetParent(f)
-
+	
 }

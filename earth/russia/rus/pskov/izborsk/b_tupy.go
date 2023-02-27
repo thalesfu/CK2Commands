@@ -11,7 +11,7 @@ type 图佩TupyBarony struct {
 var BTupy图佩 feud.Barony = &图佩TupyBarony{}
 
 func init() {
-	f := BTupy图佩.(*图佩TupyBarony)
+    f := BTupy图佩.(*图佩TupyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tupy",
 		TitleName: "图佩",

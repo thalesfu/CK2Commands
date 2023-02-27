@@ -7,25 +7,25 @@ import (
 )
 
 type DyrrachionDuke interface {
-	feud.Duke
-	CAulon阿夫洛纳斯() aulon.AulonCounty
-	CDyrrachion都拉齐翁() dyrrachion.DyrrachionCounty
+    feud.Duke
+    CAulon阿夫洛纳斯() 	aulon.AulonCounty
+    CDyrrachion都拉齐翁() 	dyrrachion.DyrrachionCounty
 }
 
 type 都拉齐翁DyrrachionDuke struct {
 	feud.BaseDuke
-	阿夫洛纳斯Aulon     aulon.AulonCounty
-	都拉齐翁Dyrrachion dyrrachion.DyrrachionCounty
+	阿夫洛纳斯Aulon 	aulon.AulonCounty
+	都拉齐翁Dyrrachion 	dyrrachion.DyrrachionCounty
 }
 
 func (d *都拉齐翁DyrrachionDuke) CAulon阿夫洛纳斯() aulon.AulonCounty {
 	return d.阿夫洛纳斯Aulon
 }
-
+    
 func (d *都拉齐翁DyrrachionDuke) CDyrrachion都拉齐翁() dyrrachion.DyrrachionCounty {
 	return d.都拉齐翁Dyrrachion
 }
-
+    
 var DDyrrachion都拉齐翁 DyrrachionDuke = &都拉齐翁DyrrachionDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.阿夫洛纳斯Aulon = aulon.CAulon阿夫洛纳斯
 	f.阿夫洛纳斯Aulon.SetParent(f)
-
+	
 	f.都拉齐翁Dyrrachion = dyrrachion.CDyrrachion都拉齐翁
 	f.都拉齐翁Dyrrachion.SetParent(f)
-
+	
 }

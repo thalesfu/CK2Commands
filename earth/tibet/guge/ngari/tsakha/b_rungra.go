@@ -11,7 +11,7 @@ type 绒热RungraBarony struct {
 var BRungra绒热 feud.Barony = &绒热RungraBarony{}
 
 func init() {
-	f := BRungra绒热.(*绒热RungraBarony)
+    f := BRungra绒热.(*绒热RungraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rungra",
 		TitleName: "绒热",

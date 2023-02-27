@@ -11,7 +11,7 @@ type 帕加马PergamonBarony struct {
 var BPergamon帕加马 feud.Barony = &帕加马PergamonBarony{}
 
 func init() {
-	f := BPergamon帕加马.(*帕加马PergamonBarony)
+    f := BPergamon帕加马.(*帕加马PergamonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pergamon",
 		TitleName: "帕加马",

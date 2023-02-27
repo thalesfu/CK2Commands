@@ -5,7 +5,7 @@ import (
 )
 
 type TimuridsEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 帖木儿TimuridsEmpire struct {

@@ -11,7 +11,7 @@ type 伊姆伯特城堡CasalimbertBarony struct {
 var BCasalimbert伊姆伯特城堡 feud.Barony = &伊姆伯特城堡CasalimbertBarony{}
 
 func init() {
-	f := BCasalimbert伊姆伯特城堡.(*伊姆伯特城堡CasalimbertBarony)
+    f := BCasalimbert伊姆伯特城堡.(*伊姆伯特城堡CasalimbertBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "casalimbert",
 		TitleName: "伊姆伯特城堡",

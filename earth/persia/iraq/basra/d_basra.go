@@ -8,31 +8,31 @@ import (
 )
 
 type BasraDuke interface {
-	feud.Duke
-	CBasra巴士拉() basra.BasraCounty
-	CKufa库法() kufa.KufaCounty
-	CRummah艾因赛德() rummah.RummahCounty
+    feud.Duke
+    CBasra巴士拉() 	basra.BasraCounty
+    CKufa库法() 	kufa.KufaCounty
+    CRummah艾因赛德() 	rummah.RummahCounty
 }
 
 type 巴士拉BasraDuke struct {
 	feud.BaseDuke
-	巴士拉Basra   basra.BasraCounty
-	库法Kufa     kufa.KufaCounty
-	艾因赛德Rummah rummah.RummahCounty
+	巴士拉Basra 	basra.BasraCounty
+	库法Kufa 	kufa.KufaCounty
+	艾因赛德Rummah 	rummah.RummahCounty
 }
 
 func (d *巴士拉BasraDuke) CBasra巴士拉() basra.BasraCounty {
 	return d.巴士拉Basra
 }
-
+    
 func (d *巴士拉BasraDuke) CKufa库法() kufa.KufaCounty {
 	return d.库法Kufa
 }
-
+    
 func (d *巴士拉BasraDuke) CRummah艾因赛德() rummah.RummahCounty {
 	return d.艾因赛德Rummah
 }
-
+    
 var DBasra巴士拉 BasraDuke = &巴士拉BasraDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.巴士拉Basra = basra.CBasra巴士拉
 	f.巴士拉Basra.SetParent(f)
-
+	
 	f.库法Kufa = kufa.CKufa库法
 	f.库法Kufa.SetParent(f)
-
+	
 	f.艾因赛德Rummah = rummah.CRummah艾因赛德
 	f.艾因赛德Rummah.SetParent(f)
-
+	
 }

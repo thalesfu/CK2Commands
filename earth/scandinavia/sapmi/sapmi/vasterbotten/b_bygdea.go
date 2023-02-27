@@ -11,7 +11,7 @@ type 比格迪奥BygdeaBarony struct {
 var BBygdea比格迪奥 feud.Barony = &比格迪奥BygdeaBarony{}
 
 func init() {
-	f := BBygdea比格迪奥.(*比格迪奥BygdeaBarony)
+    f := BBygdea比格迪奥.(*比格迪奥BygdeaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bygdea",
 		TitleName: "比格迪奥",

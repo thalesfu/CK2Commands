@@ -11,7 +11,7 @@ type 万卡思WankathBarony struct {
 var BWankath万卡思 feud.Barony = &万卡思WankathBarony{}
 
 func init() {
-	f := BWankath万卡思.(*万卡思WankathBarony)
+    f := BWankath万卡思.(*万卡思WankathBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wankath",
 		TitleName: "万卡思",

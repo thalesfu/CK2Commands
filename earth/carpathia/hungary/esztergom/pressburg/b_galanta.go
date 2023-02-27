@@ -11,7 +11,7 @@ type 高兰陶GalantaBarony struct {
 var BGalanta高兰陶 feud.Barony = &高兰陶GalantaBarony{}
 
 func init() {
-	f := BGalanta高兰陶.(*高兰陶GalantaBarony)
+    f := BGalanta高兰陶.(*高兰陶GalantaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "galanta",
 		TitleName: "高兰陶",

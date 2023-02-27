@@ -11,7 +11,7 @@ type 军遮KonchBarony struct {
 var BKonch军遮 feud.Barony = &军遮KonchBarony{}
 
 func init() {
-	f := BKonch军遮.(*军遮KonchBarony)
+    f := BKonch军遮.(*军遮KonchBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "konch",
 		TitleName: "军遮",

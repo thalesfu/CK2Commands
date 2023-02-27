@@ -11,7 +11,7 @@ type 卡尔瓦霍萨德拉萨格拉达CarbajosadelasagradaBarony struct {
 var BCarbajosadelasagrada卡尔瓦霍萨德拉萨格拉达 feud.Barony = &卡尔瓦霍萨德拉萨格拉达CarbajosadelasagradaBarony{}
 
 func init() {
-	f := BCarbajosadelasagrada卡尔瓦霍萨德拉萨格拉达.(*卡尔瓦霍萨德拉萨格拉达CarbajosadelasagradaBarony)
+    f := BCarbajosadelasagrada卡尔瓦霍萨德拉萨格拉达.(*卡尔瓦霍萨德拉萨格拉达CarbajosadelasagradaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "carbajosadelasagrada",
 		TitleName: "卡尔瓦霍萨德拉萨格拉达",

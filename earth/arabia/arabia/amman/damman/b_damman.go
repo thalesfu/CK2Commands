@@ -11,7 +11,7 @@ type 达曼DammanBarony struct {
 var BDamman达曼 feud.Barony = &达曼DammanBarony{}
 
 func init() {
-	f := BDamman达曼.(*达曼DammanBarony)
+    f := BDamman达曼.(*达曼DammanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "damman",
 		TitleName: "达曼",

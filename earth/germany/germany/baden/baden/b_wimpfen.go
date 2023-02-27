@@ -11,7 +11,7 @@ type 温普芬WimpfenBarony struct {
 var BWimpfen温普芬 feud.Barony = &温普芬WimpfenBarony{}
 
 func init() {
-	f := BWimpfen温普芬.(*温普芬WimpfenBarony)
+    f := BWimpfen温普芬.(*温普芬WimpfenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wimpfen",
 		TitleName: "温普芬",

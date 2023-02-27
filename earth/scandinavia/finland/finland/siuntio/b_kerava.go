@@ -11,7 +11,7 @@ type 凯拉瓦KeravaBarony struct {
 var BKerava凯拉瓦 feud.Barony = &凯拉瓦KeravaBarony{}
 
 func init() {
-	f := BKerava凯拉瓦.(*凯拉瓦KeravaBarony)
+    f := BKerava凯拉瓦.(*凯拉瓦KeravaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kerava",
 		TitleName: "凯拉瓦",

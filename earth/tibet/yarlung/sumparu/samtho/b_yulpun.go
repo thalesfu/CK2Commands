@@ -11,7 +11,7 @@ type 玉盘YulpunBarony struct {
 var BYulpun玉盘 feud.Barony = &玉盘YulpunBarony{}
 
 func init() {
-	f := BYulpun玉盘.(*玉盘YulpunBarony)
+    f := BYulpun玉盘.(*玉盘YulpunBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yulpun",
 		TitleName: "玉盘",

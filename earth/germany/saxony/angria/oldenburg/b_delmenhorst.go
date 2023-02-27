@@ -11,7 +11,7 @@ type 代尔门霍斯特DelmenhorstBarony struct {
 var BDelmenhorst代尔门霍斯特 feud.Barony = &代尔门霍斯特DelmenhorstBarony{}
 
 func init() {
-	f := BDelmenhorst代尔门霍斯特.(*代尔门霍斯特DelmenhorstBarony)
+    f := BDelmenhorst代尔门霍斯特.(*代尔门霍斯特DelmenhorstBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "delmenhorst",
 		TitleName: "代尔门霍斯特",

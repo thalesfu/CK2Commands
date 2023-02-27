@@ -8,31 +8,31 @@ import (
 )
 
 type SlavoniaDuke interface {
-	feud.Duke
-	CKrizevci克里热夫齐() krizevci.KrizevciCounty
-	CVaradzin瓦拉日丁() varadzin.VaradzinCounty
-	CZagreb扎格雷布() zagreb.ZagrebCounty
+    feud.Duke
+    CKrizevci克里热夫齐() 	krizevci.KrizevciCounty
+    CVaradzin瓦拉日丁() 	varadzin.VaradzinCounty
+    CZagreb扎格雷布() 	zagreb.ZagrebCounty
 }
 
 type 斯拉沃尼亚SlavoniaDuke struct {
 	feud.BaseDuke
-	克里热夫齐Krizevci krizevci.KrizevciCounty
-	瓦拉日丁Varadzin  varadzin.VaradzinCounty
-	扎格雷布Zagreb    zagreb.ZagrebCounty
+	克里热夫齐Krizevci 	krizevci.KrizevciCounty
+	瓦拉日丁Varadzin 	varadzin.VaradzinCounty
+	扎格雷布Zagreb 	zagreb.ZagrebCounty
 }
 
 func (d *斯拉沃尼亚SlavoniaDuke) CKrizevci克里热夫齐() krizevci.KrizevciCounty {
 	return d.克里热夫齐Krizevci
 }
-
+    
 func (d *斯拉沃尼亚SlavoniaDuke) CVaradzin瓦拉日丁() varadzin.VaradzinCounty {
 	return d.瓦拉日丁Varadzin
 }
-
+    
 func (d *斯拉沃尼亚SlavoniaDuke) CZagreb扎格雷布() zagreb.ZagrebCounty {
 	return d.扎格雷布Zagreb
 }
-
+    
 var DSlavonia斯拉沃尼亚 SlavoniaDuke = &斯拉沃尼亚SlavoniaDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.克里热夫齐Krizevci = krizevci.CKrizevci克里热夫齐
 	f.克里热夫齐Krizevci.SetParent(f)
-
+	
 	f.瓦拉日丁Varadzin = varadzin.CVaradzin瓦拉日丁
 	f.瓦拉日丁Varadzin.SetParent(f)
-
+	
 	f.扎格雷布Zagreb = zagreb.CZagreb扎格雷布
 	f.扎格雷布Zagreb.SetParent(f)
-
+	
 }

@@ -11,7 +11,7 @@ type 仁厚RenhouBarony struct {
 var BRenhou仁厚 feud.Barony = &仁厚RenhouBarony{}
 
 func init() {
-	f := BRenhou仁厚.(*仁厚RenhouBarony)
+    f := BRenhou仁厚.(*仁厚RenhouBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "renhou",
 		TitleName: "仁厚",

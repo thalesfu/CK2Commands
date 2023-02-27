@@ -11,7 +11,7 @@ type 训SinBarony struct {
 var BSin训 feud.Barony = &训SinBarony{}
 
 func init() {
-	f := BSin训.(*训SinBarony)
+    f := BSin训.(*训SinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sin",
 		TitleName: "训",

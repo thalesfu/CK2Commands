@@ -11,7 +11,7 @@ type 切符那XelvonaBarony struct {
 var BXelvona切符那 feud.Barony = &切符那XelvonaBarony{}
 
 func init() {
-	f := BXelvona切符那.(*切符那XelvonaBarony)
+    f := BXelvona切符那.(*切符那XelvonaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "xelvona",
 		TitleName: "切符那",

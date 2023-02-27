@@ -7,25 +7,25 @@ import (
 )
 
 type BhutanDuke interface {
-	feud.Duke
-	CBumthang布姆唐() bumthang.BumthangCounty
-	CParo帕罗() paro.ParoCounty
+    feud.Duke
+    CBumthang布姆唐() 	bumthang.BumthangCounty
+    CParo帕罗() 	paro.ParoCounty
 }
 
 type 不丹BhutanDuke struct {
 	feud.BaseDuke
-	布姆唐Bumthang bumthang.BumthangCounty
-	帕罗Paro      paro.ParoCounty
+	布姆唐Bumthang 	bumthang.BumthangCounty
+	帕罗Paro 	paro.ParoCounty
 }
 
 func (d *不丹BhutanDuke) CBumthang布姆唐() bumthang.BumthangCounty {
 	return d.布姆唐Bumthang
 }
-
+    
 func (d *不丹BhutanDuke) CParo帕罗() paro.ParoCounty {
 	return d.帕罗Paro
 }
-
+    
 var DBhutan不丹 BhutanDuke = &不丹BhutanDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.布姆唐Bumthang = bumthang.CBumthang布姆唐
 	f.布姆唐Bumthang.SetParent(f)
-
+	
 	f.帕罗Paro = paro.CParo帕罗
 	f.帕罗Paro.SetParent(f)
-
+	
 }

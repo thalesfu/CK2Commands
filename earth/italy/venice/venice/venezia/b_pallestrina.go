@@ -11,7 +11,7 @@ type 帕莱斯特里纳PallestrinaBarony struct {
 var BPallestrina帕莱斯特里纳 feud.Barony = &帕莱斯特里纳PallestrinaBarony{}
 
 func init() {
-	f := BPallestrina帕莱斯特里纳.(*帕莱斯特里纳PallestrinaBarony)
+    f := BPallestrina帕莱斯特里纳.(*帕莱斯特里纳PallestrinaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pallestrina",
 		TitleName: "帕莱斯特里纳",

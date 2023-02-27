@@ -11,7 +11,7 @@ type 文登WendenBarony struct {
 var BWenden文登 feud.Barony = &文登WendenBarony{}
 
 func init() {
-	f := BWenden文登.(*文登WendenBarony)
+    f := BWenden文登.(*文登WendenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "wenden",
 		TitleName: "文登",

@@ -11,7 +11,7 @@ type 岳普湖YopurgaBarony struct {
 var BYopurga岳普湖 feud.Barony = &岳普湖YopurgaBarony{}
 
 func init() {
-	f := BYopurga岳普湖.(*岳普湖YopurgaBarony)
+    f := BYopurga岳普湖.(*岳普湖YopurgaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yopurga",
 		TitleName: "岳普湖",

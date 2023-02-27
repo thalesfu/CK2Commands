@@ -7,25 +7,25 @@ import (
 )
 
 type MurciaDuke interface {
-	feud.Duke
-	CAlmansa阿尔曼萨() almansa.AlmansaCounty
-	CMurcia穆尔西亚() murcia.MurciaCounty
+    feud.Duke
+    CAlmansa阿尔曼萨() 	almansa.AlmansaCounty
+    CMurcia穆尔西亚() 	murcia.MurciaCounty
 }
 
 type 穆尔西亚MurciaDuke struct {
 	feud.BaseDuke
-	阿尔曼萨Almansa almansa.AlmansaCounty
-	穆尔西亚Murcia  murcia.MurciaCounty
+	阿尔曼萨Almansa 	almansa.AlmansaCounty
+	穆尔西亚Murcia 	murcia.MurciaCounty
 }
 
 func (d *穆尔西亚MurciaDuke) CAlmansa阿尔曼萨() almansa.AlmansaCounty {
 	return d.阿尔曼萨Almansa
 }
-
+    
 func (d *穆尔西亚MurciaDuke) CMurcia穆尔西亚() murcia.MurciaCounty {
 	return d.穆尔西亚Murcia
 }
-
+    
 var DMurcia穆尔西亚 MurciaDuke = &穆尔西亚MurciaDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.阿尔曼萨Almansa = almansa.CAlmansa阿尔曼萨
 	f.阿尔曼萨Almansa.SetParent(f)
-
+	
 	f.穆尔西亚Murcia = murcia.CMurcia穆尔西亚
 	f.穆尔西亚Murcia.SetParent(f)
-
+	
 }

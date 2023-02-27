@@ -11,7 +11,7 @@ type 真苏罗ChinsuraBarony struct {
 var BChinsura真苏罗 feud.Barony = &真苏罗ChinsuraBarony{}
 
 func init() {
-	f := BChinsura真苏罗.(*真苏罗ChinsuraBarony)
+    f := BChinsura真苏罗.(*真苏罗ChinsuraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chinsura",
 		TitleName: "真苏罗",

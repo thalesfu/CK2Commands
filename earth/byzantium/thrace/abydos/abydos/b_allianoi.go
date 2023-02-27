@@ -11,7 +11,7 @@ type 阿里亚诺伊AllianoiBarony struct {
 var BAllianoi阿里亚诺伊 feud.Barony = &阿里亚诺伊AllianoiBarony{}
 
 func init() {
-	f := BAllianoi阿里亚诺伊.(*阿里亚诺伊AllianoiBarony)
+    f := BAllianoi阿里亚诺伊.(*阿里亚诺伊AllianoiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "allianoi",
 		TitleName: "阿里亚诺伊",

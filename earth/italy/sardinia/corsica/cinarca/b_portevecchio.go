@@ -11,7 +11,7 @@ type 韦基奥港PortevecchioBarony struct {
 var BPortevecchio韦基奥港 feud.Barony = &韦基奥港PortevecchioBarony{}
 
 func init() {
-	f := BPortevecchio韦基奥港.(*韦基奥港PortevecchioBarony)
+    f := BPortevecchio韦基奥港.(*韦基奥港PortevecchioBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "portevecchio",
 		TitleName: "韦基奥港",

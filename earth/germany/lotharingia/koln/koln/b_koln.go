@@ -11,7 +11,7 @@ type 科隆KolnBarony struct {
 var BKoln科隆 feud.Barony = &科隆KolnBarony{}
 
 func init() {
-	f := BKoln科隆.(*科隆KolnBarony)
+    f := BKoln科隆.(*科隆KolnBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "koln",
 		TitleName: "科隆",

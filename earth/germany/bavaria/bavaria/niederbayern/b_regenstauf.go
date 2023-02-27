@@ -11,7 +11,7 @@ type 雷根施陶夫RegenstaufBarony struct {
 var BRegenstauf雷根施陶夫 feud.Barony = &雷根施陶夫RegenstaufBarony{}
 
 func init() {
-	f := BRegenstauf雷根施陶夫.(*雷根施陶夫RegenstaufBarony)
+    f := BRegenstauf雷根施陶夫.(*雷根施陶夫RegenstaufBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "regenstauf",
 		TitleName: "雷根施陶夫",

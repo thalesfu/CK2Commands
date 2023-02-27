@@ -11,7 +11,7 @@ type 均均乌恩JhunjhunuBarony struct {
 var BJhunjhunu均均乌恩 feud.Barony = &均均乌恩JhunjhunuBarony{}
 
 func init() {
-	f := BJhunjhunu均均乌恩.(*均均乌恩JhunjhunuBarony)
+    f := BJhunjhunu均均乌恩.(*均均乌恩JhunjhunuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jhunjhunu",
 		TitleName: "均均乌恩",

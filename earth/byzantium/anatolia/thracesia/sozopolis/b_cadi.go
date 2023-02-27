@@ -11,7 +11,7 @@ type 加多CadiBarony struct {
 var BCadi加多 feud.Barony = &加多CadiBarony{}
 
 func init() {
-	f := BCadi加多.(*加多CadiBarony)
+    f := BCadi加多.(*加多CadiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cadi",
 		TitleName: "加多",

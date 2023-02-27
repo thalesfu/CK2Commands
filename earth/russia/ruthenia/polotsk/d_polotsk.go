@@ -9,37 +9,37 @@ import (
 )
 
 type PolotskDuke interface {
-	feud.Duke
-	CLepiel卢科姆利() lepiel.LepielCounty
-	COrsha奥尔沙() orsha.OrshaCounty
-	CPolotsk波洛茨克() polotsk.PolotskCounty
-	CVitebsk维捷布斯克() vitebsk.VitebskCounty
+    feud.Duke
+    CLepiel卢科姆利() 	lepiel.LepielCounty
+    COrsha奥尔沙() 	orsha.OrshaCounty
+    CPolotsk波洛茨克() 	polotsk.PolotskCounty
+    CVitebsk维捷布斯克() 	vitebsk.VitebskCounty
 }
 
 type 波洛茨克PolotskDuke struct {
 	feud.BaseDuke
-	卢科姆利Lepiel   lepiel.LepielCounty
-	奥尔沙Orsha     orsha.OrshaCounty
-	波洛茨克Polotsk  polotsk.PolotskCounty
-	维捷布斯克Vitebsk vitebsk.VitebskCounty
+	卢科姆利Lepiel 	lepiel.LepielCounty
+	奥尔沙Orsha 	orsha.OrshaCounty
+	波洛茨克Polotsk 	polotsk.PolotskCounty
+	维捷布斯克Vitebsk 	vitebsk.VitebskCounty
 }
 
 func (d *波洛茨克PolotskDuke) CLepiel卢科姆利() lepiel.LepielCounty {
 	return d.卢科姆利Lepiel
 }
-
+    
 func (d *波洛茨克PolotskDuke) COrsha奥尔沙() orsha.OrshaCounty {
 	return d.奥尔沙Orsha
 }
-
+    
 func (d *波洛茨克PolotskDuke) CPolotsk波洛茨克() polotsk.PolotskCounty {
 	return d.波洛茨克Polotsk
 }
-
+    
 func (d *波洛茨克PolotskDuke) CVitebsk维捷布斯克() vitebsk.VitebskCounty {
 	return d.维捷布斯克Vitebsk
 }
-
+    
 var DPolotsk波洛茨克 PolotskDuke = &波洛茨克PolotskDuke{}
 
 func init() {
@@ -53,14 +53,14 @@ func init() {
 
 	f.卢科姆利Lepiel = lepiel.CLepiel卢科姆利
 	f.卢科姆利Lepiel.SetParent(f)
-
+	
 	f.奥尔沙Orsha = orsha.COrsha奥尔沙
 	f.奥尔沙Orsha.SetParent(f)
-
+	
 	f.波洛茨克Polotsk = polotsk.CPolotsk波洛茨克
 	f.波洛茨克Polotsk.SetParent(f)
-
+	
 	f.维捷布斯克Vitebsk = vitebsk.CVitebsk维捷布斯克
 	f.维捷布斯克Vitebsk.SetParent(f)
-
+	
 }

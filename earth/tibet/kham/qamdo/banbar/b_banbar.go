@@ -11,7 +11,7 @@ type 边坝BanbarBarony struct {
 var BBanbar边坝 feud.Barony = &边坝BanbarBarony{}
 
 func init() {
-	f := BBanbar边坝.(*边坝BanbarBarony)
+    f := BBanbar边坝.(*边坝BanbarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "banbar",
 		TitleName: "边坝",

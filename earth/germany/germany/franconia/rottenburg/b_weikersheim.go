@@ -11,7 +11,7 @@ type 魏克斯海姆WeikersheimBarony struct {
 var BWeikersheim魏克斯海姆 feud.Barony = &魏克斯海姆WeikersheimBarony{}
 
 func init() {
-	f := BWeikersheim魏克斯海姆.(*魏克斯海姆WeikersheimBarony)
+    f := BWeikersheim魏克斯海姆.(*魏克斯海姆WeikersheimBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "weikersheim",
 		TitleName: "魏克斯海姆",

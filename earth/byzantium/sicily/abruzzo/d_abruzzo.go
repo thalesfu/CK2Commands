@@ -7,25 +7,25 @@ import (
 )
 
 type AbruzzoDuke interface {
-	feud.Duke
-	CAprutium拉奎拉() aprutium.AprutiumCounty
-	CChieti基耶蒂() chieti.ChietiCounty
+    feud.Duke
+    CAprutium拉奎拉() 	aprutium.AprutiumCounty
+    CChieti基耶蒂() 	chieti.ChietiCounty
 }
 
 type 阿布鲁佐AbruzzoDuke struct {
 	feud.BaseDuke
-	拉奎拉Aprutium aprutium.AprutiumCounty
-	基耶蒂Chieti   chieti.ChietiCounty
+	拉奎拉Aprutium 	aprutium.AprutiumCounty
+	基耶蒂Chieti 	chieti.ChietiCounty
 }
 
 func (d *阿布鲁佐AbruzzoDuke) CAprutium拉奎拉() aprutium.AprutiumCounty {
 	return d.拉奎拉Aprutium
 }
-
+    
 func (d *阿布鲁佐AbruzzoDuke) CChieti基耶蒂() chieti.ChietiCounty {
 	return d.基耶蒂Chieti
 }
-
+    
 var DAbruzzo阿布鲁佐 AbruzzoDuke = &阿布鲁佐AbruzzoDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.拉奎拉Aprutium = aprutium.CAprutium拉奎拉
 	f.拉奎拉Aprutium.SetParent(f)
-
+	
 	f.基耶蒂Chieti = chieti.CChieti基耶蒂
 	f.基耶蒂Chieti.SetParent(f)
-
+	
 }

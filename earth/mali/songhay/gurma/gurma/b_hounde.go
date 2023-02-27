@@ -11,7 +11,7 @@ type 洪代HoundeBarony struct {
 var BHounde洪代 feud.Barony = &洪代HoundeBarony{}
 
 func init() {
-	f := BHounde洪代.(*洪代HoundeBarony)
+    f := BHounde洪代.(*洪代HoundeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "hounde",
 		TitleName: "洪代",

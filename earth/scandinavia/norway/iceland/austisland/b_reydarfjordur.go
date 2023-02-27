@@ -11,7 +11,7 @@ type 雷扎尔菲厄泽ReydarfjordurBarony struct {
 var BReydarfjordur雷扎尔菲厄泽 feud.Barony = &雷扎尔菲厄泽ReydarfjordurBarony{}
 
 func init() {
-	f := BReydarfjordur雷扎尔菲厄泽.(*雷扎尔菲厄泽ReydarfjordurBarony)
+    f := BReydarfjordur雷扎尔菲厄泽.(*雷扎尔菲厄泽ReydarfjordurBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "reydarfjordur",
 		TitleName: "雷扎尔菲厄泽",

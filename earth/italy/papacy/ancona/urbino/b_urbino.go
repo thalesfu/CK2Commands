@@ -11,7 +11,7 @@ type 乌尔比诺UrbinoBarony struct {
 var BUrbino乌尔比诺 feud.Barony = &乌尔比诺UrbinoBarony{}
 
 func init() {
-	f := BUrbino乌尔比诺.(*乌尔比诺UrbinoBarony)
+    f := BUrbino乌尔比诺.(*乌尔比诺UrbinoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "urbino",
 		TitleName: "乌尔比诺",

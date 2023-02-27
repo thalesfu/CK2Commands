@@ -11,7 +11,7 @@ type 内迈特利普切NemetlipcseBarony struct {
 var BNemetlipcse内迈特利普切 feud.Barony = &内迈特利普切NemetlipcseBarony{}
 
 func init() {
-	f := BNemetlipcse内迈特利普切.(*内迈特利普切NemetlipcseBarony)
+    f := BNemetlipcse内迈特利普切.(*内迈特利普切NemetlipcseBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nemetlipcse",
 		TitleName: "内迈特利普切",

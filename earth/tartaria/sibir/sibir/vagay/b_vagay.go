@@ -11,7 +11,7 @@ type 瓦盖VagayBarony struct {
 var BVagay瓦盖 feud.Barony = &瓦盖VagayBarony{}
 
 func init() {
-	f := BVagay瓦盖.(*瓦盖VagayBarony)
+    f := BVagay瓦盖.(*瓦盖VagayBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vagay",
 		TitleName: "瓦盖",

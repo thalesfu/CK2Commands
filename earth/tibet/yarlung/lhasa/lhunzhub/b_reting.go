@@ -11,7 +11,7 @@ type 热振RetingBarony struct {
 var BReting热振 feud.Barony = &热振RetingBarony{}
 
 func init() {
-	f := BReting热振.(*热振RetingBarony)
+    f := BReting热振.(*热振RetingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "reting",
 		TitleName: "热振",

@@ -11,7 +11,7 @@ type 和屯KhotonBarony struct {
 var BKhoton和屯 feud.Barony = &和屯KhotonBarony{}
 
 func init() {
-	f := BKhoton和屯.(*和屯KhotonBarony)
+    f := BKhoton和屯.(*和屯KhotonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "khoton",
 		TitleName: "和屯",

@@ -11,7 +11,7 @@ type 胡灵HuninBarony struct {
 var BHunin胡灵 feud.Barony = &胡灵HuninBarony{}
 
 func init() {
-	f := BHunin胡灵.(*胡灵HuninBarony)
+    f := BHunin胡灵.(*胡灵HuninBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "hunin",
 		TitleName: "胡灵",

@@ -11,7 +11,7 @@ type 塞尔内SerneBarony struct {
 var BSerne塞尔内 feud.Barony = &塞尔内SerneBarony{}
 
 func init() {
-	f := BSerne塞尔内.(*塞尔内SerneBarony)
+    f := BSerne塞尔内.(*塞尔内SerneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "serne",
 		TitleName: "塞尔内",

@@ -11,7 +11,7 @@ type 托林贡巴TholinggompaBarony struct {
 var BTholinggompa托林贡巴 feud.Barony = &托林贡巴TholinggompaBarony{}
 
 func init() {
-	f := BTholinggompa托林贡巴.(*托林贡巴TholinggompaBarony)
+    f := BTholinggompa托林贡巴.(*托林贡巴TholinggompaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tholinggompa",
 		TitleName: "托林贡巴",

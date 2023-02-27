@@ -11,7 +11,7 @@ type 松盘SumchengBarony struct {
 var BSumcheng松盘 feud.Barony = &松盘SumchengBarony{}
 
 func init() {
-	f := BSumcheng松盘.(*松盘SumchengBarony)
+    f := BSumcheng松盘.(*松盘SumchengBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sumcheng",
 		TitleName: "松盘",

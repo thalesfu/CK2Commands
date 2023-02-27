@@ -11,7 +11,7 @@ type 洛基雷克LocquirecBarony struct {
 var BLocquirec洛基雷克 feud.Barony = &洛基雷克LocquirecBarony{}
 
 func init() {
-	f := BLocquirec洛基雷克.(*洛基雷克LocquirecBarony)
+    f := BLocquirec洛基雷克.(*洛基雷克LocquirecBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "locquirec",
 		TitleName: "洛基雷克",

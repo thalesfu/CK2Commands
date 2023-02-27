@@ -11,7 +11,7 @@ type 古琴塘GuqintangBarony struct {
 var BGuqintang古琴塘 feud.Barony = &古琴塘GuqintangBarony{}
 
 func init() {
-	f := BGuqintang古琴塘.(*古琴塘GuqintangBarony)
+    f := BGuqintang古琴塘.(*古琴塘GuqintangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "guqintang",
 		TitleName: "古琴塘",

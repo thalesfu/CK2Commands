@@ -11,7 +11,7 @@ type 恩格尔贝格EngelbergBarony struct {
 var BEngelberg恩格尔贝格 feud.Barony = &恩格尔贝格EngelbergBarony{}
 
 func init() {
-	f := BEngelberg恩格尔贝格.(*恩格尔贝格EngelbergBarony)
+    f := BEngelberg恩格尔贝格.(*恩格尔贝格EngelbergBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "engelberg",
 		TitleName: "恩格尔贝格",

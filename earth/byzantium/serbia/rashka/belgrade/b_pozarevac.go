@@ -11,7 +11,7 @@ type 波扎雷瓦茨PozarevacBarony struct {
 var BPozarevac波扎雷瓦茨 feud.Barony = &波扎雷瓦茨PozarevacBarony{}
 
 func init() {
-	f := BPozarevac波扎雷瓦茨.(*波扎雷瓦茨PozarevacBarony)
+    f := BPozarevac波扎雷瓦茨.(*波扎雷瓦茨PozarevacBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pozarevac",
 		TitleName: "波扎雷瓦茨",

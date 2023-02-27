@@ -11,7 +11,7 @@ type 叶城YechengBarony struct {
 var BYecheng叶城 feud.Barony = &叶城YechengBarony{}
 
 func init() {
-	f := BYecheng叶城.(*叶城YechengBarony)
+    f := BYecheng叶城.(*叶城YechengBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yecheng",
 		TitleName: "叶城",

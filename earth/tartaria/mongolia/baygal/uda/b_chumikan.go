@@ -11,7 +11,7 @@ type 丘米坎ChumikanBarony struct {
 var BChumikan丘米坎 feud.Barony = &丘米坎ChumikanBarony{}
 
 func init() {
-	f := BChumikan丘米坎.(*丘米坎ChumikanBarony)
+    f := BChumikan丘米坎.(*丘米坎ChumikanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chumikan",
 		TitleName: "丘米坎",

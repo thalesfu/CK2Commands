@@ -11,7 +11,7 @@ type 酒泉JiuquanBarony struct {
 var BJiuquan酒泉 feud.Barony = &酒泉JiuquanBarony{}
 
 func init() {
-	f := BJiuquan酒泉.(*酒泉JiuquanBarony)
+    f := BJiuquan酒泉.(*酒泉JiuquanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jiuquan",
 		TitleName: "酒泉",

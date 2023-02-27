@@ -11,7 +11,7 @@ type 沃斯蒂察VostitzaBarony struct {
 var BVostitza沃斯蒂察 feud.Barony = &沃斯蒂察VostitzaBarony{}
 
 func init() {
-	f := BVostitza沃斯蒂察.(*沃斯蒂察VostitzaBarony)
+    f := BVostitza沃斯蒂察.(*沃斯蒂察VostitzaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vostitza",
 		TitleName: "沃斯蒂察",

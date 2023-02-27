@@ -11,7 +11,7 @@ type 奥弗达尔OfferdalBarony struct {
 var BOfferdal奥弗达尔 feud.Barony = &奥弗达尔OfferdalBarony{}
 
 func init() {
-	f := BOfferdal奥弗达尔.(*奥弗达尔OfferdalBarony)
+    f := BOfferdal奥弗达尔.(*奥弗达尔OfferdalBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "offerdal",
 		TitleName: "奥弗达尔",

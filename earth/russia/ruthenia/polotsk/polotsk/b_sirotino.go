@@ -11,7 +11,7 @@ type 西罗季诺SirotinoBarony struct {
 var BSirotino西罗季诺 feud.Barony = &西罗季诺SirotinoBarony{}
 
 func init() {
-	f := BSirotino西罗季诺.(*西罗季诺SirotinoBarony)
+    f := BSirotino西罗季诺.(*西罗季诺SirotinoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sirotino",
 		TitleName: "西罗季诺",

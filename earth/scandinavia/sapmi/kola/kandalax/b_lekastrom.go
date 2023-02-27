@@ -11,7 +11,7 @@ type 列卡斯特罗姆LekastromBarony struct {
 var BLekastrom列卡斯特罗姆 feud.Barony = &列卡斯特罗姆LekastromBarony{}
 
 func init() {
-	f := BLekastrom列卡斯特罗姆.(*列卡斯特罗姆LekastromBarony)
+    f := BLekastrom列卡斯特罗姆.(*列卡斯特罗姆LekastromBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lekastrom",
 		TitleName: "列卡斯特罗姆",

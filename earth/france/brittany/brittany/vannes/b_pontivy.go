@@ -11,7 +11,7 @@ type 蓬蒂维PontivyBarony struct {
 var BPontivy蓬蒂维 feud.Barony = &蓬蒂维PontivyBarony{}
 
 func init() {
-	f := BPontivy蓬蒂维.(*蓬蒂维PontivyBarony)
+    f := BPontivy蓬蒂维.(*蓬蒂维PontivyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pontivy",
 		TitleName: "蓬蒂维",

@@ -11,7 +11,7 @@ type 拉帕洛RapalloBarony struct {
 var BRapallo拉帕洛 feud.Barony = &拉帕洛RapalloBarony{}
 
 func init() {
-	f := BRapallo拉帕洛.(*拉帕洛RapalloBarony)
+    f := BRapallo拉帕洛.(*拉帕洛RapalloBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rapallo",
 		TitleName: "拉帕洛",

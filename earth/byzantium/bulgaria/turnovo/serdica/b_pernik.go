@@ -11,7 +11,7 @@ type 佩尔尼克PernikBarony struct {
 var BPernik佩尔尼克 feud.Barony = &佩尔尼克PernikBarony{}
 
 func init() {
-	f := BPernik佩尔尼克.(*佩尔尼克PernikBarony)
+    f := BPernik佩尔尼克.(*佩尔尼克PernikBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pernik",
 		TitleName: "佩尔尼克",

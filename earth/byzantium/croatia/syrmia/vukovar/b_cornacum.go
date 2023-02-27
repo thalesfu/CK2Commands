@@ -11,7 +11,7 @@ type 科尔纳库姆CornacumBarony struct {
 var BCornacum科尔纳库姆 feud.Barony = &科尔纳库姆CornacumBarony{}
 
 func init() {
-	f := BCornacum科尔纳库姆.(*科尔纳库姆CornacumBarony)
+    f := BCornacum科尔纳库姆.(*科尔纳库姆CornacumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cornacum",
 		TitleName: "科尔纳库姆",

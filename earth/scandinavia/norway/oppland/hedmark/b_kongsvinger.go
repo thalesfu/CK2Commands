@@ -11,7 +11,7 @@ type 孔斯温厄尔KongsvingerBarony struct {
 var BKongsvinger孔斯温厄尔 feud.Barony = &孔斯温厄尔KongsvingerBarony{}
 
 func init() {
-	f := BKongsvinger孔斯温厄尔.(*孔斯温厄尔KongsvingerBarony)
+    f := BKongsvinger孔斯温厄尔.(*孔斯温厄尔KongsvingerBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kongsvinger",
 		TitleName: "孔斯温厄尔",

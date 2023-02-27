@@ -11,7 +11,7 @@ type 设拉子ShirazBarony struct {
 var BShiraz设拉子 feud.Barony = &设拉子ShirazBarony{}
 
 func init() {
-	f := BShiraz设拉子.(*设拉子ShirazBarony)
+    f := BShiraz设拉子.(*设拉子ShirazBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "shiraz",
 		TitleName: "设拉子",

@@ -11,7 +11,7 @@ type 罗德岛RhodosBarony struct {
 var BRhodos罗德岛 feud.Barony = &罗德岛RhodosBarony{}
 
 func init() {
-	f := BRhodos罗德岛.(*罗德岛RhodosBarony)
+    f := BRhodos罗德岛.(*罗德岛RhodosBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rhodos",
 		TitleName: "罗德岛",

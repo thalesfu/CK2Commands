@@ -11,7 +11,7 @@ type 科瓦莱达CovaledaBarony struct {
 var BCovaleda科瓦莱达 feud.Barony = &科瓦莱达CovaledaBarony{}
 
 func init() {
-	f := BCovaleda科瓦莱达.(*科瓦莱达CovaledaBarony)
+    f := BCovaleda科瓦莱达.(*科瓦莱达CovaledaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "covaleda",
 		TitleName: "科瓦莱达",

@@ -11,7 +11,7 @@ type 摩押的吉珥KrakdemoabBarony struct {
 var BKrakdemoab摩押的吉珥 feud.Barony = &摩押的吉珥KrakdemoabBarony{}
 
 func init() {
-	f := BKrakdemoab摩押的吉珥.(*摩押的吉珥KrakdemoabBarony)
+    f := BKrakdemoab摩押的吉珥.(*摩押的吉珥KrakdemoabBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "krakdemoab",
 		TitleName: "摩押的吉珥",

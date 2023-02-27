@@ -11,7 +11,7 @@ type 班戈BaingoinBarony struct {
 var BBaingoin班戈 feud.Barony = &班戈BaingoinBarony{}
 
 func init() {
-	f := BBaingoin班戈.(*班戈BaingoinBarony)
+    f := BBaingoin班戈.(*班戈BaingoinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "baingoin",
 		TitleName: "班戈",

@@ -11,7 +11,7 @@ type 默恩MeungBarony struct {
 var BMeung默恩 feud.Barony = &默恩MeungBarony{}
 
 func init() {
-	f := BMeung默恩.(*默恩MeungBarony)
+    f := BMeung默恩.(*默恩MeungBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "meung",
 		TitleName: "默恩",

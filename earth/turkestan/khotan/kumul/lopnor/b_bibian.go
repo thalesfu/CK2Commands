@@ -11,7 +11,7 @@ type 壁边BibianBarony struct {
 var BBibian壁边 feud.Barony = &壁边BibianBarony{}
 
 func init() {
-	f := BBibian壁边.(*壁边BibianBarony)
+    f := BBibian壁边.(*壁边BibianBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bibian",
 		TitleName: "壁边",

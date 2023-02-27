@@ -5,7 +5,7 @@ import (
 )
 
 type CordobaEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 科尔多瓦CordobaEmpire struct {

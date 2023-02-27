@@ -11,7 +11,7 @@ type 伊别尔_保加尔IberbolgarBarony struct {
 var BIberbolgar伊别尔_保加尔 feud.Barony = &伊别尔_保加尔IberbolgarBarony{}
 
 func init() {
-	f := BIberbolgar伊别尔_保加尔.(*伊别尔_保加尔IberbolgarBarony)
+    f := BIberbolgar伊别尔_保加尔.(*伊别尔_保加尔IberbolgarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "iberbolgar",
 		TitleName: "伊别尔_保加尔",

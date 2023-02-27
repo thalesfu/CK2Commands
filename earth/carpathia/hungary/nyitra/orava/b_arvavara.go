@@ -11,7 +11,7 @@ type 阿尔沃堡ArvavaraBarony struct {
 var BArvavara阿尔沃堡 feud.Barony = &阿尔沃堡ArvavaraBarony{}
 
 func init() {
-	f := BArvavara阿尔沃堡.(*阿尔沃堡ArvavaraBarony)
+    f := BArvavara阿尔沃堡.(*阿尔沃堡ArvavaraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "arvavara",
 		TitleName: "阿尔沃堡",

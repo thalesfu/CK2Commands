@@ -11,7 +11,7 @@ type 优陀耆厘UdgirBarony struct {
 var BUdgir优陀耆厘 feud.Barony = &优陀耆厘UdgirBarony{}
 
 func init() {
-	f := BUdgir优陀耆厘.(*优陀耆厘UdgirBarony)
+    f := BUdgir优陀耆厘.(*优陀耆厘UdgirBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "udgir",
 		TitleName: "优陀耆厘",

@@ -11,7 +11,7 @@ type 道先TorxemBarony struct {
 var BTorxem道先 feud.Barony = &道先TorxemBarony{}
 
 func init() {
-	f := BTorxem道先.(*道先TorxemBarony)
+    f := BTorxem道先.(*道先TorxemBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "torxem",
 		TitleName: "道先",

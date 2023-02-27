@@ -9,37 +9,37 @@ import (
 )
 
 type FranceEmpire interface {
-	feud.Empire
-	KAquitaine阿基坦() aquitaine.AquitaineKingdom
-	KBrittany布列塔尼() brittany.BrittanyKingdom
-	KBurgundy勃艮第() burgundy.BurgundyKingdom
-	KFrance法兰西() france.FranceKingdom
+    feud.Empire
+    KAquitaine阿基坦() 	aquitaine.AquitaineKingdom
+    KBrittany布列塔尼() 	brittany.BrittanyKingdom
+    KBurgundy勃艮第() 	burgundy.BurgundyKingdom
+    KFrance法兰西() 	france.FranceKingdom
 }
 
 type 法兰克FranceEmpire struct {
 	feud.BaseEmpire
-	阿基坦Aquitaine aquitaine.AquitaineKingdom
-	布列塔尼Brittany brittany.BrittanyKingdom
-	勃艮第Burgundy  burgundy.BurgundyKingdom
-	法兰西France    france.FranceKingdom
+	阿基坦Aquitaine 	aquitaine.AquitaineKingdom
+	布列塔尼Brittany 	brittany.BrittanyKingdom
+	勃艮第Burgundy 	burgundy.BurgundyKingdom
+	法兰西France 	france.FranceKingdom
 }
 
 func (e *法兰克FranceEmpire) KAquitaine阿基坦() aquitaine.AquitaineKingdom {
 	return e.阿基坦Aquitaine
 }
-
+    
 func (e *法兰克FranceEmpire) KBrittany布列塔尼() brittany.BrittanyKingdom {
 	return e.布列塔尼Brittany
 }
-
+    
 func (e *法兰克FranceEmpire) KBurgundy勃艮第() burgundy.BurgundyKingdom {
 	return e.勃艮第Burgundy
 }
-
+    
 func (e *法兰克FranceEmpire) KFrance法兰西() france.FranceKingdom {
 	return e.法兰西France
 }
-
+    
 var EFrance法兰克 FranceEmpire = &法兰克FranceEmpire{}
 
 func init() {

@@ -11,7 +11,7 @@ type 坎皮利亚CampigliaBarony struct {
 var BCampiglia坎皮利亚 feud.Barony = &坎皮利亚CampigliaBarony{}
 
 func init() {
-	f := BCampiglia坎皮利亚.(*坎皮利亚CampigliaBarony)
+    f := BCampiglia坎皮利亚.(*坎皮利亚CampigliaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "campiglia",
 		TitleName: "坎皮利亚",

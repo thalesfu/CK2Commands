@@ -11,7 +11,7 @@ type 东凌井TunglingchingBarony struct {
 var BTunglingching东凌井 feud.Barony = &东凌井TunglingchingBarony{}
 
 func init() {
-	f := BTunglingching东凌井.(*东凌井TunglingchingBarony)
+    f := BTunglingching东凌井.(*东凌井TunglingchingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tunglingching",
 		TitleName: "东凌井",

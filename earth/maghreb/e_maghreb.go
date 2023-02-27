@@ -7,25 +7,25 @@ import (
 )
 
 type MaghrebEmpire interface {
-	feud.Empire
-	KAfrica阿非利加() africa.AfricaKingdom
-	KMauretania马格里布() mauretania.MauretaniaKingdom
+    feud.Empire
+    KAfrica阿非利加() 	africa.AfricaKingdom
+    KMauretania马格里布() 	mauretania.MauretaniaKingdom
 }
 
 type 马格里布MaghrebEmpire struct {
 	feud.BaseEmpire
-	阿非利加Africa     africa.AfricaKingdom
-	马格里布Mauretania mauretania.MauretaniaKingdom
+	阿非利加Africa 	africa.AfricaKingdom
+	马格里布Mauretania 	mauretania.MauretaniaKingdom
 }
 
 func (e *马格里布MaghrebEmpire) KAfrica阿非利加() africa.AfricaKingdom {
 	return e.阿非利加Africa
 }
-
+    
 func (e *马格里布MaghrebEmpire) KMauretania马格里布() mauretania.MauretaniaKingdom {
 	return e.马格里布Mauretania
 }
-
+    
 var EMaghreb马格里布 MaghrebEmpire = &马格里布MaghrebEmpire{}
 
 func init() {

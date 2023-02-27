@@ -11,7 +11,7 @@ type 旬曼补JhammanpurBarony struct {
 var BJhammanpur旬曼补 feud.Barony = &旬曼补JhammanpurBarony{}
 
 func init() {
-	f := BJhammanpur旬曼补.(*旬曼补JhammanpurBarony)
+    f := BJhammanpur旬曼补.(*旬曼补JhammanpurBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "jhammanpur",
 		TitleName: "旬曼补",

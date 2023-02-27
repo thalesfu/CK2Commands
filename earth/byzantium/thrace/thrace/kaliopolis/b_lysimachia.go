@@ -11,7 +11,7 @@ type 利西马其亚LysimachiaBarony struct {
 var BLysimachia利西马其亚 feud.Barony = &利西马其亚LysimachiaBarony{}
 
 func init() {
-	f := BLysimachia利西马其亚.(*利西马其亚LysimachiaBarony)
+    f := BLysimachia利西马其亚.(*利西马其亚LysimachiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lysimachia",
 		TitleName: "利西马其亚",

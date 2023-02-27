@@ -11,7 +11,7 @@ type 北迦尸UttarkashiBarony struct {
 var BUttarkashi北迦尸 feud.Barony = &北迦尸UttarkashiBarony{}
 
 func init() {
-	f := BUttarkashi北迦尸.(*北迦尸UttarkashiBarony)
+    f := BUttarkashi北迦尸.(*北迦尸UttarkashiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "uttarkashi",
 		TitleName: "北迦尸",

@@ -11,7 +11,7 @@ type 塞尔扣克SelkirkBarony struct {
 var BSelkirk塞尔扣克 feud.Barony = &塞尔扣克SelkirkBarony{}
 
 func init() {
-	f := BSelkirk塞尔扣克.(*塞尔扣克SelkirkBarony)
+    f := BSelkirk塞尔扣克.(*塞尔扣克SelkirkBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "selkirk",
 		TitleName: "塞尔扣克",

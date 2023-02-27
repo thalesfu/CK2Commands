@@ -11,7 +11,7 @@ type 达拉斯DharaseoBarony struct {
 var BDharaseo达拉斯 feud.Barony = &达拉斯DharaseoBarony{}
 
 func init() {
-	f := BDharaseo达拉斯.(*达拉斯DharaseoBarony)
+    f := BDharaseo达拉斯.(*达拉斯DharaseoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dharaseo",
 		TitleName: "达拉斯",

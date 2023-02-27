@@ -11,7 +11,7 @@ type 德瓦尔亚加利DevaryamjalBarony struct {
 var BDevaryamjal德瓦尔亚加利 feud.Barony = &德瓦尔亚加利DevaryamjalBarony{}
 
 func init() {
-	f := BDevaryamjal德瓦尔亚加利.(*德瓦尔亚加利DevaryamjalBarony)
+    f := BDevaryamjal德瓦尔亚加利.(*德瓦尔亚加利DevaryamjalBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "devaryamjal",
 		TitleName: "德瓦尔亚加利",

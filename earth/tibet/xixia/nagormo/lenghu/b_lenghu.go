@@ -11,7 +11,7 @@ type 冷湖LenghuBarony struct {
 var BLenghu冷湖 feud.Barony = &冷湖LenghuBarony{}
 
 func init() {
-	f := BLenghu冷湖.(*冷湖LenghuBarony)
+    f := BLenghu冷湖.(*冷湖LenghuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lenghu",
 		TitleName: "冷湖",

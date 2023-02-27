@@ -11,7 +11,7 @@ type 诺夫塔普NovtapBarony struct {
 var BNovtap诺夫塔普 feud.Barony = &诺夫塔普NovtapBarony{}
 
 func init() {
-	f := BNovtap诺夫塔普.(*诺夫塔普NovtapBarony)
+    f := BNovtap诺夫塔普.(*诺夫塔普NovtapBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "novtap",
 		TitleName: "诺夫塔普",

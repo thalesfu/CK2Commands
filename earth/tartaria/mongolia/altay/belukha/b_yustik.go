@@ -11,7 +11,7 @@ type 尤斯季克YustikBarony struct {
 var BYustik尤斯季克 feud.Barony = &尤斯季克YustikBarony{}
 
 func init() {
-	f := BYustik尤斯季克.(*尤斯季克YustikBarony)
+    f := BYustik尤斯季克.(*尤斯季克YustikBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yustik",
 		TitleName: "尤斯季克",

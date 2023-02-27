@@ -11,7 +11,7 @@ type 肯普隆格CampulungBarony struct {
 var BCampulung肯普隆格 feud.Barony = &肯普隆格CampulungBarony{}
 
 func init() {
-	f := BCampulung肯普隆格.(*肯普隆格CampulungBarony)
+    f := BCampulung肯普隆格.(*肯普隆格CampulungBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "campulung",
 		TitleName: "肯普隆格",

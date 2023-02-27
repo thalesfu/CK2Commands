@@ -8,31 +8,31 @@ import (
 )
 
 type LadakhDuke interface {
-	feud.Duke
-	CDiskit德吉() diskit.DiskitCounty
-	CLeh列城() leh.LehCounty
-	CPangong班公() pangong.PangongCounty
+    feud.Duke
+    CDiskit德吉() 	diskit.DiskitCounty
+    CLeh列城() 	leh.LehCounty
+    CPangong班公() 	pangong.PangongCounty
 }
 
 type 拉达克LadakhDuke struct {
 	feud.BaseDuke
-	德吉Diskit  diskit.DiskitCounty
-	列城Leh     leh.LehCounty
-	班公Pangong pangong.PangongCounty
+	德吉Diskit 	diskit.DiskitCounty
+	列城Leh 	leh.LehCounty
+	班公Pangong 	pangong.PangongCounty
 }
 
 func (d *拉达克LadakhDuke) CDiskit德吉() diskit.DiskitCounty {
 	return d.德吉Diskit
 }
-
+    
 func (d *拉达克LadakhDuke) CLeh列城() leh.LehCounty {
 	return d.列城Leh
 }
-
+    
 func (d *拉达克LadakhDuke) CPangong班公() pangong.PangongCounty {
 	return d.班公Pangong
 }
-
+    
 var DLadakh拉达克 LadakhDuke = &拉达克LadakhDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.德吉Diskit = diskit.CDiskit德吉
 	f.德吉Diskit.SetParent(f)
-
+	
 	f.列城Leh = leh.CLeh列城
 	f.列城Leh.SetParent(f)
-
+	
 	f.班公Pangong = pangong.CPangong班公
 	f.班公Pangong.SetParent(f)
-
+	
 }

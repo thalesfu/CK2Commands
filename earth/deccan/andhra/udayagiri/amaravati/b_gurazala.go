@@ -11,7 +11,7 @@ type 古罗扎拉GurazalaBarony struct {
 var BGurazala古罗扎拉 feud.Barony = &古罗扎拉GurazalaBarony{}
 
 func init() {
-	f := BGurazala古罗扎拉.(*古罗扎拉GurazalaBarony)
+    f := BGurazala古罗扎拉.(*古罗扎拉GurazalaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gurazala",
 		TitleName: "古罗扎拉",

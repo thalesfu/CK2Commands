@@ -6,19 +6,19 @@ import (
 )
 
 type MoskvaDuke interface {
-	feud.Duke
-	CMoskva莫斯科() moskva.MoskvaCounty
+    feud.Duke
+    CMoskva莫斯科() 	moskva.MoskvaCounty
 }
 
 type 莫斯科MoskvaDuke struct {
 	feud.BaseDuke
-	莫斯科Moskva moskva.MoskvaCounty
+	莫斯科Moskva 	moskva.MoskvaCounty
 }
 
 func (d *莫斯科MoskvaDuke) CMoskva莫斯科() moskva.MoskvaCounty {
 	return d.莫斯科Moskva
 }
-
+    
 var DMoskva莫斯科 MoskvaDuke = &莫斯科MoskvaDuke{}
 
 func init() {
@@ -32,5 +32,5 @@ func init() {
 
 	f.莫斯科Moskva = moskva.CMoskva莫斯科
 	f.莫斯科Moskva.SetParent(f)
-
+	
 }

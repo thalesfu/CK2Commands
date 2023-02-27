@@ -11,7 +11,7 @@ type 科勒祖姆KolzumBarony struct {
 var BKolzum科勒祖姆 feud.Barony = &科勒祖姆KolzumBarony{}
 
 func init() {
-	f := BKolzum科勒祖姆.(*科勒祖姆KolzumBarony)
+    f := BKolzum科勒祖姆.(*科勒祖姆KolzumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kolzum",
 		TitleName: "科勒祖姆",

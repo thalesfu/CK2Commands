@@ -11,7 +11,7 @@ type 伊莫茨基ImotskiBarony struct {
 var BImotski伊莫茨基 feud.Barony = &伊莫茨基ImotskiBarony{}
 
 func init() {
-	f := BImotski伊莫茨基.(*伊莫茨基ImotskiBarony)
+    f := BImotski伊莫茨基.(*伊莫茨基ImotskiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "imotski",
 		TitleName: "伊莫茨基",

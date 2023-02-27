@@ -11,7 +11,7 @@ type 尤门尼亚EumeniaBarony struct {
 var BEumenia尤门尼亚 feud.Barony = &尤门尼亚EumeniaBarony{}
 
 func init() {
-	f := BEumenia尤门尼亚.(*尤门尼亚EumeniaBarony)
+    f := BEumenia尤门尼亚.(*尤门尼亚EumeniaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "eumenia",
 		TitleName: "尤门尼亚",

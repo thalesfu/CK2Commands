@@ -11,7 +11,7 @@ type 亚滕加YatengaBarony struct {
 var BYatenga亚滕加 feud.Barony = &亚滕加YatengaBarony{}
 
 func init() {
-	f := BYatenga亚滕加.(*亚滕加YatengaBarony)
+    f := BYatenga亚滕加.(*亚滕加YatengaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yatenga",
 		TitleName: "亚滕加",

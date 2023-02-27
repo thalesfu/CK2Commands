@@ -11,7 +11,7 @@ type 辛佩瓦普SimpevarpBarony struct {
 var BSimpevarp辛佩瓦普 feud.Barony = &辛佩瓦普SimpevarpBarony{}
 
 func init() {
-	f := BSimpevarp辛佩瓦普.(*辛佩瓦普SimpevarpBarony)
+    f := BSimpevarp辛佩瓦普.(*辛佩瓦普SimpevarpBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "simpevarp",
 		TitleName: "辛佩瓦普",

@@ -11,7 +11,7 @@ type 柳湾乡LiuwanxiangBarony struct {
 var BLiuwanxiang柳湾乡 feud.Barony = &柳湾乡LiuwanxiangBarony{}
 
 func init() {
-	f := BLiuwanxiang柳湾乡.(*柳湾乡LiuwanxiangBarony)
+    f := BLiuwanxiang柳湾乡.(*柳湾乡LiuwanxiangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "liuwanxiang",
 		TitleName: "柳湾乡",

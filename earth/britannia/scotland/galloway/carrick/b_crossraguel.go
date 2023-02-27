@@ -11,7 +11,7 @@ type 科罗斯拉结尔CrossraguelBarony struct {
 var BCrossraguel科罗斯拉结尔 feud.Barony = &科罗斯拉结尔CrossraguelBarony{}
 
 func init() {
-	f := BCrossraguel科罗斯拉结尔.(*科罗斯拉结尔CrossraguelBarony)
+    f := BCrossraguel科罗斯拉结尔.(*科罗斯拉结尔CrossraguelBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "crossraguel",
 		TitleName: "科罗斯拉结尔",

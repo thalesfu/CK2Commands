@@ -11,49 +11,49 @@ import (
 )
 
 type TibetEmpire interface {
-	feud.Empire
-	KGuge古格() guge.GugeKingdom
-	KKashmir迦湿弥罗() kashmir.KashmirKingdom
-	KKham康区() kham.KhamKingdom
-	KNepal尼波罗() nepal.NepalKingdom
-	KXixia西夏() xixia.XixiaKingdom
-	KYarlung卫藏() yarlung.YarlungKingdom
+    feud.Empire
+    KGuge古格() 	guge.GugeKingdom
+    KKashmir迦湿弥罗() 	kashmir.KashmirKingdom
+    KKham康区() 	kham.KhamKingdom
+    KNepal尼波罗() 	nepal.NepalKingdom
+    KXixia西夏() 	xixia.XixiaKingdom
+    KYarlung卫藏() 	yarlung.YarlungKingdom
 }
 
 type 吐蕃TibetEmpire struct {
 	feud.BaseEmpire
-	古格Guge      guge.GugeKingdom
-	迦湿弥罗Kashmir kashmir.KashmirKingdom
-	康区Kham      kham.KhamKingdom
-	尼波罗Nepal    nepal.NepalKingdom
-	西夏Xixia     xixia.XixiaKingdom
-	卫藏Yarlung   yarlung.YarlungKingdom
+	古格Guge 	guge.GugeKingdom
+	迦湿弥罗Kashmir 	kashmir.KashmirKingdom
+	康区Kham 	kham.KhamKingdom
+	尼波罗Nepal 	nepal.NepalKingdom
+	西夏Xixia 	xixia.XixiaKingdom
+	卫藏Yarlung 	yarlung.YarlungKingdom
 }
 
 func (e *吐蕃TibetEmpire) KGuge古格() guge.GugeKingdom {
 	return e.古格Guge
 }
-
+    
 func (e *吐蕃TibetEmpire) KKashmir迦湿弥罗() kashmir.KashmirKingdom {
 	return e.迦湿弥罗Kashmir
 }
-
+    
 func (e *吐蕃TibetEmpire) KKham康区() kham.KhamKingdom {
 	return e.康区Kham
 }
-
+    
 func (e *吐蕃TibetEmpire) KNepal尼波罗() nepal.NepalKingdom {
 	return e.尼波罗Nepal
 }
-
+    
 func (e *吐蕃TibetEmpire) KXixia西夏() xixia.XixiaKingdom {
 	return e.西夏Xixia
 }
-
+    
 func (e *吐蕃TibetEmpire) KYarlung卫藏() yarlung.YarlungKingdom {
 	return e.卫藏Yarlung
 }
-
+    
 var ETibet吐蕃 TibetEmpire = &吐蕃TibetEmpire{}
 
 func init() {

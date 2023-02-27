@@ -11,7 +11,7 @@ type 艺那头梨KenduliBarony struct {
 var BKenduli艺那头梨 feud.Barony = &艺那头梨KenduliBarony{}
 
 func init() {
-	f := BKenduli艺那头梨.(*艺那头梨KenduliBarony)
+    f := BKenduli艺那头梨.(*艺那头梨KenduliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kenduli",
 		TitleName: "艺那头梨",

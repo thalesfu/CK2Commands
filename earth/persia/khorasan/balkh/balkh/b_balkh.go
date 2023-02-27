@@ -11,7 +11,7 @@ type 缚喝BalkhBarony struct {
 var BBalkh缚喝 feud.Barony = &缚喝BalkhBarony{}
 
 func init() {
-	f := BBalkh缚喝.(*缚喝BalkhBarony)
+    f := BBalkh缚喝.(*缚喝BalkhBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "balkh",
 		TitleName: "缚喝",

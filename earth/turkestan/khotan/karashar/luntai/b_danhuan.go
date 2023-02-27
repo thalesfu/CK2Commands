@@ -11,7 +11,7 @@ type 单桓DanhuanBarony struct {
 var BDanhuan单桓 feud.Barony = &单桓DanhuanBarony{}
 
 func init() {
-	f := BDanhuan单桓.(*单桓DanhuanBarony)
+    f := BDanhuan单桓.(*单桓DanhuanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "danhuan",
 		TitleName: "单桓",

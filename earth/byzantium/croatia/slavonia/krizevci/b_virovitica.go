@@ -11,7 +11,7 @@ type 维特罗维蒂察ViroviticaBarony struct {
 var BVirovitica维特罗维蒂察 feud.Barony = &维特罗维蒂察ViroviticaBarony{}
 
 func init() {
-	f := BVirovitica维特罗维蒂察.(*维特罗维蒂察ViroviticaBarony)
+    f := BVirovitica维特罗维蒂察.(*维特罗维蒂察ViroviticaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "virovitica",
 		TitleName: "维特罗维蒂察",

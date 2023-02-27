@@ -11,7 +11,7 @@ type 月牙泉YueyaquanBarony struct {
 var BYueyaquan月牙泉 feud.Barony = &月牙泉YueyaquanBarony{}
 
 func init() {
-	f := BYueyaquan月牙泉.(*月牙泉YueyaquanBarony)
+    f := BYueyaquan月牙泉.(*月牙泉YueyaquanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yueyaquan",
 		TitleName: "月牙泉",

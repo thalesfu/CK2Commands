@@ -11,7 +11,7 @@ type 奥诺戈什特OnogostBarony struct {
 var BOnogost奥诺戈什特 feud.Barony = &奥诺戈什特OnogostBarony{}
 
 func init() {
-	f := BOnogost奥诺戈什特.(*奥诺戈什特OnogostBarony)
+    f := BOnogost奥诺戈什特.(*奥诺戈什特OnogostBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "onogost",
 		TitleName: "奥诺戈什特",

@@ -11,7 +11,7 @@ type 旃陀罗伐底CandravatiBarony struct {
 var BCandravati旃陀罗伐底 feud.Barony = &旃陀罗伐底CandravatiBarony{}
 
 func init() {
-	f := BCandravati旃陀罗伐底.(*旃陀罗伐底CandravatiBarony)
+    f := BCandravati旃陀罗伐底.(*旃陀罗伐底CandravatiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "candravati",
 		TitleName: "旃陀罗伐底",

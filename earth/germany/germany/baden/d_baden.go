@@ -7,25 +7,25 @@ import (
 )
 
 type BadenDuke interface {
-	feud.Duke
-	CBaden巴登() baden.BadenCounty
-	CBreisgau布赖施高() breisgau.BreisgauCounty
+    feud.Duke
+    CBaden巴登() 	baden.BadenCounty
+    CBreisgau布赖施高() 	breisgau.BreisgauCounty
 }
 
 type 巴登BadenDuke struct {
 	feud.BaseDuke
-	巴登Baden      baden.BadenCounty
-	布赖施高Breisgau breisgau.BreisgauCounty
+	巴登Baden 	baden.BadenCounty
+	布赖施高Breisgau 	breisgau.BreisgauCounty
 }
 
 func (d *巴登BadenDuke) CBaden巴登() baden.BadenCounty {
 	return d.巴登Baden
 }
-
+    
 func (d *巴登BadenDuke) CBreisgau布赖施高() breisgau.BreisgauCounty {
 	return d.布赖施高Breisgau
 }
-
+    
 var DBaden巴登 BadenDuke = &巴登BadenDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.巴登Baden = baden.CBaden巴登
 	f.巴登Baden.SetParent(f)
-
+	
 	f.布赖施高Breisgau = breisgau.CBreisgau布赖施高
 	f.布赖施高Breisgau.SetParent(f)
-
+	
 }

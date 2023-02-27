@@ -7,25 +7,25 @@ import (
 )
 
 type KanemEmpire interface {
-	feud.Empire
-	KHausaland豪萨() hausaland.HausalandKingdom
-	KKanem加涅姆() kanem.KanemKingdom
+    feud.Empire
+    KHausaland豪萨() 	hausaland.HausalandKingdom
+    KKanem加涅姆() 	kanem.KanemKingdom
 }
 
 type 加涅姆_博尔努KanemEmpire struct {
 	feud.BaseEmpire
-	豪萨Hausaland hausaland.HausalandKingdom
-	加涅姆Kanem    kanem.KanemKingdom
+	豪萨Hausaland 	hausaland.HausalandKingdom
+	加涅姆Kanem 	kanem.KanemKingdom
 }
 
 func (e *加涅姆_博尔努KanemEmpire) KHausaland豪萨() hausaland.HausalandKingdom {
 	return e.豪萨Hausaland
 }
-
+    
 func (e *加涅姆_博尔努KanemEmpire) KKanem加涅姆() kanem.KanemKingdom {
 	return e.加涅姆Kanem
 }
-
+    
 var EKanem加涅姆_博尔努 KanemEmpire = &加涅姆_博尔努KanemEmpire{}
 
 func init() {

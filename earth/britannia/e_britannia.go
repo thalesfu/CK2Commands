@@ -9,37 +9,37 @@ import (
 )
 
 type BritanniaEmpire interface {
-	feud.Empire
-	KEngland英格兰() england.EnglandKingdom
-	KIreland爱尔兰() ireland.IrelandKingdom
-	KScotland苏格兰() scotland.ScotlandKingdom
-	KWales威尔士() wales.WalesKingdom
+    feud.Empire
+    KEngland英格兰() 	england.EnglandKingdom
+    KIreland爱尔兰() 	ireland.IrelandKingdom
+    KScotland苏格兰() 	scotland.ScotlandKingdom
+    KWales威尔士() 	wales.WalesKingdom
 }
 
 type 不列颠尼亚BritanniaEmpire struct {
 	feud.BaseEmpire
-	英格兰England  england.EnglandKingdom
-	爱尔兰Ireland  ireland.IrelandKingdom
-	苏格兰Scotland scotland.ScotlandKingdom
-	威尔士Wales    wales.WalesKingdom
+	英格兰England 	england.EnglandKingdom
+	爱尔兰Ireland 	ireland.IrelandKingdom
+	苏格兰Scotland 	scotland.ScotlandKingdom
+	威尔士Wales 	wales.WalesKingdom
 }
 
 func (e *不列颠尼亚BritanniaEmpire) KEngland英格兰() england.EnglandKingdom {
 	return e.英格兰England
 }
-
+    
 func (e *不列颠尼亚BritanniaEmpire) KIreland爱尔兰() ireland.IrelandKingdom {
 	return e.爱尔兰Ireland
 }
-
+    
 func (e *不列颠尼亚BritanniaEmpire) KScotland苏格兰() scotland.ScotlandKingdom {
 	return e.苏格兰Scotland
 }
-
+    
 func (e *不列颠尼亚BritanniaEmpire) KWales威尔士() wales.WalesKingdom {
 	return e.威尔士Wales
 }
-
+    
 var EBritannia不列颠尼亚 BritanniaEmpire = &不列颠尼亚BritanniaEmpire{}
 
 func init() {

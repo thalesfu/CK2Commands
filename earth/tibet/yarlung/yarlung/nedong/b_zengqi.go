@@ -11,7 +11,7 @@ type 增期ZengqiBarony struct {
 var BZengqi增期 feud.Barony = &增期ZengqiBarony{}
 
 func init() {
-	f := BZengqi增期.(*增期ZengqiBarony)
+    f := BZengqi增期.(*增期ZengqiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zengqi",
 		TitleName: "增期",

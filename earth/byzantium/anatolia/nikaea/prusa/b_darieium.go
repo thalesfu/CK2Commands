@@ -11,7 +11,7 @@ type 达里埃翁DarieiumBarony struct {
 var BDarieium达里埃翁 feud.Barony = &达里埃翁DarieiumBarony{}
 
 func init() {
-	f := BDarieium达里埃翁.(*达里埃翁DarieiumBarony)
+    f := BDarieium达里埃翁.(*达里埃翁DarieiumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "darieium",
 		TitleName: "达里埃翁",

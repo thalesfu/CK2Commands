@@ -11,7 +11,7 @@ type 菩迦伊城BokainagarBarony struct {
 var BBokainagar菩迦伊城 feud.Barony = &菩迦伊城BokainagarBarony{}
 
 func init() {
-	f := BBokainagar菩迦伊城.(*菩迦伊城BokainagarBarony)
+    f := BBokainagar菩迦伊城.(*菩迦伊城BokainagarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bokainagar",
 		TitleName: "菩迦伊城",

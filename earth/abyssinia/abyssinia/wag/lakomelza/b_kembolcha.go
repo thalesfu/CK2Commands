@@ -11,7 +11,7 @@ type 孔博勒查KembolchaBarony struct {
 var BKembolcha孔博勒查 feud.Barony = &孔博勒查KembolchaBarony{}
 
 func init() {
-	f := BKembolcha孔博勒查.(*孔博勒查KembolchaBarony)
+    f := BKembolcha孔博勒查.(*孔博勒查KembolchaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kembolcha",
 		TitleName: "孔博勒查",

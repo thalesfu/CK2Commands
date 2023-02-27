@@ -11,7 +11,7 @@ type 特克托萨季TectosagiiBarony struct {
 var BTectosagii特克托萨季 feud.Barony = &特克托萨季TectosagiiBarony{}
 
 func init() {
-	f := BTectosagii特克托萨季.(*特克托萨季TectosagiiBarony)
+    f := BTectosagii特克托萨季.(*特克托萨季TectosagiiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tectosagii",
 		TitleName: "特克托萨季",

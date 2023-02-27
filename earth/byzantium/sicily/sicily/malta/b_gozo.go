@@ -11,7 +11,7 @@ type 海堡GozoBarony struct {
 var BGozo海堡 feud.Barony = &海堡GozoBarony{}
 
 func init() {
-	f := BGozo海堡.(*海堡GozoBarony)
+    f := BGozo海堡.(*海堡GozoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gozo",
 		TitleName: "海堡",

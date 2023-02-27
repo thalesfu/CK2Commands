@@ -8,31 +8,31 @@ import (
 )
 
 type AngriaDuke interface {
-	feud.Duke
-	CMinden明登() minden.MindenCounty
-	COldenburg奥尔登堡() oldenburg.OldenburgCounty
-	COsnabruck奥斯纳布吕克() osnabruck.OsnabruckCounty
+    feud.Duke
+    CMinden明登() 	minden.MindenCounty
+    COldenburg奥尔登堡() 	oldenburg.OldenburgCounty
+    COsnabruck奥斯纳布吕克() 	osnabruck.OsnabruckCounty
 }
 
 type 盎格利亚AngriaDuke struct {
 	feud.BaseDuke
-	明登Minden        minden.MindenCounty
-	奥尔登堡Oldenburg   oldenburg.OldenburgCounty
-	奥斯纳布吕克Osnabruck osnabruck.OsnabruckCounty
+	明登Minden 	minden.MindenCounty
+	奥尔登堡Oldenburg 	oldenburg.OldenburgCounty
+	奥斯纳布吕克Osnabruck 	osnabruck.OsnabruckCounty
 }
 
 func (d *盎格利亚AngriaDuke) CMinden明登() minden.MindenCounty {
 	return d.明登Minden
 }
-
+    
 func (d *盎格利亚AngriaDuke) COldenburg奥尔登堡() oldenburg.OldenburgCounty {
 	return d.奥尔登堡Oldenburg
 }
-
+    
 func (d *盎格利亚AngriaDuke) COsnabruck奥斯纳布吕克() osnabruck.OsnabruckCounty {
 	return d.奥斯纳布吕克Osnabruck
 }
-
+    
 var DAngria盎格利亚 AngriaDuke = &盎格利亚AngriaDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.明登Minden = minden.CMinden明登
 	f.明登Minden.SetParent(f)
-
+	
 	f.奥尔登堡Oldenburg = oldenburg.COldenburg奥尔登堡
 	f.奥尔登堡Oldenburg.SetParent(f)
-
+	
 	f.奥斯纳布吕克Osnabruck = osnabruck.COsnabruck奥斯纳布吕克
 	f.奥斯纳布吕克Osnabruck.SetParent(f)
-
+	
 }

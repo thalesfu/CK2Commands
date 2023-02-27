@@ -11,7 +11,7 @@ type 贡捷堡ChateaugontierBarony struct {
 var BChateaugontier贡捷堡 feud.Barony = &贡捷堡ChateaugontierBarony{}
 
 func init() {
-	f := BChateaugontier贡捷堡.(*贡捷堡ChateaugontierBarony)
+    f := BChateaugontier贡捷堡.(*贡捷堡ChateaugontierBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chateaugontier",
 		TitleName: "贡捷堡",

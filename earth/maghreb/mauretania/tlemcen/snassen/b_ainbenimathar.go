@@ -11,7 +11,7 @@ type 艾因贝尼迈特海尔AinbenimatharBarony struct {
 var BAinbenimathar艾因贝尼迈特海尔 feud.Barony = &艾因贝尼迈特海尔AinbenimatharBarony{}
 
 func init() {
-	f := BAinbenimathar艾因贝尼迈特海尔.(*艾因贝尼迈特海尔AinbenimatharBarony)
+    f := BAinbenimathar艾因贝尼迈特海尔.(*艾因贝尼迈特海尔AinbenimatharBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ainbenimathar",
 		TitleName: "艾因贝尼迈特海尔",

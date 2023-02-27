@@ -8,31 +8,31 @@ import (
 )
 
 type GilanDuke interface {
-	feud.Duke
-	CDaylam德莱木() daylam.DaylamCounty
-	CGilan吉兰() gilan.GilanCounty
-	CQazwin加兹温() qazwin.QazwinCounty
+    feud.Duke
+    CDaylam德莱木() 	daylam.DaylamCounty
+    CGilan吉兰() 	gilan.GilanCounty
+    CQazwin加兹温() 	qazwin.QazwinCounty
 }
 
 type 吉兰GilanDuke struct {
 	feud.BaseDuke
-	德莱木Daylam daylam.DaylamCounty
-	吉兰Gilan   gilan.GilanCounty
-	加兹温Qazwin qazwin.QazwinCounty
+	德莱木Daylam 	daylam.DaylamCounty
+	吉兰Gilan 	gilan.GilanCounty
+	加兹温Qazwin 	qazwin.QazwinCounty
 }
 
 func (d *吉兰GilanDuke) CDaylam德莱木() daylam.DaylamCounty {
 	return d.德莱木Daylam
 }
-
+    
 func (d *吉兰GilanDuke) CGilan吉兰() gilan.GilanCounty {
 	return d.吉兰Gilan
 }
-
+    
 func (d *吉兰GilanDuke) CQazwin加兹温() qazwin.QazwinCounty {
 	return d.加兹温Qazwin
 }
-
+    
 var DGilan吉兰 GilanDuke = &吉兰GilanDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.德莱木Daylam = daylam.CDaylam德莱木
 	f.德莱木Daylam.SetParent(f)
-
+	
 	f.吉兰Gilan = gilan.CGilan吉兰
 	f.吉兰Gilan.SetParent(f)
-
+	
 	f.加兹温Qazwin = qazwin.CQazwin加兹温
 	f.加兹温Qazwin.SetParent(f)
-
+	
 }

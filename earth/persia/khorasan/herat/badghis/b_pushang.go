@@ -11,7 +11,7 @@ type 普尚格PushangBarony struct {
 var BPushang普尚格 feud.Barony = &普尚格PushangBarony{}
 
 func init() {
-	f := BPushang普尚格.(*普尚格PushangBarony)
+    f := BPushang普尚格.(*普尚格PushangBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pushang",
 		TitleName: "普尚格",

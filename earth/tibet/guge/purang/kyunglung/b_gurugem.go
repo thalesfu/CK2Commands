@@ -11,7 +11,7 @@ type 古入江GurugemBarony struct {
 var BGurugem古入江 feud.Barony = &古入江GurugemBarony{}
 
 func init() {
-	f := BGurugem古入江.(*古入江GurugemBarony)
+    f := BGurugem古入江.(*古入江GurugemBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gurugem",
 		TitleName: "古入江",

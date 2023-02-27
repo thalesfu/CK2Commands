@@ -11,7 +11,7 @@ type 两姊妹镇DoshermanasBarony struct {
 var BDoshermanas两姊妹镇 feud.Barony = &两姊妹镇DoshermanasBarony{}
 
 func init() {
-	f := BDoshermanas两姊妹镇.(*两姊妹镇DoshermanasBarony)
+    f := BDoshermanas两姊妹镇.(*两姊妹镇DoshermanasBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "doshermanas",
 		TitleName: "两姊妹镇",

@@ -11,7 +11,7 @@ type 大陶波尔恰尼NagytapolcsanyBarony struct {
 var BNagytapolcsany大陶波尔恰尼 feud.Barony = &大陶波尔恰尼NagytapolcsanyBarony{}
 
 func init() {
-	f := BNagytapolcsany大陶波尔恰尼.(*大陶波尔恰尼NagytapolcsanyBarony)
+    f := BNagytapolcsany大陶波尔恰尼.(*大陶波尔恰尼NagytapolcsanyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "nagytapolcsany",
 		TitleName: "大陶波尔恰尼",

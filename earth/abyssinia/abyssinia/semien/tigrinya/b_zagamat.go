@@ -11,7 +11,7 @@ type 札加马特ZagamatBarony struct {
 var BZagamat札加马特 feud.Barony = &札加马特ZagamatBarony{}
 
 func init() {
-	f := BZagamat札加马特.(*札加马特ZagamatBarony)
+    f := BZagamat札加马特.(*札加马特ZagamatBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zagamat",
 		TitleName: "札加马特",

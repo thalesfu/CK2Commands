@@ -11,7 +11,7 @@ type 蓄集XujiBarony struct {
 var BXuji蓄集 feud.Barony = &蓄集XujiBarony{}
 
 func init() {
-	f := BXuji蓄集.(*蓄集XujiBarony)
+    f := BXuji蓄集.(*蓄集XujiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "xuji",
 		TitleName: "蓄集",

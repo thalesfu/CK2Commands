@@ -11,7 +11,7 @@ type 卡珠KazhuBarony struct {
 var BKazhu卡珠 feud.Barony = &卡珠KazhuBarony{}
 
 func init() {
-	f := BKazhu卡珠.(*卡珠KazhuBarony)
+    f := BKazhu卡珠.(*卡珠KazhuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kazhu",
 		TitleName: "卡珠",

@@ -11,7 +11,7 @@ type 珠龙ZhuglungBarony struct {
 var BZhuglung珠龙 feud.Barony = &珠龙ZhuglungBarony{}
 
 func init() {
-	f := BZhuglung珠龙.(*珠龙ZhuglungBarony)
+    f := BZhuglung珠龙.(*珠龙ZhuglungBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zhuglung",
 		TitleName: "珠龙",

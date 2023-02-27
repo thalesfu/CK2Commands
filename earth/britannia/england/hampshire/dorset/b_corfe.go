@@ -11,7 +11,7 @@ type 科夫CorfeBarony struct {
 var BCorfe科夫 feud.Barony = &科夫CorfeBarony{}
 
 func init() {
-	f := BCorfe科夫.(*科夫CorfeBarony)
+    f := BCorfe科夫.(*科夫CorfeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "corfe",
 		TitleName: "科夫",

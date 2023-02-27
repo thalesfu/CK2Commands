@@ -11,7 +11,7 @@ type 采尔德默尔克CelldomolkBarony struct {
 var BCelldomolk采尔德默尔克 feud.Barony = &采尔德默尔克CelldomolkBarony{}
 
 func init() {
-	f := BCelldomolk采尔德默尔克.(*采尔德默尔克CelldomolkBarony)
+    f := BCelldomolk采尔德默尔克.(*采尔德默尔克CelldomolkBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "celldomolk",
 		TitleName: "采尔德默尔克",

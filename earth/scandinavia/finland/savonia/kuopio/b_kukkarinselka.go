@@ -11,7 +11,7 @@ type 库卡林湖KukkarinselkaBarony struct {
 var BKukkarinselka库卡林湖 feud.Barony = &库卡林湖KukkarinselkaBarony{}
 
 func init() {
-	f := BKukkarinselka库卡林湖.(*库卡林湖KukkarinselkaBarony)
+    f := BKukkarinselka库卡林湖.(*库卡林湖KukkarinselkaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kukkarinselka",
 		TitleName: "库卡林湖",

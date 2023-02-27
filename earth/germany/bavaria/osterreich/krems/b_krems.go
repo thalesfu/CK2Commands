@@ -11,7 +11,7 @@ type 克雷米斯KremsBarony struct {
 var BKrems克雷米斯 feud.Barony = &克雷米斯KremsBarony{}
 
 func init() {
-	f := BKrems克雷米斯.(*克雷米斯KremsBarony)
+    f := BKrems克雷米斯.(*克雷米斯KremsBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "krems",
 		TitleName: "克雷米斯",

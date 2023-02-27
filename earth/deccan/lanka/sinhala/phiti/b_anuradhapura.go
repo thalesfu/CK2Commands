@@ -11,7 +11,7 @@ type 阿㝹罗陀补罗AnuradhapuraBarony struct {
 var BAnuradhapura阿㝹罗陀补罗 feud.Barony = &阿㝹罗陀补罗AnuradhapuraBarony{}
 
 func init() {
-	f := BAnuradhapura阿㝹罗陀补罗.(*阿㝹罗陀补罗AnuradhapuraBarony)
+    f := BAnuradhapura阿㝹罗陀补罗.(*阿㝹罗陀补罗AnuradhapuraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "anuradhapura",
 		TitleName: "阿㝹罗陀补罗",

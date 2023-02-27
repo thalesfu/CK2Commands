@@ -11,7 +11,7 @@ type 格兰特利GrandtullyBarony struct {
 var BGrandtully格兰特利 feud.Barony = &格兰特利GrandtullyBarony{}
 
 func init() {
-	f := BGrandtully格兰特利.(*格兰特利GrandtullyBarony)
+    f := BGrandtully格兰特利.(*格兰特利GrandtullyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "grandtully",
 		TitleName: "格兰特利",

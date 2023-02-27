@@ -11,7 +11,7 @@ type 伊古迈尼察IgoumenitsaBarony struct {
 var BIgoumenitsa伊古迈尼察 feud.Barony = &伊古迈尼察IgoumenitsaBarony{}
 
 func init() {
-	f := BIgoumenitsa伊古迈尼察.(*伊古迈尼察IgoumenitsaBarony)
+    f := BIgoumenitsa伊古迈尼察.(*伊古迈尼察IgoumenitsaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "igoumenitsa",
 		TitleName: "伊古迈尼察",

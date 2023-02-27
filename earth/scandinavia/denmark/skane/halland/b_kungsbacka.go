@@ -11,7 +11,7 @@ type 孔斯巴卡KungsbackaBarony struct {
 var BKungsbacka孔斯巴卡 feud.Barony = &孔斯巴卡KungsbackaBarony{}
 
 func init() {
-	f := BKungsbacka孔斯巴卡.(*孔斯巴卡KungsbackaBarony)
+    f := BKungsbacka孔斯巴卡.(*孔斯巴卡KungsbackaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kungsbacka",
 		TitleName: "孔斯巴卡",

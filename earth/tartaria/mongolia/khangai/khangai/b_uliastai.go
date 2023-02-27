@@ -11,7 +11,7 @@ type 乌里雅苏台UliastaiBarony struct {
 var BUliastai乌里雅苏台 feud.Barony = &乌里雅苏台UliastaiBarony{}
 
 func init() {
-	f := BUliastai乌里雅苏台.(*乌里雅苏台UliastaiBarony)
+    f := BUliastai乌里雅苏台.(*乌里雅苏台UliastaiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "uliastai",
 		TitleName: "乌里雅苏台",

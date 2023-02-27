@@ -11,7 +11,7 @@ type 西托CiteauxBarony struct {
 var BCiteaux西托 feud.Barony = &西托CiteauxBarony{}
 
 func init() {
-	f := BCiteaux西托.(*西托CiteauxBarony)
+    f := BCiteaux西托.(*西托CiteauxBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "citeaux",
 		TitleName: "西托",

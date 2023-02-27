@@ -11,7 +11,7 @@ type 罗金厄姆RockinghamBarony struct {
 var BRockingham罗金厄姆 feud.Barony = &罗金厄姆RockinghamBarony{}
 
 func init() {
-	f := BRockingham罗金厄姆.(*罗金厄姆RockinghamBarony)
+    f := BRockingham罗金厄姆.(*罗金厄姆RockinghamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "rockingham",
 		TitleName: "罗金厄姆",

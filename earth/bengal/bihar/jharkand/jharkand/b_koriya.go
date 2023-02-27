@@ -11,7 +11,7 @@ type 憍利耶KoriyaBarony struct {
 var BKoriya憍利耶 feud.Barony = &憍利耶KoriyaBarony{}
 
 func init() {
-	f := BKoriya憍利耶.(*憍利耶KoriyaBarony)
+    f := BKoriya憍利耶.(*憍利耶KoriyaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "koriya",
 		TitleName: "憍利耶",

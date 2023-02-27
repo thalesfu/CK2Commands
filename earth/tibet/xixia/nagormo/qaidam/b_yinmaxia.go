@@ -11,7 +11,7 @@ type 饮马峡YinmaxiaBarony struct {
 var BYinmaxia饮马峡 feud.Barony = &饮马峡YinmaxiaBarony{}
 
 func init() {
-	f := BYinmaxia饮马峡.(*饮马峡YinmaxiaBarony)
+    f := BYinmaxia饮马峡.(*饮马峡YinmaxiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "yinmaxia",
 		TitleName: "饮马峡",

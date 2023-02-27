@@ -11,7 +11,7 @@ type 廷尼斯PelusiaBarony struct {
 var BPelusia廷尼斯 feud.Barony = &廷尼斯PelusiaBarony{}
 
 func init() {
-	f := BPelusia廷尼斯.(*廷尼斯PelusiaBarony)
+    f := BPelusia廷尼斯.(*廷尼斯PelusiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pelusia",
 		TitleName: "廷尼斯",

@@ -11,7 +11,7 @@ type 波城PauBarony struct {
 var BPau波城 feud.Barony = &波城PauBarony{}
 
 func init() {
-	f := BPau波城.(*波城PauBarony)
+    f := BPau波城.(*波城PauBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pau",
 		TitleName: "波城",

@@ -11,7 +11,7 @@ type 诺瓦卢科姆利NovalukomlBarony struct {
 var BNovalukoml诺瓦卢科姆利 feud.Barony = &诺瓦卢科姆利NovalukomlBarony{}
 
 func init() {
-	f := BNovalukoml诺瓦卢科姆利.(*诺瓦卢科姆利NovalukomlBarony)
+    f := BNovalukoml诺瓦卢科姆利.(*诺瓦卢科姆利NovalukomlBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "novalukoml",
 		TitleName: "诺瓦卢科姆利",

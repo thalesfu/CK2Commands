@@ -8,31 +8,31 @@ import (
 )
 
 type FaiyumDuke interface {
-	feud.Duke
-	CBuhairyac_buhairya() buhairya.BuhairyaCounty
-	CFaiyum法尤姆() faiyum.FaiyumCounty
-	CFarafrac_farafra() farafra.FarafraCounty
+    feud.Duke
+    CBuhairyac_buhairya() 	buhairya.BuhairyaCounty
+    CFaiyum法尤姆() 	faiyum.FaiyumCounty
+    CFarafrac_farafra() 	farafra.FarafraCounty
 }
 
 type 法尤姆FaiyumDuke struct {
 	feud.BaseDuke
-	c_buhairyaBuhairya buhairya.BuhairyaCounty
-	法尤姆Faiyum          faiyum.FaiyumCounty
-	c_farafraFarafra   farafra.FarafraCounty
+	c_buhairyaBuhairya 	buhairya.BuhairyaCounty
+	法尤姆Faiyum 	faiyum.FaiyumCounty
+	c_farafraFarafra 	farafra.FarafraCounty
 }
 
 func (d *法尤姆FaiyumDuke) CBuhairyac_buhairya() buhairya.BuhairyaCounty {
 	return d.c_buhairyaBuhairya
 }
-
+    
 func (d *法尤姆FaiyumDuke) CFaiyum法尤姆() faiyum.FaiyumCounty {
 	return d.法尤姆Faiyum
 }
-
+    
 func (d *法尤姆FaiyumDuke) CFarafrac_farafra() farafra.FarafraCounty {
 	return d.c_farafraFarafra
 }
-
+    
 var DFaiyum法尤姆 FaiyumDuke = &法尤姆FaiyumDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.c_buhairyaBuhairya = buhairya.CBuhairyac_buhairya
 	f.c_buhairyaBuhairya.SetParent(f)
-
+	
 	f.法尤姆Faiyum = faiyum.CFaiyum法尤姆
 	f.法尤姆Faiyum.SetParent(f)
-
+	
 	f.c_farafraFarafra = farafra.CFarafrac_farafra
 	f.c_farafraFarafra.SetParent(f)
-
+	
 }

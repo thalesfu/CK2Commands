@@ -11,7 +11,7 @@ type 加大拉GaderaBarony struct {
 var BGadera加大拉 feud.Barony = &加大拉GaderaBarony{}
 
 func init() {
-	f := BGadera加大拉.(*加大拉GaderaBarony)
+    f := BGadera加大拉.(*加大拉GaderaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gadera",
 		TitleName: "加大拉",

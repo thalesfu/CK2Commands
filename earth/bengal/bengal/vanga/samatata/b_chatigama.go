@@ -11,7 +11,7 @@ type 车底伽摩ChatigamaBarony struct {
 var BChatigama车底伽摩 feud.Barony = &车底伽摩ChatigamaBarony{}
 
 func init() {
-	f := BChatigama车底伽摩.(*车底伽摩ChatigamaBarony)
+    f := BChatigama车底伽摩.(*车底伽摩ChatigamaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chatigama",
 		TitleName: "车底伽摩",

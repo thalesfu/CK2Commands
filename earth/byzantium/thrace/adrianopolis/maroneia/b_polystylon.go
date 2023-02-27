@@ -11,7 +11,7 @@ type 波利斯提伦PolystylonBarony struct {
 var BPolystylon波利斯提伦 feud.Barony = &波利斯提伦PolystylonBarony{}
 
 func init() {
-	f := BPolystylon波利斯提伦.(*波利斯提伦PolystylonBarony)
+    f := BPolystylon波利斯提伦.(*波利斯提伦PolystylonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "polystylon",
 		TitleName: "波利斯提伦",

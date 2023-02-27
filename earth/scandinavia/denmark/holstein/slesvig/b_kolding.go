@@ -11,7 +11,7 @@ type 科灵KoldingBarony struct {
 var BKolding科灵 feud.Barony = &科灵KoldingBarony{}
 
 func init() {
-	f := BKolding科灵.(*科灵KoldingBarony)
+    f := BKolding科灵.(*科灵KoldingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kolding",
 		TitleName: "科灵",

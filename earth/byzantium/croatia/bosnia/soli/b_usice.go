@@ -11,7 +11,7 @@ type 乌日采UsiceBarony struct {
 var BUsice乌日采 feud.Barony = &乌日采UsiceBarony{}
 
 func init() {
-	f := BUsice乌日采.(*乌日采UsiceBarony)
+    f := BUsice乌日采.(*乌日采UsiceBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "usice",
 		TitleName: "乌日采",

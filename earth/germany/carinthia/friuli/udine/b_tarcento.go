@@ -11,7 +11,7 @@ type 塔尔琴托TarcentoBarony struct {
 var BTarcento塔尔琴托 feud.Barony = &塔尔琴托TarcentoBarony{}
 
 func init() {
-	f := BTarcento塔尔琴托.(*塔尔琴托TarcentoBarony)
+    f := BTarcento塔尔琴托.(*塔尔琴托TarcentoBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tarcento",
 		TitleName: "塔尔琴托",

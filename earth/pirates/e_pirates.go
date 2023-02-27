@@ -5,7 +5,7 @@ import (
 )
 
 type PiratesEmpire interface {
-	feud.Empire
+    feud.Empire
 }
 
 type 海盗PiratesEmpire struct {

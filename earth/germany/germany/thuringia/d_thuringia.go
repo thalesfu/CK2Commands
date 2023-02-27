@@ -7,25 +7,25 @@ import (
 )
 
 type ThuringiaDuke interface {
-	feud.Duke
-	CThuringen图林根() thuringen.ThuringenCounty
-	CWeimar魏玛() weimar.WeimarCounty
+    feud.Duke
+    CThuringen图林根() 	thuringen.ThuringenCounty
+    CWeimar魏玛() 	weimar.WeimarCounty
 }
 
 type 图林根ThuringiaDuke struct {
 	feud.BaseDuke
-	图林根Thuringen thuringen.ThuringenCounty
-	魏玛Weimar     weimar.WeimarCounty
+	图林根Thuringen 	thuringen.ThuringenCounty
+	魏玛Weimar 	weimar.WeimarCounty
 }
 
 func (d *图林根ThuringiaDuke) CThuringen图林根() thuringen.ThuringenCounty {
 	return d.图林根Thuringen
 }
-
+    
 func (d *图林根ThuringiaDuke) CWeimar魏玛() weimar.WeimarCounty {
 	return d.魏玛Weimar
 }
-
+    
 var DThuringia图林根 ThuringiaDuke = &图林根ThuringiaDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.图林根Thuringen = thuringen.CThuringen图林根
 	f.图林根Thuringen.SetParent(f)
-
+	
 	f.魏玛Weimar = weimar.CWeimar魏玛
 	f.魏玛Weimar.SetParent(f)
-
+	
 }

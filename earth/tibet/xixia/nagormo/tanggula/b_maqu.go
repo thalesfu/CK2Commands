@@ -11,7 +11,7 @@ type 玛曲MaquBarony struct {
 var BMaqu玛曲 feud.Barony = &玛曲MaquBarony{}
 
 func init() {
-	f := BMaqu玛曲.(*玛曲MaquBarony)
+    f := BMaqu玛曲.(*玛曲MaquBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "maqu",
 		TitleName: "玛曲",

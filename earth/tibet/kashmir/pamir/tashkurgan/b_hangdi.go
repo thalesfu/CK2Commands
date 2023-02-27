@@ -11,7 +11,7 @@ type 行地HangdiBarony struct {
 var BHangdi行地 feud.Barony = &行地HangdiBarony{}
 
 func init() {
-	f := BHangdi行地.(*行地HangdiBarony)
+    f := BHangdi行地.(*行地HangdiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "hangdi",
 		TitleName: "行地",

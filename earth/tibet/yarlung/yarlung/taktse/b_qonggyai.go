@@ -11,7 +11,7 @@ type 琼结QonggyaiBarony struct {
 var BQonggyai琼结 feud.Barony = &琼结QonggyaiBarony{}
 
 func init() {
-	f := BQonggyai琼结.(*琼结QonggyaiBarony)
+    f := BQonggyai琼结.(*琼结QonggyaiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "qonggyai",
 		TitleName: "琼结",

@@ -11,7 +11,7 @@ type 杰维亚季内DevyatinyBarony struct {
 var BDevyatiny杰维亚季内 feud.Barony = &杰维亚季内DevyatinyBarony{}
 
 func init() {
-	f := BDevyatiny杰维亚季内.(*杰维亚季内DevyatinyBarony)
+    f := BDevyatiny杰维亚季内.(*杰维亚季内DevyatinyBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "devyatiny",
 		TitleName: "杰维亚季内",

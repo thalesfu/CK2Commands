@@ -11,7 +11,7 @@ type 盖尔马GuelmaBarony struct {
 var BGuelma盖尔马 feud.Barony = &盖尔马GuelmaBarony{}
 
 func init() {
-	f := BGuelma盖尔马.(*盖尔马GuelmaBarony)
+    f := BGuelma盖尔马.(*盖尔马GuelmaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "guelma",
 		TitleName: "盖尔马",

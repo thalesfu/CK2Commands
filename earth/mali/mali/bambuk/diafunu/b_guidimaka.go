@@ -11,7 +11,7 @@ type 吉迪马卡GuidimakaBarony struct {
 var BGuidimaka吉迪马卡 feud.Barony = &吉迪马卡GuidimakaBarony{}
 
 func init() {
-	f := BGuidimaka吉迪马卡.(*吉迪马卡GuidimakaBarony)
+    f := BGuidimaka吉迪马卡.(*吉迪马卡GuidimakaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "guidimaka",
 		TitleName: "吉迪马卡",

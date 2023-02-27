@@ -11,7 +11,7 @@ type 圣吉扬_勒_代赛尔SaintguilhemledesertBarony struct {
 var BSaintguilhemledesert圣吉扬_勒_代赛尔 feud.Barony = &圣吉扬_勒_代赛尔SaintguilhemledesertBarony{}
 
 func init() {
-	f := BSaintguilhemledesert圣吉扬_勒_代赛尔.(*圣吉扬_勒_代赛尔SaintguilhemledesertBarony)
+    f := BSaintguilhemledesert圣吉扬_勒_代赛尔.(*圣吉扬_勒_代赛尔SaintguilhemledesertBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "saintguilhemledesert",
 		TitleName: "圣吉扬_勒_代赛尔",

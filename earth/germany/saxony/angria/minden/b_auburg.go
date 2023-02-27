@@ -11,7 +11,7 @@ type 奥堡AuburgBarony struct {
 var BAuburg奥堡 feud.Barony = &奥堡AuburgBarony{}
 
 func init() {
-	f := BAuburg奥堡.(*奥堡AuburgBarony)
+    f := BAuburg奥堡.(*奥堡AuburgBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "auburg",
 		TitleName: "奥堡",

@@ -11,7 +11,7 @@ type 遮朱计ChachokeBarony struct {
 var BChachoke遮朱计 feud.Barony = &遮朱计ChachokeBarony{}
 
 func init() {
-	f := BChachoke遮朱计.(*遮朱计ChachokeBarony)
+    f := BChachoke遮朱计.(*遮朱计ChachokeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chachoke",
 		TitleName: "遮朱计",

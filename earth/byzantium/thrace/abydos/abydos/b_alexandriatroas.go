@@ -11,7 +11,7 @@ type 亚历山大特罗亚AlexandriatroasBarony struct {
 var BAlexandriatroas亚历山大特罗亚 feud.Barony = &亚历山大特罗亚AlexandriatroasBarony{}
 
 func init() {
-	f := BAlexandriatroas亚历山大特罗亚.(*亚历山大特罗亚AlexandriatroasBarony)
+    f := BAlexandriatroas亚历山大特罗亚.(*亚历山大特罗亚AlexandriatroasBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "alexandriatroas",
 		TitleName: "亚历山大特罗亚",

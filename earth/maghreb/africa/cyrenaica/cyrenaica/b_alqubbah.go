@@ -11,7 +11,7 @@ type 拱北AlqubbahBarony struct {
 var BAlqubbah拱北 feud.Barony = &拱北AlqubbahBarony{}
 
 func init() {
-	f := BAlqubbah拱北.(*拱北AlqubbahBarony)
+    f := BAlqubbah拱北.(*拱北AlqubbahBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "alqubbah",
 		TitleName: "拱北",

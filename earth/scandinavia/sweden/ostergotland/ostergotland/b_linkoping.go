@@ -11,7 +11,7 @@ type 林雪平LinkopingBarony struct {
 var BLinkoping林雪平 feud.Barony = &林雪平LinkopingBarony{}
 
 func init() {
-	f := BLinkoping林雪平.(*林雪平LinkopingBarony)
+    f := BLinkoping林雪平.(*林雪平LinkopingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "linkoping",
 		TitleName: "林雪平",

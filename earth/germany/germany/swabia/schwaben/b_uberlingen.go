@@ -11,7 +11,7 @@ type 于伯林根UberlingenBarony struct {
 var BUberlingen于伯林根 feud.Barony = &于伯林根UberlingenBarony{}
 
 func init() {
-	f := BUberlingen于伯林根.(*于伯林根UberlingenBarony)
+    f := BUberlingen于伯林根.(*于伯林根UberlingenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "uberlingen",
 		TitleName: "于伯林根",

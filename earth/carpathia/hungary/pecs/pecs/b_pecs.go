@@ -11,7 +11,7 @@ type 佩奇PecsBarony struct {
 var BPecs佩奇 feud.Barony = &佩奇PecsBarony{}
 
 func init() {
-	f := BPecs佩奇.(*佩奇PecsBarony)
+    f := BPecs佩奇.(*佩奇PecsBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pecs",
 		TitleName: "佩奇",

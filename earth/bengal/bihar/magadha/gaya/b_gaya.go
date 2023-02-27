@@ -11,7 +11,7 @@ type 伽耶GayaBarony struct {
 var BGaya伽耶 feud.Barony = &伽耶GayaBarony{}
 
 func init() {
-	f := BGaya伽耶.(*伽耶GayaBarony)
+    f := BGaya伽耶.(*伽耶GayaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "gaya",
 		TitleName: "伽耶",

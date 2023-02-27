@@ -11,7 +11,7 @@ type 帝利那跋陀TrinabadBarony struct {
 var BTrinabad帝利那跋陀 feud.Barony = &帝利那跋陀TrinabadBarony{}
 
 func init() {
-	f := BTrinabad帝利那跋陀.(*帝利那跋陀TrinabadBarony)
+    f := BTrinabad帝利那跋陀.(*帝利那跋陀TrinabadBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "trinabad",
 		TitleName: "帝利那跋陀",

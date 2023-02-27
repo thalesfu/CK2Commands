@@ -11,7 +11,7 @@ type 利普托夫斯基米库拉什LiptovskymikulasBarony struct {
 var BLiptovskymikulas利普托夫斯基米库拉什 feud.Barony = &利普托夫斯基米库拉什LiptovskymikulasBarony{}
 
 func init() {
-	f := BLiptovskymikulas利普托夫斯基米库拉什.(*利普托夫斯基米库拉什LiptovskymikulasBarony)
+    f := BLiptovskymikulas利普托夫斯基米库拉什.(*利普托夫斯基米库拉什LiptovskymikulasBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "liptovskymikulas",
 		TitleName: "利普托夫斯基米库拉什",

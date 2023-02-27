@@ -11,7 +11,7 @@ type 伊夫尼IfniBarony struct {
 var BIfni伊夫尼 feud.Barony = &伊夫尼IfniBarony{}
 
 func init() {
-	f := BIfni伊夫尼.(*伊夫尼IfniBarony)
+    f := BIfni伊夫尼.(*伊夫尼IfniBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ifni",
 		TitleName: "伊夫尼",

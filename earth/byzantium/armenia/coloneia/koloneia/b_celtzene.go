@@ -11,7 +11,7 @@ type 凯尔齐尼CeltzeneBarony struct {
 var BCeltzene凯尔齐尼 feud.Barony = &凯尔齐尼CeltzeneBarony{}
 
 func init() {
-	f := BCeltzene凯尔齐尼.(*凯尔齐尼CeltzeneBarony)
+    f := BCeltzene凯尔齐尼.(*凯尔齐尼CeltzeneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "celtzene",
 		TitleName: "凯尔齐尼",

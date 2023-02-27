@@ -5,7 +5,7 @@ import (
 )
 
 type MainzDuke interface {
-	feud.Duke
+    feud.Duke
 }
 
 type 美因茨MainzDuke struct {

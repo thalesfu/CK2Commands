@@ -11,7 +11,7 @@ type 卡岑埃尔恩博根KatzenelnbogenBarony struct {
 var BKatzenelnbogen卡岑埃尔恩博根 feud.Barony = &卡岑埃尔恩博根KatzenelnbogenBarony{}
 
 func init() {
-	f := BKatzenelnbogen卡岑埃尔恩博根.(*卡岑埃尔恩博根KatzenelnbogenBarony)
+    f := BKatzenelnbogen卡岑埃尔恩博根.(*卡岑埃尔恩博根KatzenelnbogenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "katzenelnbogen",
 		TitleName: "卡岑埃尔恩博根",

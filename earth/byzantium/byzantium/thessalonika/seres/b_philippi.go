@@ -11,7 +11,7 @@ type 腓立比PhilippiBarony struct {
 var BPhilippi腓立比 feud.Barony = &腓立比PhilippiBarony{}
 
 func init() {
-	f := BPhilippi腓立比.(*腓立比PhilippiBarony)
+    f := BPhilippi腓立比.(*腓立比PhilippiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "philippi",
 		TitleName: "腓立比",

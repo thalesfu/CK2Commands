@@ -11,7 +11,7 @@ type 恰克图KhyagtBarony struct {
 var BKhyagt恰克图 feud.Barony = &恰克图KhyagtBarony{}
 
 func init() {
-	f := BKhyagt恰克图.(*恰克图KhyagtBarony)
+    f := BKhyagt恰克图.(*恰克图KhyagtBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "khyagt",
 		TitleName: "恰克图",

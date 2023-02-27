@@ -11,7 +11,7 @@ type 提采TiaceBarony struct {
 var BTiace提采 feud.Barony = &提采TiaceBarony{}
 
 func init() {
-	f := BTiace提采.(*提采TiaceBarony)
+    f := BTiace提采.(*提采TiaceBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tiace",
 		TitleName: "提采",

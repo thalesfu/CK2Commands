@@ -11,7 +11,7 @@ type 兀的UdaBarony struct {
 var BUda兀的 feud.Barony = &兀的UdaBarony{}
 
 func init() {
-	f := BUda兀的.(*兀的UdaBarony)
+    f := BUda兀的.(*兀的UdaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "uda",
 		TitleName: "兀的",

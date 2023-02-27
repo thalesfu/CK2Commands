@@ -11,7 +11,7 @@ type 诃悉帝军持HastikundiBarony struct {
 var BHastikundi诃悉帝军持 feud.Barony = &诃悉帝军持HastikundiBarony{}
 
 func init() {
-	f := BHastikundi诃悉帝军持.(*诃悉帝军持HastikundiBarony)
+    f := BHastikundi诃悉帝军持.(*诃悉帝军持HastikundiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "hastikundi",
 		TitleName: "诃悉帝军持",

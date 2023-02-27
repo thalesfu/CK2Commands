@@ -8,31 +8,31 @@ import (
 )
 
 type CarniolaDuke interface {
-	feud.Duke
-	CIstria伊斯特里亚() istria.IstriaCounty
-	CKrain克雷纳() krain.KrainCounty
-	CPettau佩陶() pettau.PettauCounty
+    feud.Duke
+    CIstria伊斯特里亚() 	istria.IstriaCounty
+    CKrain克雷纳() 	krain.KrainCounty
+    CPettau佩陶() 	pettau.PettauCounty
 }
 
 type 卡尔尼奥拉CarniolaDuke struct {
 	feud.BaseDuke
-	伊斯特里亚Istria istria.IstriaCounty
-	克雷纳Krain    krain.KrainCounty
-	佩陶Pettau    pettau.PettauCounty
+	伊斯特里亚Istria 	istria.IstriaCounty
+	克雷纳Krain 	krain.KrainCounty
+	佩陶Pettau 	pettau.PettauCounty
 }
 
 func (d *卡尔尼奥拉CarniolaDuke) CIstria伊斯特里亚() istria.IstriaCounty {
 	return d.伊斯特里亚Istria
 }
-
+    
 func (d *卡尔尼奥拉CarniolaDuke) CKrain克雷纳() krain.KrainCounty {
 	return d.克雷纳Krain
 }
-
+    
 func (d *卡尔尼奥拉CarniolaDuke) CPettau佩陶() pettau.PettauCounty {
 	return d.佩陶Pettau
 }
-
+    
 var DCarniola卡尔尼奥拉 CarniolaDuke = &卡尔尼奥拉CarniolaDuke{}
 
 func init() {
@@ -46,11 +46,11 @@ func init() {
 
 	f.伊斯特里亚Istria = istria.CIstria伊斯特里亚
 	f.伊斯特里亚Istria.SetParent(f)
-
+	
 	f.克雷纳Krain = krain.CKrain克雷纳
 	f.克雷纳Krain.SetParent(f)
-
+	
 	f.佩陶Pettau = pettau.CPettau佩陶
 	f.佩陶Pettau.SetParent(f)
-
+	
 }

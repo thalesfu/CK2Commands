@@ -11,7 +11,7 @@ type 科泰延KotiaionBarony struct {
 var BKotiaion科泰延 feud.Barony = &科泰延KotiaionBarony{}
 
 func init() {
-	f := BKotiaion科泰延.(*科泰延KotiaionBarony)
+    f := BKotiaion科泰延.(*科泰延KotiaionBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kotiaion",
 		TitleName: "科泰延",

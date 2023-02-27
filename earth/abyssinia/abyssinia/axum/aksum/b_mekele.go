@@ -11,7 +11,7 @@ type 默克莱MekeleBarony struct {
 var BMekele默克莱 feud.Barony = &默克莱MekeleBarony{}
 
 func init() {
-	f := BMekele默克莱.(*默克莱MekeleBarony)
+    f := BMekele默克莱.(*默克莱MekeleBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mekele",
 		TitleName: "默克莱",

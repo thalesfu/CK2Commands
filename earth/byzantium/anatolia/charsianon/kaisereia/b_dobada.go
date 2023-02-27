@@ -11,7 +11,7 @@ type 多巴达DobadaBarony struct {
 var BDobada多巴达 feud.Barony = &多巴达DobadaBarony{}
 
 func init() {
-	f := BDobada多巴达.(*多巴达DobadaBarony)
+    f := BDobada多巴达.(*多巴达DobadaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "dobada",
 		TitleName: "多巴达",

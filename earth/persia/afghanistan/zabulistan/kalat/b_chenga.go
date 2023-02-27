@@ -11,7 +11,7 @@ type 琴加ChengaBarony struct {
 var BChenga琴加 feud.Barony = &琴加ChengaBarony{}
 
 func init() {
-	f := BChenga琴加.(*琴加ChengaBarony)
+    f := BChenga琴加.(*琴加ChengaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chenga",
 		TitleName: "琴加",

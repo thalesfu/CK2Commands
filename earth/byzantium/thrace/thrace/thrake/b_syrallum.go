@@ -11,7 +11,7 @@ type 希拉冷SyrallumBarony struct {
 var BSyrallum希拉冷 feud.Barony = &希拉冷SyrallumBarony{}
 
 func init() {
-	f := BSyrallum希拉冷.(*希拉冷SyrallumBarony)
+    f := BSyrallum希拉冷.(*希拉冷SyrallumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "syrallum",
 		TitleName: "希拉冷",

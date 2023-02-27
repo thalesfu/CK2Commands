@@ -7,25 +7,25 @@ import (
 )
 
 type JaziraDuke interface {
-	feud.Duke
-	CAmida阿米达() amida.AmidaCounty
-	CBira比雷() bira.BiraCounty
+    feud.Duke
+    CAmida阿米达() 	amida.AmidaCounty
+    CBira比雷() 	bira.BiraCounty
 }
 
 type 贾兹拉JaziraDuke struct {
 	feud.BaseDuke
-	阿米达Amida amida.AmidaCounty
-	比雷Bira   bira.BiraCounty
+	阿米达Amida 	amida.AmidaCounty
+	比雷Bira 	bira.BiraCounty
 }
 
 func (d *贾兹拉JaziraDuke) CAmida阿米达() amida.AmidaCounty {
 	return d.阿米达Amida
 }
-
+    
 func (d *贾兹拉JaziraDuke) CBira比雷() bira.BiraCounty {
 	return d.比雷Bira
 }
-
+    
 var DJazira贾兹拉 JaziraDuke = &贾兹拉JaziraDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.阿米达Amida = amida.CAmida阿米达
 	f.阿米达Amida.SetParent(f)
-
+	
 	f.比雷Bira = bira.CBira比雷
 	f.比雷Bira.SetParent(f)
-
+	
 }

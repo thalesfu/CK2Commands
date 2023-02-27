@@ -11,7 +11,7 @@ type 安条克AntiocheiaBarony struct {
 var BAntiocheia安条克 feud.Barony = &安条克AntiocheiaBarony{}
 
 func init() {
-	f := BAntiocheia安条克.(*安条克AntiocheiaBarony)
+    f := BAntiocheia安条克.(*安条克AntiocheiaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "antiocheia",
 		TitleName: "安条克",

@@ -11,7 +11,7 @@ type 蒙特里焦尼MonteriggioniBarony struct {
 var BMonteriggioni蒙特里焦尼 feud.Barony = &蒙特里焦尼MonteriggioniBarony{}
 
 func init() {
-	f := BMonteriggioni蒙特里焦尼.(*蒙特里焦尼MonteriggioniBarony)
+    f := BMonteriggioni蒙特里焦尼.(*蒙特里焦尼MonteriggioniBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "monteriggioni",
 		TitleName: "蒙特里焦尼",

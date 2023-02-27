@@ -11,7 +11,7 @@ type 曲女城KanyakubjaBarony struct {
 var BKanyakubja曲女城 feud.Barony = &曲女城KanyakubjaBarony{}
 
 func init() {
-	f := BKanyakubja曲女城.(*曲女城KanyakubjaBarony)
+    f := BKanyakubja曲女城.(*曲女城KanyakubjaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kanyakubja",
 		TitleName: "曲女城",

@@ -11,7 +11,7 @@ type 也儿的石ErtisBarony struct {
 var BErtis也儿的石 feud.Barony = &也儿的石ErtisBarony{}
 
 func init() {
-	f := BErtis也儿的石.(*也儿的石ErtisBarony)
+    f := BErtis也儿的石.(*也儿的石ErtisBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ertis",
 		TitleName: "也儿的石",

@@ -11,7 +11,7 @@ type 巴塞罗那BarcelonaBarony struct {
 var BBarcelona巴塞罗那 feud.Barony = &巴塞罗那BarcelonaBarony{}
 
 func init() {
-	f := BBarcelona巴塞罗那.(*巴塞罗那BarcelonaBarony)
+    f := BBarcelona巴塞罗那.(*巴塞罗那BarcelonaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "barcelona",
 		TitleName: "巴塞罗那",

@@ -11,7 +11,7 @@ type 皮特奥PiteaBarony struct {
 var BPitea皮特奥 feud.Barony = &皮特奥PiteaBarony{}
 
 func init() {
-	f := BPitea皮特奥.(*皮特奥PiteaBarony)
+    f := BPitea皮特奥.(*皮特奥PiteaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pitea",
 		TitleName: "皮特奥",

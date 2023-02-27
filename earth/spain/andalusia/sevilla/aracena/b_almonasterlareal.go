@@ -11,7 +11,7 @@ type 阿尔莫纳斯特拉雷亚尔AlmonasterlarealBarony struct {
 var BAlmonasterlareal阿尔莫纳斯特拉雷亚尔 feud.Barony = &阿尔莫纳斯特拉雷亚尔AlmonasterlarealBarony{}
 
 func init() {
-	f := BAlmonasterlareal阿尔莫纳斯特拉雷亚尔.(*阿尔莫纳斯特拉雷亚尔AlmonasterlarealBarony)
+    f := BAlmonasterlareal阿尔莫纳斯特拉雷亚尔.(*阿尔莫纳斯特拉雷亚尔AlmonasterlarealBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "almonasterlareal",
 		TitleName: "阿尔莫纳斯特拉雷亚尔",

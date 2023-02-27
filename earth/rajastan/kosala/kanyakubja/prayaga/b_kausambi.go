@@ -11,7 +11,7 @@ type 憍赏弥KausambiBarony struct {
 var BKausambi憍赏弥 feud.Barony = &憍赏弥KausambiBarony{}
 
 func init() {
-	f := BKausambi憍赏弥.(*憍赏弥KausambiBarony)
+    f := BKausambi憍赏弥.(*憍赏弥KausambiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kausambi",
 		TitleName: "憍赏弥",

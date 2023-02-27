@@ -11,7 +11,7 @@ type 圣比亚焦普拉塔尼SanbiagioplataniBarony struct {
 var BSanbiagioplatani圣比亚焦普拉塔尼 feud.Barony = &圣比亚焦普拉塔尼SanbiagioplataniBarony{}
 
 func init() {
-	f := BSanbiagioplatani圣比亚焦普拉塔尼.(*圣比亚焦普拉塔尼SanbiagioplataniBarony)
+    f := BSanbiagioplatani圣比亚焦普拉塔尼.(*圣比亚焦普拉塔尼SanbiagioplataniBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sanbiagioplatani",
 		TitleName: "圣比亚焦普拉塔尼",

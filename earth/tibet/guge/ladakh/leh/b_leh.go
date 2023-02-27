@@ -11,7 +11,7 @@ type 列城LehBarony struct {
 var BLeh列城 feud.Barony = &列城LehBarony{}
 
 func init() {
-	f := BLeh列城.(*列城LehBarony)
+    f := BLeh列城.(*列城LehBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "leh",
 		TitleName: "列城",

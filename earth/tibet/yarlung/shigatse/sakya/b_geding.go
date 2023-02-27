@@ -11,7 +11,7 @@ type 吉定GedingBarony struct {
 var BGeding吉定 feud.Barony = &吉定GedingBarony{}
 
 func init() {
-	f := BGeding吉定.(*吉定GedingBarony)
+    f := BGeding吉定.(*吉定GedingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "geding",
 		TitleName: "吉定",

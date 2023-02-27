@@ -11,7 +11,7 @@ type 吐格勒TughylBarony struct {
 var BTughyl吐格勒 feud.Barony = &吐格勒TughylBarony{}
 
 func init() {
-	f := BTughyl吐格勒.(*吐格勒TughylBarony)
+    f := BTughyl吐格勒.(*吐格勒TughylBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tughyl",
 		TitleName: "吐格勒",

@@ -11,7 +11,7 @@ type 马费尔斯科伊MafelskoiBarony struct {
 var BMafelskoi马费尔斯科伊 feud.Barony = &马费尔斯科伊MafelskoiBarony{}
 
 func init() {
-	f := BMafelskoi马费尔斯科伊.(*马费尔斯科伊MafelskoiBarony)
+    f := BMafelskoi马费尔斯科伊.(*马费尔斯科伊MafelskoiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mafelskoi",
 		TitleName: "马费尔斯科伊",

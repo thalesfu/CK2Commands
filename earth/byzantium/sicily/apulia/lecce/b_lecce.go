@@ -11,7 +11,7 @@ type 莱切LecceBarony struct {
 var BLecce莱切 feud.Barony = &莱切LecceBarony{}
 
 func init() {
-	f := BLecce莱切.(*莱切LecceBarony)
+    f := BLecce莱切.(*莱切LecceBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lecce",
 		TitleName: "莱切",

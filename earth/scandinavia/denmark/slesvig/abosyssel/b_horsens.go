@@ -11,7 +11,7 @@ type 霍尔森斯HorsensBarony struct {
 var BHorsens霍尔森斯 feud.Barony = &霍尔森斯HorsensBarony{}
 
 func init() {
-	f := BHorsens霍尔森斯.(*霍尔森斯HorsensBarony)
+    f := BHorsens霍尔森斯.(*霍尔森斯HorsensBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "horsens",
 		TitleName: "霍尔森斯",

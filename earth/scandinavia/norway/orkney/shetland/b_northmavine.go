@@ -11,7 +11,7 @@ type 诺赫马因NorthmavineBarony struct {
 var BNorthmavine诺赫马因 feud.Barony = &诺赫马因NorthmavineBarony{}
 
 func init() {
-	f := BNorthmavine诺赫马因.(*诺赫马因NorthmavineBarony)
+    f := BNorthmavine诺赫马因.(*诺赫马因NorthmavineBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "northmavine",
 		TitleName: "诺赫马因",

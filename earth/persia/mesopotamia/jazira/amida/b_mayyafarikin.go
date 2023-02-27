@@ -11,7 +11,7 @@ type 迈亚法里金MayyafarikinBarony struct {
 var BMayyafarikin迈亚法里金 feud.Barony = &迈亚法里金MayyafarikinBarony{}
 
 func init() {
-	f := BMayyafarikin迈亚法里金.(*迈亚法里金MayyafarikinBarony)
+    f := BMayyafarikin迈亚法里金.(*迈亚法里金MayyafarikinBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mayyafarikin",
 		TitleName: "迈亚法里金",

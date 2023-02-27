@@ -11,7 +11,7 @@ type 阿克沙套AkshatauBarony struct {
 var BAkshatau阿克沙套 feud.Barony = &阿克沙套AkshatauBarony{}
 
 func init() {
-	f := BAkshatau阿克沙套.(*阿克沙套AkshatauBarony)
+    f := BAkshatau阿克沙套.(*阿克沙套AkshatauBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "akshatau",
 		TitleName: "阿克沙套",

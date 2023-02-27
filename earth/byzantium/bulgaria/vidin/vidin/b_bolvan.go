@@ -11,7 +11,7 @@ type 博尔万BolvanBarony struct {
 var BBolvan博尔万 feud.Barony = &博尔万BolvanBarony{}
 
 func init() {
-	f := BBolvan博尔万.(*博尔万BolvanBarony)
+    f := BBolvan博尔万.(*博尔万BolvanBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "bolvan",
 		TitleName: "博尔万",

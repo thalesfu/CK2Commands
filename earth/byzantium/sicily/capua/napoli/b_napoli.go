@@ -11,7 +11,7 @@ type 那波利NapoliBarony struct {
 var BNapoli那波利 feud.Barony = &那波利NapoliBarony{}
 
 func init() {
-	f := BNapoli那波利.(*那波利NapoliBarony)
+    f := BNapoli那波利.(*那波利NapoliBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "napoli",
 		TitleName: "那波利",

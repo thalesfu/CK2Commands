@@ -5,43 +5,55 @@ import (
 )
 
 type NajranCounty interface {
-	feud.County
-	BHasakat哈萨卡特() feud.Barony
-	BHuth侯斯() feud.Barony
-	BNajran纳季兰() feud.Barony
-	BRibakhah里巴哈() feud.Barony
-	BSada萨达() feud.Barony
+    feud.County
+    BAz_zawwah扎乌瓦() 	feud.Barony
+    BDahal_jalal达哈勒贾拉勒() 	feud.Barony
+    BHasakat哈萨卡特() 	feud.Barony
+    BHuth侯斯() 	feud.Barony
+    BNajran纳季兰() 	feud.Barony
+    BRibakhah里巴哈() 	feud.Barony
+    BSada萨达() 	feud.Barony
 }
 
 type 纳季兰NajranCounty struct {
 	feud.BaseCounty
-	哈萨卡特Hasakat feud.Barony
-	侯斯Huth      feud.Barony
-	纳季兰Najran   feud.Barony
-	里巴哈Ribakhah feud.Barony
-	萨达Sada      feud.Barony
+	扎乌瓦Az_zawwah 	feud.Barony
+	达哈勒贾拉勒Dahal_jalal 	feud.Barony
+	哈萨卡特Hasakat 	feud.Barony
+	侯斯Huth 	feud.Barony
+	纳季兰Najran 	feud.Barony
+	里巴哈Ribakhah 	feud.Barony
+	萨达Sada 	feud.Barony
 }
 
+func (c *纳季兰NajranCounty) BAz_zawwah扎乌瓦() feud.Barony {
+	return c.扎乌瓦Az_zawwah
+}
+    
+func (c *纳季兰NajranCounty) BDahal_jalal达哈勒贾拉勒() feud.Barony {
+	return c.达哈勒贾拉勒Dahal_jalal
+}
+    
 func (c *纳季兰NajranCounty) BHasakat哈萨卡特() feud.Barony {
 	return c.哈萨卡特Hasakat
 }
-
+    
 func (c *纳季兰NajranCounty) BHuth侯斯() feud.Barony {
 	return c.侯斯Huth
 }
-
+    
 func (c *纳季兰NajranCounty) BNajran纳季兰() feud.Barony {
 	return c.纳季兰Najran
 }
-
+    
 func (c *纳季兰NajranCounty) BRibakhah里巴哈() feud.Barony {
 	return c.里巴哈Ribakhah
 }
-
+    
 func (c *纳季兰NajranCounty) BSada萨达() feud.Barony {
 	return c.萨达Sada
 }
-
+    
 var CNajran纳季兰 NajranCounty = &纳季兰NajranCounty{}
 
 func init() {
@@ -54,19 +66,25 @@ func init() {
 		Baronies:  map[string]feud.Barony{},
 	}
 
+	f.扎乌瓦Az_zawwah = BAz_zawwah扎乌瓦
+	f.扎乌瓦Az_zawwah.SetParent(f)
+	
+	f.达哈勒贾拉勒Dahal_jalal = BDahal_jalal达哈勒贾拉勒
+	f.达哈勒贾拉勒Dahal_jalal.SetParent(f)
+	
 	f.哈萨卡特Hasakat = BHasakat哈萨卡特
 	f.哈萨卡特Hasakat.SetParent(f)
-
+	
 	f.侯斯Huth = BHuth侯斯
 	f.侯斯Huth.SetParent(f)
-
+	
 	f.纳季兰Najran = BNajran纳季兰
 	f.纳季兰Najran.SetParent(f)
-
+	
 	f.里巴哈Ribakhah = BRibakhah里巴哈
 	f.里巴哈Ribakhah.SetParent(f)
-
+	
 	f.萨达Sada = BSada萨达
 	f.萨达Sada.SetParent(f)
-
+	
 }

@@ -11,7 +11,7 @@ type 小柴达木XiaochaidamuBarony struct {
 var BXiaochaidamu小柴达木 feud.Barony = &小柴达木XiaochaidamuBarony{}
 
 func init() {
-	f := BXiaochaidamu小柴达木.(*小柴达木XiaochaidamuBarony)
+    f := BXiaochaidamu小柴达木.(*小柴达木XiaochaidamuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "xiaochaidamu",
 		TitleName: "小柴达木",

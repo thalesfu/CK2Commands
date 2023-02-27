@@ -11,7 +11,7 @@ type 克利夫CleeveBarony struct {
 var BCleeve克利夫 feud.Barony = &克利夫CleeveBarony{}
 
 func init() {
-	f := BCleeve克利夫.(*克利夫CleeveBarony)
+    f := BCleeve克利夫.(*克利夫CleeveBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "cleeve",
 		TitleName: "克利夫",

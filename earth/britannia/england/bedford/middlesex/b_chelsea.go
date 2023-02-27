@@ -11,7 +11,7 @@ type 切尔西ChelseaBarony struct {
 var BChelsea切尔西 feud.Barony = &切尔西ChelseaBarony{}
 
 func init() {
-	f := BChelsea切尔西.(*切尔西ChelseaBarony)
+    f := BChelsea切尔西.(*切尔西ChelseaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "chelsea",
 		TitleName: "切尔西",

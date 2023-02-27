@@ -11,7 +11,7 @@ type 曲登QudengBarony struct {
 var BQudeng曲登 feud.Barony = &曲登QudengBarony{}
 
 func init() {
-	f := BQudeng曲登.(*曲登QudengBarony)
+    f := BQudeng曲登.(*曲登QudengBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "qudeng",
 		TitleName: "曲登",

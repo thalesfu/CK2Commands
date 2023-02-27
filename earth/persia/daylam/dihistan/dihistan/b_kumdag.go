@@ -11,7 +11,7 @@ type 古姆达格KumdagBarony struct {
 var BKumdag古姆达格 feud.Barony = &古姆达格KumdagBarony{}
 
 func init() {
-	f := BKumdag古姆达格.(*古姆达格KumdagBarony)
+    f := BKumdag古姆达格.(*古姆达格KumdagBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "kumdag",
 		TitleName: "古姆达格",

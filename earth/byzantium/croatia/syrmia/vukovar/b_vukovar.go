@@ -11,7 +11,7 @@ type 武科瓦尔VukovarBarony struct {
 var BVukovar武科瓦尔 feud.Barony = &武科瓦尔VukovarBarony{}
 
 func init() {
-	f := BVukovar武科瓦尔.(*武科瓦尔VukovarBarony)
+    f := BVukovar武科瓦尔.(*武科瓦尔VukovarBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "vukovar",
 		TitleName: "武科瓦尔",

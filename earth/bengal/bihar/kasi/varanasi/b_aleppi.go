@@ -11,7 +11,7 @@ type 亚力皮AleppiBarony struct {
 var BAleppi亚力皮 feud.Barony = &亚力皮AleppiBarony{}
 
 func init() {
-	f := BAleppi亚力皮.(*亚力皮AleppiBarony)
+    f := BAleppi亚力皮.(*亚力皮AleppiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "aleppi",
 		TitleName: "亚力皮",

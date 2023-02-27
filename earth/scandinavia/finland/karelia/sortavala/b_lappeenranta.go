@@ -11,7 +11,7 @@ type 拉彭兰塔LappeenrantaBarony struct {
 var BLappeenranta拉彭兰塔 feud.Barony = &拉彭兰塔LappeenrantaBarony{}
 
 func init() {
-	f := BLappeenranta拉彭兰塔.(*拉彭兰塔LappeenrantaBarony)
+    f := BLappeenranta拉彭兰塔.(*拉彭兰塔LappeenrantaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lappeenranta",
 		TitleName: "拉彭兰塔",

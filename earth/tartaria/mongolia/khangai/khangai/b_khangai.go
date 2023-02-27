@@ -11,7 +11,7 @@ type 杭海KhangaiBarony struct {
 var BKhangai杭海 feud.Barony = &杭海KhangaiBarony{}
 
 func init() {
-	f := BKhangai杭海.(*杭海KhangaiBarony)
+    f := BKhangai杭海.(*杭海KhangaiBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "khangai",
 		TitleName: "杭海",

@@ -11,7 +11,7 @@ type 雪源ZhoyonBarony struct {
 var BZhoyon雪源 feud.Barony = &雪源ZhoyonBarony{}
 
 func init() {
-	f := BZhoyon雪源.(*雪源ZhoyonBarony)
+    f := BZhoyon雪源.(*雪源ZhoyonBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "zhoyon",
 		TitleName: "雪源",

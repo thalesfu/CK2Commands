@@ -11,7 +11,7 @@ type 乐都LeduBarony struct {
 var BLedu乐都 feud.Barony = &乐都LeduBarony{}
 
 func init() {
-	f := BLedu乐都.(*乐都LeduBarony)
+    f := BLedu乐都.(*乐都LeduBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "ledu",
 		TitleName: "乐都",

@@ -11,7 +11,7 @@ type 提翁TieionBarony struct {
 var BTieion提翁 feud.Barony = &提翁TieionBarony{}
 
 func init() {
-	f := BTieion提翁.(*提翁TieionBarony)
+    f := BTieion提翁.(*提翁TieionBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tieion",
 		TitleName: "提翁",

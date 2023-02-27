@@ -11,7 +11,7 @@ type 法齐莫尼蒂斯PhazimonitisBarony struct {
 var BPhazimonitis法齐莫尼蒂斯 feud.Barony = &法齐莫尼蒂斯PhazimonitisBarony{}
 
 func init() {
-	f := BPhazimonitis法齐莫尼蒂斯.(*法齐莫尼蒂斯PhazimonitisBarony)
+    f := BPhazimonitis法齐莫尼蒂斯.(*法齐莫尼蒂斯PhazimonitisBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "phazimonitis",
 		TitleName: "法齐莫尼蒂斯",

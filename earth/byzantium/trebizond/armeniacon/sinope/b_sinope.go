@@ -11,7 +11,7 @@ type 锡诺皮SinopeBarony struct {
 var BSinope锡诺皮 feud.Barony = &锡诺皮SinopeBarony{}
 
 func init() {
-	f := BSinope锡诺皮.(*锡诺皮SinopeBarony)
+    f := BSinope锡诺皮.(*锡诺皮SinopeBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sinope",
 		TitleName: "锡诺皮",

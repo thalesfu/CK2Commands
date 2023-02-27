@@ -11,7 +11,7 @@ type 帕拉沃拉ParavolaBarony struct {
 var BParavola帕拉沃拉 feud.Barony = &帕拉沃拉ParavolaBarony{}
 
 func init() {
-	f := BParavola帕拉沃拉.(*帕拉沃拉ParavolaBarony)
+    f := BParavola帕拉沃拉.(*帕拉沃拉ParavolaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "paravola",
 		TitleName: "帕拉沃拉",

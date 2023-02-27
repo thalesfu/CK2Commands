@@ -11,7 +11,7 @@ type 米兰多拉MirandolaBarony struct {
 var BMirandola米兰多拉 feud.Barony = &米兰多拉MirandolaBarony{}
 
 func init() {
-	f := BMirandola米兰多拉.(*米兰多拉MirandolaBarony)
+    f := BMirandola米兰多拉.(*米兰多拉MirandolaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "mirandola",
 		TitleName: "米兰多拉",

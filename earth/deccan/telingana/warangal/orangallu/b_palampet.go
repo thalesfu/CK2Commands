@@ -11,7 +11,7 @@ type 波罗姆佩特PalampetBarony struct {
 var BPalampet波罗姆佩特 feud.Barony = &波罗姆佩特PalampetBarony{}
 
 func init() {
-	f := BPalampet波罗姆佩特.(*波罗姆佩特PalampetBarony)
+    f := BPalampet波罗姆佩特.(*波罗姆佩特PalampetBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "palampet",
 		TitleName: "波罗姆佩特",

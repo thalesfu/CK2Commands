@@ -11,7 +11,7 @@ type 塔季AttajBarony struct {
 var BAttaj塔季 feud.Barony = &塔季AttajBarony{}
 
 func init() {
-	f := BAttaj塔季.(*塔季AttajBarony)
+    f := BAttaj塔季.(*塔季AttajBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "attaj",
 		TitleName: "塔季",

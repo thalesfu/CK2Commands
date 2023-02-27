@@ -11,7 +11,7 @@ type 格拉斯哥GlasgowBarony struct {
 var BGlasgow格拉斯哥 feud.Barony = &格拉斯哥GlasgowBarony{}
 
 func init() {
-	f := BGlasgow格拉斯哥.(*格拉斯哥GlasgowBarony)
+    f := BGlasgow格拉斯哥.(*格拉斯哥GlasgowBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "glasgow",
 		TitleName: "格拉斯哥",

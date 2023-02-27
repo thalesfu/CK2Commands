@@ -8,31 +8,31 @@ import (
 )
 
 type HausalandKingdom interface {
-	feud.Kingdom
-	DAir艾尔() air.AirDuke
-	DHausaland豪萨() hausaland.HausalandDuke
-	DKebbi凯比() kebbi.KebbiDuke
+    feud.Kingdom
+    DAir艾尔() 	air.AirDuke
+    DHausaland豪萨() 	hausaland.HausalandDuke
+    DKebbi凯比() 	kebbi.KebbiDuke
 }
 
 type 豪萨HausalandKingdom struct {
 	feud.BaseKingdom
-	艾尔Air       air.AirDuke
-	豪萨Hausaland hausaland.HausalandDuke
-	凯比Kebbi     kebbi.KebbiDuke
+	艾尔Air 	air.AirDuke
+	豪萨Hausaland 	hausaland.HausalandDuke
+	凯比Kebbi 	kebbi.KebbiDuke
 }
 
 func (k *豪萨HausalandKingdom) DAir艾尔() air.AirDuke {
 	return k.艾尔Air
 }
-
+    
 func (k *豪萨HausalandKingdom) DHausaland豪萨() hausaland.HausalandDuke {
 	return k.豪萨Hausaland
 }
-
+    
 func (k *豪萨HausalandKingdom) DKebbi凯比() kebbi.KebbiDuke {
 	return k.凯比Kebbi
 }
-
+    
 var KHausaland豪萨 HausalandKingdom = &豪萨HausalandKingdom{}
 
 func init() {
@@ -41,16 +41,16 @@ func init() {
 		Title:     "hausaland",
 		TitleName: "豪萨",
 		TitleCode: "k_hausaland",
-		Dukes:     map[string]feud.Duke{},
+		Dukes:  map[string]feud.Duke{},
 	}
 
 	f.艾尔Air = air.DAir艾尔
 	f.艾尔Air.SetParent(f)
-
+	
 	f.豪萨Hausaland = hausaland.DHausaland豪萨
 	f.豪萨Hausaland.SetParent(f)
-
+	
 	f.凯比Kebbi = kebbi.DKebbi凯比
 	f.凯比Kebbi.SetParent(f)
-
+	
 }

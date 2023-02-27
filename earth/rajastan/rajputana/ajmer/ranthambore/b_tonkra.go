@@ -11,7 +11,7 @@ type 通卡TonkraBarony struct {
 var BTonkra通卡 feud.Barony = &通卡TonkraBarony{}
 
 func init() {
-	f := BTonkra通卡.(*通卡TonkraBarony)
+    f := BTonkra通卡.(*通卡TonkraBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tonkra",
 		TitleName: "通卡",

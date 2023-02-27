@@ -11,7 +11,7 @@ type 盘卡克PankakBarony struct {
 var BPankak盘卡克 feud.Barony = &盘卡克PankakBarony{}
 
 func init() {
-	f := BPankak盘卡克.(*盘卡克PankakBarony)
+    f := BPankak盘卡克.(*盘卡克PankakBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pankak",
 		TitleName: "盘卡克",

@@ -11,7 +11,7 @@ type 大拉明GrobramingBarony struct {
 var BGrobraming大拉明 feud.Barony = &大拉明GrobramingBarony{}
 
 func init() {
-	f := BGrobraming大拉明.(*大拉明GrobramingBarony)
+    f := BGrobraming大拉明.(*大拉明GrobramingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "grobraming",
 		TitleName: "大拉明",

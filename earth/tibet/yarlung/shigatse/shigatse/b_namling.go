@@ -11,7 +11,7 @@ type 南木林NamlingBarony struct {
 var BNamling南木林 feud.Barony = &南木林NamlingBarony{}
 
 func init() {
-	f := BNamling南木林.(*南木林NamlingBarony)
+    f := BNamling南木林.(*南木林NamlingBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "namling",
 		TitleName: "南木林",

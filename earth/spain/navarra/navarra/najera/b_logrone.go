@@ -11,7 +11,7 @@ type 洛格罗尼奥LogroneBarony struct {
 var BLogrone洛格罗尼奥 feud.Barony = &洛格罗尼奥LogroneBarony{}
 
 func init() {
-	f := BLogrone洛格罗尼奥.(*洛格罗尼奥LogroneBarony)
+    f := BLogrone洛格罗尼奥.(*洛格罗尼奥LogroneBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "logrone",
 		TitleName: "洛格罗尼奥",

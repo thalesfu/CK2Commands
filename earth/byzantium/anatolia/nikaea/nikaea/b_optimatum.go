@@ -11,7 +11,7 @@ type 奥普提马同OptimatumBarony struct {
 var BOptimatum奥普提马同 feud.Barony = &奥普提马同OptimatumBarony{}
 
 func init() {
-	f := BOptimatum奥普提马同.(*奥普提马同OptimatumBarony)
+    f := BOptimatum奥普提马同.(*奥普提马同OptimatumBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "optimatum",
 		TitleName: "奥普提马同",

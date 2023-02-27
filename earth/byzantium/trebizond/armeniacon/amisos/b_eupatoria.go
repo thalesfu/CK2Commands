@@ -11,7 +11,7 @@ type 叶夫帕托里亚EupatoriaBarony struct {
 var BEupatoria叶夫帕托里亚 feud.Barony = &叶夫帕托里亚EupatoriaBarony{}
 
 func init() {
-	f := BEupatoria叶夫帕托里亚.(*叶夫帕托里亚EupatoriaBarony)
+    f := BEupatoria叶夫帕托里亚.(*叶夫帕托里亚EupatoriaBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "eupatoria",
 		TitleName: "叶夫帕托里亚",

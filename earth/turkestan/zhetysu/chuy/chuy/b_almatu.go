@@ -11,7 +11,7 @@ type 阿拉木图AlmatuBarony struct {
 var BAlmatu阿拉木图 feud.Barony = &阿拉木图AlmatuBarony{}
 
 func init() {
-	f := BAlmatu阿拉木图.(*阿拉木图AlmatuBarony)
+    f := BAlmatu阿拉木图.(*阿拉木图AlmatuBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "almatu",
 		TitleName: "阿拉木图",

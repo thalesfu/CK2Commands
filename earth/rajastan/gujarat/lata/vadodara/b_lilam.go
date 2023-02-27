@@ -11,7 +11,7 @@ type 梨蓝LilamBarony struct {
 var BLilam梨蓝 feud.Barony = &梨蓝LilamBarony{}
 
 func init() {
-	f := BLilam梨蓝.(*梨蓝LilamBarony)
+    f := BLilam梨蓝.(*梨蓝LilamBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "lilam",
 		TitleName: "梨蓝",

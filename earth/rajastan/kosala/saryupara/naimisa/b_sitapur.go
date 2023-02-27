@@ -11,7 +11,7 @@ type 私多城SitapurBarony struct {
 var BSitapur私多城 feud.Barony = &私多城SitapurBarony{}
 
 func init() {
-	f := BSitapur私多城.(*私多城SitapurBarony)
+    f := BSitapur私多城.(*私多城SitapurBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "sitapur",
 		TitleName: "私多城",

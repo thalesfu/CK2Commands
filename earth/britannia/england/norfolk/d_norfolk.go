@@ -7,25 +7,25 @@ import (
 )
 
 type NorfolkDuke interface {
-	feud.Duke
-	CNorfolk诺福克() norfolk.NorfolkCounty
-	CSuffolk萨福克() suffolk.SuffolkCounty
+    feud.Duke
+    CNorfolk诺福克() 	norfolk.NorfolkCounty
+    CSuffolk萨福克() 	suffolk.SuffolkCounty
 }
 
 type 东盎格利亚NorfolkDuke struct {
 	feud.BaseDuke
-	诺福克Norfolk norfolk.NorfolkCounty
-	萨福克Suffolk suffolk.SuffolkCounty
+	诺福克Norfolk 	norfolk.NorfolkCounty
+	萨福克Suffolk 	suffolk.SuffolkCounty
 }
 
 func (d *东盎格利亚NorfolkDuke) CNorfolk诺福克() norfolk.NorfolkCounty {
 	return d.诺福克Norfolk
 }
-
+    
 func (d *东盎格利亚NorfolkDuke) CSuffolk萨福克() suffolk.SuffolkCounty {
 	return d.萨福克Suffolk
 }
-
+    
 var DNorfolk东盎格利亚 NorfolkDuke = &东盎格利亚NorfolkDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.诺福克Norfolk = norfolk.CNorfolk诺福克
 	f.诺福克Norfolk.SetParent(f)
-
+	
 	f.萨福克Suffolk = suffolk.CSuffolk萨福克
 	f.萨福克Suffolk.SetParent(f)
-
+	
 }

@@ -11,7 +11,7 @@ type 鄂特冈腾格里OtgontengerBarony struct {
 var BOtgontenger鄂特冈腾格里 feud.Barony = &鄂特冈腾格里OtgontengerBarony{}
 
 func init() {
-	f := BOtgontenger鄂特冈腾格里.(*鄂特冈腾格里OtgontengerBarony)
+    f := BOtgontenger鄂特冈腾格里.(*鄂特冈腾格里OtgontengerBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "otgontenger",
 		TitleName: "鄂特冈腾格里",

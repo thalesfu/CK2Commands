@@ -9,37 +9,37 @@ import (
 )
 
 type DenmarkKingdom interface {
-	feud.Kingdom
-	DHolstein荷尔斯泰因() holstein.HolsteinDuke
-	DSjaelland西兰() sjaelland.SjaellandDuke
-	DSkane斯堪尼亚() skane.SkaneDuke
-	DSlesvig日德兰() slesvig.SlesvigDuke
+    feud.Kingdom
+    DHolstein荷尔斯泰因() 	holstein.HolsteinDuke
+    DSjaelland西兰() 	sjaelland.SjaellandDuke
+    DSkane斯堪尼亚() 	skane.SkaneDuke
+    DSlesvig日德兰() 	slesvig.SlesvigDuke
 }
 
 type 丹麦DenmarkKingdom struct {
 	feud.BaseKingdom
-	荷尔斯泰因Holstein holstein.HolsteinDuke
-	西兰Sjaelland   sjaelland.SjaellandDuke
-	斯堪尼亚Skane     skane.SkaneDuke
-	日德兰Slesvig    slesvig.SlesvigDuke
+	荷尔斯泰因Holstein 	holstein.HolsteinDuke
+	西兰Sjaelland 	sjaelland.SjaellandDuke
+	斯堪尼亚Skane 	skane.SkaneDuke
+	日德兰Slesvig 	slesvig.SlesvigDuke
 }
 
 func (k *丹麦DenmarkKingdom) DHolstein荷尔斯泰因() holstein.HolsteinDuke {
 	return k.荷尔斯泰因Holstein
 }
-
+    
 func (k *丹麦DenmarkKingdom) DSjaelland西兰() sjaelland.SjaellandDuke {
 	return k.西兰Sjaelland
 }
-
+    
 func (k *丹麦DenmarkKingdom) DSkane斯堪尼亚() skane.SkaneDuke {
 	return k.斯堪尼亚Skane
 }
-
+    
 func (k *丹麦DenmarkKingdom) DSlesvig日德兰() slesvig.SlesvigDuke {
 	return k.日德兰Slesvig
 }
-
+    
 var KDenmark丹麦 DenmarkKingdom = &丹麦DenmarkKingdom{}
 
 func init() {
@@ -48,19 +48,19 @@ func init() {
 		Title:     "denmark",
 		TitleName: "丹麦",
 		TitleCode: "k_denmark",
-		Dukes:     map[string]feud.Duke{},
+		Dukes:  map[string]feud.Duke{},
 	}
 
 	f.荷尔斯泰因Holstein = holstein.DHolstein荷尔斯泰因
 	f.荷尔斯泰因Holstein.SetParent(f)
-
+	
 	f.西兰Sjaelland = sjaelland.DSjaelland西兰
 	f.西兰Sjaelland.SetParent(f)
-
+	
 	f.斯堪尼亚Skane = skane.DSkane斯堪尼亚
 	f.斯堪尼亚Skane.SetParent(f)
-
+	
 	f.日德兰Slesvig = slesvig.DSlesvig日德兰
 	f.日德兰Slesvig.SetParent(f)
-
+	
 }

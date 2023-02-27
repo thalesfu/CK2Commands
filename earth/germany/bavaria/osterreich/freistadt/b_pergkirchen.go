@@ -11,7 +11,7 @@ type 佩尔格基兴PergkirchenBarony struct {
 var BPergkirchen佩尔格基兴 feud.Barony = &佩尔格基兴PergkirchenBarony{}
 
 func init() {
-	f := BPergkirchen佩尔格基兴.(*佩尔格基兴PergkirchenBarony)
+    f := BPergkirchen佩尔格基兴.(*佩尔格基兴PergkirchenBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "pergkirchen",
 		TitleName: "佩尔格基兴",

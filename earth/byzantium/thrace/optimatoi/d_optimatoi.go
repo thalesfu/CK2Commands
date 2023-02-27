@@ -7,25 +7,25 @@ import (
 )
 
 type OptimatoiDuke interface {
-	feud.Duke
-	CHerakleia赫拉克利亚() herakleia.HerakleiaCounty
-	CNikomedeia尼科米底亚() nikomedeia.NikomedeiaCounty
+    feud.Duke
+    CHerakleia赫拉克利亚() 	herakleia.HerakleiaCounty
+    CNikomedeia尼科米底亚() 	nikomedeia.NikomedeiaCounty
 }
 
 type 奥普提马通OptimatoiDuke struct {
 	feud.BaseDuke
-	赫拉克利亚Herakleia  herakleia.HerakleiaCounty
-	尼科米底亚Nikomedeia nikomedeia.NikomedeiaCounty
+	赫拉克利亚Herakleia 	herakleia.HerakleiaCounty
+	尼科米底亚Nikomedeia 	nikomedeia.NikomedeiaCounty
 }
 
 func (d *奥普提马通OptimatoiDuke) CHerakleia赫拉克利亚() herakleia.HerakleiaCounty {
 	return d.赫拉克利亚Herakleia
 }
-
+    
 func (d *奥普提马通OptimatoiDuke) CNikomedeia尼科米底亚() nikomedeia.NikomedeiaCounty {
 	return d.尼科米底亚Nikomedeia
 }
-
+    
 var DOptimatoi奥普提马通 OptimatoiDuke = &奥普提马通OptimatoiDuke{}
 
 func init() {
@@ -39,8 +39,8 @@ func init() {
 
 	f.赫拉克利亚Herakleia = herakleia.CHerakleia赫拉克利亚
 	f.赫拉克利亚Herakleia.SetParent(f)
-
+	
 	f.尼科米底亚Nikomedeia = nikomedeia.CNikomedeia尼科米底亚
 	f.尼科米底亚Nikomedeia.SetParent(f)
-
+	
 }

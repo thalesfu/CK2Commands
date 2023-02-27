@@ -11,7 +11,7 @@ type 阿尔比扎泰AlbizzateBarony struct {
 var BAlbizzate阿尔比扎泰 feud.Barony = &阿尔比扎泰AlbizzateBarony{}
 
 func init() {
-	f := BAlbizzate阿尔比扎泰.(*阿尔比扎泰AlbizzateBarony)
+    f := BAlbizzate阿尔比扎泰.(*阿尔比扎泰AlbizzateBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "albizzate",
 		TitleName: "阿尔比扎泰",

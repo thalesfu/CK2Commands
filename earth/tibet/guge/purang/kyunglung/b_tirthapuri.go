@@ -11,7 +11,7 @@ type 直达布日TirthapuriBarony struct {
 var BTirthapuri直达布日 feud.Barony = &直达布日TirthapuriBarony{}
 
 func init() {
-	f := BTirthapuri直达布日.(*直达布日TirthapuriBarony)
+    f := BTirthapuri直达布日.(*直达布日TirthapuriBarony)
 	f.BaseBarony = feud.BaseBarony{
 		Title:     "tirthapuri",
 		TitleName: "直达布日",
