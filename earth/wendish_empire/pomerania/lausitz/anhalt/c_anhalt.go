@@ -10,6 +10,7 @@ type AnhaltCounty interface {
     BDessau德绍() 	feud.Barony
     BDornburg_zeist多恩堡() 	feud.Barony
     BLindau_zeist林道() 	feud.Barony
+    BWalter_nienburg瓦尔特宁堡() 	feud.Barony
     BWittenberg_zeist维滕贝格() 	feud.Barony
     BZerbst采尔布斯特() 	feud.Barony
 }
@@ -20,6 +21,7 @@ type 采尔布斯特AnhaltCounty struct {
 	德绍Dessau 	feud.Barony
 	多恩堡Dornburg_zeist 	feud.Barony
 	林道Lindau_zeist 	feud.Barony
+	瓦尔特宁堡Walter_nienburg 	feud.Barony
 	维滕贝格Wittenberg_zeist 	feud.Barony
 	采尔布斯特Zerbst 	feud.Barony
 }
@@ -38,6 +40,10 @@ func (c *采尔布斯特AnhaltCounty) BDornburg_zeist多恩堡() feud.Barony {
     
 func (c *采尔布斯特AnhaltCounty) BLindau_zeist林道() feud.Barony {
 	return c.林道Lindau_zeist
+}
+    
+func (c *采尔布斯特AnhaltCounty) BWalter_nienburg瓦尔特宁堡() feud.Barony {
+	return c.瓦尔特宁堡Walter_nienburg
 }
     
 func (c *采尔布斯特AnhaltCounty) BWittenberg_zeist维滕贝格() feud.Barony {
@@ -71,6 +77,9 @@ func init() {
 	
 	f.林道Lindau_zeist = BLindau_zeist林道
 	f.林道Lindau_zeist.SetParent(f)
+	
+	f.瓦尔特宁堡Walter_nienburg = BWalter_nienburg瓦尔特宁堡
+	f.瓦尔特宁堡Walter_nienburg.SetParent(f)
 	
 	f.维滕贝格Wittenberg_zeist = BWittenberg_zeist维滕贝格
 	f.维滕贝格Wittenberg_zeist.SetParent(f)

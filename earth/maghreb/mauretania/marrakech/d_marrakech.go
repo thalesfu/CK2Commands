@@ -1,6 +1,7 @@
 package marrakech
 
 import (
+	"github.com/thalesfu/CK2Commands/earth/maghreb/mauretania/marrakech/anti_atlas"
 	"github.com/thalesfu/CK2Commands/earth/maghreb/mauretania/marrakech/canarias"
 	"github.com/thalesfu/CK2Commands/earth/maghreb/mauretania/marrakech/marrakech"
 	"github.com/thalesfu/CK2Commands/earth/maghreb/mauretania/marrakech/massat"
@@ -11,6 +12,7 @@ import (
 
 type MarrakechDuke interface {
     feud.Duke
+    CAnti_atlas萨非() 	anti_atlas.Anti_atlasCounty
     CCanarias加那利() 	canarias.CanariasCounty
     CMarrakech马拉喀什() 	marrakech.MarrakechCounty
     CMassat安法() 	massat.MassatCounty
@@ -20,6 +22,7 @@ type MarrakechDuke interface {
 
 type 马拉喀什MarrakechDuke struct {
 	feud.BaseDuke
+	萨非Anti_atlas 	anti_atlas.Anti_atlasCounty
 	加那利Canarias 	canarias.CanariasCounty
 	马拉喀什Marrakech 	marrakech.MarrakechCounty
 	安法Massat 	massat.MassatCounty
@@ -27,6 +30,10 @@ type 马拉喀什MarrakechDuke struct {
 	廷马拉尔Tinmallal 	tinmallal.TinmallalCounty
 }
 
+func (d *马拉喀什MarrakechDuke) CAnti_atlas萨非() anti_atlas.Anti_atlasCounty {
+	return d.萨非Anti_atlas
+}
+    
 func (d *马拉喀什MarrakechDuke) CCanarias加那利() canarias.CanariasCounty {
 	return d.加那利Canarias
 }
@@ -58,6 +65,9 @@ func init() {
 		Counties:  map[string]feud.County{},
 	}
 
+	f.萨非Anti_atlas = anti_atlas.CAnti_atlas萨非
+	f.萨非Anti_atlas.SetParent(f)
+	
 	f.加那利Canarias = canarias.CCanarias加那利
 	f.加那利Canarias.SetParent(f)
 	

@@ -7,6 +7,7 @@ import (
 type TurovCounty interface {
     feud.County
     BAlsany奥利沙内() 	feud.Barony
+    BDavyd_haradok达维德_戈罗多克() 	feud.Barony
     BFiadory费多雷() 	feud.Barony
     BSarny萨尔内() 	feud.Barony
     BStachava斯塔霍沃() 	feud.Barony
@@ -17,6 +18,7 @@ type TurovCounty interface {
 type 图罗夫TurovCounty struct {
 	feud.BaseCounty
 	奥利沙内Alsany 	feud.Barony
+	达维德_戈罗多克Davyd_haradok 	feud.Barony
 	费多雷Fiadory 	feud.Barony
 	萨尔内Sarny 	feud.Barony
 	斯塔霍沃Stachava 	feud.Barony
@@ -26,6 +28,10 @@ type 图罗夫TurovCounty struct {
 
 func (c *图罗夫TurovCounty) BAlsany奥利沙内() feud.Barony {
 	return c.奥利沙内Alsany
+}
+    
+func (c *图罗夫TurovCounty) BDavyd_haradok达维德_戈罗多克() feud.Barony {
+	return c.达维德_戈罗多克Davyd_haradok
 }
     
 func (c *图罗夫TurovCounty) BFiadory费多雷() feud.Barony {
@@ -62,6 +68,9 @@ func init() {
 
 	f.奥利沙内Alsany = BAlsany奥利沙内
 	f.奥利沙内Alsany.SetParent(f)
+	
+	f.达维德_戈罗多克Davyd_haradok = BDavyd_haradok达维德_戈罗多克
+	f.达维德_戈罗多克Davyd_haradok.SetParent(f)
 	
 	f.费多雷Fiadory = BFiadory费多雷
 	f.费多雷Fiadory.SetParent(f)

@@ -9,6 +9,7 @@ type SaumurCounty interface {
     BBeaupreau博普雷欧() 	feud.Barony
     BCholet绍莱() 	feud.Barony
     BDoue_la_fontaine杜埃拉丰坦() 	feud.Barony
+    BFontevraud_l_abbaye丰特夫罗拉拜() 	feud.Barony
     BMaulevrier莫莱夫里耶() 	feud.Barony
     BSaumur索米尔() 	feud.Barony
     BVauchretien沃克雷蒂安() 	feud.Barony
@@ -19,6 +20,7 @@ type 索米尔SaumurCounty struct {
 	博普雷欧Beaupreau 	feud.Barony
 	绍莱Cholet 	feud.Barony
 	杜埃拉丰坦Doue_la_fontaine 	feud.Barony
+	丰特夫罗拉拜Fontevraud_l_abbaye 	feud.Barony
 	莫莱夫里耶Maulevrier 	feud.Barony
 	索米尔Saumur 	feud.Barony
 	沃克雷蒂安Vauchretien 	feud.Barony
@@ -34,6 +36,10 @@ func (c *索米尔SaumurCounty) BCholet绍莱() feud.Barony {
     
 func (c *索米尔SaumurCounty) BDoue_la_fontaine杜埃拉丰坦() feud.Barony {
 	return c.杜埃拉丰坦Doue_la_fontaine
+}
+    
+func (c *索米尔SaumurCounty) BFontevraud_l_abbaye丰特夫罗拉拜() feud.Barony {
+	return c.丰特夫罗拉拜Fontevraud_l_abbaye
 }
     
 func (c *索米尔SaumurCounty) BMaulevrier莫莱夫里耶() feud.Barony {
@@ -68,6 +74,9 @@ func init() {
 	
 	f.杜埃拉丰坦Doue_la_fontaine = BDoue_la_fontaine杜埃拉丰坦
 	f.杜埃拉丰坦Doue_la_fontaine.SetParent(f)
+	
+	f.丰特夫罗拉拜Fontevraud_l_abbaye = BFontevraud_l_abbaye丰特夫罗拉拜
+	f.丰特夫罗拉拜Fontevraud_l_abbaye.SetParent(f)
 	
 	f.莫莱夫里耶Maulevrier = BMaulevrier莫莱夫里耶
 	f.莫莱夫里耶Maulevrier.SetParent(f)

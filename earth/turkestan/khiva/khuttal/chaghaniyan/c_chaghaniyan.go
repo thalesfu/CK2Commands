@@ -7,6 +7,8 @@ import (
 type ChaghaniyanCounty interface {
     feud.County
     BChaghaniyan斫汗那() 	feud.Barony
+    BDi_l_kifl助勒基福勒() 	feud.Barony
+    BDi_l_qarnain左勒盖尔奈英() 	feud.Barony
     BKalif卡利甫() 	feud.Barony
     BSapoltepa萨波特帕() 	feud.Barony
     BShuman数瞒() 	feud.Barony
@@ -16,6 +18,8 @@ type ChaghaniyanCounty interface {
 type 斫汗那ChaghaniyanCounty struct {
 	feud.BaseCounty
 	斫汗那Chaghaniyan 	feud.Barony
+	助勒基福勒Di_l_kifl 	feud.Barony
+	左勒盖尔奈英Di_l_qarnain 	feud.Barony
 	卡利甫Kalif 	feud.Barony
 	萨波特帕Sapoltepa 	feud.Barony
 	数瞒Shuman 	feud.Barony
@@ -24,6 +28,14 @@ type 斫汗那ChaghaniyanCounty struct {
 
 func (c *斫汗那ChaghaniyanCounty) BChaghaniyan斫汗那() feud.Barony {
 	return c.斫汗那Chaghaniyan
+}
+    
+func (c *斫汗那ChaghaniyanCounty) BDi_l_kifl助勒基福勒() feud.Barony {
+	return c.助勒基福勒Di_l_kifl
+}
+    
+func (c *斫汗那ChaghaniyanCounty) BDi_l_qarnain左勒盖尔奈英() feud.Barony {
+	return c.左勒盖尔奈英Di_l_qarnain
 }
     
 func (c *斫汗那ChaghaniyanCounty) BKalif卡利甫() feud.Barony {
@@ -56,6 +68,12 @@ func init() {
 
 	f.斫汗那Chaghaniyan = BChaghaniyan斫汗那
 	f.斫汗那Chaghaniyan.SetParent(f)
+	
+	f.助勒基福勒Di_l_kifl = BDi_l_kifl助勒基福勒
+	f.助勒基福勒Di_l_kifl.SetParent(f)
+	
+	f.左勒盖尔奈英Di_l_qarnain = BDi_l_qarnain左勒盖尔奈英
+	f.左勒盖尔奈英Di_l_qarnain.SetParent(f)
 	
 	f.卡利甫Kalif = BKalif卡利甫
 	f.卡利甫Kalif.SetParent(f)

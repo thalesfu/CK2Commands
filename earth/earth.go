@@ -17,6 +17,7 @@ import (
 	"github.com/thalesfu/CK2Commands/earth/golden_horde"
 	"github.com/thalesfu/CK2Commands/earth/hre"
 	"github.com/thalesfu/CK2Commands/earth/idel_ural"
+	"github.com/thalesfu/CK2Commands/earth/il_khanate"
 	"github.com/thalesfu/CK2Commands/earth/india"
 	"github.com/thalesfu/CK2Commands/earth/italy"
 	"github.com/thalesfu/CK2Commands/earth/kanem"
@@ -64,6 +65,7 @@ var (
     Golden_horde金帐汗国 = golden_horde.EGolden_horde金帐汗国
     Hre神圣罗马帝国 = hre.EHre神圣罗马帝国
     Idel_ural伏尔加_乌拉尔 = idel_ural.EIdel_ural伏尔加_乌拉尔
+    Il_khanate伊儿汗国 = il_khanate.EIl_khanate伊儿汗国
     India印度 = india.EIndia印度
     Italy意大利亚 = italy.EItaly意大利亚
     Kanem加涅姆_博尔努 = kanem.EKanem加涅姆_博尔努

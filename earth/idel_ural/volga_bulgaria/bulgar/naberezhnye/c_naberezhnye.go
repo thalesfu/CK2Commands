@@ -9,6 +9,7 @@ type NaberezhnyeCounty interface {
     BAlmetyevsk阿尔梅季耶夫斯克() 	feud.Barony
     BAznakayevo阿兹纳卡耶沃() 	feud.Barony
     BBugulma布古利马() 	feud.Barony
+    BChatyr_tau恰特尔_陶() 	feud.Barony
     BNaberezhnye纳别列日内耶() 	feud.Barony
     BNizhnekamsk下卡姆斯克() 	feud.Barony
     BTuymazy图伊马济() 	feud.Barony
@@ -19,6 +20,7 @@ type 纳别列日内耶NaberezhnyeCounty struct {
 	阿尔梅季耶夫斯克Almetyevsk 	feud.Barony
 	阿兹纳卡耶沃Aznakayevo 	feud.Barony
 	布古利马Bugulma 	feud.Barony
+	恰特尔_陶Chatyr_tau 	feud.Barony
 	纳别列日内耶Naberezhnye 	feud.Barony
 	下卡姆斯克Nizhnekamsk 	feud.Barony
 	图伊马济Tuymazy 	feud.Barony
@@ -34,6 +36,10 @@ func (c *纳别列日内耶NaberezhnyeCounty) BAznakayevo阿兹纳卡耶沃() fe
     
 func (c *纳别列日内耶NaberezhnyeCounty) BBugulma布古利马() feud.Barony {
 	return c.布古利马Bugulma
+}
+    
+func (c *纳别列日内耶NaberezhnyeCounty) BChatyr_tau恰特尔_陶() feud.Barony {
+	return c.恰特尔_陶Chatyr_tau
 }
     
 func (c *纳别列日内耶NaberezhnyeCounty) BNaberezhnye纳别列日内耶() feud.Barony {
@@ -68,6 +74,9 @@ func init() {
 	
 	f.布古利马Bugulma = BBugulma布古利马
 	f.布古利马Bugulma.SetParent(f)
+	
+	f.恰特尔_陶Chatyr_tau = BChatyr_tau恰特尔_陶
+	f.恰特尔_陶Chatyr_tau.SetParent(f)
 	
 	f.纳别列日内耶Naberezhnye = BNaberezhnye纳别列日内耶
 	f.纳别列日内耶Naberezhnye.SetParent(f)

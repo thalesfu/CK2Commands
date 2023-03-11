@@ -4,6 +4,7 @@ import (
 	"github.com/thalesfu/CK2Commands/earth/russia/chernigov/chernigov"
 	"github.com/thalesfu/CK2Commands/earth/russia/chernigov/karachev"
 	"github.com/thalesfu/CK2Commands/earth/russia/chernigov/murom"
+	"github.com/thalesfu/CK2Commands/earth/russia/chernigov/novgorod_seversk"
 	"github.com/thalesfu/CK2Commands/earth/russia/chernigov/novosil"
 	"github.com/thalesfu/CK2Commands/earth/russia/chernigov/ryazan"
 	"github.com/thalesfu/paradoxtools/CK2/feud"
@@ -14,6 +15,7 @@ type ChernigovKingdom interface {
     DChernigov切尔尼戈夫() 	chernigov.ChernigovDuke
     DKarachev卡拉切夫() 	karachev.KarachevDuke
     DMurom穆罗姆() 	murom.MuromDuke
+    DNovgorod_seversk布良斯克() 	novgorod_seversk.Novgorod_severskDuke
     DNovosil诺沃西利() 	novosil.NovosilDuke
     DRyazan梁赞() 	ryazan.RyazanDuke
 }
@@ -23,6 +25,7 @@ type 切尔尼戈夫ChernigovKingdom struct {
 	切尔尼戈夫Chernigov 	chernigov.ChernigovDuke
 	卡拉切夫Karachev 	karachev.KarachevDuke
 	穆罗姆Murom 	murom.MuromDuke
+	布良斯克Novgorod_seversk 	novgorod_seversk.Novgorod_severskDuke
 	诺沃西利Novosil 	novosil.NovosilDuke
 	梁赞Ryazan 	ryazan.RyazanDuke
 }
@@ -37,6 +40,10 @@ func (k *切尔尼戈夫ChernigovKingdom) DKarachev卡拉切夫() karachev.Karac
     
 func (k *切尔尼戈夫ChernigovKingdom) DMurom穆罗姆() murom.MuromDuke {
 	return k.穆罗姆Murom
+}
+    
+func (k *切尔尼戈夫ChernigovKingdom) DNovgorod_seversk布良斯克() novgorod_seversk.Novgorod_severskDuke {
+	return k.布良斯克Novgorod_seversk
 }
     
 func (k *切尔尼戈夫ChernigovKingdom) DNovosil诺沃西利() novosil.NovosilDuke {
@@ -66,6 +73,9 @@ func init() {
 	
 	f.穆罗姆Murom = murom.DMurom穆罗姆
 	f.穆罗姆Murom.SetParent(f)
+	
+	f.布良斯克Novgorod_seversk = novgorod_seversk.DNovgorod_seversk布良斯克
+	f.布良斯克Novgorod_seversk.SetParent(f)
 	
 	f.诺沃西利Novosil = novosil.DNovosil诺沃西利
 	f.诺沃西利Novosil.SetParent(f)

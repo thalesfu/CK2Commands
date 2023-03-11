@@ -4,6 +4,7 @@ import (
 	"github.com/thalesfu/CK2Commands/earth/wendish_empire/poland/mazovia/czersk"
 	"github.com/thalesfu/CK2Commands/earth/wendish_empire/poland/mazovia/lomzynska"
 	"github.com/thalesfu/CK2Commands/earth/wendish_empire/poland/mazovia/plock"
+	"github.com/thalesfu/CK2Commands/earth/wendish_empire/poland/mazovia/sieradzko_leczyckie"
 	"github.com/thalesfu/paradoxtools/CK2/feud"
 )
 
@@ -12,6 +13,7 @@ type MazoviaDuke interface {
     CCzersk利夫() 	czersk.CzerskCounty
     CLomzynska沃姆扎() 	lomzynska.LomzynskaCounty
     CPlock普沃茨克() 	plock.PlockCounty
+    CSieradzko_leczyckie戈斯蒂宁() 	sieradzko_leczyckie.Sieradzko_leczyckieCounty
 }
 
 type 马佐维亚MazoviaDuke struct {
@@ -19,6 +21,7 @@ type 马佐维亚MazoviaDuke struct {
 	利夫Czersk 	czersk.CzerskCounty
 	沃姆扎Lomzynska 	lomzynska.LomzynskaCounty
 	普沃茨克Plock 	plock.PlockCounty
+	戈斯蒂宁Sieradzko_leczyckie 	sieradzko_leczyckie.Sieradzko_leczyckieCounty
 }
 
 func (d *马佐维亚MazoviaDuke) CCzersk利夫() czersk.CzerskCounty {
@@ -31,6 +34,10 @@ func (d *马佐维亚MazoviaDuke) CLomzynska沃姆扎() lomzynska.LomzynskaCount
     
 func (d *马佐维亚MazoviaDuke) CPlock普沃茨克() plock.PlockCounty {
 	return d.普沃茨克Plock
+}
+    
+func (d *马佐维亚MazoviaDuke) CSieradzko_leczyckie戈斯蒂宁() sieradzko_leczyckie.Sieradzko_leczyckieCounty {
+	return d.戈斯蒂宁Sieradzko_leczyckie
 }
     
 var DMazovia马佐维亚 MazoviaDuke = &马佐维亚MazoviaDuke{}
@@ -52,5 +59,8 @@ func init() {
 	
 	f.普沃茨克Plock = plock.CPlock普沃茨克
 	f.普沃茨克Plock.SetParent(f)
+	
+	f.戈斯蒂宁Sieradzko_leczyckie = sieradzko_leczyckie.CSieradzko_leczyckie戈斯蒂宁
+	f.戈斯蒂宁Sieradzko_leczyckie.SetParent(f)
 	
 }

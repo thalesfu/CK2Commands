@@ -12,6 +12,7 @@ type MadabaCounty interface {
     BQastal盖斯泰勒() 	feud.Barony
     BSahab萨哈布() 	feud.Barony
     BSamhal萨姆哈拉() 	feud.Barony
+    BUmm_ar_rasas乌姆赖萨斯() 	feud.Barony
     BWadi_al_sir瓦迪西尔() 	feud.Barony
 }
 
@@ -23,6 +24,7 @@ type 马德巴MadabaCounty struct {
 	盖斯泰勒Qastal 	feud.Barony
 	萨哈布Sahab 	feud.Barony
 	萨姆哈拉Samhal 	feud.Barony
+	乌姆赖萨斯Umm_ar_rasas 	feud.Barony
 	瓦迪西尔Wadi_al_sir 	feud.Barony
 }
 
@@ -48,6 +50,10 @@ func (c *马德巴MadabaCounty) BSahab萨哈布() feud.Barony {
     
 func (c *马德巴MadabaCounty) BSamhal萨姆哈拉() feud.Barony {
 	return c.萨姆哈拉Samhal
+}
+    
+func (c *马德巴MadabaCounty) BUmm_ar_rasas乌姆赖萨斯() feud.Barony {
+	return c.乌姆赖萨斯Umm_ar_rasas
 }
     
 func (c *马德巴MadabaCounty) BWadi_al_sir瓦迪西尔() feud.Barony {
@@ -83,6 +89,9 @@ func init() {
 	
 	f.萨姆哈拉Samhal = BSamhal萨姆哈拉
 	f.萨姆哈拉Samhal.SetParent(f)
+	
+	f.乌姆赖萨斯Umm_ar_rasas = BUmm_ar_rasas乌姆赖萨斯
+	f.乌姆赖萨斯Umm_ar_rasas.SetParent(f)
 	
 	f.瓦迪西尔Wadi_al_sir = BWadi_al_sir瓦迪西尔
 	f.瓦迪西尔Wadi_al_sir.SetParent(f)

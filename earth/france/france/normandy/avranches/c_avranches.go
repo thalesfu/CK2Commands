@@ -8,6 +8,7 @@ type AvranchesCounty interface {
     feud.County
     BAvranches阿夫朗什() 	feud.Barony
     BBarfleur巴夫勒尔() 	feud.Barony
+    BBarneville_carteret巴尔纳维尔卡尔特雷() 	feud.Barony
     BCarentan卡朗唐() 	feud.Barony
     BCherbourg瑟堡() 	feud.Barony
     BCoutances库唐斯() 	feud.Barony
@@ -18,6 +19,7 @@ type 莫尔坦AvranchesCounty struct {
 	feud.BaseCounty
 	阿夫朗什Avranches 	feud.Barony
 	巴夫勒尔Barfleur 	feud.Barony
+	巴尔纳维尔卡尔特雷Barneville_carteret 	feud.Barony
 	卡朗唐Carentan 	feud.Barony
 	瑟堡Cherbourg 	feud.Barony
 	库唐斯Coutances 	feud.Barony
@@ -30,6 +32,10 @@ func (c *莫尔坦AvranchesCounty) BAvranches阿夫朗什() feud.Barony {
     
 func (c *莫尔坦AvranchesCounty) BBarfleur巴夫勒尔() feud.Barony {
 	return c.巴夫勒尔Barfleur
+}
+    
+func (c *莫尔坦AvranchesCounty) BBarneville_carteret巴尔纳维尔卡尔特雷() feud.Barony {
+	return c.巴尔纳维尔卡尔特雷Barneville_carteret
 }
     
 func (c *莫尔坦AvranchesCounty) BCarentan卡朗唐() feud.Barony {
@@ -65,6 +71,9 @@ func init() {
 	
 	f.巴夫勒尔Barfleur = BBarfleur巴夫勒尔
 	f.巴夫勒尔Barfleur.SetParent(f)
+	
+	f.巴尔纳维尔卡尔特雷Barneville_carteret = BBarneville_carteret巴尔纳维尔卡尔特雷
+	f.巴尔纳维尔卡尔特雷Barneville_carteret.SetParent(f)
 	
 	f.卡朗唐Carentan = BCarentan卡朗唐
 	f.卡朗唐Carentan.SetParent(f)

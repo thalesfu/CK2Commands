@@ -11,6 +11,7 @@ type CaenCounty interface {
     BClecy克莱西() 	feud.Barony
     BDomfront栋夫龙() 	feud.Barony
     BJurques瑞尔克() 	feud.Barony
+    BVillers_bocage维莱博卡日() 	feud.Barony
     BVire维尔() 	feud.Barony
 }
 
@@ -21,6 +22,7 @@ type 卡昂CaenCounty struct {
 	克莱西Clecy 	feud.Barony
 	栋夫龙Domfront 	feud.Barony
 	瑞尔克Jurques 	feud.Barony
+	维莱博卡日Villers_bocage 	feud.Barony
 	维尔Vire 	feud.Barony
 }
 
@@ -42,6 +44,10 @@ func (c *卡昂CaenCounty) BDomfront栋夫龙() feud.Barony {
     
 func (c *卡昂CaenCounty) BJurques瑞尔克() feud.Barony {
 	return c.瑞尔克Jurques
+}
+    
+func (c *卡昂CaenCounty) BVillers_bocage维莱博卡日() feud.Barony {
+	return c.维莱博卡日Villers_bocage
 }
     
 func (c *卡昂CaenCounty) BVire维尔() feud.Barony {
@@ -74,6 +80,9 @@ func init() {
 	
 	f.瑞尔克Jurques = BJurques瑞尔克
 	f.瑞尔克Jurques.SetParent(f)
+	
+	f.维莱博卡日Villers_bocage = BVillers_bocage维莱博卡日
+	f.维莱博卡日Villers_bocage.SetParent(f)
 	
 	f.维尔Vire = BVire维尔
 	f.维尔Vire.SetParent(f)

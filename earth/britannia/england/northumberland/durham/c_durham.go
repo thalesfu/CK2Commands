@@ -7,6 +7,7 @@ import (
 type DurhamCounty interface {
     feud.County
     BAuckland奥克兰() 	feud.Barony
+    BChester_le_street切斯特勒街() 	feud.Barony
     BDurham达勒姆() 	feud.Barony
     BGateshead盖茨黑德() 	feud.Barony
     BHartlepool哈特尔浦() 	feud.Barony
@@ -18,6 +19,7 @@ type DurhamCounty interface {
 type 达勒姆DurhamCounty struct {
 	feud.BaseCounty
 	奥克兰Auckland 	feud.Barony
+	切斯特勒街Chester_le_street 	feud.Barony
 	达勒姆Durham 	feud.Barony
 	盖茨黑德Gateshead 	feud.Barony
 	哈特尔浦Hartlepool 	feud.Barony
@@ -28,6 +30,10 @@ type 达勒姆DurhamCounty struct {
 
 func (c *达勒姆DurhamCounty) BAuckland奥克兰() feud.Barony {
 	return c.奥克兰Auckland
+}
+    
+func (c *达勒姆DurhamCounty) BChester_le_street切斯特勒街() feud.Barony {
+	return c.切斯特勒街Chester_le_street
 }
     
 func (c *达勒姆DurhamCounty) BDurham达勒姆() feud.Barony {
@@ -68,6 +74,9 @@ func init() {
 
 	f.奥克兰Auckland = BAuckland奥克兰
 	f.奥克兰Auckland.SetParent(f)
+	
+	f.切斯特勒街Chester_le_street = BChester_le_street切斯特勒街
+	f.切斯特勒街Chester_le_street.SetParent(f)
 	
 	f.达勒姆Durham = BDurham达勒姆
 	f.达勒姆Durham.SetParent(f)

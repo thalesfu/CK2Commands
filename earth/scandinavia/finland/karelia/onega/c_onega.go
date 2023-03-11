@@ -12,6 +12,7 @@ type OnegaCounty interface {
     BPetrozavodsk彼得罗斯科伊() 	feud.Barony
     BPryazha普里亚扎() 	feud.Barony
     BPudoga普多加() 	feud.Barony
+    BUst_onega乌斯季_奥涅加() 	feud.Barony
 }
 
 type 奥洛涅茨OnegaCounty struct {
@@ -22,6 +23,7 @@ type 奥洛涅茨OnegaCounty struct {
 	彼得罗斯科伊Petrozavodsk 	feud.Barony
 	普里亚扎Pryazha 	feud.Barony
 	普多加Pudoga 	feud.Barony
+	乌斯季_奥涅加Ust_onega 	feud.Barony
 }
 
 func (c *奥洛涅茨OnegaCounty) BAunus奥努斯() feud.Barony {
@@ -46,6 +48,10 @@ func (c *奥洛涅茨OnegaCounty) BPryazha普里亚扎() feud.Barony {
     
 func (c *奥洛涅茨OnegaCounty) BPudoga普多加() feud.Barony {
 	return c.普多加Pudoga
+}
+    
+func (c *奥洛涅茨OnegaCounty) BUst_onega乌斯季_奥涅加() feud.Barony {
+	return c.乌斯季_奥涅加Ust_onega
 }
     
 var COnega奥洛涅茨 OnegaCounty = &奥洛涅茨OnegaCounty{}
@@ -77,5 +83,8 @@ func init() {
 	
 	f.普多加Pudoga = BPudoga普多加
 	f.普多加Pudoga.SetParent(f)
+	
+	f.乌斯季_奥涅加Ust_onega = BUst_onega乌斯季_奥涅加
+	f.乌斯季_奥涅加Ust_onega.SetParent(f)
 	
 }

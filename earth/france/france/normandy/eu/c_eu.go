@@ -12,6 +12,7 @@ type EuCounty interface {
     BForges福尔日() 	feud.Barony
     BGournay古尔奈() 	feud.Barony
     BMortemer莫特梅() 	feud.Barony
+    BNeufchatel_en_bray讷沙泰勒昂布赖() 	feud.Barony
     BSerqueux塞尔克() 	feud.Barony
 }
 
@@ -23,6 +24,7 @@ type 厄镇EuCounty struct {
 	福尔日Forges 	feud.Barony
 	古尔奈Gournay 	feud.Barony
 	莫特梅Mortemer 	feud.Barony
+	讷沙泰勒昂布赖Neufchatel_en_bray 	feud.Barony
 	塞尔克Serqueux 	feud.Barony
 }
 
@@ -48,6 +50,10 @@ func (c *厄镇EuCounty) BGournay古尔奈() feud.Barony {
     
 func (c *厄镇EuCounty) BMortemer莫特梅() feud.Barony {
 	return c.莫特梅Mortemer
+}
+    
+func (c *厄镇EuCounty) BNeufchatel_en_bray讷沙泰勒昂布赖() feud.Barony {
+	return c.讷沙泰勒昂布赖Neufchatel_en_bray
 }
     
 func (c *厄镇EuCounty) BSerqueux塞尔克() feud.Barony {
@@ -83,6 +89,9 @@ func init() {
 	
 	f.莫特梅Mortemer = BMortemer莫特梅
 	f.莫特梅Mortemer.SetParent(f)
+	
+	f.讷沙泰勒昂布赖Neufchatel_en_bray = BNeufchatel_en_bray讷沙泰勒昂布赖
+	f.讷沙泰勒昂布赖Neufchatel_en_bray.SetParent(f)
 	
 	f.塞尔克Serqueux = BSerqueux塞尔克
 	f.塞尔克Serqueux.SetParent(f)

@@ -12,6 +12,7 @@ type AurillacCounty interface {
     BLa_tour拉图尔() 	feud.Barony
     BMauriac莫里亚克() 	feud.Barony
     BMurat米拉() 	feud.Barony
+    BSaint_flour圣弗卢尔() 	feud.Barony
 }
 
 type 欧里亚克AurillacCounty struct {
@@ -22,6 +23,7 @@ type 欧里亚克AurillacCounty struct {
 	拉图尔La_tour 	feud.Barony
 	莫里亚克Mauriac 	feud.Barony
 	米拉Murat 	feud.Barony
+	圣弗卢尔Saint_flour 	feud.Barony
 }
 
 func (c *欧里亚克AurillacCounty) BAurillac欧里亚克() feud.Barony {
@@ -46,6 +48,10 @@ func (c *欧里亚克AurillacCounty) BMauriac莫里亚克() feud.Barony {
     
 func (c *欧里亚克AurillacCounty) BMurat米拉() feud.Barony {
 	return c.米拉Murat
+}
+    
+func (c *欧里亚克AurillacCounty) BSaint_flour圣弗卢尔() feud.Barony {
+	return c.圣弗卢尔Saint_flour
 }
     
 var CAurillac欧里亚克 AurillacCounty = &欧里亚克AurillacCounty{}
@@ -77,5 +83,8 @@ func init() {
 	
 	f.米拉Murat = BMurat米拉
 	f.米拉Murat.SetParent(f)
+	
+	f.圣弗卢尔Saint_flour = BSaint_flour圣弗卢尔
+	f.圣弗卢尔Saint_flour.SetParent(f)
 	
 }

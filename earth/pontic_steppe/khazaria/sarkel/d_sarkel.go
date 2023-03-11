@@ -2,6 +2,7 @@ package sarkel
 
 import (
 	"github.com/thalesfu/CK2Commands/earth/pontic_steppe/khazaria/sarkel/chortitza"
+	"github.com/thalesfu/CK2Commands/earth/pontic_steppe/khazaria/sarkel/desht_i_kipchak"
 	"github.com/thalesfu/CK2Commands/earth/pontic_steppe/khazaria/sarkel/don_portage"
 	"github.com/thalesfu/CK2Commands/earth/pontic_steppe/khazaria/sarkel/sarkel"
 	"github.com/thalesfu/CK2Commands/earth/pontic_steppe/khazaria/sarkel/sharukan"
@@ -12,6 +13,7 @@ import (
 type SarkelDuke interface {
     feud.Duke
     CChortitza霍尔季察() 	chortitza.ChortitzaCounty
+    CDesht_i_kipchak钦察草原() 	desht_i_kipchak.Desht_i_kipchakCounty
     CDon_portage顿河水冲() 	don_portage.Don_portageCounty
     CSarkel萨克尔() 	sarkel.SarkelCounty
     CSharukan沙鲁坎() 	sharukan.SharukanCounty
@@ -21,6 +23,7 @@ type SarkelDuke interface {
 type 萨克尔SarkelDuke struct {
 	feud.BaseDuke
 	霍尔季察Chortitza 	chortitza.ChortitzaCounty
+	钦察草原Desht_i_kipchak 	desht_i_kipchak.Desht_i_kipchakCounty
 	顿河水冲Don_portage 	don_portage.Don_portageCounty
 	萨克尔Sarkel 	sarkel.SarkelCounty
 	沙鲁坎Sharukan 	sharukan.SharukanCounty
@@ -29,6 +32,10 @@ type 萨克尔SarkelDuke struct {
 
 func (d *萨克尔SarkelDuke) CChortitza霍尔季察() chortitza.ChortitzaCounty {
 	return d.霍尔季察Chortitza
+}
+    
+func (d *萨克尔SarkelDuke) CDesht_i_kipchak钦察草原() desht_i_kipchak.Desht_i_kipchakCounty {
+	return d.钦察草原Desht_i_kipchak
 }
     
 func (d *萨克尔SarkelDuke) CDon_portage顿河水冲() don_portage.Don_portageCounty {
@@ -60,6 +67,9 @@ func init() {
 
 	f.霍尔季察Chortitza = chortitza.CChortitza霍尔季察
 	f.霍尔季察Chortitza.SetParent(f)
+	
+	f.钦察草原Desht_i_kipchak = desht_i_kipchak.CDesht_i_kipchak钦察草原
+	f.钦察草原Desht_i_kipchak.SetParent(f)
 	
 	f.顿河水冲Don_portage = don_portage.CDon_portage顿河水冲
 	f.顿河水冲Don_portage.SetParent(f)

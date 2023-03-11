@@ -11,6 +11,7 @@ type PonthieuCounty interface {
     BFlixecourt弗利克斯库尔() 	feud.Barony
     BLe_crotoy勒克罗图瓦() 	feud.Barony
     BLe_treport勒特雷波尔() 	feud.Barony
+    BSaint_valery圣瓦莱里() 	feud.Barony
 }
 
 type 蓬蒂耶PonthieuCounty struct {
@@ -20,6 +21,7 @@ type 蓬蒂耶PonthieuCounty struct {
 	弗利克斯库尔Flixecourt 	feud.Barony
 	勒克罗图瓦Le_crotoy 	feud.Barony
 	勒特雷波尔Le_treport 	feud.Barony
+	圣瓦莱里Saint_valery 	feud.Barony
 }
 
 func (c *蓬蒂耶PonthieuCounty) BAbbeville阿布维尔() feud.Barony {
@@ -40,6 +42,10 @@ func (c *蓬蒂耶PonthieuCounty) BLe_crotoy勒克罗图瓦() feud.Barony {
     
 func (c *蓬蒂耶PonthieuCounty) BLe_treport勒特雷波尔() feud.Barony {
 	return c.勒特雷波尔Le_treport
+}
+    
+func (c *蓬蒂耶PonthieuCounty) BSaint_valery圣瓦莱里() feud.Barony {
+	return c.圣瓦莱里Saint_valery
 }
     
 var CPonthieu蓬蒂耶 PonthieuCounty = &蓬蒂耶PonthieuCounty{}
@@ -68,5 +74,8 @@ func init() {
 	
 	f.勒特雷波尔Le_treport = BLe_treport勒特雷波尔
 	f.勒特雷波尔Le_treport.SetParent(f)
+	
+	f.圣瓦莱里Saint_valery = BSaint_valery圣瓦莱里
+	f.圣瓦莱里Saint_valery.SetParent(f)
 	
 }

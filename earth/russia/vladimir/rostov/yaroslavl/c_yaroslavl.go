@@ -10,6 +10,7 @@ type YaroslavlCounty interface {
     BPetropavlovsky彼得罗巴甫洛夫斯基() 	feud.Barony
     BRomanov罗曼诺夫() 	feud.Barony
     BRybinsk雷宾斯克() 	feud.Barony
+    BSpaso_preobrazhensky斯帕索普列奥布拉任斯基() 	feud.Barony
     BTimerevo季梅列沃() 	feud.Barony
     BYaroslavl雅罗斯拉夫尔() 	feud.Barony
 }
@@ -20,6 +21,7 @@ type 雅罗斯拉夫尔YaroslavlCounty struct {
 	彼得罗巴甫洛夫斯基Petropavlovsky 	feud.Barony
 	罗曼诺夫Romanov 	feud.Barony
 	雷宾斯克Rybinsk 	feud.Barony
+	斯帕索普列奥布拉任斯基Spaso_preobrazhensky 	feud.Barony
 	季梅列沃Timerevo 	feud.Barony
 	雅罗斯拉夫尔Yaroslavl 	feud.Barony
 }
@@ -38,6 +40,10 @@ func (c *雅罗斯拉夫尔YaroslavlCounty) BRomanov罗曼诺夫() feud.Barony {
     
 func (c *雅罗斯拉夫尔YaroslavlCounty) BRybinsk雷宾斯克() feud.Barony {
 	return c.雷宾斯克Rybinsk
+}
+    
+func (c *雅罗斯拉夫尔YaroslavlCounty) BSpaso_preobrazhensky斯帕索普列奥布拉任斯基() feud.Barony {
+	return c.斯帕索普列奥布拉任斯基Spaso_preobrazhensky
 }
     
 func (c *雅罗斯拉夫尔YaroslavlCounty) BTimerevo季梅列沃() feud.Barony {
@@ -71,6 +77,9 @@ func init() {
 	
 	f.雷宾斯克Rybinsk = BRybinsk雷宾斯克
 	f.雷宾斯克Rybinsk.SetParent(f)
+	
+	f.斯帕索普列奥布拉任斯基Spaso_preobrazhensky = BSpaso_preobrazhensky斯帕索普列奥布拉任斯基
+	f.斯帕索普列奥布拉任斯基Spaso_preobrazhensky.SetParent(f)
 	
 	f.季梅列沃Timerevo = BTimerevo季梅列沃
 	f.季梅列沃Timerevo.SetParent(f)
