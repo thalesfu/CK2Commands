@@ -1,70 +1,27 @@
 package main
 
 import (
-	"fmt"
-	"github.com/thalesfu/CK2Commands/earth"
 	"github.com/thalesfu/CK2Commands/family/bi"
+	"github.com/thalesfu/CK2Commands/family/circinn"
 	"github.com/thalesfu/CK2Commands/family/fu"
 	"github.com/thalesfu/CK2Commands/family/lin"
 	"github.com/thalesfu/CK2Commands/family/lou"
 	"github.com/thalesfu/CK2Commands/family/pictish"
-	"github.com/thalesfu/CK2Commands/family/sesende"
 	"github.com/thalesfu/CK2Commands/family/wu"
 	"github.com/thalesfu/CK2Commands/family/wuyibu"
 	"github.com/thalesfu/CK2Commands/family/yin"
 	"github.com/thalesfu/CK2Commands/family/yuan"
+	"github.com/thalesfu/CK2Commands/feudal"
+	"github.com/thalesfu/CK2Commands/job"
 	"github.com/thalesfu/CK2Commands/people"
 )
 
 func main() {
 
-	fmt.Println(earth.Germany日耳曼尼亚.KSaxony萨克森().DBremen不来梅().CCelle不来梅().BBremen不来梅().GetTitleName())
-
-	people.MakeFriends(getMyBrothersAndSisters(),
-		getMySonsAndDaughters(),
-		getMyBigFamiliesFriends(),
-		getMyBigLoads(),
-		getScotlandFriends(),
-		getWuFriends(),
-		getLouFriends(),
-		getBiFriends(),
-		getGermanFriends(),
-		getYiwubuFriends(),
-	)
-
-	yuan.Hy()
-	pictish.Hy()
-	fu.Hy()
-	lin.Hy()
-
-	people.BuildMyLoad(0,
-		fu.Me,
-		fu.MyWife,
-	)
-	people.BuildAmbassador(0,
-		2805833,
-	)
-	people.BuildGeneral(0,
-		2841364,
-	)
-	people.BuildManager(0,
-		wu.M方庆_守礼II,
-		wu.F埃莱内_守礼II,
-	)
-	people.BuildSpy(0,
-		fu.MyBrother2,
-	)
-	people.BuildFather(0,
-		bi.M君集_守礼II,
-		bi.F素节_守礼II,
-	)
-	people.BuildDoctor(0,
-		yuan.M待举_守礼II,
-		yuan.F湘兰_守礼II,
-	)
-	people.BuildRandom(0,
-		2853577,
-	)
+	feudal.BuildTitle()
+	makefriends()
+	pollinate()
+	buildjobs()
 
 	var curedIllPeople []int
 	curedIllPeople = append(curedIllPeople, getMyBrothersAndSisters()...)
@@ -77,44 +34,32 @@ func main() {
 	removePeople = append(removePeople, getMyBigFamiliesFriends()...)
 	people.RemoveBad(removePeople...)
 
-	people.ReligionIsTaoist(0,
-		2827199,
-		2830449,
-		2845776,
-		2849855,
-		2846929,
-		2853147,
-	)
+}
 
-	people.CultureIsHanPictish(2804979,
-		2847861,
-		2848344,
-		2864693,
-	)
+func buildjobs() {
+	people.BuildMyLoad(job.GetMyloads()...)
+	people.BuildAmbassador(job.GetAmbassadors()...)
+	people.BuildGeneral(job.GetGenerals()...)
+	people.BuildManager(job.GetManagers()...)
+	people.BuildSpy(job.GetSpys()...)
+	people.BuildFather(job.GetFathers()...)
+	people.BuildDoctor(job.GetDoctors()...)
+	people.BuildRandom(job.GetRandoms()...)
+}
 
-	people.CultureIsHanScottish(2798738,
-		2798653,
-		2798658,
-		2798660,
-		2803320,
-		2769336,
-		2801182,
-		2766527,
-		2798635,
-		2798637,
-		2798638,
-		2790843,
+func makefriends() {
+	people.MakeFriends(getMyBrothersAndSisters(),
+		getMySonsAndDaughters(),
+		getMyBigFamiliesFriends(),
+		getMyBigLoads(),
+		circinn.GetFriends(),
+		wu.GetFriends(),
+		lou.GetLouFriends(),
+		bi.GetBiFriends(),
+		getGermanFriends(),
+		getYiwubuFriends(),
+		lin.GetFriends(),
 	)
-
-	people.CultureIsHanWelsh(2793945,
-		2803978,
-		2803979,
-		2803980,
-		2803981,
-		2803982,
-		2803983,
-	)
-
 }
 
 func getMySonsAndDaughters() []int {
@@ -182,8 +127,8 @@ func getMyBigFamiliesFriends() []int {
 	peoples = append(peoples, yuan.M待举_守礼II)
 	peoples = append(peoples, wuyibu.M多梅希_守礼II)
 	peoples = append(peoples, wuyibu.F善理_守礼II)
-	peoples = append(peoples, sesende.M安石_守礼II)
-	peoples = append(peoples, sesende.F侯_守礼II)
+	peoples = append(peoples, circinn.M安石_守礼II)
+	peoples = append(peoples, circinn.F侯_守礼II)
 	peoples = append(peoples, lou.M鸿渐_守礼II)
 	peoples = append(peoples, lou.F仙惠_守礼II)
 	peoples = append(peoples, wu.M方庆_守礼II)
@@ -206,73 +151,7 @@ func getMyBigLoads() []int {
 	peoples = append(peoples, fu.Me)
 	peoples = append(peoples, 2830311)
 	peoples = append(peoples, 2840690)
-
-	return peoples
-}
-
-func getScotlandFriends() []int {
-	var peoples []int
-
-	peoples = append(peoples, sesende.M安石_守礼II)
-	peoples = append(peoples, sesende.F侯_守礼II)
-	peoples = append(peoples, 2811089)
-	peoples = append(peoples, 2830311)
-	peoples = append(peoples, 2822231)
-	peoples = append(peoples, 2830384)
-	peoples = append(peoples, 2850246)
-
-	return peoples
-}
-
-func getWuFriends() []int {
-	var peoples []int
-
-	peoples = append(peoples, wu.M方庆_守礼II)
-	peoples = append(peoples, wu.F埃莱内_守礼II)
-	peoples = append(peoples, 2830314)
-	peoples = append(peoples, 2811649)
-	peoples = append(peoples, 2822928)
-	peoples = append(peoples, 2831544)
-	peoples = append(peoples, 2815827)
-	peoples = append(peoples, 2846817)
-	peoples = append(peoples, 2849641)
-
-	return peoples
-}
-
-func getLouFriends() []int {
-	var peoples []int
-
-	peoples = append(peoples, lou.F仙惠_守礼II)
-	peoples = append(peoples, lou.M鸿渐_守礼II)
-	peoples = append(peoples, 2813163)
-	peoples = append(peoples, 2816546)
-	peoples = append(peoples, 2832575)
-	peoples = append(peoples, 2833850)
-	peoples = append(peoples, 2835430)
-	peoples = append(peoples, 2825502)
-	peoples = append(peoples, 2842863)
-	peoples = append(peoples, 2844558)
-	peoples = append(peoples, 2850317)
-	peoples = append(peoples, 2851236)
-	peoples = append(peoples, 2844939)
-	peoples = append(peoples, 2840690)
-
-	return peoples
-}
-
-func getBiFriends() []int {
-	var peoples []int
-
-	peoples = append(peoples, bi.F素节_守礼II)
-	peoples = append(peoples, bi.M君集_守礼II)
-	peoples = append(peoples, 2810790)
-	peoples = append(peoples, 2825235)
-	peoples = append(peoples, 2846549)
-	peoples = append(peoples, 2830070)
-	peoples = append(peoples, 2830070)
-	peoples = append(peoples, 2849704)
-	peoples = append(peoples, 2851140)
+	peoples = append(peoples, lin.M林承庆10960227)
 
 	return peoples
 }
@@ -302,4 +181,14 @@ func getYiwubuFriends() []int {
 	peoples = append(peoples, 2850307)
 
 	return peoples
+}
+
+func pollinate() {
+	yuan.Hy()
+	pictish.Hy()
+	fu.Hy()
+	lin.Pollinate()
+	wu.Pollinate()
+	bi.Pollinate()
+	lou.Pollinate()
 }

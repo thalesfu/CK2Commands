@@ -14,12 +14,12 @@ var ambassadorTraits = []string{
 
 func addAmbassadorTraitsTraits(writer *bufio.Writer, peopleId int) {
 	for _, trait := range ambassadorTraits {
-		addTrait(writer, trait, peopleId)
+		writeAddTrait(writer, trait, peopleId)
 	}
 }
 
 func addAmbassadorDiplomacy(writer *bufio.Writer, peopleId int) {
-	addDiplomacy(writer, peopleId, 5)
+	writeAddDiplomacy(writer, peopleId, 5)
 }
 
 func getAmbassadorFunctions() []buildFunc {

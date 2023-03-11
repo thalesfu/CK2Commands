@@ -17,7 +17,7 @@ var woundTraits = []string{
 
 func cureWound(writer *bufio.Writer, peopleId int) {
 	for _, trait := range woundTraits {
-		removeTrait(writer, trait, peopleId)
+		writeRemoveTrait(writer, trait, peopleId)
 	}
 }
 

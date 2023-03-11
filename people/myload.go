@@ -15,16 +15,16 @@ var myLoadTraits = []string{
 
 func addMyLoadTraits(writer *bufio.Writer, peopleId int) {
 	for _, trait := range myLoadTraits {
-		addTrait(writer, trait, peopleId)
+		writeAddTrait(writer, trait, peopleId)
 	}
 }
 
 func addMyLoadStatus(writer *bufio.Writer, peopleId int) {
-	addDiplomacy(writer, peopleId, 10)
-	addMartial(writer, peopleId, 10)
-	addStewardship(writer, peopleId, 10)
-	addIntrigue(writer, peopleId, 10)
-	addLearning(writer, peopleId, 10)
+	writeAddDiplomacy(writer, peopleId, 10)
+	writeAddMartial(writer, peopleId, 10)
+	writeAddStewardship(writer, peopleId, 10)
+	writeAddIntrigue(writer, peopleId, 10)
+	writeAddLearning(writer, peopleId, 10)
 }
 
 func getMyloadFunctions() []buildFunc {

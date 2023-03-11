@@ -11,12 +11,12 @@ var managerTraits = []string{
 
 func addManagerTraits(writer *bufio.Writer, peopleId int) {
 	for _, trait := range managerTraits {
-		addTrait(writer, trait, peopleId)
+		writeAddTrait(writer, trait, peopleId)
 	}
 }
 
 func addManagerStewardship(writer *bufio.Writer, peopleId int) {
-	addStewardship(writer, peopleId, 5)
+	writeAddStewardship(writer, peopleId, 5)
 }
 
 func getManagerFunctions() []buildFunc {

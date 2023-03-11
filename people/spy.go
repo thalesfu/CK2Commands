@@ -12,12 +12,12 @@ var spyTraits = []string{
 
 func addSpyTraits(writer *bufio.Writer, peopleId int) {
 	for _, trait := range spyTraits {
-		addTrait(writer, trait, peopleId)
+		writeAddTrait(writer, trait, peopleId)
 	}
 }
 
 func addSpyIntrigue(writer *bufio.Writer, peopleId int) {
-	addIntrigue(writer, peopleId, 5)
+	writeAddIntrigue(writer, peopleId, 5)
 }
 
 func getSpyFunctions() []buildFunc {

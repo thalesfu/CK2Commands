@@ -3,7 +3,7 @@ package people
 import "bufio"
 
 func setReligionToTaoist(writer *bufio.Writer, peopleId int) {
-	changeReligion(writer, peopleId, "taoist", "pictish")
+	writeChangeReligion(writer, peopleId, "taoist")
 }
 
 func ReligionIsTaoist(peopleId ...int) {
