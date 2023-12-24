@@ -1,16 +1,18 @@
 package fu
 
+import "github.com/thalesfu/CK2Commands/family/wu"
+
 var (
-	Me     = 2828537
-	MyWife = 2814790
+	Me     = M傅思来2609848
+	MyWife = wu.F武兰英247996
 
 	MyBrother1      = 0
 	MyBrother1Wife  = 0
-	MyBrother2      = 2829539
-	MyBrother2Wifle = 2828202
-	MyBrother3      = 2834307
+	MyBrother2      = 0
+	MyBrother2Wifle = 0
+	MyBrother3      = 0
 	MyBrother3Wife  = 0
-	MyBrother4      = 2840086
+	MyBrother4      = 0
 	MyBrother4Wife  = 0
 	MyBrother5      = 0
 	MyBrother5Wife  = 0
@@ -25,17 +27,17 @@ var (
 	MyBrother10     = 0
 	MyBrother10Wife = 0
 
-	MySister1         = 2832428
+	MySister1         = wu.F武继嘉2614028
 	MySister1Husband  = 0
-	MySister2         = 2842990
+	MySister2         = F傅继仙2615200
 	MySister2Husband  = 0
-	MySister3         = 2843880
+	MySister3         = F傅继殷2616420
 	MySister3Husband  = 0
-	MySister4         = 0
+	MySister4         = wu.F武继怡2616853
 	MySister4Husband  = 0
-	MySister5         = 0
+	MySister5         = wu.F武继男2617639
 	MySister5Husband  = 0
-	MySister6         = 0
+	MySister6         = F傅继玲2621457
 	MySister6Husband  = 0
 	MySister7         = 0
 	MySister7Husband  = 0
@@ -46,13 +48,13 @@ var (
 	MySister10        = 0
 	MySister10Husband = 0
 
-	MySon1      = 2847678
+	MySon1      = M傅继光2618366
 	MySon1Wife  = 0
-	MySon2      = 2849133
+	MySon2      = M傅继军2618452
 	MySon2Wife  = 0
-	MySon3      = 2851720
+	MySon3      = M傅继业2621517
 	MySon3Wife  = 0
-	MySon4      = 2854728
+	MySon4      = 0
 	MySon4Wife  = 0
 	MySon5      = 0
 	MySon5Wife  = 0
@@ -67,15 +69,15 @@ var (
 	MySon10     = 0
 	MySon10Wife = 0
 
-	MyDaughter1         = 2845482
+	MyDaughter1         = 0
 	MyDaughter1Husband  = 0
-	MyDaughter2         = 2847679
+	MyDaughter2         = 0
 	MyDaughter2Husband  = 0
-	MyDaughter3         = 2852775
+	MyDaughter3         = 0
 	MyDaughter3Husband  = 0
-	MyDaughter4         = 2855586
+	MyDaughter4         = 0
 	MyDaughter4Husband  = 0
-	MyDaughter5         = 2857464
+	MyDaughter5         = 0
 	MyDaughter5Husband  = 0
 	MyDaughter6         = 0
 	MyDaughter6Husband  = 0

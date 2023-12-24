@@ -9,7 +9,7 @@ func Pollinate() {
 func getPollinatePeople() []people.Couple {
 	var couples []people.Couple
 
-	couples = append(couples, people.Couple{Husband: M楼麟10961209, Wife: 2868714})
+	//couples = append(couples, people.Couple{Husband: M楼麟10961209, Wife: 2868714})
 
 	return couples
 }

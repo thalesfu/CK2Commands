@@ -1,7 +1,10 @@
 package job
 
+import "github.com/thalesfu/CK2Commands/family/chu"
+
 func GetSpys() []int {
 	return []int{0,
-		2845260,
+		chu.M储寂2615827,
 	}
+
 }
