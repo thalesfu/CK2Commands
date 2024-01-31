@@ -40,20 +40,28 @@ func MakeFriends(group ...[]int) {
 	writer.Flush()
 }
 
-func MakeFriendsWithNebula(writer *bufio.Writer, space *nebulagolang.Space, group [][]*ck2nebula.People) {
+func MakeFriendsWithNebula(space *nebulagolang.Space, group [][]*ck2nebula.People) map[int]*PeopleScriptGenerator {
+	result := make(map[int]*PeopleScriptGenerator)
 	for _, peoples := range group {
 		for i := 0; i < len(peoples); i++ {
+			p, ok := result[peoples[i].ID]
+			if !ok {
+				p = NewPeopleScriptGenerator(peoples[i])
+				result[peoples[i].ID] = p
+			}
 			r := peoples[i].GetFriends(space)
 
 			for j := i + 1; j < len(peoples); j++ {
 				_, exists := r.Data[peoples[j].ID]
 				if !r.Ok || !exists {
-					writer.WriteString(fmt.Sprintf("add_friend %d %d\n", peoples[i].ID, peoples[j].ID))
 					fmt.Printf("%s.%s and %s.%s family are friends\n", peoples[i].DynastyName, peoples[i].Name, peoples[j].DynastyName, peoples[j].Name)
+					p.AddScriptGenerator(NewMakeFriendScriptGenerator(peoples[j]))
 				}
 			}
 		}
 	}
+
+	return result
 }
 
 func GetFriendsGroup(space *nebulagolang.Space, player *ck2nebula.People, coreFamily map[int]string) ([][]*ck2nebula.People, map[int]map[int]*ck2nebula.People) {

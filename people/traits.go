@@ -1,8 +1,8 @@
 package people
 
 import (
-	"bufio"
 	"fmt"
+	"github.com/thalesfu/CK2Commands"
 	"github.com/thalesfu/ck2nebula"
 	"github.com/thalesfu/nebulagolang"
 	"math/rand"
@@ -173,24 +173,26 @@ func GetPropertyTypeByEductionTrait(trait *ck2nebula.Trait) PropertyType {
 	return PropertyTypeNone
 }
 
-func BuildPeopleTrait(writer *bufio.Writer, space *nebulagolang.Space, people *ck2nebula.People, modifiers []*PropertyModifier) map[string]*ck2nebula.Trait {
-	traists := RemoveBadTraitsWithNebula(writer, space, people)
+func BuildPeopleTrait(space *nebulagolang.Space, people *ck2nebula.People, modifiers []*PropertyModifier) (map[string]*ck2nebula.Trait, []CK2Commands.ScriptGenerator) {
+	traists, scriptGenerators := RemoveBadTraitsWithNebula(space, people)
 
-	traists = BuildPeopleEductionTrait(writer, space, people, traists, modifiers)
+	traists, edusg := BuildPeopleEductionTrait(people, traists, modifiers)
+
+	scriptGenerators = append(scriptGenerators, edusg...)
 
 	var chance = 5
 
 	switch modifiers[0].Talent {
 	case TalentGenius:
 		if traists[GeniusTrait.Code] == nil {
-			writeAddTrait(writer, GeniusTrait.Code, people.ID)
+			scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(GeniusTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, GeniusTrait.Name)
 			traists[GeniusTrait.Code] = GeniusTrait
 		}
 		chance = 3
 	case TalentQuick:
 		if traists[QuickTrait.Code] == nil {
-			writeAddTrait(writer, QuickTrait.Code, people.ID)
+			scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(QuickTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, QuickTrait.Name)
 			traists[QuickTrait.Code] = QuickTrait
 		}
@@ -200,7 +202,7 @@ func BuildPeopleTrait(writer *bufio.Writer, space *nebulagolang.Space, people *c
 	for _, trait := range CommonGoodTraits {
 		if rand.Intn(chance) == 0 {
 			if traists[trait.Code] == nil {
-				writeAddTrait(writer, trait.Code, people.ID)
+				scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
 				fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
 				traists[trait.Code] = trait
 			}
@@ -210,7 +212,7 @@ func BuildPeopleTrait(writer *bufio.Writer, space *nebulagolang.Space, people *c
 	for _, trait := range VirtueTraits {
 		if rand.Intn(chance) == 0 {
 			if traists[trait.Code] == nil {
-				writeAddTrait(writer, trait.Code, people.ID)
+				scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
 				fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
 				traists[trait.Code] = trait
 			}
@@ -233,7 +235,7 @@ func BuildPeopleTrait(writer *bufio.Writer, space *nebulagolang.Space, people *c
 		}
 
 		if traists[lifeStyleTrait.Code] == nil {
-			writeAddTrait(writer, lifeStyleTrait.Code, people.ID)
+			scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(lifeStyleTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, lifeStyleTrait.Name)
 			traists[lifeStyleTrait.Code] = lifeStyleTrait
 		}
@@ -242,7 +244,7 @@ func BuildPeopleTrait(writer *bufio.Writer, space *nebulagolang.Space, people *c
 		for _, trait := range goodTraits {
 			if rand.Intn(chance) == 0 {
 				if traists[trait.Code] == nil {
-					writeAddTrait(writer, trait.Code, people.ID)
+					scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
 					fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
 					traists[trait.Code] = trait
 				}
@@ -254,7 +256,7 @@ func BuildPeopleTrait(writer *bufio.Writer, space *nebulagolang.Space, people *c
 			for _, trait := range LeaderTraits {
 				if rand.Intn(chance+i*2) == 0 {
 					if traists[trait.Code] == nil {
-						writeAddTrait(writer, trait.Code, people.ID)
+						scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
 						fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
 						traists[trait.Code] = trait
 					}
@@ -265,7 +267,7 @@ func BuildPeopleTrait(writer *bufio.Writer, space *nebulagolang.Space, people *c
 		for _, trait := range ChildhoodTraits {
 			if rand.Intn(chance) == 0 {
 				if traists[trait.Code] == nil {
-					writeAddTrait(writer, trait.Code, people.ID)
+					scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
 					fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
 					traists[trait.Code] = trait
 				}
@@ -273,10 +275,10 @@ func BuildPeopleTrait(writer *bufio.Writer, space *nebulagolang.Space, people *c
 		}
 	}
 
-	return traists
+	return traists, scriptGenerators
 }
 
-func BuildPeopleEductionTrait(writer *bufio.Writer, space *nebulagolang.Space, people *ck2nebula.People, traits map[string]*ck2nebula.Trait, modifiers []*PropertyModifier) map[string]*ck2nebula.Trait {
+func BuildPeopleEductionTrait(people *ck2nebula.People, traits map[string]*ck2nebula.Trait, modifiers []*PropertyModifier) (map[string]*ck2nebula.Trait, []CK2Commands.ScriptGenerator) {
 	var newEducationTrait *ck2nebula.Trait
 	var oldEducationTrait *ck2nebula.Trait
 
@@ -288,216 +290,218 @@ func BuildPeopleEductionTrait(writer *bufio.Writer, space *nebulagolang.Space, p
 	}
 
 	if oldEducationTrait == nil {
-		return traits
+		return traits, nil
 	}
+
+	generators := make([]CK2Commands.ScriptGenerator, 0)
 
 	switch modifiers[0].Property {
 	case PropertyTypeDiplomacy:
 		if modifiers[0].Talent == TalentGenius {
 			if oldEducationTrait.Code == "grey_eminence" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["grey_eminence"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else if modifiers[0].Talent == TalentQuick {
 			if oldEducationTrait.Code == "grey_eminence" || oldEducationTrait.Code == "charismatic_negotiator" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["charismatic_negotiator"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else {
 			if oldEducationTrait.Code == "grey_eminence" || oldEducationTrait.Code == "charismatic_negotiator" || oldEducationTrait.Code == "underhanded_rogue" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["underhanded_rogue"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		}
 	case PropertyTypeMartial:
 		if modifiers[0].Talent == TalentGenius {
 			if oldEducationTrait.Code == "brilliant_strategist" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["brilliant_strategist"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else if modifiers[0].Talent == TalentQuick {
 			if oldEducationTrait.Code == "brilliant_strategist" || oldEducationTrait.Code == "skilled_tactician" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["skilled_tactician"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else {
 			if oldEducationTrait.Code == "brilliant_strategist" || oldEducationTrait.Code == "skilled_tactician" || oldEducationTrait.Code == "tough_soldier" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["tough_soldier"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		}
 	case PropertyTypeStewardship:
 		if modifiers[0].Talent == TalentGenius {
 			if oldEducationTrait.Code == "midas_touched" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["midas_touched"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else if modifiers[0].Talent == TalentQuick {
 			if oldEducationTrait.Code == "midas_touched" || oldEducationTrait.Code == "thrifty_clerk" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["thrifty_clerk"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else {
 			if oldEducationTrait.Code == "midas_touched" || oldEducationTrait.Code == "thrifty_clerk" || oldEducationTrait.Code == "fortune_builder" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["fortune_builder"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		}
 	case PropertyTypeIntrigue:
 		if modifiers[0].Talent == TalentGenius {
 			if oldEducationTrait.Code == "elusive_shadow" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["elusive_shadow"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else if modifiers[0].Talent == TalentQuick {
 			if oldEducationTrait.Code == "elusive_shadow" || oldEducationTrait.Code == "intricate_webweaver" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["intricate_webweaver"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else {
 			if oldEducationTrait.Code == "elusive_shadow" || oldEducationTrait.Code == "intricate_webweaver" || oldEducationTrait.Code == "flamboyant_schemer" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["flamboyant_schemer"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		}
 	case PropertyTypeLearning:
 		if modifiers[0].Talent == TalentGenius {
 			if oldEducationTrait.Code == "mastermind_theologian" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["mastermind_theologian"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else if modifiers[0].Talent == TalentQuick {
 			if oldEducationTrait.Code == "mastermind_theologian" || oldEducationTrait.Code == "scholarly_theologian" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["scholarly_theologian"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		} else {
 			if oldEducationTrait.Code == "mastermind_theologian" || oldEducationTrait.Code == "scholarly_theologian" || oldEducationTrait.Code == "martial_cleric" {
-				return traits
+				return traits, generators
 			}
 
 			fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
-			writeRemoveTrait(writer, oldEducationTrait.Code, people.ID)
+			generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 
 			newEducationTrait = AllTraits["martial_cleric"]
-			writeAddTrait(writer, newEducationTrait.Code, people.ID)
+			generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
 			traits[newEducationTrait.Code] = newEducationTrait
-			return traits
+			return traits, generators
 		}
 	}
 
-	return traits
+	return traits, generators
 }

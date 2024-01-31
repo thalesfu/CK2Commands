@@ -3,6 +3,7 @@ package people
 import (
 	"bufio"
 	"fmt"
+	"github.com/thalesfu/CK2Commands"
 	"github.com/thalesfu/ck2nebula"
 	"github.com/thalesfu/nebulagolang"
 )
@@ -54,24 +55,25 @@ func RemoveBadTraits(writer *bufio.Writer, peopleId int) {
 	cureWound(writer, peopleId)
 }
 
-func RemoveBadTraitsWithNebula(writer *bufio.Writer, space *nebulagolang.Space, people *ck2nebula.People) map[string]*ck2nebula.Trait {
+func RemoveBadTraitsWithNebula(space *nebulagolang.Space, people *ck2nebula.People) (map[string]*ck2nebula.Trait, []CK2Commands.ScriptGenerator) {
 	r := people.GetTraits(space)
 
-	result := make(map[string]*ck2nebula.Trait)
+	traitResult := make(map[string]*ck2nebula.Trait)
+	scriptsGenerator := make([]CK2Commands.ScriptGenerator, 0)
 
 	if r.Ok {
 		for _, trait := range r.Data {
 			_, exist := badTraits[trait.Code]
 			if trait.IsHealth || trait.IsIllness || trait.Blinding || trait.Inbred || trait.Vice || trait.SexAppealOpinion < 0 || exist {
 				fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, trait.Name)
-				writeRemoveTrait(writer, trait.Code, people.ID)
+				scriptsGenerator = append(scriptsGenerator, NewRemoveTraitScriptGenerator(trait))
 			} else {
-				result[trait.Code] = trait
+				traitResult[trait.Code] = trait
 			}
 		}
 	}
 
-	return result
+	return traitResult, scriptsGenerator
 }
 
 func RemoveBad(peopleId ...int) {

@@ -27,7 +27,7 @@ const saveFolder = "T:\\OneDrive\\fu.thales@live.com\\OneDrive\\MyDocument\\Para
 
 func main() {
 
-	story, player, err := GetStory(true)
+	story, player, err := GetStory(false)
 
 	if err != nil {
 		log.Fatal(err)
@@ -60,7 +60,7 @@ func BuildFriends(player *ck2nebula.People) {
 		for _, f := range fr.Data {
 			friends = append(friends, f)
 		}
-		people.BuildPeople(ck2nebula.SPACE, friends...)
+		people.BuildHealthAndFertility(ck2nebula.SPACE, friends...)
 	}
 }
 

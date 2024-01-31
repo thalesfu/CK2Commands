@@ -92,13 +92,17 @@ func GetPropertyModifiers(space *nebulagolang.Space, people *ck2nebula.People) [
 		return result[i].OriginalValue > result[j].OriginalValue
 	})
 
-	topTalent := Talent(rand.Intn(3))
+	topTalent := getTopTalent(space, people)
 
 	for _, modifier := range result {
 		modifier.Talent = topTalent
 		top := modifier.Talent.GetPropertyTopValueLimit()
-		if people.Age < 16 {
-			top = top * people.Age / 16
+		age := people.Age
+		if age <= 6 {
+			age = 6
+		}
+		if age < 16 {
+			top = top * age / 16
 		}
 		v := top - modifier.OriginalValue
 		if v > 0 {
@@ -110,5 +114,27 @@ func GetPropertyModifiers(space *nebulagolang.Space, people *ck2nebula.People) [
 	}
 
 	return result
+}
 
+func getTopTalent(space *nebulagolang.Space, people *ck2nebula.People) Talent {
+	tr := people.GetTraits(space)
+
+	if !tr.Ok {
+		return Talent(rand.Intn(3))
+	}
+
+	if _, ok := tr.Data[GeniusTrait.Code]; ok {
+		return TalentGenius
+	}
+
+	if _, ok := tr.Data[QuickTrait.Code]; ok {
+		t := Talent(rand.Intn(3))
+		if t == TalentGenius {
+			return TalentQuick
+		} else {
+			return TalentQuick
+		}
+	}
+
+	return Talent(rand.Intn(3))
 }
