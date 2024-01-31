@@ -33,6 +33,10 @@ func writeAddLearning(writer *bufio.Writer, peopleId int, value int) {
 	writer.WriteString(fmt.Sprintf("add_learning %d %d\n", peopleId, value))
 }
 
+func writeAddPropertyValue(writer *bufio.Writer, propertyName string, peopleId int, value int) {
+	writer.WriteString(fmt.Sprintf("add_%s %d %d\n", propertyName, peopleId, value))
+}
+
 func writeChangeCulture(writer *bufio.Writer, peopleId int, culture string, ethnicity string) {
 	if culture != "" {
 		writer.WriteString(fmt.Sprintf("culture %d %s\n", peopleId, culture))

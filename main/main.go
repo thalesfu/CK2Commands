@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"github.com/samber/lo"
 	"github.com/thalesfu/CK2Commands/family/bi"
 	"github.com/thalesfu/CK2Commands/family/chu"
 	"github.com/thalesfu/CK2Commands/family/fu"
@@ -9,31 +11,127 @@ import (
 	"github.com/thalesfu/CK2Commands/family/lou"
 	"github.com/thalesfu/CK2Commands/family/wu"
 	"github.com/thalesfu/CK2Commands/family/wuyibu"
-	"github.com/thalesfu/CK2Commands/feudal"
 	"github.com/thalesfu/CK2Commands/job"
 	"github.com/thalesfu/CK2Commands/people"
+	"github.com/thalesfu/ck2nebula"
+	"github.com/thalesfu/paradoxtools/utils"
+	"log"
+	"os"
+	"path/filepath"
+	"sort"
+	"strings"
 )
+
+const ck2Folder = "R:\\Thales\\Game\\SteamLibrary\\steamapps\\common\\Crusader Kings II"
+const saveFolder = "T:\\OneDrive\\fu.thales@live.com\\OneDrive\\MyDocument\\Paradox Interactive\\Crusader Kings II\\save games"
 
 func main() {
 
-	feudal.BuildTitle()
-	makefriends()
-	pollinate()
-	buildjobs()
+	story, player, err := GetStory(true)
 
-	var curedIllPeople []int
-	curedIllPeople = append(curedIllPeople, getMyBrothersAndSisters()...)
-	curedIllPeople = append(curedIllPeople, getMySonsAndDaughters()...)
-	curedIllPeople = append(curedIllPeople, getMyBigFamiliesFriends()...)
-	people.CurePeopleIll(curedIllPeople...)
-	var removePeople []int
-	removePeople = append(removePeople, getMyBrothersAndSisters()...)
-	removePeople = append(removePeople, getMySonsAndDaughters()...)
-	removePeople = append(removePeople, getMyBigFamiliesFriends()...)
-	people.RemoveBad(removePeople...)
+	if err != nil {
+		log.Fatal(err)
+	}
 
-	people.CultureIsHanPictish(2618522)
+	fmt.Println(story.PlayerName)
 
+	coreFamily := map[int]string{
+		1000103393: "lou",
+		1000103382: "yuan",
+		1000103379: "chu",
+		1000103374: "wu",
+		1000103360: "zhang",
+		1000103348: "lin",
+		1000103339: "bi",
+		1000103336: "yin",
+		1051150:    "li",
+	}
+
+	people.AutoBuild(ck2nebula.SPACE, player, coreFamily)
+
+	//BuildFriends(player)
+}
+
+func BuildFriends(player *ck2nebula.People) {
+	fr := player.GetFriends(ck2nebula.SPACE)
+
+	if fr.Ok {
+		friends := make([]*ck2nebula.People, 0)
+		for _, f := range fr.Data {
+			friends = append(friends, f)
+		}
+		people.BuildPeople(ck2nebula.SPACE, friends...)
+	}
+}
+
+func GetStory(force bool) (*ck2nebula.Story, *ck2nebula.People, error) {
+
+	sr := ck2nebula.GetLatestStory(ck2nebula.SPACE)
+
+	if !sr.Ok {
+		return nil, nil, sr.Err
+	}
+
+	files, err := os.ReadDir(saveFolder)
+	if err != nil {
+		return nil, nil, err
+	}
+
+	files = lo.Filter(files, func(file os.DirEntry, _ int) bool {
+		return !file.IsDir() && strings.HasSuffix(file.Name(), ".ck2")
+	})
+
+	sort.Slice(files, func(i, j int) bool {
+		xInfo, _ := files[i].Info()
+		yInfo, _ := files[j].Info()
+		return xInfo.ModTime().Unix() > yInfo.ModTime().Unix()
+	})
+
+	filePath := strings.ReplaceAll(filepath.Join(saveFolder, files[0].Name()), "\\", "/")
+
+	if force || !isSameStory(filePath, sr.Data) {
+		log.Printf("loading save file \"%s\"", filePath)
+		ck2nebula.BuildStory(ck2Folder, filePath)
+
+		sr = ck2nebula.GetLatestStory(ck2nebula.SPACE)
+
+		if !sr.Ok {
+			return nil, nil, sr.Err
+		}
+	}
+
+	pr := sr.Data.GetPlayer(ck2nebula.SPACE)
+
+	if !pr.Ok {
+		return nil, nil, pr.Err
+	}
+
+	return sr.Data, pr.Data, nil
+}
+
+func isSameStory(fp string, story *ck2nebula.Story) bool {
+
+	if fp != story.FilePath {
+		return false
+	}
+
+	hash, err := utils.GetFileHash(fp)
+
+	if err != nil {
+		return false
+	}
+
+	if hash != story.FileHash {
+		return false
+	}
+
+	fileInfo, err := os.Stat(fp)
+
+	if err != nil {
+		return false
+	}
+
+	return fileInfo.ModTime().Format("2006-01-02 15:04:05") == story.FileUpdateTime.Format("2006-01-02 15:04:05")
 }
 
 func buildjobs() {
