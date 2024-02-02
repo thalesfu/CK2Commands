@@ -28,7 +28,18 @@ const ck2Folder = "R:\\Thales\\Game\\SteamLibrary\\steamapps\\common\\Crusader K
 const saveFolder = "T:\\OneDrive\\fu.thales@live.com\\OneDrive\\MyDocument\\Paradox Interactive\\Crusader Kings II\\save games"
 
 func main() {
-	story, player, err := GetStory(false)
+	forceLoadData := false
+
+	if len(os.Args) > 0 {
+		for _, arg := range os.Args {
+			if arg == "-f" {
+				forceLoadData = true
+				break
+			}
+		}
+	}
+
+	story, player, err := GetStory(forceLoadData)
 
 	if err != nil {
 		log.Fatal(err)
