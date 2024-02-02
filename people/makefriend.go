@@ -64,37 +64,20 @@ func MakeFriendsWithNebula(space *nebulagolang.Space, group [][]*ck2nebula.Peopl
 	return result
 }
 
-func GetFriendsGroup(space *nebulagolang.Space, player *ck2nebula.People, coreFamily map[int]string) ([][]*ck2nebula.People, map[int]map[int]*ck2nebula.People) {
+func GetFriendsGroup(space *nebulagolang.Space, player *ck2nebula.People, coreFamily map[int]string) [][]*ck2nebula.People {
 	result := make([][]*ck2nebula.People, 0)
-	newFriendsByFamily := make(map[int]map[int]*ck2nebula.People)
 
-	coreFamilyFriends, newFriends := GetCoreDynastyFriends(space, player, coreFamily)
-
-	for _, p := range newFriends {
-		if _, ok := newFriendsByFamily[p.Dynasty]; !ok {
-			newFriendsByFamily[p.Dynasty] = make(map[int]*ck2nebula.People)
-		}
-
-		newFriendsByFamily[p.Dynasty][p.ID] = p
-	}
+	coreFamilyFriends := GetCoreDynastyFriends(space, player, coreFamily)
 
 	for _, p := range coreFamilyFriends {
-		familyFriends, nf := GetFamilyFriends(space, p)
+		familyFriends := GetFamilyFriends(space, p)
 		result = append(result, familyFriends)
-		for _, p := range nf {
-			if _, ok := newFriendsByFamily[p.Dynasty]; !ok {
-				newFriendsByFamily[p.Dynasty] = make(map[int]*ck2nebula.People)
-			}
-
-			newFriendsByFamily[p.Dynasty][p.ID] = p
-		}
 	}
 
-	return result, newFriendsByFamily
+	return result
 }
 
-func GetCoreDynastyFriends(space *nebulagolang.Space, player *ck2nebula.People, coreFamily map[int]string) ([]*ck2nebula.People, []*ck2nebula.People) {
-	newFriends := make([]*ck2nebula.People, 0)
+func GetCoreDynastyFriends(space *nebulagolang.Space, player *ck2nebula.People, coreFamily map[int]string) []*ck2nebula.People {
 	fr := player.GetFriends(space)
 
 	friendsFamilies := make(map[int][]*ck2nebula.People)
@@ -117,23 +100,34 @@ func GetCoreDynastyFriends(space *nebulagolang.Space, player *ck2nebula.People, 
 		families[v] = k
 	}
 
-	r := player.GetVassals(space)
+	familyVassals := make(map[int][]*ck2nebula.People)
 
-	if !r.Ok {
-		return nil, nil
+	er := player.GetEmpirePeople(space)
+
+	if er.Ok {
+		for _, p := range er.Data {
+			if _, ok := coreFamily[p.Dynasty]; ok {
+				if _, ok := familyVassals[p.Dynasty]; !ok {
+					familyVassals[p.Dynasty] = make([]*ck2nebula.People, 0)
+				}
+
+				familyVassals[p.Dynasty] = append(familyVassals[p.Dynasty], p)
+			}
+		}
 	}
 
-	familyCourtiers := make(map[int][]*ck2nebula.People)
+	vr := player.GetVassals(space)
 
-	for _, p := range r.Data {
-		if _, ok := coreFamily[p.Dynasty]; ok {
-			if _, ok := familyCourtiers[p.Dynasty]; !ok {
-				familyCourtiers[p.Dynasty] = make([]*ck2nebula.People, 0)
+	if vr.Ok {
+		for _, p := range vr.Data {
+			if _, ok := coreFamily[p.Dynasty]; ok {
+				if _, ok := familyVassals[p.Dynasty]; !ok {
+					familyVassals[p.Dynasty] = make([]*ck2nebula.People, 0)
+				}
+
+				familyVassals[p.Dynasty] = append(familyVassals[p.Dynasty], p)
 			}
-
-			familyCourtiers[p.Dynasty] = append(familyCourtiers[p.Dynasty], p)
 		}
-
 	}
 
 	result := make([]*ck2nebula.People, 0)
@@ -151,14 +145,12 @@ func GetCoreDynastyFriends(space *nebulagolang.Space, player *ck2nebula.People, 
 			continue
 		}
 
-		if fcs, ok := familyCourtiers[f]; ok {
+		if fcs, ok := familyVassals[f]; ok {
 			if len(fcs) == 1 {
 				result = append(result, fcs[0])
-				newFriends = append(newFriends, fcs[0])
 			} else if len(fcs) > 1 {
 				people := getTopClosedPeople(fcs, player)
 				result = append(result, people)
-				newFriends = append(newFriends, people)
 			}
 
 			delete(families, f)
@@ -166,14 +158,11 @@ func GetCoreDynastyFriends(space *nebulagolang.Space, player *ck2nebula.People, 
 		}
 	}
 
-	return result, newFriends
+	return result
 }
 
-func GetFamilyFriends(space *nebulagolang.Space, player *ck2nebula.People) ([]*ck2nebula.People, []*ck2nebula.People) {
-	newFriends := make([]*ck2nebula.People, 0)
+func GetFamilyFriends(space *nebulagolang.Space, player *ck2nebula.People) []*ck2nebula.People {
 	result := make([]*ck2nebula.People, 0)
-
-	friendsResult := player.GetFriends(space)
 
 	fr := player.GetFamilies(space)
 
@@ -191,17 +180,9 @@ func GetFamilyFriends(space *nebulagolang.Space, player *ck2nebula.People) ([]*c
 		}
 	}
 
-	for _, p := range result {
-		if friendsResult.Ok {
-			if _, ok := friendsResult.Data[p.ID]; !ok {
-				newFriends = append(newFriends, p)
-			}
-		}
-	}
-
 	result = append(result, player)
 
-	return result, newFriends
+	return result
 }
 
 func getTopClosedPeople(people []*ck2nebula.People, base *ck2nebula.People) *ck2nebula.People {

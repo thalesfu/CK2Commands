@@ -3,6 +3,7 @@ package people
 import (
 	"bufio"
 	"fmt"
+	"github.com/thalesfu/CK2Commands"
 	"github.com/thalesfu/ck2nebula"
 	"github.com/thalesfu/nebulagolang"
 )
@@ -75,23 +76,46 @@ func CurePeopleIll(peopleId ...int) {
 	buildPeople("cureill", functions, peopleId...)
 }
 
-func cureIllsWithNebula(writer *bufio.Writer, space *nebulagolang.Space, people *ck2nebula.People) {
-	result := people.GetTraits(space)
+func buildCurePeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebula.People) *PeopleScriptGenerator {
+	scriptGenerator := NewPeopleScriptGenerator(people)
 
-	if result.Ok {
-		for _, trait := range result.Data {
+	tr := people.GetTraits(space)
+
+	if tr.Ok {
+		for _, trait := range tr.Data {
 			if trait.IsHealth || trait.IsIllness || trait.Blinding {
 				fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, trait.Name)
-				writeRemoveTrait(writer, trait.Code, people.ID)
+				scriptGenerator.AddScriptGenerator(NewRemoveTraitScriptGenerator(trait))
 			}
 		}
 	}
+
+	return scriptGenerator
 }
 
-func CurePeopleWithNebula(space *nebulagolang.Space, people ...*ck2nebula.People) {
-	var functions = []buildFuncWithNebula{
-		cureIllsWithNebula,
+func BuildCurePeopleScript(space *nebulagolang.Space, people ...*ck2nebula.People) {
+	generators := make([]CK2Commands.ScriptGenerator, len(people))
+
+	for i, p := range people {
+		generators[i] = buildCurePeopleScriptGenerator(space, p)
 	}
 
-	buildPeopleWithNebula("cure", functions, space, people...)
+	CK2Commands.BuildScript("cure", generators...)
+}
+
+func CureFriends(space *nebulagolang.Space, people *ck2nebula.People) {
+	fr := people.GetFriends(space)
+
+	if fr.Ok {
+		friends := make([]*ck2nebula.People, len(fr.Data)+1)
+		friends[0] = people
+
+		i := 1
+		for _, friend := range fr.Data {
+			friends[i] = friend
+			i++
+		}
+
+		BuildCurePeopleScript(space, friends...)
+	}
 }

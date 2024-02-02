@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"github.com/samber/lo"
 	"github.com/thalesfu/CK2Commands/family/bi"
@@ -14,6 +15,7 @@ import (
 	"github.com/thalesfu/CK2Commands/job"
 	"github.com/thalesfu/CK2Commands/people"
 	"github.com/thalesfu/ck2nebula"
+	"github.com/thalesfu/nebulagolang"
 	"github.com/thalesfu/paradoxtools/utils"
 	"log"
 	"os"
@@ -26,7 +28,6 @@ const ck2Folder = "R:\\Thales\\Game\\SteamLibrary\\steamapps\\common\\Crusader K
 const saveFolder = "T:\\OneDrive\\fu.thales@live.com\\OneDrive\\MyDocument\\Paradox Interactive\\Crusader Kings II\\save games"
 
 func main() {
-
 	story, player, err := GetStory(false)
 
 	if err != nil {
@@ -49,6 +50,12 @@ func main() {
 
 	people.AutoBuild(ck2nebula.SPACE, player, coreFamily)
 
+	//people.CureFriends(ck2nebula.SPACE, player)
+
+	//people.SetFriendsAndFriendsFriendsBuildPeopleFlag(ck2nebula.SPACE, player)
+
+	//people.PollinateFriendsAndFriendsFriends(ck2nebula.SPACE, player)
+
 	//BuildFriends(player)
 }
 
@@ -68,7 +75,7 @@ func GetStory(force bool) (*ck2nebula.Story, *ck2nebula.People, error) {
 
 	sr := ck2nebula.GetLatestStory(ck2nebula.SPACE)
 
-	if !sr.Ok {
+	if !sr.Ok && !errors.As(sr.Err, &nebulagolang.NoDataErr) {
 		return nil, nil, sr.Err
 	}
 
@@ -89,7 +96,7 @@ func GetStory(force bool) (*ck2nebula.Story, *ck2nebula.People, error) {
 
 	filePath := strings.ReplaceAll(filepath.Join(saveFolder, files[0].Name()), "\\", "/")
 
-	if force || !isSameStory(filePath, sr.Data) {
+	if force || errors.As(sr.Err, &nebulagolang.NoDataErr) || !isSameStory(filePath, sr.Data) {
 		log.Printf("loading save file \"%s\"", filePath)
 		ck2nebula.BuildStory(ck2Folder, filePath)
 
