@@ -205,7 +205,9 @@ func BuildSinglePeople(space *nebulagolang.Space, people *ck2nebula.People) *Peo
 		result.AddScriptGenerator(NewModifyHealthScriptGenerator(modifiedHealth))
 	}
 
-	result.AddScriptGenerator(NewModifyWealthScriptGenerator(2000))
+	var money float32 = 2000
+	fmt.Printf("%s.%s(%d) add money %f\n", people.DynastyName, people.Name, people.ID, money)
+	result.AddScriptGenerator(NewModifyWealthScriptGenerator(money))
 
 	peopleType := "common"
 	if people.Age < 16 {
