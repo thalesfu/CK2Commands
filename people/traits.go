@@ -186,14 +186,14 @@ func BuildPeopleTrait(space *nebulagolang.Space, people *ck2nebula.People, modif
 	case TalentGenius:
 		if traits[GeniusTrait.Code] == nil {
 			scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(GeniusTrait))
-			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, GeniusTrait.Name)
+			fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, GeniusTrait.Name, GeniusTrait.Code)
 			traits[GeniusTrait.Code] = GeniusTrait
 		}
 		chance = 3
 	case TalentQuick:
 		if traits[QuickTrait.Code] == nil {
 			scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(QuickTrait))
-			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, QuickTrait.Name)
+			fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, QuickTrait.Name, QuickTrait.Code)
 			traits[QuickTrait.Code] = QuickTrait
 		}
 		chance = 4
@@ -203,7 +203,7 @@ func BuildPeopleTrait(space *nebulagolang.Space, people *ck2nebula.People, modif
 		if rand.Intn(chance) == 0 {
 			if traits[trait.Code] == nil {
 				scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
-				fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
+				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 				traits[trait.Code] = trait
 			}
 		}
@@ -213,7 +213,7 @@ func BuildPeopleTrait(space *nebulagolang.Space, people *ck2nebula.People, modif
 		if rand.Intn(chance) == 0 {
 			if traits[trait.Code] == nil {
 				scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
-				fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
+				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 				traits[trait.Code] = trait
 			}
 		}
@@ -236,7 +236,7 @@ func BuildPeopleTrait(space *nebulagolang.Space, people *ck2nebula.People, modif
 
 		if traits[lifeStyleTrait.Code] == nil {
 			scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(lifeStyleTrait))
-			fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, lifeStyleTrait.Name)
+			fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, lifeStyleTrait.Name, lifeStyleTrait.Code)
 			traits[lifeStyleTrait.Code] = lifeStyleTrait
 		}
 
@@ -245,7 +245,7 @@ func BuildPeopleTrait(space *nebulagolang.Space, people *ck2nebula.People, modif
 			if rand.Intn(chance) == 0 {
 				if traits[trait.Code] == nil {
 					scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
-					fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
+					fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 					traits[trait.Code] = trait
 				}
 			}
@@ -257,7 +257,7 @@ func BuildPeopleTrait(space *nebulagolang.Space, people *ck2nebula.People, modif
 				if rand.Intn(chance+i*2) == 0 {
 					if traits[trait.Code] == nil {
 						scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
-						fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
+						fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 						traits[trait.Code] = trait
 					}
 				}
@@ -268,7 +268,7 @@ func BuildPeopleTrait(space *nebulagolang.Space, people *ck2nebula.People, modif
 			if rand.Intn(chance) == 0 {
 				if traits[trait.Code] == nil {
 					scriptGenerators = append(scriptGenerators, NewAddTraitScriptGenerator(trait))
-					fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
+					fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 					traits[trait.Code] = trait
 				}
 			}
@@ -399,11 +399,11 @@ func BuildPeopleEductionTrait(people *ck2nebula.People, traits map[string]*ck2ne
 			newEducationTrait = AllTraits["martial_cleric"]
 		}
 
-		fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, oldEducationTrait.Name)
+		fmt.Printf("%s.%s(%d) remove trait %s(%s)\n", people.DynastyName, people.Name, people.ID, oldEducationTrait.Name, oldEducationTrait.Code)
 		generators = append(generators, NewRemoveTraitScriptGenerator(oldEducationTrait))
 		delete(traits, oldEducationTrait.Code)
 
-		fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, newEducationTrait.Name)
+		fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, newEducationTrait.Name, newEducationTrait.Code)
 		generators = append(generators, NewAddTraitScriptGenerator(newEducationTrait))
 		traits[newEducationTrait.Code] = newEducationTrait
 	}

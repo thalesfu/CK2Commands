@@ -54,7 +54,7 @@ func MakeFriendsWithNebula(space *nebulagolang.Space, group [][]*ck2nebula.Peopl
 			for j := i + 1; j < len(peoples); j++ {
 				_, exists := r.Data[peoples[j].ID]
 				if !r.Ok || !exists {
-					fmt.Printf("%s.%s and %s.%s family are friends\n", peoples[i].DynastyName, peoples[i].Name, peoples[j].DynastyName, peoples[j].Name)
+					fmt.Printf("%s.%s(%d) and %s.%s(%d) are friends\n", peoples[i].DynastyName, peoples[i].Name, peoples[i].ID, peoples[j].DynastyName, peoples[j].Name, peoples[j].ID)
 					p.AddScriptGenerator(NewMakeFriendScriptGenerator(peoples[j]))
 				}
 			}
@@ -164,7 +164,7 @@ func GetCoreDynastyFriends(space *nebulagolang.Space, player *ck2nebula.People, 
 func GetFamilyFriends(space *nebulagolang.Space, player *ck2nebula.People) []*ck2nebula.People {
 	result := make([]*ck2nebula.People, 0)
 
-	fr := player.GetFamilies(space)
+	fr := player.GetAliveFamilies(space)
 
 	if fr.Ok {
 		for _, f := range fr.Data {
@@ -172,7 +172,7 @@ func GetFamilyFriends(space *nebulagolang.Space, player *ck2nebula.People) []*ck
 		}
 	}
 
-	br := player.GetBrothersAndSisters(space)
+	br := player.GetAliveBrothersAndSisters(space)
 
 	if br.Ok {
 		for _, b := range br.Data {

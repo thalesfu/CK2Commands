@@ -46,7 +46,7 @@ func buildPollinatePeopleScriptGenerator(space *nebulagolang.Space, people *ck2n
 
 	if people.IsFemale {
 		if people.IsSuccessionMarriage(space) {
-			sr := people.GetSpouses(space)
+			sr := people.GetAliveSpouses(space)
 
 			if sr.Ok {
 				for _, spouse := range sr.Data {
@@ -58,7 +58,7 @@ func buildPollinatePeopleScriptGenerator(space *nebulagolang.Space, people *ck2n
 		}
 	} else {
 		if !people.IsSuccessionMarriage(space) {
-			sr := people.GetSpouses(space)
+			sr := people.GetAliveSpouses(space)
 
 			if sr.Ok {
 				for _, spouse := range sr.Data {
@@ -69,7 +69,7 @@ func buildPollinatePeopleScriptGenerator(space *nebulagolang.Space, people *ck2n
 			}
 		}
 
-		cr := people.GetConsorts(space)
+		cr := people.GetAliveConsorts(space)
 
 		if cr.Ok {
 			for _, consort := range cr.Data {
@@ -83,7 +83,7 @@ func buildPollinatePeopleScriptGenerator(space *nebulagolang.Space, people *ck2n
 	if len(spouses) > 0 {
 		spouse := spouses[rand.Intn(len(spouses))]
 
-		fmt.Printf("%s.%s and %s.%s make a baby\n", people.DynastyName, people.Name, spouse.DynastyName, spouse.Name)
+		fmt.Printf("%s.%s(%d) and %s.%s(%d) make a baby\n", people.DynastyName, people.Name, people.ID, spouse.DynastyName, spouse.Name, spouse.ID)
 		scriptGenerator.AddScriptGenerator(NewImpregnateScriptGenerator(spouse))
 	}
 
@@ -103,11 +103,11 @@ func NeedPollinate(space *nebulagolang.Space, people *ck2nebula.People) bool {
 
 	sonCount := 0
 
-	sr := people.GetSon(space)
+	sr := people.GetAliveSon(space)
 
 	if sr.Ok {
 		for _, son := range sr.Data {
-			if !son.IsDead && son.Age < 45 {
+			if son.Age < 45 {
 				sonCount++
 			}
 		}

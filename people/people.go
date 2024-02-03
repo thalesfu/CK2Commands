@@ -162,13 +162,13 @@ func BuildHealthAndFertility(space *nebulagolang.Space, people ...*ck2nebula.Peo
 		talent := getTopTalent(space, p)
 		modifiedFertility := getModifiedFloat32(p.Fertility, 1, talent)
 		if modifiedFertility > 0 {
-			fmt.Printf("%s.%s add fertility %f\n", p.DynastyName, p.Name, modifiedFertility)
+			fmt.Printf("%s.%s(%d) add fertility %f\n", p.DynastyName, p.Name, p.ID, modifiedFertility)
 			pg.AddScriptGenerator(NewModifyFertilityScriptGenerator(modifiedFertility))
 		}
 
 		modifiedHealth := getModifiedFloat32(p.Health, 10, talent)
 		if modifiedHealth > 0 {
-			fmt.Printf("%s.%s add health %f\n", p.DynastyName, p.Name, modifiedHealth)
+			fmt.Printf("%s.%s(%d) add health %f\n", p.DynastyName, p.Name, p.ID, modifiedHealth)
 			pg.AddScriptGenerator(NewModifyHealthScriptGenerator(modifiedHealth))
 		}
 
@@ -188,22 +188,24 @@ func BuildSinglePeople(space *nebulagolang.Space, people *ck2nebula.People) *Peo
 
 	for _, modifier := range modifiers {
 		if modifier.ModifiedValue > 0 {
-			fmt.Printf("%s.%s add %s %d\n", people.DynastyName, people.Name, modifier.Property, modifier.ModifiedValue)
+			fmt.Printf("%s.%s(%d) add %s %d\n", people.DynastyName, people.Name, people.ID, modifier.Property, modifier.ModifiedValue)
 			result.AddScriptGenerator(NewModifyPropertyValueScriptGenerator(modifier))
 		}
 	}
 
 	modifiedFertility := getModifiedFloat32(people.Fertility, 1, modifiers[0].Talent)
 	if modifiedFertility > 0 {
-		fmt.Printf("%s.%s add fertility %f\n", people.DynastyName, people.Name, modifiedFertility)
+		fmt.Printf("%s.%s(%d) add fertility %f\n", people.DynastyName, people.Name, people.ID, modifiedFertility)
 		result.AddScriptGenerator(NewModifyFertilityScriptGenerator(modifiedFertility))
 	}
 
 	modifiedHealth := getModifiedFloat32(people.Health, 10, modifiers[0].Talent)
 	if modifiedHealth > 0 {
-		fmt.Printf("%s.%s add health %f\n", people.DynastyName, people.Name, modifiedHealth)
+		fmt.Printf("%s.%s(%d) add health %f\n", people.DynastyName, people.Name, people.ID, modifiedHealth)
 		result.AddScriptGenerator(NewModifyHealthScriptGenerator(modifiedHealth))
 	}
+
+	result.AddScriptGenerator(NewModifyWealthScriptGenerator(2000))
 
 	peopleType := "common"
 	if people.Age < 16 {

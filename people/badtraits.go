@@ -63,9 +63,14 @@ func RemoveBadTraitsWithNebula(space *nebulagolang.Space, people *ck2nebula.Peop
 
 	if r.Ok {
 		for _, trait := range r.Data {
+
+			if trait.Code == "pregnancy_finishing" {
+				continue
+			}
+
 			_, exist := badTraits[trait.Code]
 			if trait.IsHealth || trait.IsIllness || trait.Blinding || trait.Inbred || trait.Vice || trait.SexAppealOpinion < 0 || exist {
-				fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, trait.Name)
+				fmt.Printf("%s.%s(%d) remove trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 				scriptsGenerator = append(scriptsGenerator, NewRemoveTraitScriptGenerator(trait))
 			} else {
 				traitResult[trait.Code] = trait

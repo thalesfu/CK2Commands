@@ -1,8 +1,10 @@
 package main
 
 import (
+	"bufio"
 	"errors"
 	"fmt"
+	"github.com/fsnotify/fsnotify"
 	"github.com/samber/lo"
 	"github.com/thalesfu/CK2Commands/family/bi"
 	"github.com/thalesfu/CK2Commands/family/chu"
@@ -16,50 +18,106 @@ import (
 	"github.com/thalesfu/CK2Commands/people"
 	"github.com/thalesfu/ck2nebula"
 	"github.com/thalesfu/nebulagolang"
+	utils2 "github.com/thalesfu/nebulagolang/utils"
 	"github.com/thalesfu/paradoxtools/utils"
 	"log"
 	"os"
 	"path/filepath"
 	"sort"
 	"strings"
+	"time"
 )
 
 const ck2Folder = "R:\\Thales\\Game\\SteamLibrary\\steamapps\\common\\Crusader Kings II"
 const saveFolder = "T:\\OneDrive\\fu.thales@live.com\\OneDrive\\MyDocument\\Paradox Interactive\\Crusader Kings II\\save games"
 
+var CoreFamily = map[int]string{
+	1000103393: "lou",
+	1000103382: "yuan",
+	1000103379: "chu",
+	1000103374: "wu",
+	1000103360: "zhang",
+	1000103348: "lin",
+	1000103339: "bi",
+	1000103336: "yin",
+	1051150:    "li",
+}
+
 func main() {
 	forceLoadData := false
+	watchMode := false
 
 	if len(os.Args) > 0 {
 		for _, arg := range os.Args {
 			if arg == "-f" {
 				forceLoadData = true
-				break
+				continue
+			}
+
+			if arg == "-w" {
+				watchMode = true
+				continue
 			}
 		}
 	}
 
-	story, player, err := GetStory(forceLoadData)
+	if !watchMode {
+		loadAndAutoBuild(forceLoadData)
+	} else {
+		watcher, err := fsnotify.NewWatcher()
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer watcher.Close()
 
-	if err != nil {
-		log.Fatal(err)
+		done := make(chan bool)
+		stop := make(chan bool)
+
+		go func() {
+			for {
+				select {
+				case event := <-watcher.Events:
+					fmt.Println("Event:", time.Now().Format("2006-01-02 15:04:05"), event)
+					if event.Op&fsnotify.Create == fsnotify.Create {
+						fn := filepath.Base(event.Name)
+						if strings.HasSuffix(event.Name, ".ck2") && fn != "oldautosave.ck2" && fn != "olderautosave.ck2" {
+							loadAndAutoBuild(forceLoadData)
+						}
+					}
+				case err := <-watcher.Errors:
+					fmt.Println("Error:", err)
+				case <-stop:
+					fmt.Println("Stopping watcher...")
+					done <- true
+					return
+				}
+			}
+		}()
+
+		err = watcher.Add(saveFolder)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		fmt.Println("Watching", saveFolder, "for changes...")
+
+		// 在另一个协程中等待用户输入
+		go func() {
+			fmt.Println("Type 'exit' to stop the program.")
+			scanner := bufio.NewScanner(os.Stdin)
+			for scanner.Scan() {
+				text := scanner.Text()
+				if text == "exit" {
+					stop <- true
+					return
+				}
+			}
+		}()
+
+		// 等待监视器协程优雅地停止
+		<-done
+		fmt.Println("Program exited.")
 	}
-
-	fmt.Println(story.PlayerName)
-
-	coreFamily := map[int]string{
-		1000103393: "lou",
-		1000103382: "yuan",
-		1000103379: "chu",
-		1000103374: "wu",
-		1000103360: "zhang",
-		1000103348: "lin",
-		1000103339: "bi",
-		1000103336: "yin",
-		1051150:    "li",
-	}
-
-	people.AutoBuild(ck2nebula.SPACE, player, coreFamily)
 
 	//people.CureFriends(ck2nebula.SPACE, player)
 
@@ -68,6 +126,18 @@ func main() {
 	//people.PollinateFriendsAndFriendsFriends(ck2nebula.SPACE, player)
 
 	//BuildFriends(player)
+}
+
+func loadAndAutoBuild(forceLoadData bool) {
+	story, player, err := GetStory(forceLoadData)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(story.PlayerName)
+
+	people.AutoBuild(ck2nebula.SPACE, player, CoreFamily)
 }
 
 func BuildFriends(player *ck2nebula.People) {
@@ -108,7 +178,7 @@ func GetStory(force bool) (*ck2nebula.Story, *ck2nebula.People, error) {
 	filePath := strings.ReplaceAll(filepath.Join(saveFolder, files[0].Name()), "\\", "/")
 
 	if force || errors.As(sr.Err, &nebulagolang.NoDataErr) || !isSameStory(filePath, sr.Data) {
-		log.Printf("loading save file \"%s\"", filePath)
+		log.Printf("%sloading save file \"%s\"%s\n", utils2.PrintColorCyan, filePath, utils2.PrintColorReset)
 		ck2nebula.BuildStory(ck2Folder, filePath)
 
 		sr = ck2nebula.GetLatestStory(ck2nebula.SPACE)

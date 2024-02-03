@@ -84,7 +84,7 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 	for _, trait := range CommonGoodTraits {
 		if rand.Intn(chance) == 0 {
 			if traits[trait.Code] == nil {
-				fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
+				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 				result.AddScriptGenerator(NewAddTraitScriptGenerator(trait))
 				traits[trait.Code] = trait
 			}
@@ -94,7 +94,7 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 	for _, trait := range VirtueTraits {
 		if rand.Intn(2) == 0 {
 			if traits[trait.Code] == nil {
-				fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
+				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 				result.AddScriptGenerator(NewAddTraitScriptGenerator(trait))
 				traits[trait.Code] = trait
 			}
@@ -116,7 +116,7 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 	}
 
 	if traits[lifeStyleTrait.Code] == nil {
-		fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, lifeStyleTrait.Name)
+		fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, lifeStyleTrait.Name, lifeStyleTrait.Code)
 		result.AddScriptGenerator(NewAddTraitScriptGenerator(lifeStyleTrait))
 		traits[lifeStyleTrait.Code] = lifeStyleTrait
 	}
@@ -126,7 +126,7 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 		if rand.Intn(chance) == 0 {
 			if traits[trait.Code] == nil {
 				result.AddScriptGenerator(NewAddTraitScriptGenerator(trait))
-				fmt.Printf("%s.%s add trait %s\n", people.DynastyName, people.Name, trait.Name)
+				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 				traits[trait.Code] = trait
 			}
 		}
@@ -134,14 +134,14 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 
 	for _, modifier := range fatherModifiers {
 		if modifier.ModifiedValue > 0 {
-			fmt.Printf("%s.%s add %s %d\n", people.DynastyName, people.Name, modifier.Property, modifier.ModifiedValue)
+			fmt.Printf("%s.%s(%d) add %s %d\n", people.DynastyName, people.Name, people.ID, modifier.Property, modifier.ModifiedValue)
 			result.AddScriptGenerator(NewModifyPropertyValueScriptGenerator(modifier))
 		}
 	}
 
 	modifiedHealth := getModifiedFloat32(people.Health, 10, fatherModifiers[0].Talent)
 	if modifiedHealth > 0 {
-		fmt.Printf("%s.%s add health %f\n", people.DynastyName, people.Name, modifiedHealth)
+		fmt.Printf("%s.%s(%d) add health %f\n", people.DynastyName, people.Name, people.ID, modifiedHealth)
 		result.AddScriptGenerator(NewModifyHealthScriptGenerator(modifiedHealth))
 	}
 

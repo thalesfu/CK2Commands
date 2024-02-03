@@ -83,8 +83,11 @@ func buildCurePeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebula
 
 	if tr.Ok {
 		for _, trait := range tr.Data {
+			if trait.Code == "pregnancy_finishing" {
+				continue
+			}
 			if trait.IsHealth || trait.IsIllness || trait.Blinding {
-				fmt.Printf("%s.%s remove trait %s\n", people.DynastyName, people.Name, trait.Name)
+				fmt.Printf("%s.%s(%d) remove trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 				scriptGenerator.AddScriptGenerator(NewRemoveTraitScriptGenerator(trait))
 			}
 		}
