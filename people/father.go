@@ -103,22 +103,14 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 
 	lifeStyletraits := LifeStyleTraitsByPropertyType[fatherModifiers[0].Property]
 
-	lifeStyleTrait := lifeStyletraits[rand.Intn(len(lifeStyletraits))]
-
-	if lifeStyleTrait.Code == "seducer" {
-		if people.IsFemale {
-			lifeStyleTrait = AllTraits["seductress"]
+	for _, lifeStyleTrait := range lifeStyletraits {
+		if rand.Intn(chance) == 0 {
+			if traits[lifeStyleTrait.Code] == nil {
+				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, lifeStyleTrait.Name, lifeStyleTrait.Code)
+				result.AddScriptGenerator(NewAddTraitScriptGenerator(lifeStyleTrait))
+				traits[lifeStyleTrait.Code] = lifeStyleTrait
+			}
 		}
-	} else if lifeStyleTrait.Code == "seductress" {
-		if !people.IsFemale {
-			lifeStyleTrait = AllTraits["seducer"]
-		}
-	}
-
-	if traits[lifeStyleTrait.Code] == nil {
-		fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, lifeStyleTrait.Name, lifeStyleTrait.Code)
-		result.AddScriptGenerator(NewAddTraitScriptGenerator(lifeStyleTrait))
-		traits[lifeStyleTrait.Code] = lifeStyleTrait
 	}
 
 	goodTraits := GoodTraitsByPropertyType[fatherModifiers[0].Property]
@@ -144,6 +136,10 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 		fmt.Printf("%s.%s(%d) add health %f\n", people.DynastyName, people.Name, people.ID, modifiedHealth)
 		result.AddScriptGenerator(NewModifyHealthScriptGenerator(modifiedHealth))
 	}
+
+	var money float32 = 2000
+	fmt.Printf("%s.%s(%d) add money %f\n", people.DynastyName, people.Name, people.ID, money)
+	result.AddScriptGenerator(NewModifyWealthScriptGenerator(money))
 
 	result.AddScriptGenerator(NewSetBuildPeopleFlagScriptGenerator("father"))
 
