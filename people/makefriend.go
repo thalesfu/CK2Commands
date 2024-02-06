@@ -158,6 +158,48 @@ func GetCoreDynastyFriends(space *nebulagolang.Space, player *ck2nebula.People, 
 		}
 	}
 
+	for f, _ := range families {
+		dynasty := ck2nebula.NewDynasty(player.StoryID, f)
+
+		dpr := dynasty.GetAlivePeoples(space)
+		if dpr.Ok {
+			candidates := make([]*ck2nebula.People, 0)
+
+			for _, p := range dpr.Data {
+				candidates = append(candidates, p)
+			}
+
+			if len(candidates) == 1 {
+				result = append(result, candidates[0])
+			} else if len(candidates) > 1 {
+				people := getTopClosedPeople(candidates, player)
+				result = append(result, people)
+			}
+
+			delete(families, f)
+		}
+	}
+
+	myDistanceFamilyResult := player.GetAliveDistanceFamilies(space)
+	if myDistanceFamilyResult.Ok {
+		candidates := make([]*ck2nebula.People, 0)
+
+		for _, p := range myDistanceFamilyResult.Data {
+			if _, ok := fr.Data[p.ID]; !ok {
+				candidates = append(candidates, p)
+			} else {
+				return result
+			}
+		}
+
+		if len(candidates) == 1 {
+			result = append(result, candidates[0])
+		} else if len(candidates) > 1 {
+			people := getTopClosedPeople(candidates, player)
+			result = append(result, people)
+		}
+	}
+
 	return result
 }
 

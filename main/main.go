@@ -5,7 +5,6 @@ import (
 	"errors"
 	"fmt"
 	"github.com/fsnotify/fsnotify"
-	"github.com/samber/lo"
 	"github.com/thalesfu/CK2Commands/family/bi"
 	"github.com/thalesfu/CK2Commands/family/chu"
 	"github.com/thalesfu/CK2Commands/family/fu"
@@ -23,13 +22,13 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"sort"
 	"strings"
 	"time"
 )
 
 const ck2Folder = "R:\\Thales\\Game\\SteamLibrary\\steamapps\\common\\Crusader Kings II"
 const saveFolder = "T:\\OneDrive\\fu.thales@live.com\\OneDrive\\MyDocument\\Paradox Interactive\\Crusader Kings II\\save games"
+const saveFolder2 = "C:\\Program Files (x86)\\Steam\\userdata\\94993760\\203770\\remote\\save games"
 
 var CoreFamily = map[int]string{
 	1000103393: "lou",
@@ -98,6 +97,10 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
+		err = watcher.Add(saveFolder2)
+		if err != nil {
+			log.Fatal(err)
+		}
 
 		fmt.Println("Watching", saveFolder, "for changes...")
 
@@ -160,22 +163,27 @@ func GetStory(force bool) (*ck2nebula.Story, *ck2nebula.People, error) {
 		return nil, nil, sr.Err
 	}
 
-	files, err := os.ReadDir(saveFolder)
-	if err != nil {
-		return nil, nil, err
+	dirs := []string{saveFolder, saveFolder2}
+
+	var filePath string
+	var modifTime int64
+
+	for _, d := range dirs {
+		fs, err := os.ReadDir(d)
+		if err != nil {
+			return nil, nil, err
+		}
+
+		for _, f := range fs {
+			if !f.IsDir() && strings.HasSuffix(f.Name(), ".ck2") {
+				info, _ := f.Info()
+				if info.ModTime().Unix() > modifTime {
+					filePath = strings.ReplaceAll(filepath.Join(d, f.Name()), "\\", "/")
+					modifTime = info.ModTime().Unix()
+				}
+			}
+		}
 	}
-
-	files = lo.Filter(files, func(file os.DirEntry, _ int) bool {
-		return !file.IsDir() && strings.HasSuffix(file.Name(), ".ck2")
-	})
-
-	sort.Slice(files, func(i, j int) bool {
-		xInfo, _ := files[i].Info()
-		yInfo, _ := files[j].Info()
-		return xInfo.ModTime().Unix() > yInfo.ModTime().Unix()
-	})
-
-	filePath := strings.ReplaceAll(filepath.Join(saveFolder, files[0].Name()), "\\", "/")
 
 	if force || errors.As(sr.Err, &nebulagolang.NoDataErr) || !isSameStory(filePath, sr.Data) {
 		log.Printf("%sloading save file \"%s\"%s\n", utils2.PrintColorCyan, filePath, utils2.PrintColorReset)

@@ -113,7 +113,7 @@ func NeedPollinate(space *nebulagolang.Space, people *ck2nebula.People) bool {
 		}
 	}
 
-	if sonCount >= 2 {
+	if sonCount >= 3 {
 		return false
 	}
 
@@ -129,7 +129,7 @@ func NeedPollinate(space *nebulagolang.Space, people *ck2nebula.People) bool {
 		}
 	}
 
-	if grandsonCount+sonCount >= 4 {
+	if grandsonCount+sonCount >= 6 {
 		return false
 	}
 
