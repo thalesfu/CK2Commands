@@ -132,6 +132,7 @@ func main() {
 }
 
 func loadAndAutoBuild(forceLoadData bool) {
+	start := time.Now()
 	story, player, err := GetStory(forceLoadData)
 
 	if err != nil {
@@ -141,6 +142,9 @@ func loadAndAutoBuild(forceLoadData bool) {
 	fmt.Println(story.PlayerName)
 
 	people.AutoBuild(ck2nebula.SPACE, player, CoreFamily)
+	end := time.Now()
+	duration := end.Sub(start)
+	log.Printf("%sDuration: %f seconds from %s to %s %s", utils2.PrintColorCyan, duration.Seconds(), start.Format("2006-01-02 15:04:05"), end.Format("2006-01-02 15:04:05"), utils2.PrintColorReset)
 }
 
 func BuildFriends(player *ck2nebula.People) {
