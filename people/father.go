@@ -165,7 +165,7 @@ func BuildMyFathers(space *nebulagolang.Space, people *ck2nebula.People) {
 
 	if vr.Ok {
 		for _, v := range vr.Data {
-			if v.IsReligionVassal(space) {
+			if v.IsReligionVassal(space) && v.Religion == people.Religion {
 				fathers = append(fathers, v)
 			}
 		}

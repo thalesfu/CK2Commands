@@ -67,7 +67,7 @@ func AutoBuild(space *nebulagolang.Space, player *ck2nebula.People, coreFamily m
 
 	peopleGeneratorMap := MakeFriendsWithNebula(space, groups)
 
-	for _, group := range groups {
+	for d, group := range groups {
 		for _, p := range group {
 			if !p.IsBuilt {
 				spg := BuildSinglePeople(space, p)
@@ -92,7 +92,7 @@ func AutoBuild(space *nebulagolang.Space, player *ck2nebula.People, coreFamily m
 				}
 			}
 
-			if NeedPollinate(space, p) {
+			if NeedPollinate(space, p) && p.Dynasty == d {
 				pollinateGenerator := buildPollinatePeopleScriptGenerator(space, p)
 
 				if len(pollinateGenerator.ScriptGenerators) > 0 {
@@ -112,7 +112,7 @@ func AutoBuild(space *nebulagolang.Space, player *ck2nebula.People, coreFamily m
 
 	if vr.Ok {
 		for _, v := range vr.Data {
-			if v.IsReligionVassal(space) {
+			if v.IsReligionVassal(space) && player.Religion == v.Religion {
 				if !v.IsBuilt {
 					fsg := buildFatherPeopleScriptGenerator(space, v)
 					if pg, ok := peopleGeneratorMap[fsg.Me.ID]; ok {

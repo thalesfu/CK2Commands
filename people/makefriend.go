@@ -40,7 +40,7 @@ func MakeFriends(group ...[]int) {
 	writer.Flush()
 }
 
-func MakeFriendsWithNebula(space *nebulagolang.Space, group [][]*ck2nebula.People) map[int]*PeopleScriptGenerator {
+func MakeFriendsWithNebula(space *nebulagolang.Space, group map[int][]*ck2nebula.People) map[int]*PeopleScriptGenerator {
 	result := make(map[int]*PeopleScriptGenerator)
 	for _, peoples := range group {
 		for i := 0; i < len(peoples); i++ {
@@ -64,14 +64,14 @@ func MakeFriendsWithNebula(space *nebulagolang.Space, group [][]*ck2nebula.Peopl
 	return result
 }
 
-func GetFriendsGroup(space *nebulagolang.Space, player *ck2nebula.People, coreFamily map[int]string) [][]*ck2nebula.People {
-	result := make([][]*ck2nebula.People, 0)
+func GetFriendsGroup(space *nebulagolang.Space, player *ck2nebula.People, coreFamily map[int]string) map[int][]*ck2nebula.People {
+	result := make(map[int][]*ck2nebula.People)
 
 	coreFamilyFriends := GetCoreDynastyFriends(space, player, coreFamily)
 
 	for _, p := range coreFamilyFriends {
 		familyFriends := GetFamilyFriends(space, p)
-		result = append(result, familyFriends)
+		result[p.Dynasty] = familyFriends
 	}
 
 	return result
