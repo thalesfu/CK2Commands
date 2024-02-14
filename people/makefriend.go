@@ -74,6 +74,8 @@ func GetFriendsGroup(space *nebulagolang.Space, player *ck2nebula.People, coreFa
 		result[p.Dynasty] = familyFriends
 	}
 
+	result[0] = coreFamilyFriends
+
 	return result
 }
 

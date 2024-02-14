@@ -20,8 +20,11 @@ import (
 	utils2 "github.com/thalesfu/nebulagolang/utils"
 	"github.com/thalesfu/paradoxtools/utils"
 	"log"
+	_ "net/http/pprof"
 	"os"
 	"path/filepath"
+	"runtime"
+	"runtime/pprof"
 	"strings"
 	"time"
 )
@@ -40,6 +43,27 @@ var CoreFamily = map[int]string{
 	1000103339: "bi",
 	1000103336: "yin",
 	1051150:    "li",
+}
+
+func monitorMemoryUsage(threshold uint64, snapshotInterval time.Duration) {
+	for {
+		var m runtime.MemStats
+		runtime.ReadMemStats(&m)
+		if m.Alloc > threshold {
+			log.Printf("Memory usage is high, taking a snapshot: %v bytes\n", m.Alloc)
+			file, err := os.Create(time.Now().Format("2006-01-02_15-04-05_heap.pprof"))
+			if err != nil {
+				log.Printf("Could not create heap snapshot file: %v\n", err)
+				continue
+			}
+			if err := pprof.WriteHeapProfile(file); err != nil {
+				log.Printf("Could not write heap profile: %v\n", err)
+			}
+			file.Close()
+			log.Println("Heap snapshot saved.")
+		}
+		time.Sleep(snapshotInterval)
+	}
 }
 
 func main() {
@@ -142,6 +166,7 @@ func loadAndAutoBuild(forceLoadData bool) {
 	fmt.Println(story.PlayerName)
 
 	people.AutoBuild(ck2nebula.SPACE, player, CoreFamily)
+	people.ForceCurePeople(ck2nebula.SPACE, player, CoreFamily)
 	end := time.Now()
 	duration := end.Sub(start)
 	log.Printf("%sDuration: %f seconds from %s to %s %s", utils2.PrintColorCyan, duration.Seconds(), start.Format("2006-01-02 15:04:05"), end.Format("2006-01-02 15:04:05"), utils2.PrintColorReset)

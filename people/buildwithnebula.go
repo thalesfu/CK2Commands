@@ -68,6 +68,9 @@ func AutoBuild(space *nebulagolang.Space, player *ck2nebula.People, coreFamily m
 	peopleGeneratorMap := MakeFriendsWithNebula(space, groups)
 
 	for d, group := range groups {
+		if d == 0 {
+			continue
+		}
 		for _, p := range group {
 			if !p.IsBuilt {
 				spg := BuildSinglePeople(space, p)
@@ -127,6 +130,8 @@ func AutoBuild(space *nebulagolang.Space, player *ck2nebula.People, coreFamily m
 		}
 	}
 
+	BuildAllReligionVassal(space, player, player.Religion, peopleGeneratorMap)
+
 	peopleGenerators := make([]CK2Commands.ScriptGenerator, 0)
 
 	for _, p := range peopleGeneratorMap {
@@ -134,4 +139,27 @@ func AutoBuild(space *nebulagolang.Space, player *ck2nebula.People, coreFamily m
 	}
 
 	CK2Commands.BuildScript("auto", peopleGenerators...)
+}
+
+func BuildAllReligionVassal(space *nebulagolang.Space, people *ck2nebula.People, religion string, allPeople map[int]*PeopleScriptGenerator) {
+	vr := people.GetVassals(space)
+
+	if vr.Ok {
+		for _, v := range vr.Data {
+			if v.IsReligionVassal(space) && religion == v.Religion {
+				if !v.IsBuilt {
+					fsg := buildFatherPeopleScriptGenerator(space, v)
+					if pg, ok := allPeople[fsg.Me.ID]; ok {
+						for _, g := range fsg.ScriptGenerators {
+							pg.AddScriptGenerator(g)
+						}
+					} else {
+						allPeople[fsg.Me.ID] = fsg
+					}
+				}
+			}
+
+			BuildAllReligionVassal(space, v, religion, allPeople)
+		}
+	}
 }
