@@ -13,6 +13,7 @@ import (
 	"github.com/thalesfu/CK2Commands/family/lou"
 	"github.com/thalesfu/CK2Commands/family/wu"
 	"github.com/thalesfu/CK2Commands/family/wuyibu"
+	"github.com/thalesfu/CK2Commands/feudal"
 	"github.com/thalesfu/CK2Commands/job"
 	"github.com/thalesfu/CK2Commands/people"
 	"github.com/thalesfu/ck2nebula"
@@ -43,6 +44,7 @@ var CoreFamily = map[int]string{
 	1000103339: "bi",
 	1000103336: "yin",
 	1051150:    "li",
+	1040018:    "Óengus",
 }
 
 func monitorMemoryUsage(threshold uint64, snapshotInterval time.Duration) {
@@ -69,6 +71,7 @@ func monitorMemoryUsage(threshold uint64, snapshotInterval time.Duration) {
 func main() {
 	forceLoadData := false
 	watchMode := false
+	titleMode := false
 
 	if len(os.Args) > 0 {
 		for _, arg := range os.Args {
@@ -81,12 +84,18 @@ func main() {
 				watchMode = true
 				continue
 			}
+
+			if arg == "-t" {
+				titleMode = true
+				continue
+			}
 		}
 	}
 
-	if !watchMode {
-		loadAndAutoBuild(forceLoadData)
-	} else {
+	if titleMode {
+		feudal.BuildTitle()
+	} else if watchMode {
+
 		watcher, err := fsnotify.NewWatcher()
 		if err != nil {
 			log.Fatal(err)
@@ -144,6 +153,8 @@ func main() {
 		// 等待监视器协程优雅地停止
 		<-done
 		fmt.Println("Program exited.")
+	} else {
+		loadAndAutoBuild(forceLoadData)
 	}
 
 	//people.CureFriends(ck2nebula.SPACE, player)
