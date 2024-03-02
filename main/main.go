@@ -30,9 +30,9 @@ import (
 	"time"
 )
 
-const ck2Folder = "R:\\Thales\\Game\\SteamLibrary\\steamapps\\common\\Crusader Kings II"
-const saveFolder = "T:\\OneDrive\\fu.thales@live.com\\OneDrive\\MyDocument\\Paradox Interactive\\Crusader Kings II\\save games"
-const saveFolder2 = "C:\\Program Files (x86)\\Steam\\userdata\\94993760\\203770\\remote\\save games"
+const ck2Folder = "/Volumes/[C] Windows 11.hidden/Program Files (x86)/Steam/steamapps/common/Crusader Kings II"
+const saveFolder = "/Users/thalesfu/Documents/Paradox Interactive/Crusader Kings II/save games"
+const saveFolder2 = "/Volumes/[C] Windows 11.hidden/Program Files (x86)/Steam/userdata/94993760/203770/remote/save games"
 
 var CoreFamily = map[int]string{
 	1000103393: "lou",
