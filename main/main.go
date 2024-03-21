@@ -30,9 +30,9 @@ import (
 	"time"
 )
 
-const ck2Folder = "/Volumes/[C] Windows 11.hidden/Program Files (x86)/Steam/steamapps/common/Crusader Kings II"
+const ck2Folder = "/Users/thalesfu/Windows/steam/steamapps/common/Crusader Kings II"
 const saveFolder = "/Users/thalesfu/Documents/Paradox Interactive/Crusader Kings II/save games"
-const saveFolder2 = "/Volumes/[C] Windows 11.hidden/Program Files (x86)/Steam/userdata/94993760/203770/remote/save games"
+const saveFolder2 = "/Users/thalesfu/Windows/steam/userdata/94993760/203770/remote/save games"
 
 var CoreFamily = map[int]string{
 	1000103393: "lou",
@@ -69,6 +69,14 @@ func monitorMemoryUsage(threshold uint64, snapshotInterval time.Duration) {
 }
 
 func main() {
+	cpuFile, err := os.Create("cpu.prof")
+	if err != nil {
+		log.Fatal("could not create CPU profile: ", err)
+	}
+	if err := pprof.StartCPUProfile(cpuFile); err != nil {
+		log.Fatal("could not start CPU profile: ", err)
+	}
+	defer pprof.StopCPUProfile()
 	forceLoadData := false
 	watchMode := false
 	titleMode := false

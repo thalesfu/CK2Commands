@@ -38,8 +38,9 @@ func BuildTitle() {
 	titles = append(titles, &Title{
 		Holder: 2609830,
 		Feuds: []feud.Feud{
-			earth.Turkestan图兰.KKhotan于阗().DKashgar可失合儿().CAksu阿克苏(),
-			earth.Turkestan图兰.KKhotan于阗().DKashgar可失合儿().CAksu阿克苏().BTumshuk图木舒克(),
+			earth.Turkestan图兰.KKhiva河中().DKhiva希瓦().CGurganj玉龙杰赤(),
+			earth.Turkestan图兰.KKhiva河中().DKhiva希瓦().CGurganj玉龙杰赤().BUrgench玉龙杰赤(),
+			earth.Turkestan图兰.KKhiva河中().DKhiva希瓦().CGurganj玉龙杰赤().BNukus努库斯(),
 		},
 	})
 	GiveTitle(titles)
