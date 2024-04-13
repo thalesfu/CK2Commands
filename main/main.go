@@ -69,14 +69,7 @@ func monitorMemoryUsage(threshold uint64, snapshotInterval time.Duration) {
 }
 
 func main() {
-	cpuFile, err := os.Create("cpu.prof")
-	if err != nil {
-		log.Fatal("could not create CPU profile: ", err)
-	}
-	if err := pprof.StartCPUProfile(cpuFile); err != nil {
-		log.Fatal("could not start CPU profile: ", err)
-	}
-	defer pprof.StopCPUProfile()
+	defer ck2nebula.SPACE.Nebula.Close()
 	forceLoadData := false
 	watchMode := false
 	titleMode := false
