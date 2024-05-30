@@ -130,7 +130,7 @@ func AutoBuild(space *nebulagolang.Space, player *ck2nebula.People, coreFamily m
 		}
 	}
 
-	BuildAllReligionVassal(space, player, player.Religion, peopleGeneratorMap)
+	BuildAllReligionVassal(space, player, player.Religion, peopleGeneratorMap, nil)
 
 	peopleGenerators := make([]CK2Commands.ScriptGenerator, 0)
 
@@ -141,8 +141,14 @@ func AutoBuild(space *nebulagolang.Space, player *ck2nebula.People, coreFamily m
 	CK2Commands.BuildScript("auto", peopleGenerators...)
 }
 
-func BuildAllReligionVassal(space *nebulagolang.Space, people *ck2nebula.People, religion string, allPeople map[int]*PeopleScriptGenerator) {
+func BuildAllReligionVassal(space *nebulagolang.Space, people *ck2nebula.People, religion string, allPeople map[int]*PeopleScriptGenerator, scannedPeople map[int]*ck2nebula.People) {
 	vr := people.GetVassals(space)
+
+	if scannedPeople == nil {
+		scannedPeople = make(map[int]*ck2nebula.People)
+	}
+
+	scannedPeople[people.ID] = people
 
 	if vr.Ok {
 		for _, v := range vr.Data {
@@ -159,7 +165,9 @@ func BuildAllReligionVassal(space *nebulagolang.Space, people *ck2nebula.People,
 				}
 			}
 
-			BuildAllReligionVassal(space, v, religion, allPeople)
+			if _, ok := scannedPeople[v.ID]; !ok {
+				BuildAllReligionVassal(space, v, religion, allPeople, scannedPeople)
+			}
 		}
 	}
 }
