@@ -73,6 +73,9 @@ func main() {
 	forceLoadData := false
 	watchMode := false
 	titleMode := false
+	culture := false
+	religion := false
+	name := false
 
 	if len(os.Args) > 0 {
 		for _, arg := range os.Args {
@@ -90,10 +93,30 @@ func main() {
 				titleMode = true
 				continue
 			}
+
+			if arg == "-c" {
+				culture = true
+				continue
+			}
+
+			if arg == "-r" {
+				religion = true
+				continue
+			}
+
+			if arg == "-n" {
+				name = true
+				continue
+			}
 		}
 	}
-
-	if titleMode {
+	if name {
+		people.ChangePeopleName()
+	} else if religion {
+		people.Taoist()
+	} else if culture {
+		people.HanPictish()
+	} else if titleMode {
 		feudal.BuildTitle()
 	} else if watchMode {
 

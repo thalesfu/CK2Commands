@@ -1,46 +1,15 @@
 package people
 
 import (
-	"bufio"
 	"fmt"
 	"github.com/thalesfu/CK2Commands"
+	"github.com/thalesfu/CK2Commands/culture"
 	"github.com/thalesfu/ck2nebula"
+	"github.com/thalesfu/nebulagolang"
+	"strings"
 )
 
-var CultureMap map[string]*ck2nebula.Culture
-
-func init() {
-	culturesResult := ck2nebula.GetAllCulture(ck2nebula.SPACE)
-	if culturesResult.Ok {
-		CultureMap = make(map[string]*ck2nebula.Culture)
-		for _, culture := range culturesResult.Data {
-			CultureMap[culture.Name] = culture
-		}
-	}
-}
-
-func setCultureToHanPictish(writer *bufio.Writer, peopleId int) {
-	writeChangeCulture(writer, peopleId, "han", "pictish")
-}
-
-func CultureIsHanPictish(peopleId ...int) {
-	var functions = []buildFunc{
-		setCultureToHanPictish,
-	}
-
-	buildPeople("hanpictish", functions, peopleId...)
-}
-
 func HanPictish() {
-	storyResult := ck2nebula.GetLatestStory(ck2nebula.SPACE)
-	if !storyResult.Ok {
-		fmt.Println(storyResult.Err.Error())
-		return
-	}
-
-	han := CultureMap["汉"]
-	pictish := CultureMap["皮克特"]
-
 	peopleIds := make([]int, 0)
 	peopleIds = append(peopleIds, 2717663)
 	peopleIds = append(peopleIds, 2729781)
@@ -51,21 +20,28 @@ func HanPictish() {
 	peopleIds = append(peopleIds, 2726855)
 	peopleIds = append(peopleIds, 2726776)
 
+	BuildCultureScript(ck2nebula.SPACE, culture.Culture_中华_汉, culture.Culture_凯尔特_皮克特, peopleIds...)
+}
+
+func BuildCultureScript(space *nebulagolang.Space, culture *ck2nebula.Culture, ethnicity *ck2nebula.Culture, people ...int) {
+	storyResult := ck2nebula.GetLatestStory(space)
+	if !storyResult.Ok {
+		fmt.Println(storyResult.Err.Error())
+		return
+	}
+
 	generators := make([]CK2Commands.ScriptGenerator, 0)
 
-	for _, peopleId := range peopleIds {
+	for _, peopleId := range people {
 		people := ck2nebula.GetPeopleByID(ck2nebula.SPACE, storyResult.Data.StoryId, peopleId)
 
-		generator := buildCultureScriptGenerator(people.Data, han, pictish)
+		generator := buildCultureScriptGenerator(people.Data, culture, ethnicity)
 
 		generators = append(generators, generator)
 	}
 
-	CK2Commands.BuildScript("hanpictish", generators...)
-}
+	CK2Commands.BuildScript(strings.ToLower(fmt.Sprintf("%s%s", culture.Code, ethnicity.Code)), generators...)
 
-func setCultureToHanScottish(writer *bufio.Writer, peopleId int) {
-	writeChangeCulture(writer, peopleId, "han", "scottish")
 }
 
 func buildCultureScriptGenerator(people *ck2nebula.People, culture *ck2nebula.Culture, ethnicity *ck2nebula.Culture) *PeopleScriptGenerator {
@@ -82,24 +58,4 @@ func buildCultureScriptGenerator(people *ck2nebula.People, culture *ck2nebula.Cu
 	}
 
 	return scriptGenerator
-}
-
-func CultureIsHanScottish(peopleId ...int) {
-	var functions = []buildFunc{
-		setCultureToHanScottish,
-	}
-
-	buildPeople("hanscottish", functions, peopleId...)
-}
-
-func setCultureToHanWelsh(writer *bufio.Writer, peopleId int) {
-	writeChangeCulture(writer, peopleId, "han", "welsh")
-}
-
-func CultureIsHanWelsh(peopleId ...int) {
-	var functions = []buildFunc{
-		setCultureToHanWelsh,
-	}
-
-	buildPeople("hanwelsh", functions, peopleId...)
 }
