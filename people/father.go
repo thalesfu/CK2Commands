@@ -66,6 +66,7 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 			fatherModifiers[0] = modifier
 		} else if modifier.Property == PropertyTypeMartial {
 			fatherModifiers[1] = modifier
+			modifier.ModifiedValue += 20
 		}
 	}
 
