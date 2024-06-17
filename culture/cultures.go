@@ -3,7 +3,55 @@ package culture
 import "github.com/thalesfu/ck2nebula"
 
 var (
-	Culture_阿尔泰_女真 = &ck2nebula.Culture{
+	Culture_阿尔泰_阿瓦尔_altaic_avar = &ck2nebula.Culture{
+		VID:                   "culture.avar",
+		Name:                  "阿瓦尔",
+		Code:                  "avar",
+		FromDynastyPrefix:     "of ",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: true,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          true,
+	}
+	Culture_阿尔泰_保加尔_altaic_bolghar = &ck2nebula.Culture{
+		VID:                   "culture.bolghar",
+		Name:                  "保加尔",
+		Code:                  "bolghar",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: true,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          true,
+	}
+	Culture_阿尔泰_库曼_altaic_cuman = &ck2nebula.Culture{
+		VID:                   "culture.cuman",
+		Name:                  "库曼",
+		Code:                  "cuman",
+		FromDynastyPrefix:     "of ",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: true,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          true,
+	}
+	Culture_阿尔泰_女真_altaic_jurchen = &ck2nebula.Culture{
 		VID:                   "culture.jurchen",
 		Name:                  "女真",
 		Code:                  "jurchen",
@@ -19,7 +67,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_阿尔泰_葛逻禄 = &ck2nebula.Culture{
+	Culture_阿尔泰_葛逻禄_altaic_karluk = &ck2nebula.Culture{
 		VID:                   "culture.karluk",
 		Name:                  "葛逻禄",
 		Code:                  "karluk",
@@ -35,7 +83,23 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_阿尔泰_契丹 = &ck2nebula.Culture{
+	Culture_阿尔泰_可萨_altaic_khazar = &ck2nebula.Culture{
+		VID:                   "culture.khazar",
+		Name:                  "可萨",
+		Code:                  "khazar",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: true,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          true,
+	}
+	Culture_阿尔泰_契丹_altaic_khitan = &ck2nebula.Culture{
 		VID:                   "culture.khitan",
 		Name:                  "契丹",
 		Code:                  "khitan",
@@ -51,7 +115,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_阿尔泰_黠戛斯 = &ck2nebula.Culture{
+	Culture_阿尔泰_黠戛斯_altaic_kirghiz = &ck2nebula.Culture{
 		VID:                   "culture.kirghiz",
 		Name:                  "黠戛斯",
 		Code:                  "kirghiz",
@@ -67,7 +131,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_阿尔泰_蒙古 = &ck2nebula.Culture{
+	Culture_阿尔泰_蒙古_altaic_mongol = &ck2nebula.Culture{
 		VID:                   "culture.mongol",
 		Name:                  "蒙古",
 		Code:                  "mongol",
@@ -83,7 +147,39 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_阿尔泰_回鹘 = &ck2nebula.Culture{
+	Culture_阿尔泰_佩切涅格_altaic_pecheneg = &ck2nebula.Culture{
+		VID:                   "culture.pecheneg",
+		Name:                  "佩切涅格",
+		Code:                  "pecheneg",
+		FromDynastyPrefix:     "of ",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: true,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          true,
+	}
+	Culture_阿尔泰_突厥_altaic_turkish = &ck2nebula.Culture{
+		VID:                   "culture.turkish",
+		Name:                  "突厥",
+		Code:                  "turkish",
+		FromDynastyPrefix:     "ve ",
+		MaleParonym:           "oglu",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          true,
+	}
+	Culture_阿尔泰_回鹘_altaic_uyghur = &ck2nebula.Culture{
 		VID:                   "culture.uyghur",
 		Name:                  "回鹘",
 		Code:                  "uyghur",
@@ -99,7 +195,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_阿拉伯_安达卢西亚 = &ck2nebula.Culture{
+	Culture_阿拉伯_安达卢西亚_arabic_andalusian_arabic = &ck2nebula.Culture{
 		VID:                   "culture.andalusian_arabic",
 		Name:                  "安达卢西亚",
 		Code:                  "andalusian_arabic",
@@ -115,7 +211,23 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_阿拉伯_埃及 = &ck2nebula.Culture{
+	Culture_阿拉伯_贝都因_arabic_bedouin_arabic = &ck2nebula.Culture{
+		VID:                   "culture.bedouin_arabic",
+		Name:                  "贝都因",
+		Code:                  "bedouin_arabic",
+		FromDynastyPrefix:     "mn ",
+		MaleParonym:           "ibn ",
+		FemaleParonym:         "bint ",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_阿拉伯_埃及_arabic_egyptian_arabic = &ck2nebula.Culture{
 		VID:                   "culture.egyptian_arabic",
 		Name:                  "埃及",
 		Code:                  "egyptian_arabic",
@@ -131,7 +243,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_阿拉伯_黎凡特 = &ck2nebula.Culture{
+	Culture_阿拉伯_黎凡特_arabic_levantine_arabic = &ck2nebula.Culture{
 		VID:                   "culture.levantine_arabic",
 		Name:                  "黎凡特",
 		Code:                  "levantine_arabic",
@@ -147,7 +259,23 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_波罗的_拉特加莱 = &ck2nebula.Culture{
+	Culture_阿拉伯_柏柏尔_arabic_maghreb_arabic = &ck2nebula.Culture{
+		VID:                   "culture.maghreb_arabic",
+		Name:                  "柏柏尔",
+		Code:                  "maghreb_arabic",
+		FromDynastyPrefix:     "mn ",
+		MaleParonym:           "ibn ",
+		FemaleParonym:         "bint ",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          true,
+	}
+	Culture_波罗的_拉特加莱_baltic_lettigallish = &ck2nebula.Culture{
 		VID:                   "culture.lettigallish",
 		Name:                  "拉特加莱",
 		Code:                  "lettigallish",
@@ -163,7 +291,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_波罗的_立陶宛 = &ck2nebula.Culture{
+	Culture_波罗的_立陶宛_baltic_lithuanian = &ck2nebula.Culture{
 		VID:                   "culture.lithuanian",
 		Name:                  "立陶宛",
 		Code:                  "lithuanian",
@@ -179,7 +307,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_波罗的_普鲁士 = &ck2nebula.Culture{
+	Culture_波罗的_普鲁士_baltic_prussian = &ck2nebula.Culture{
 		VID:                   "culture.prussian",
 		Name:                  "普鲁士",
 		Code:                  "prussian",
@@ -195,7 +323,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_熊_熊 = &ck2nebula.Culture{
+	Culture_熊_熊_bear_group_bear = &ck2nebula.Culture{
 		VID:                   "culture.bear",
 		Name:                  "熊",
 		Code:                  "bear",
@@ -211,7 +339,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拜占庭_阿兰 = &ck2nebula.Culture{
+	Culture_拜占庭_阿兰_byzantine_alan = &ck2nebula.Culture{
 		VID:                   "culture.alan",
 		Name:                  "阿兰",
 		Code:                  "alan",
@@ -227,7 +355,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拜占庭_阿尔贝里亚 = &ck2nebula.Culture{
+	Culture_拜占庭_阿尔贝里亚_byzantine_arberian = &ck2nebula.Culture{
 		VID:                   "culture.arberian",
 		Name:                  "阿尔贝里亚",
 		Code:                  "arberian",
@@ -243,7 +371,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拜占庭_亚美尼亚 = &ck2nebula.Culture{
+	Culture_拜占庭_亚美尼亚_byzantine_armenian = &ck2nebula.Culture{
 		VID:                   "culture.armenian",
 		Name:                  "亚美尼亚",
 		Code:                  "armenian",
@@ -259,7 +387,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拜占庭_亚述 = &ck2nebula.Culture{
+	Culture_拜占庭_亚述_byzantine_assyrian = &ck2nebula.Culture{
 		VID:                   "culture.assyrian",
 		Name:                  "亚述",
 		Code:                  "assyrian",
@@ -275,7 +403,23 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拜占庭_哥特 = &ck2nebula.Culture{
+	Culture_拜占庭_科普特_byzantine_coptic = &ck2nebula.Culture{
+		VID:                   "culture.coptic",
+		Name:                  "科普特",
+		Code:                  "coptic",
+		FromDynastyPrefix:     "en ",
+		MaleParonym:           "psen",
+		FemaleParonym:         "tsen",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: false,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_拜占庭_哥特_byzantine_crimean_gothic = &ck2nebula.Culture{
 		VID:                   "culture.crimean_gothic",
 		Name:                  "哥特",
 		Code:                  "crimean_gothic",
@@ -291,7 +435,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拜占庭_格鲁吉亚 = &ck2nebula.Culture{
+	Culture_拜占庭_格鲁吉亚_byzantine_georgian = &ck2nebula.Culture{
 		VID:                   "culture.georgian",
 		Name:                  "格鲁吉亚",
 		Code:                  "georgian",
@@ -307,7 +451,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拜占庭_希腊 = &ck2nebula.Culture{
+	Culture_拜占庭_希腊_byzantine_greek = &ck2nebula.Culture{
 		VID:                   "culture.greek",
 		Name:                  "希腊",
 		Code:                  "greek",
@@ -323,7 +467,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_猫_猫 = &ck2nebula.Culture{
+	Culture_猫_猫_cat_group_cat = &ck2nebula.Culture{
 		VID:                   "culture.cat",
 		Name:                  "猫",
 		Code:                  "cat",
@@ -339,7 +483,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_凯尔特_布列塔尼 = &ck2nebula.Culture{
+	Culture_凯尔特_布列塔尼_celtic_breton = &ck2nebula.Culture{
 		VID:                   "culture.breton",
 		Name:                  "布列塔尼",
 		Code:                  "breton",
@@ -355,7 +499,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_凯尔特_爱尔兰 = &ck2nebula.Culture{
+	Culture_凯尔特_爱尔兰_celtic_irish = &ck2nebula.Culture{
 		VID:                   "culture.irish",
 		Name:                  "爱尔兰",
 		Code:                  "irish",
@@ -371,7 +515,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_凯尔特_皮克特 = &ck2nebula.Culture{
+	Culture_凯尔特_皮克特_celtic_pictish = &ck2nebula.Culture{
 		VID:                   "culture.pictish",
 		Name:                  "皮克特",
 		Code:                  "pictish",
@@ -387,7 +531,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_凯尔特_苏格兰 = &ck2nebula.Culture{
+	Culture_凯尔特_苏格兰_celtic_scottish = &ck2nebula.Culture{
 		VID:                   "culture.scottish",
 		Name:                  "苏格兰",
 		Code:                  "scottish",
@@ -403,7 +547,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_凯尔特_威尔士 = &ck2nebula.Culture{
+	Culture_凯尔特_威尔士_celtic_welsh = &ck2nebula.Culture{
 		VID:                   "culture.welsh",
 		Name:                  "威尔士",
 		Code:                  "welsh",
@@ -419,7 +563,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_中非_豪萨 = &ck2nebula.Culture{
+	Culture_中非_豪萨_central_african_hausa = &ck2nebula.Culture{
 		VID:                   "culture.hausa",
 		Name:                  "豪萨",
 		Code:                  "hausa",
@@ -435,7 +579,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_中非_卡努里 = &ck2nebula.Culture{
+	Culture_中非_卡努里_central_african_kanuri = &ck2nebula.Culture{
 		VID:                   "culture.kanuri",
 		Name:                  "卡努里",
 		Code:                  "kanuri",
@@ -451,7 +595,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_中非_扎加瓦 = &ck2nebula.Culture{
+	Culture_中非_扎加瓦_central_african_zaghawa = &ck2nebula.Culture{
 		VID:                   "culture.zaghawa",
 		Name:                  "扎加瓦",
 		Code:                  "zaghawa",
@@ -467,7 +611,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_中日耳曼_日耳曼 = &ck2nebula.Culture{
+	Culture_中日耳曼_日耳曼_central_germanic_german = &ck2nebula.Culture{
 		VID:                   "culture.german",
 		Name:                  "日耳曼",
 		Code:                  "german",
@@ -483,7 +627,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_中日耳曼_伦巴第 = &ck2nebula.Culture{
+	Culture_中日耳曼_伦巴第_central_germanic_lombard = &ck2nebula.Culture{
 		VID:                   "culture.lombard",
 		Name:                  "伦巴第",
 		Code:                  "lombard",
@@ -499,7 +643,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_中日耳曼_法兰克 = &ck2nebula.Culture{
+	Culture_中日耳曼_法兰克_central_germanic_old_frankish = &ck2nebula.Culture{
 		VID:                   "culture.old_frankish",
 		Name:                  "法兰克",
 		Code:                  "old_frankish",
@@ -515,7 +659,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_中日耳曼_苏维汇 = &ck2nebula.Culture{
+	Culture_中日耳曼_苏维汇_central_germanic_suebi = &ck2nebula.Culture{
 		VID:                   "culture.suebi",
 		Name:                  "苏维汇",
 		Code:                  "suebi",
@@ -531,7 +675,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_中华_汉 = &ck2nebula.Culture{
+	Culture_中华_汉_chinese_group_han = &ck2nebula.Culture{
 		VID:                   "culture.han",
 		Name:                  "汉",
 		Code:                  "han",
@@ -547,7 +691,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_犬科_狗 = &ck2nebula.Culture{
+	Culture_犬科_狗_dog_group_dog_culture = &ck2nebula.Culture{
 		VID:                   "culture.dog_culture",
 		Name:                  "狗",
 		Code:                  "dog_culture",
@@ -563,7 +707,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_龙科_龙 = &ck2nebula.Culture{
+	Culture_龙科_龙_dragon_group_dragon_culture = &ck2nebula.Culture{
 		VID:                   "culture.dragon_culture",
 		Name:                  "龙",
 		Code:                  "dragon_culture",
@@ -579,7 +723,55 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_鸟类_鸭 = &ck2nebula.Culture{
+	Culture_达罗毗荼_迦那陀_dravidian_group_kannada = &ck2nebula.Culture{
+		VID:                   "culture.kannada",
+		Name:                  "迦那陀",
+		Code:                  "kannada",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_达罗毗荼_昙密罗_dravidian_group_tamil = &ck2nebula.Culture{
+		VID:                   "culture.tamil",
+		Name:                  "昙密罗",
+		Code:                  "tamil",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_达罗毗荼_泰卢固_dravidian_group_telugu = &ck2nebula.Culture{
+		VID:                   "culture.telugu",
+		Name:                  "泰卢固",
+		Code:                  "telugu",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_鸟类_鸭_duck_group_duck_culture = &ck2nebula.Culture{
 		VID:                   "culture.duck_culture",
 		Name:                  "鸭",
 		Code:                  "duck_culture",
@@ -595,7 +787,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_东非_达朱 = &ck2nebula.Culture{
+	Culture_东非_达朱_east_african_daju = &ck2nebula.Culture{
 		VID:                   "culture.daju",
 		Name:                  "达朱",
 		Code:                  "daju",
@@ -611,7 +803,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_东非_埃塞俄比亚 = &ck2nebula.Culture{
+	Culture_东非_埃塞俄比亚_east_african_ethiopian = &ck2nebula.Culture{
 		VID:                   "culture.ethiopian",
 		Name:                  "埃塞俄比亚",
 		Code:                  "ethiopian",
@@ -627,7 +819,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_东非_努比亚 = &ck2nebula.Culture{
+	Culture_东非_努比亚_east_african_nubian = &ck2nebula.Culture{
 		VID:                   "culture.nubian",
 		Name:                  "努比亚",
 		Code:                  "nubian",
@@ -643,7 +835,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_东非_索马里 = &ck2nebula.Culture{
+	Culture_东非_索马里_east_african_somali = &ck2nebula.Culture{
 		VID:                   "culture.somali",
 		Name:                  "索马里",
 		Code:                  "somali",
@@ -659,7 +851,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_东斯拉夫_伊尔门 = &ck2nebula.Culture{
+	Culture_东斯拉夫_伊尔门_east_slavic_ilmenian = &ck2nebula.Culture{
 		VID:                   "culture.ilmenian",
 		Name:                  "伊尔门",
 		Code:                  "ilmenian",
@@ -675,7 +867,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_东斯拉夫_罗斯 = &ck2nebula.Culture{
+	Culture_东斯拉夫_罗斯_east_slavic_russian = &ck2nebula.Culture{
 		VID:                   "culture.russian",
 		Name:                  "罗斯",
 		Code:                  "russian",
@@ -691,7 +883,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_东斯拉夫_西维利亚 = &ck2nebula.Culture{
+	Culture_东斯拉夫_西维利亚_east_slavic_severian = &ck2nebula.Culture{
 		VID:                   "culture.severian",
 		Name:                  "西维利亚",
 		Code:                  "severian",
@@ -707,7 +899,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_东斯拉夫_沃里尼亚 = &ck2nebula.Culture{
+	Culture_东斯拉夫_沃里尼亚_east_slavic_volhynian = &ck2nebula.Culture{
 		VID:                   "culture.volhynian",
 		Name:                  "沃里尼亚",
 		Code:                  "volhynian",
@@ -723,7 +915,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_长鼻目_象 = &ck2nebula.Culture{
+	Culture_长鼻目_象_elephant_group_elephant_culture = &ck2nebula.Culture{
 		VID:                   "culture.elephant_culture",
 		Name:                  "象",
 		Code:                  "elephant_culture",
@@ -739,7 +931,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_芬兰_乌戈尔_芬兰 = &ck2nebula.Culture{
+	Culture_芬兰_乌戈尔_芬兰_finno_ugric_finnish = &ck2nebula.Culture{
 		VID:                   "culture.finnish",
 		Name:                  "芬兰",
 		Code:                  "finnish",
@@ -755,7 +947,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_芬兰_乌戈尔_汉特 = &ck2nebula.Culture{
+	Culture_芬兰_乌戈尔_汉特_finno_ugric_khanty = &ck2nebula.Culture{
 		VID:                   "culture.khanty",
 		Name:                  "汉特",
 		Code:                  "khanty",
@@ -771,7 +963,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_芬兰_乌戈尔_科米 = &ck2nebula.Culture{
+	Culture_芬兰_乌戈尔_科米_finno_ugric_komi = &ck2nebula.Culture{
 		VID:                   "culture.komi",
 		Name:                  "科米",
 		Code:                  "komi",
@@ -787,7 +979,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_芬兰_乌戈尔_萨米 = &ck2nebula.Culture{
+	Culture_芬兰_乌戈尔_萨米_finno_ugric_lappish = &ck2nebula.Culture{
 		VID:                   "culture.lappish",
 		Name:                  "萨米",
 		Code:                  "lappish",
@@ -803,7 +995,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_芬兰_乌戈尔_梅晓拉 = &ck2nebula.Culture{
+	Culture_芬兰_乌戈尔_梅晓拉_finno_ugric_meshchera = &ck2nebula.Culture{
 		VID:                   "culture.meshchera",
 		Name:                  "梅晓拉",
 		Code:                  "meshchera",
@@ -819,7 +1011,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_芬兰_乌戈尔_莫尔多瓦 = &ck2nebula.Culture{
+	Culture_芬兰_乌戈尔_莫尔多瓦_finno_ugric_mordvin = &ck2nebula.Culture{
 		VID:                   "culture.mordvin",
 		Name:                  "莫尔多瓦",
 		Code:                  "mordvin",
@@ -835,7 +1027,23 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_芬兰_乌戈尔_爱沙尼亚 = &ck2nebula.Culture{
+	Culture_芬兰_乌戈尔_涅涅茨_finno_ugric_samoyed = &ck2nebula.Culture{
+		VID:                   "culture.samoyed",
+		Name:                  "涅涅茨",
+		Code:                  "samoyed",
+		FromDynastyPrefix:     "of ",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: true,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_芬兰_乌戈尔_爱沙尼亚_finno_ugric_ugricbaltic = &ck2nebula.Culture{
 		VID:                   "culture.ugricbaltic",
 		Name:                  "爱沙尼亚",
 		Code:                  "ugricbaltic",
@@ -851,7 +1059,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_猬科_刺猬 = &ck2nebula.Culture{
+	Culture_猬科_刺猬_hedgehog_group_hedgehog_culture = &ck2nebula.Culture{
 		VID:                   "culture.hedgehog_culture",
 		Name:                  "刺猬",
 		Code:                  "hedgehog_culture",
@@ -867,7 +1075,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_马_马 = &ck2nebula.Culture{
+	Culture_马_马_horse_group_horse = &ck2nebula.Culture{
 		VID:                   "culture.horse",
 		Name:                  "马",
 		Code:                  "horse",
@@ -883,7 +1091,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊比利亚_巴斯克 = &ck2nebula.Culture{
+	Culture_伊比利亚_巴斯克_iberian_basque = &ck2nebula.Culture{
 		VID:                   "culture.basque",
 		Name:                  "巴斯克",
 		Code:                  "basque",
@@ -899,7 +1107,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊比利亚_卡斯蒂利亚 = &ck2nebula.Culture{
+	Culture_伊比利亚_卡斯蒂利亚_iberian_castillan = &ck2nebula.Culture{
 		VID:                   "culture.castillan",
 		Name:                  "卡斯蒂利亚",
 		Code:                  "castillan",
@@ -915,7 +1123,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊比利亚_加泰罗尼亚 = &ck2nebula.Culture{
+	Culture_伊比利亚_加泰罗尼亚_iberian_catalan = &ck2nebula.Culture{
 		VID:                   "culture.catalan",
 		Name:                  "加泰罗尼亚",
 		Code:                  "catalan",
@@ -931,7 +1139,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊比利亚_葡萄牙 = &ck2nebula.Culture{
+	Culture_伊比利亚_葡萄牙_iberian_portuguese = &ck2nebula.Culture{
 		VID:                   "culture.portuguese",
 		Name:                  "葡萄牙",
 		Code:                  "portuguese",
@@ -947,7 +1155,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊比利亚_西哥特 = &ck2nebula.Culture{
+	Culture_伊比利亚_西哥特_iberian_visigothic = &ck2nebula.Culture{
 		VID:                   "culture.visigothic",
 		Name:                  "西哥特",
 		Code:                  "visigothic",
@@ -963,7 +1171,87 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_印度雅利安_尼波罗 = &ck2nebula.Culture{
+	Culture_印度雅利安_阿萨姆_indo_aryan_group_assamese = &ck2nebula.Culture{
+		VID:                   "culture.assamese",
+		Name:                  "阿萨姆",
+		Code:                  "assamese",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_印度雅利安_旁伽罗_indo_aryan_group_bengali = &ck2nebula.Culture{
+		VID:                   "culture.bengali",
+		Name:                  "旁伽罗",
+		Code:                  "bengali",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_印度雅利安_瞿折罗_indo_aryan_group_gujurati = &ck2nebula.Culture{
+		VID:                   "culture.gujurati",
+		Name:                  "瞿折罗",
+		Code:                  "gujurati",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_印度雅利安_印度斯坦_indo_aryan_group_hindustani = &ck2nebula.Culture{
+		VID:                   "culture.hindustani",
+		Name:                  "印度斯坦",
+		Code:                  "hindustani",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_印度雅利安_摩剌侘_indo_aryan_group_marathi = &ck2nebula.Culture{
+		VID:                   "culture.marathi",
+		Name:                  "摩剌侘",
+		Code:                  "marathi",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_印度雅利安_尼波罗_indo_aryan_group_nepali = &ck2nebula.Culture{
 		VID:                   "culture.nepali",
 		Name:                  "尼波罗",
 		Code:                  "nepali",
@@ -979,7 +1267,87 @@ var (
 		BaronTitlesHidden:     true,
 		AllowLooting:          true,
 	}
-	Culture_伊朗_阿富汗 = &ck2nebula.Culture{
+	Culture_印度雅利安_乌里舍_indo_aryan_group_oriya = &ck2nebula.Culture{
+		VID:                   "culture.oriya",
+		Name:                  "乌里舍",
+		Code:                  "oriya",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_印度雅利安_五河_indo_aryan_group_panjabi = &ck2nebula.Culture{
+		VID:                   "culture.panjabi",
+		Name:                  "五河",
+		Code:                  "panjabi",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_印度雅利安_罗阇弗多_indo_aryan_group_rajput = &ck2nebula.Culture{
+		VID:                   "culture.rajput",
+		Name:                  "罗阇弗多",
+		Code:                  "rajput",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_印度雅利安_信度_indo_aryan_group_sindhi = &ck2nebula.Culture{
+		VID:                   "culture.sindhi",
+		Name:                  "信度",
+		Code:                  "sindhi",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_印度雅利安_僧伽罗_indo_aryan_group_sinhala = &ck2nebula.Culture{
+		VID:                   "culture.sinhala",
+		Name:                  "僧伽罗",
+		Code:                  "sinhala",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     true,
+		FounderNamedDynasties: true,
+		Caste:                 true,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_伊朗_阿富汗_iranian_afghan = &ck2nebula.Culture{
 		VID:                   "culture.afghan",
 		Name:                  "阿富汗",
 		Code:                  "afghan",
@@ -995,7 +1363,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊朗_库尔德 = &ck2nebula.Culture{
+	Culture_伊朗_库尔德_iranian_kurdish = &ck2nebula.Culture{
 		VID:                   "culture.kurdish",
 		Name:                  "库尔德",
 		Code:                  "kurdish",
@@ -1011,7 +1379,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊朗_波斯 = &ck2nebula.Culture{
+	Culture_伊朗_波斯_iranian_persian = &ck2nebula.Culture{
 		VID:                   "culture.persian",
 		Name:                  "波斯",
 		Code:                  "persian",
@@ -1027,7 +1395,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊朗_塞种 = &ck2nebula.Culture{
+	Culture_伊朗_塞种_iranian_saka = &ck2nebula.Culture{
 		VID:                   "culture.saka",
 		Name:                  "塞种",
 		Code:                  "saka",
@@ -1043,7 +1411,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊朗_粟特 = &ck2nebula.Culture{
+	Culture_伊朗_粟特_iranian_sogdian = &ck2nebula.Culture{
 		VID:                   "culture.sogdian",
 		Name:                  "粟特",
 		Code:                  "sogdian",
@@ -1059,7 +1427,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_伊朗_吐火罗 = &ck2nebula.Culture{
+	Culture_伊朗_吐火罗_iranian_tocharian = &ck2nebula.Culture{
 		VID:                   "culture.tocharian",
 		Name:                  "吐火罗",
 		Code:                  "tocharian",
@@ -1075,7 +1443,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_以色列_阿什肯纳兹 = &ck2nebula.Culture{
+	Culture_以色列_阿什肯纳兹_israelite_ashkenazi = &ck2nebula.Culture{
 		VID:                   "culture.ashkenazi",
 		Name:                  "阿什肯纳兹",
 		Code:                  "ashkenazi",
@@ -1091,7 +1459,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_以色列_塞法迪 = &ck2nebula.Culture{
+	Culture_以色列_塞法迪_israelite_sephardi = &ck2nebula.Culture{
 		VID:                   "culture.sephardi",
 		Name:                  "塞法迪",
 		Code:                  "sephardi",
@@ -1107,7 +1475,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拉丁_达尔马提亚 = &ck2nebula.Culture{
+	Culture_拉丁_达尔马提亚_latin_dalmatian = &ck2nebula.Culture{
 		VID:                   "culture.dalmatian",
 		Name:                  "达尔马提亚",
 		Code:                  "dalmatian",
@@ -1123,7 +1491,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拉丁_法兰西 = &ck2nebula.Culture{
+	Culture_拉丁_法兰西_latin_frankish = &ck2nebula.Culture{
 		VID:                   "culture.frankish",
 		Name:                  "法兰西",
 		Code:                  "frankish",
@@ -1139,7 +1507,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拉丁_意大利 = &ck2nebula.Culture{
+	Culture_拉丁_意大利_latin_italian = &ck2nebula.Culture{
 		VID:                   "culture.italian",
 		Name:                  "意大利",
 		Code:                  "italian",
@@ -1155,7 +1523,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拉丁_诺曼 = &ck2nebula.Culture{
+	Culture_拉丁_诺曼_latin_norman = &ck2nebula.Culture{
 		VID:                   "culture.norman",
 		Name:                  "诺曼",
 		Code:                  "norman",
@@ -1171,7 +1539,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拉丁_奥克 = &ck2nebula.Culture{
+	Culture_拉丁_奥克_latin_occitan = &ck2nebula.Culture{
 		VID:                   "culture.occitan",
 		Name:                  "奥克",
 		Code:                  "occitan",
@@ -1187,7 +1555,23 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拉丁_罗马 = &ck2nebula.Culture{
+	Culture_拉丁_海外_latin_outremer = &ck2nebula.Culture{
+		VID:                   "culture.outremer",
+		Name:                  "海外",
+		Code:                  "outremer",
+		FromDynastyPrefix:     "de ",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: false,
+		Caste:                 false,
+		DynastyNameFirst:      false,
+		DukesCalledKings:      false,
+		CountTitlesHidden:     false,
+		BaronTitlesHidden:     false,
+		AllowLooting:          false,
+	}
+	Culture_拉丁_罗马_latin_roman = &ck2nebula.Culture{
 		VID:                   "culture.roman",
 		Name:                  "罗马",
 		Code:                  "roman",
@@ -1203,7 +1587,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_拉丁_撒丁 = &ck2nebula.Culture{
+	Culture_拉丁_撒丁_latin_sardinian = &ck2nebula.Culture{
 		VID:                   "culture.sardinian",
 		Name:                  "撒丁",
 		Code:                  "sardinian",
@@ -1219,7 +1603,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_马扎尔_匈牙利 = &ck2nebula.Culture{
+	Culture_马扎尔_匈牙利_magyar_hungarian = &ck2nebula.Culture{
 		VID:                   "culture.hungarian",
 		Name:                  "匈牙利",
 		Code:                  "hungarian",
@@ -1235,7 +1619,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_中美洲_纳瓦 = &ck2nebula.Culture{
+	Culture_中美洲_纳瓦_mesoamerican_nahuatl = &ck2nebula.Culture{
 		VID:                   "culture.nahuatl",
 		Name:                  "纳瓦",
 		Code:                  "nahuatl",
@@ -1251,7 +1635,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          true,
 	}
-	Culture_北日耳曼_丹麦 = &ck2nebula.Culture{
+	Culture_北日耳曼_丹麦_north_germanic_danish = &ck2nebula.Culture{
 		VID:                   "culture.danish",
 		Name:                  "丹麦",
 		Code:                  "danish",
@@ -1267,7 +1651,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_北日耳曼_诺斯 = &ck2nebula.Culture{
+	Culture_北日耳曼_诺斯_north_germanic_norse = &ck2nebula.Culture{
 		VID:                   "culture.norse",
 		Name:                  "诺斯",
 		Code:                  "norse",
@@ -1283,7 +1667,7 @@ var (
 		BaronTitlesHidden:     true,
 		AllowLooting:          true,
 	}
-	Culture_北日耳曼_挪威 = &ck2nebula.Culture{
+	Culture_北日耳曼_挪威_north_germanic_norwegian = &ck2nebula.Culture{
 		VID:                   "culture.norwegian",
 		Name:                  "挪威",
 		Code:                  "norwegian",
@@ -1299,7 +1683,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_北日耳曼_瑞典 = &ck2nebula.Culture{
+	Culture_北日耳曼_瑞典_north_germanic_swedish = &ck2nebula.Culture{
 		VID:                   "culture.swedish",
 		Name:                  "瑞典",
 		Code:                  "swedish",
@@ -1315,7 +1699,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_熊猫科_小熊猫 = &ck2nebula.Culture{
+	Culture_熊猫科_小熊猫_panda_group_red_panda = &ck2nebula.Culture{
 		VID:                   "culture.red_panda",
 		Name:                  "小熊猫",
 		Code:                  "red_panda",
@@ -1331,7 +1715,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_南斯拉夫_波斯尼亚 = &ck2nebula.Culture{
+	Culture_南斯拉夫_波斯尼亚_south_slavic_bosnian = &ck2nebula.Culture{
 		VID:                   "culture.bosnian",
 		Name:                  "波斯尼亚",
 		Code:                  "bosnian",
@@ -1347,7 +1731,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_南斯拉夫_保加利亚 = &ck2nebula.Culture{
+	Culture_南斯拉夫_保加利亚_south_slavic_bulgarian = &ck2nebula.Culture{
 		VID:                   "culture.bulgarian",
 		Name:                  "保加利亚",
 		Code:                  "bulgarian",
@@ -1363,7 +1747,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_南斯拉夫_卡拉塔尼亚 = &ck2nebula.Culture{
+	Culture_南斯拉夫_卡拉塔尼亚_south_slavic_carantanian = &ck2nebula.Culture{
 		VID:                   "culture.carantanian",
 		Name:                  "卡拉塔尼亚",
 		Code:                  "carantanian",
@@ -1379,7 +1763,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_南斯拉夫_克罗地亚 = &ck2nebula.Culture{
+	Culture_南斯拉夫_克罗地亚_south_slavic_croatian = &ck2nebula.Culture{
 		VID:                   "culture.croatian",
 		Name:                  "克罗地亚",
 		Code:                  "croatian",
@@ -1395,7 +1779,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_南斯拉夫_瓦拉几亚 = &ck2nebula.Culture{
+	Culture_南斯拉夫_瓦拉几亚_south_slavic_romanian = &ck2nebula.Culture{
 		VID:                   "culture.romanian",
 		Name:                  "瓦拉几亚",
 		Code:                  "romanian",
@@ -1411,7 +1795,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_南斯拉夫_塞尔维亚 = &ck2nebula.Culture{
+	Culture_南斯拉夫_塞尔维亚_south_slavic_serbian = &ck2nebula.Culture{
 		VID:                   "culture.serbian",
 		Name:                  "塞尔维亚",
 		Code:                  "serbian",
@@ -1427,7 +1811,39 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_藏缅_党项 = &ck2nebula.Culture{
+	Culture_藏缅_吐蕃_tibetan_group_bodpa = &ck2nebula.Culture{
+		VID:                   "culture.bodpa",
+		Name:                  "吐蕃",
+		Code:                  "bodpa",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: false,
+		Caste:                 false,
+		DynastyNameFirst:      true,
+		DukesCalledKings:      true,
+		CountTitlesHidden:     true,
+		BaronTitlesHidden:     true,
+		AllowLooting:          true,
+	}
+	Culture_藏缅_孙波_tibetan_group_sumpa = &ck2nebula.Culture{
+		VID:                   "culture.sumpa",
+		Name:                  "孙波",
+		Code:                  "sumpa",
+		FromDynastyPrefix:     "",
+		MaleParonym:           "",
+		FemaleParonym:         "",
+		DynastyTitleNames:     false,
+		FounderNamedDynasties: false,
+		Caste:                 false,
+		DynastyNameFirst:      true,
+		DukesCalledKings:      true,
+		CountTitlesHidden:     true,
+		BaronTitlesHidden:     true,
+		AllowLooting:          true,
+	}
+	Culture_藏缅_党项_tibetan_group_tangut = &ck2nebula.Culture{
 		VID:                   "culture.tangut",
 		Name:                  "党项",
 		Code:                  "tangut",
@@ -1443,7 +1859,7 @@ var (
 		BaronTitlesHidden:     true,
 		AllowLooting:          true,
 	}
-	Culture_藏缅_象雄 = &ck2nebula.Culture{
+	Culture_藏缅_象雄_tibetan_group_zhangzhung = &ck2nebula.Culture{
 		VID:                   "culture.zhangzhung",
 		Name:                  "象雄",
 		Code:                  "zhangzhung",
@@ -1459,7 +1875,7 @@ var (
 		BaronTitlesHidden:     true,
 		AllowLooting:          true,
 	}
-	Culture_西非_曼德 = &ck2nebula.Culture{
+	Culture_西非_曼德_west_african_manden = &ck2nebula.Culture{
 		VID:                   "culture.manden",
 		Name:                  "曼德",
 		Code:                  "manden",
@@ -1475,7 +1891,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_西非_桑海 = &ck2nebula.Culture{
+	Culture_西非_桑海_west_african_songhay = &ck2nebula.Culture{
 		VID:                   "culture.songhay",
 		Name:                  "桑海",
 		Code:                  "songhay",
@@ -1491,7 +1907,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_西非_索宁凯 = &ck2nebula.Culture{
+	Culture_西非_索宁凯_west_african_soninke = &ck2nebula.Culture{
 		VID:                   "culture.soninke",
 		Name:                  "索宁凯",
 		Code:                  "soninke",
@@ -1507,7 +1923,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_西日耳曼_荷兰 = &ck2nebula.Culture{
+	Culture_西日耳曼_荷兰_west_germanic_dutch = &ck2nebula.Culture{
 		VID:                   "culture.dutch",
 		Name:                  "荷兰",
 		Code:                  "dutch",
@@ -1523,7 +1939,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_西日耳曼_英格兰 = &ck2nebula.Culture{
+	Culture_西日耳曼_英格兰_west_germanic_english = &ck2nebula.Culture{
 		VID:                   "culture.english",
 		Name:                  "英格兰",
 		Code:                  "english",
@@ -1539,7 +1955,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_西日耳曼_弗里斯兰 = &ck2nebula.Culture{
+	Culture_西日耳曼_弗里斯兰_west_germanic_frisian = &ck2nebula.Culture{
 		VID:                   "culture.frisian",
 		Name:                  "弗里斯兰",
 		Code:                  "frisian",
@@ -1555,7 +1971,7 @@ var (
 		BaronTitlesHidden:     true,
 		AllowLooting:          false,
 	}
-	Culture_西日耳曼_撒克逊 = &ck2nebula.Culture{
+	Culture_西日耳曼_撒克逊_west_germanic_old_saxon = &ck2nebula.Culture{
 		VID:                   "culture.old_saxon",
 		Name:                  "撒克逊",
 		Code:                  "old_saxon",
@@ -1571,7 +1987,7 @@ var (
 		BaronTitlesHidden:     true,
 		AllowLooting:          false,
 	}
-	Culture_西日耳曼_盎格鲁_撒克逊 = &ck2nebula.Culture{
+	Culture_西日耳曼_盎格鲁_撒克逊_west_germanic_saxon = &ck2nebula.Culture{
 		VID:                   "culture.saxon",
 		Name:                  "盎格鲁－撒克逊",
 		Code:                  "saxon",
@@ -1587,7 +2003,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_西斯拉夫_波希米亚 = &ck2nebula.Culture{
+	Culture_西斯拉夫_波希米亚_west_slavic_bohemian = &ck2nebula.Culture{
 		VID:                   "culture.bohemian",
 		Name:                  "波希米亚",
 		Code:                  "bohemian",
@@ -1603,7 +2019,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_西斯拉夫_波兰 = &ck2nebula.Culture{
+	Culture_西斯拉夫_波兰_west_slavic_polish = &ck2nebula.Culture{
 		VID:                   "culture.polish",
 		Name:                  "波兰",
 		Code:                  "polish",
@@ -1619,7 +2035,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_西斯拉夫_波美拉尼亚 = &ck2nebula.Culture{
+	Culture_西斯拉夫_波美拉尼亚_west_slavic_pommeranian = &ck2nebula.Culture{
 		VID:                   "culture.pommeranian",
 		Name:                  "波美拉尼亚",
 		Code:                  "pommeranian",
@@ -1635,7 +2051,7 @@ var (
 		BaronTitlesHidden:     false,
 		AllowLooting:          false,
 	}
-	Culture_西斯拉夫_斯洛伐克 = &ck2nebula.Culture{
+	Culture_西斯拉夫_斯洛伐克_west_slavic_slovieni = &ck2nebula.Culture{
 		VID:                   "culture.slovieni",
 		Name:                  "斯洛伐克",
 		Code:                  "slovieni",
