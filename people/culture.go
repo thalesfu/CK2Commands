@@ -11,16 +11,9 @@ import (
 
 func HanPictish() {
 	peopleIds := make([]int, 0)
-	peopleIds = append(peopleIds, 2717663)
-	peopleIds = append(peopleIds, 2729781)
-	peopleIds = append(peopleIds, 2729779)
-	peopleIds = append(peopleIds, 2729774)
-	peopleIds = append(peopleIds, 2712711)
-	peopleIds = append(peopleIds, 2726856)
-	peopleIds = append(peopleIds, 2726855)
-	peopleIds = append(peopleIds, 2726776)
+	peopleIds = append(peopleIds, 2749220)
 
-	BuildCultureScript(ck2nebula.SPACE, culture.Culture_中华_汉, culture.Culture_凯尔特_皮克特, peopleIds...)
+	BuildCultureScript(ck2nebula.SPACE, culture.Culture_中华_汉_chinese_group_han, culture.Culture_凯尔特_皮克特_celtic_pictish, peopleIds...)
 }
 
 func BuildCultureScript(space *nebulagolang.Space, culture *ck2nebula.Culture, ethnicity *ck2nebula.Culture, people ...int) {
