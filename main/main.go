@@ -16,6 +16,7 @@ import (
 	"github.com/thalesfu/CK2Commands/feudal"
 	"github.com/thalesfu/CK2Commands/job"
 	"github.com/thalesfu/CK2Commands/people"
+	"github.com/thalesfu/CK2Commands/religion"
 	"github.com/thalesfu/ck2nebula"
 	"github.com/thalesfu/nebulagolang"
 	utils2 "github.com/thalesfu/nebulagolang/utils"
@@ -70,17 +71,18 @@ func monitorMemoryUsage(threshold uint64, snapshotInterval time.Duration) {
 
 func main() {
 	defer ck2nebula.SPACE.Nebula.Close()
-	forceLoadData := false
+	forceLoadDataMode := false
 	watchMode := false
 	titleMode := false
-	culture := false
-	religion := false
-	name := false
+	cultureMode := false
+	religionMode := false
+	nameMode := false
+	washReligionMode := false
 
 	if len(os.Args) > 0 {
 		for _, arg := range os.Args {
 			if arg == "-f" {
-				forceLoadData = true
+				forceLoadDataMode = true
 				continue
 			}
 
@@ -95,26 +97,35 @@ func main() {
 			}
 
 			if arg == "-c" {
-				culture = true
+				cultureMode = true
 				continue
 			}
 
 			if arg == "-r" {
-				religion = true
+				religionMode = true
 				continue
 			}
 
 			if arg == "-n" {
-				name = true
+				nameMode = true
+				continue
+			}
+
+			if arg == "-wr" {
+				washReligionMode = true
 				continue
 			}
 		}
 	}
-	if name {
+
+	if washReligionMode {
+		people.BuildWashReligionScript(ck2nebula.SPACE, religion.Religion_东方宗教_道教_taoist)
+		return
+	} else if nameMode {
 		people.ChangePeopleName()
-	} else if religion {
+	} else if religionMode {
 		people.Taoist()
-	} else if culture {
+	} else if cultureMode {
 		people.HanPictish()
 	} else if titleMode {
 		feudal.BuildTitle()
@@ -137,7 +148,7 @@ func main() {
 					if event.Op&fsnotify.Create == fsnotify.Create {
 						fn := filepath.Base(event.Name)
 						if strings.HasSuffix(event.Name, ".ck2") && fn != "oldautosave.ck2" && fn != "olderautosave.ck2" {
-							loadAndAutoBuild(forceLoadData)
+							loadAndAutoBuild(forceLoadDataMode)
 						}
 					}
 				case err := <-watcher.Errors:
@@ -178,7 +189,7 @@ func main() {
 		<-done
 		fmt.Println("Program exited.")
 	} else {
-		loadAndAutoBuild(forceLoadData)
+		loadAndAutoBuild(forceLoadDataMode)
 	}
 
 	//people.CureFriends(ck2nebula.SPACE, player)

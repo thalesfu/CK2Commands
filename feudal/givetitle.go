@@ -37,7 +37,7 @@ func BuildTitle() {
 	var titles []*Title
 	titles = append(titles, &Title{
 		Holder: 2703149,
-		Feuds: []feud.Feud{
+		Feuds:  []feud.Feud{
 			//earth.Turkestan图兰.KKhotan于阗().DKashgar可失合儿(),
 			//earth.Turkestan图兰.KKhotan于阗().DKashgar可失合儿().CYopurga岳普湖(),
 			//earth.Turkestan图兰.KKhotan于阗().DKashgar可失合儿().CUchturpan乌什吐鲁番(),
@@ -52,24 +52,36 @@ func BuildTitle() {
 			//earth.Turkestan图兰.KKhotan于阗().DKhotan于阗().CYarkand鸦儿看().BYarkand鸦儿看(),
 			//earth.Turkestan图兰.KKhotan于阗().DKhotan于阗().CKarghalik喀格勒克(),
 			//earth.Turkestan图兰.KKhotan于阗().DKarashar喀喇沙尔().CKubera俱毗罗().BKubera俱毗罗(),
-			//earth.Turkestan图兰.KKhiva河中().DKhiva希瓦().CDashhowuz达什霍武兹(),
+			//earth.Turkestan图兰.KKhiva河中().DKhiva希瓦(),
 			//earth.Turkestan图兰.KKhiva河中().DKhiva希瓦().CDashhowuz达什霍武兹().BDashhowuz达什霍武兹(),
-			earth.Turkestan图兰.KKhiva河中().DKhuttal珂咄罗().CKhuttal珂咄罗(),
+			//earth.Turkestan图兰.KKhiva河中().DKhuttal珂咄罗().CVakhan镬侃(),
 			//earth.Turkestan图兰.KKhiva河中().DFerghana费尔干纳().CKhaylam海拉姆(),
 			//earth.Turkestan图兰.KKhiva河中().DFerghana费尔干纳(),
+			//earth.Turkestan图兰.KKhiva河中().DFerghana费尔干纳().CFergana费尔干纳(),
+			//earth.Turkestan图兰.KKhiva河中().DFerghana费尔干纳().CFergana费尔干纳().BUzkand讹迹邗(),
+			//earth.Turkestan图兰.KKhiva河中().DFerghana费尔干纳().CKhaylam海拉姆(),
+			//earth.Turkestan图兰.KKhiva河中().DFerghana费尔干纳().CKhojand苦盏(),
 			//earth.Turkestan图兰.KKhiva河中().DSamarkand撒马尔罕().CBukhara布哈拉(),
+			//earth.Turkestan图兰.KZhetysu七河().DChuy垂河(),
 			//earth.Turkestan图兰.KTurkestan乌古斯().DUsturt乌斯秋尔特(),
 			//earth.Turkestan图兰.KTurkestan乌古斯().DUsturt乌斯秋尔特().CKusbulak库斯布拉克().BKusbulak库斯布拉克(),
-			//earth.Tibet吐蕃.KKashmir迦湿弥罗().DPamir播密().CPamir播密().BKala_panja喀喇喷赤(),
+			//earth.Tibet吐蕃.r().DPamir播密().CPamir播密().BKala_panja喀喇喷赤(),
 			//earth.Tibet吐蕃.KKashmir迦湿弥罗().DPamir播密().CTashkurgan塔什库尔干(),
+			//earth.Persia波斯帝国.KKhorasan呼罗珊().DBalkh缚喝().CBalkh缚喝(),
+			//earth.Persia波斯帝国.KKhorasan呼罗珊().DBalkh缚喝().CBalkh缚喝().BTiliatepe蒂拉丘地(),
+			//earth.Persia波斯帝国.KKhorasan呼罗珊().DBalkh缚喝().CBalkh缚喝().BAlkhanoum艾哈努姆(),
+			//earth.Persia波斯帝国.KKhorasan呼罗珊(),
+			//earth.Persia波斯帝国.KDaylam德莱木().DDihistan大益斯坦().CKara_kum法拉瓦().BFarava法拉瓦(),
+			//
+			//earth.Persia波斯帝国.KDaylam德莱木().DDihistan大益斯坦().CKara_kum法拉瓦(),
 		},
 	})
-	//titles = append(titles, &Title{
-	//	Holder: 2719448,
-	//	Feuds: []feud.Feud{
-	//		earth.Persia波斯帝国.KAfghanistan迦布罗().DKabul迦布罗().CKabul迦布罗().BKabul迦布罗(),
-	//	},
-	//})
+	titles = append(titles, &Title{
+		Holder: 2728929,
+		Feuds: []feud.Feud{
+			earth.Persia波斯帝国.KDaylam德莱木().DDihistan大益斯坦().CKara_kum法拉瓦(),
+		},
+	})
 	//titles = append(titles, &Title{
 	//	Holder: 2700333,
 	//	Feuds: []feud.Feud{
