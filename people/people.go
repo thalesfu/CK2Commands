@@ -3,22 +3,13 @@ package people
 import (
 	"fmt"
 	"github.com/thalesfu/CK2Commands"
+	"github.com/thalesfu/CK2Commands/property"
+	"github.com/thalesfu/CK2Commands/trait"
 	"github.com/thalesfu/ck2nebula"
 	"github.com/thalesfu/nebulagolang"
 	"math/rand"
 	"sort"
 	"time"
-)
-
-type PropertyType string
-
-const (
-	PropertyTypeNone        PropertyType = "none"
-	PropertyTypeDiplomacy                = "diplomacy"
-	PropertyTypeMartial                  = "martial"
-	PropertyTypeStewardship              = "stewardship"
-	PropertyTypeIntrigue                 = "intrigue"
-	PropertyTypeLearning                 = "learning"
 )
 
 type Talent int
@@ -41,14 +32,14 @@ func (t Talent) GetPropertyTopValueLimit() int {
 }
 
 type PropertyModifier struct {
-	Property         PropertyType
+	Property         property.PropertyType
 	OriginalValue    int
 	ModifiedValue    int
 	IsEducationTrait bool
 	Talent           Talent
 }
 
-func NewPropertyModifier(property PropertyType, originalValue int, isEdu bool) *PropertyModifier {
+func NewPropertyModifier(property property.PropertyType, originalValue int, isEdu bool) *PropertyModifier {
 	return &PropertyModifier{
 		Property:         property,
 		OriginalValue:    originalValue,
@@ -59,12 +50,12 @@ func NewPropertyModifier(property PropertyType, originalValue int, isEdu bool) *
 func GetPropertyModifiers(space *nebulagolang.Space, people *ck2nebula.People) []*PropertyModifier {
 	var result []*PropertyModifier
 
-	eductionResult := map[PropertyType]bool{
-		PropertyTypeDiplomacy:   false,
-		PropertyTypeMartial:     false,
-		PropertyTypeStewardship: false,
-		PropertyTypeIntrigue:    false,
-		PropertyTypeLearning:    false,
+	eductionResult := map[property.PropertyType]bool{
+		property.PropertyTypeDiplomacy:   false,
+		property.PropertyTypeMartial:     false,
+		property.PropertyTypeStewardship: false,
+		property.PropertyTypeIntrigue:    false,
+		property.PropertyTypeLearning:    false,
 	}
 
 	educationResult := people.GetEductionTraits(space)
@@ -77,11 +68,11 @@ func GetPropertyModifiers(space *nebulagolang.Space, people *ck2nebula.People) [
 		}
 	}
 
-	result = append(result, NewPropertyModifier(PropertyTypeDiplomacy, people.Diplomacy, eductionResult[PropertyTypeDiplomacy]))
-	result = append(result, NewPropertyModifier(PropertyTypeMartial, people.Martial, eductionResult[PropertyTypeMartial]))
-	result = append(result, NewPropertyModifier(PropertyTypeStewardship, people.Stewardship, eductionResult[PropertyTypeStewardship]))
-	result = append(result, NewPropertyModifier(PropertyTypeIntrigue, people.Intrigue, eductionResult[PropertyTypeIntrigue]))
-	result = append(result, NewPropertyModifier(PropertyTypeLearning, people.Learning, eductionResult[PropertyTypeLearning]))
+	result = append(result, NewPropertyModifier(property.PropertyTypeDiplomacy, people.Diplomacy, eductionResult[property.PropertyTypeDiplomacy]))
+	result = append(result, NewPropertyModifier(property.PropertyTypeMartial, people.Martial, eductionResult[property.PropertyTypeMartial]))
+	result = append(result, NewPropertyModifier(property.PropertyTypeStewardship, people.Stewardship, eductionResult[property.PropertyTypeStewardship]))
+	result = append(result, NewPropertyModifier(property.PropertyTypeIntrigue, people.Intrigue, eductionResult[property.PropertyTypeIntrigue]))
+	result = append(result, NewPropertyModifier(property.PropertyTypeLearning, people.Learning, eductionResult[property.PropertyTypeLearning]))
 
 	sort.Slice(result, func(i, j int) bool {
 		if result[i].IsEducationTrait && !result[j].IsEducationTrait {
@@ -126,11 +117,11 @@ func getTopTalent(space *nebulagolang.Space, people *ck2nebula.People) Talent {
 		return Talent(rand.Intn(3))
 	}
 
-	if _, ok := tr.Data[GeniusTrait.Code]; ok {
+	if _, ok := tr.Data[trait.Trait_56_genius_天才.Code]; ok {
 		return TalentGenius
 	}
 
-	if _, ok := tr.Data[QuickTrait.Code]; ok {
+	if _, ok := tr.Data[trait.Trait_57_quick_敏锐.Code]; ok {
 		t := Talent(rand.Intn(3))
 		if t == TalentGenius {
 			return TalentQuick

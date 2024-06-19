@@ -4,30 +4,14 @@ import (
 	"bufio"
 	"fmt"
 	"github.com/thalesfu/CK2Commands"
+	"github.com/thalesfu/CK2Commands/trait"
 	"github.com/thalesfu/ck2nebula"
 	"github.com/thalesfu/nebulagolang"
 )
 
-var IllTraitMap map[string]*ck2nebula.Trait
-
-func init() {
-	tr := ck2nebula.GetAllTraits(ck2nebula.SPACE)
-	if tr.Ok {
-		IllTraitMap = make(map[string]*ck2nebula.Trait)
-		for _, trait := range tr.Data {
-			if trait.Code == "pregnancy_finishing" {
-				continue
-			}
-			if trait.IsHealth || trait.IsIllness || trait.Blinding {
-				IllTraitMap[trait.Code] = trait
-			}
-		}
-	}
-}
-
 func cureIlls(writer *bufio.Writer, peopleId int) {
-	for trait, _ := range IllTraitMap {
-		writeRemoveTrait(writer, trait, peopleId)
+	for t, _ := range trait.IllTraitMap {
+		writeRemoveTrait(writer, t, peopleId)
 	}
 }
 
@@ -42,12 +26,9 @@ func CurePeopleIll(peopleId ...int) {
 func buildForceCurePeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebula.People) *PeopleScriptGenerator {
 	scriptGenerator := NewPeopleScriptGenerator(people)
 
-	for _, trait := range IllTraitMap {
-		if trait.Code == "pregnancy_finishing" {
-			continue
-		}
-		if trait.IsHealth || trait.IsIllness || trait.Blinding {
-			scriptGenerator.AddScriptGenerator(NewRemoveTraitScriptGenerator(trait))
+	for _, t := range trait.IllTraitMap {
+		if t.IsHealth || t.IsIllness || t.Blinding {
+			scriptGenerator.AddScriptGenerator(NewRemoveTraitScriptGenerator(t))
 		}
 	}
 
@@ -80,24 +61,6 @@ func ForceCurePeople(space *nebulagolang.Space, player *ck2nebula.People, coreFa
 	BuildForceCurePeopleScript(space, people...)
 }
 
-func GetAllReligionVassal(space *nebulagolang.Space, people *ck2nebula.People, religion string) []*ck2nebula.People {
-	religionVassals := make([]*ck2nebula.People, 0)
-
-	vr := people.GetVassals(space)
-
-	if vr.Ok {
-		for _, v := range vr.Data {
-			if v.IsReligionVassal(space) && religion == v.Religion {
-				religionVassals = append(religionVassals, v)
-			}
-
-			religionVassals = append(religionVassals, GetAllReligionVassal(space, v, religion)...)
-		}
-	}
-
-	return religionVassals
-}
-
 func buildCurePeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebula.People) *PeopleScriptGenerator {
 	scriptGenerator := NewPeopleScriptGenerator(people)
 
@@ -105,9 +68,6 @@ func buildCurePeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebula
 
 	if tr.Ok {
 		for _, trait := range tr.Data {
-			if trait.Code == "pregnancy_finishing" {
-				continue
-			}
 			if trait.IsHealth || trait.IsIllness || trait.Blinding {
 				fmt.Printf("%s.%s(%d) remove trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
 				scriptGenerator.AddScriptGenerator(NewRemoveTraitScriptGenerator(trait))

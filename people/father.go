@@ -4,6 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"github.com/thalesfu/CK2Commands"
+	"github.com/thalesfu/CK2Commands/property"
+	"github.com/thalesfu/CK2Commands/trait"
 	"github.com/thalesfu/ck2nebula"
 	"github.com/thalesfu/nebulagolang"
 	"math/rand"
@@ -61,10 +63,10 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 	fatherModifiers := make([]*PropertyModifier, 2)
 
 	for _, modifier := range modifiers {
-		if modifier.Property == PropertyTypeLearning {
+		if modifier.Property == property.PropertyTypeLearning {
 			modifier.IsEducationTrait = true
 			fatherModifiers[0] = modifier
-		} else if modifier.Property == PropertyTypeMartial {
+		} else if modifier.Property == property.PropertyTypeMartial {
 			fatherModifiers[1] = modifier
 			modifier.ModifiedValue += 20
 		}
@@ -82,27 +84,27 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 		result.AddScriptGenerator(edusg)
 	}
 
-	for _, trait := range CommonGoodTraits {
+	for _, tr := range trait.CommonGoodTraits {
 		if rand.Intn(chance) == 0 {
-			if traits[trait.Code] == nil {
-				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
-				result.AddScriptGenerator(NewAddTraitScriptGenerator(trait))
-				traits[trait.Code] = trait
+			if traits[tr.Code] == nil {
+				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, tr.Name, tr.Code)
+				result.AddScriptGenerator(NewAddTraitScriptGenerator(tr))
+				traits[tr.Code] = tr
 			}
 		}
 	}
 
-	for _, trait := range VirtueTraits {
+	for _, tr := range trait.VirtueTraits {
 		if rand.Intn(2) == 0 {
-			if traits[trait.Code] == nil {
-				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
-				result.AddScriptGenerator(NewAddTraitScriptGenerator(trait))
-				traits[trait.Code] = trait
+			if traits[tr.Code] == nil {
+				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, tr.Name, tr.Code)
+				result.AddScriptGenerator(NewAddTraitScriptGenerator(tr))
+				traits[tr.Code] = tr
 			}
 		}
 	}
 
-	lifeStyletraits := LifeStyleTraitsByPropertyType[fatherModifiers[0].Property]
+	lifeStyletraits := trait.LifeStyleTraitsByPropertyType[fatherModifiers[0].Property]
 
 	for _, lifeStyleTrait := range lifeStyletraits {
 		if rand.Intn(chance) == 0 {
@@ -114,13 +116,13 @@ func buildFatherPeopleScriptGenerator(space *nebulagolang.Space, people *ck2nebu
 		}
 	}
 
-	goodTraits := GoodTraitsByPropertyType[fatherModifiers[0].Property]
-	for _, trait := range goodTraits {
+	goodTraits := trait.GoodTraitsByPropertyType[fatherModifiers[0].Property]
+	for _, tr := range goodTraits {
 		if rand.Intn(chance) == 0 {
-			if traits[trait.Code] == nil {
-				result.AddScriptGenerator(NewAddTraitScriptGenerator(trait))
-				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, trait.Name, trait.Code)
-				traits[trait.Code] = trait
+			if traits[tr.Code] == nil {
+				result.AddScriptGenerator(NewAddTraitScriptGenerator(tr))
+				fmt.Printf("%s.%s(%d) add trait %s(%s)\n", people.DynastyName, people.Name, people.ID, tr.Name, tr.Code)
+				traits[tr.Code] = tr
 			}
 		}
 	}
