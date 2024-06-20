@@ -15,6 +15,7 @@ import (
 	"github.com/thalesfu/CK2Commands/family/wu"
 	"github.com/thalesfu/CK2Commands/family/wuyibu"
 	"github.com/thalesfu/CK2Commands/feudal"
+	"github.com/thalesfu/CK2Commands/historydynasty"
 	"github.com/thalesfu/CK2Commands/historypeople"
 	"github.com/thalesfu/CK2Commands/job"
 	"github.com/thalesfu/CK2Commands/people"
@@ -241,7 +242,7 @@ func GetStory(force bool) (*ck2nebula.Story, *ck2nebula.People, error) {
 
 	if force || errors.As(sr.Err, &nebulagolang.NoDataErr) || !isSameStory(filePath, sr.Data) {
 		log.Printf("%sloading save file \"%s\"%s\n", utils2.PrintColorCyan, filePath, utils2.PrintColorReset)
-		ck2nebula.BuildStory(ck2Folder, filePath, culture.CultureMap, religion.ReligionMap, historypeople.HistoryPeopleMap)
+		ck2nebula.BuildStory(ck2Folder, filePath, culture.CultureMap, religion.ReligionMap, historypeople.HistoryPeopleMap, historydynasty.HistoryDynastyMap)
 
 		sr = ck2nebula.GetLatestStory(ck2nebula.SPACE)
 
