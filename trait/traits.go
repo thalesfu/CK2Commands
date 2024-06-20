@@ -59123,6 +59123,7 @@ func init() {
 	IllTraitMap["vomiting"] = Trait_210_vomiting_呕吐
 	IllTraitMap["wounded"] = Trait_29_wounded_受伤
 
+	CommonGoodTraits = make(map[string]*ck2nebula.Trait)
 	CommonGoodTraits["fair"] = Trait_53_fair_魅力非凡
 	CommonGoodTraits["groomed"] = Trait_404_groomed_整洁
 	CommonGoodTraits["robust"] = Trait_203_robust_健壮

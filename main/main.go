@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/fsnotify/fsnotify"
+	"github.com/thalesfu/CK2Commands/culture"
 	"github.com/thalesfu/CK2Commands/family/bi"
 	"github.com/thalesfu/CK2Commands/family/chu"
 	"github.com/thalesfu/CK2Commands/family/fu"
@@ -14,6 +15,7 @@ import (
 	"github.com/thalesfu/CK2Commands/family/wu"
 	"github.com/thalesfu/CK2Commands/family/wuyibu"
 	"github.com/thalesfu/CK2Commands/feudal"
+	"github.com/thalesfu/CK2Commands/historypeople"
 	"github.com/thalesfu/CK2Commands/job"
 	"github.com/thalesfu/CK2Commands/people"
 	"github.com/thalesfu/CK2Commands/religion"
@@ -25,8 +27,6 @@ import (
 	_ "net/http/pprof"
 	"os"
 	"path/filepath"
-	"runtime"
-	"runtime/pprof"
 	"strings"
 	"time"
 )
@@ -46,27 +46,6 @@ var CoreFamily = map[int]string{
 	1000103336: "yin",
 	1051150:    "li",
 	1040018:    "Óengus",
-}
-
-func monitorMemoryUsage(threshold uint64, snapshotInterval time.Duration) {
-	for {
-		var m runtime.MemStats
-		runtime.ReadMemStats(&m)
-		if m.Alloc > threshold {
-			log.Printf("Memory usage is high, taking a snapshot: %v bytes\n", m.Alloc)
-			file, err := os.Create(time.Now().Format("2006-01-02_15-04-05_heap.pprof"))
-			if err != nil {
-				log.Printf("Could not create heap snapshot file: %v\n", err)
-				continue
-			}
-			if err := pprof.WriteHeapProfile(file); err != nil {
-				log.Printf("Could not write heap profile: %v\n", err)
-			}
-			file.Close()
-			log.Println("Heap snapshot saved.")
-		}
-		time.Sleep(snapshotInterval)
-	}
 }
 
 func main() {
@@ -262,7 +241,7 @@ func GetStory(force bool) (*ck2nebula.Story, *ck2nebula.People, error) {
 
 	if force || errors.As(sr.Err, &nebulagolang.NoDataErr) || !isSameStory(filePath, sr.Data) {
 		log.Printf("%sloading save file \"%s\"%s\n", utils2.PrintColorCyan, filePath, utils2.PrintColorReset)
-		ck2nebula.BuildStory(ck2Folder, filePath)
+		ck2nebula.BuildStory(ck2Folder, filePath, culture.CultureMap, religion.ReligionMap, historypeople.HistoryPeopleMap)
 
 		sr = ck2nebula.GetLatestStory(ck2nebula.SPACE)
 
