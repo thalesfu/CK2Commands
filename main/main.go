@@ -58,6 +58,7 @@ func main() {
 	religionMode := false
 	nameMode := false
 	washReligionMode := false
+	marriage := false
 
 	if len(os.Args) > 0 {
 		for _, arg := range os.Args {
@@ -95,10 +96,18 @@ func main() {
 				washReligionMode = true
 				continue
 			}
+
+			if arg == "-m" {
+				marriage = true
+				continue
+			}
 		}
 	}
 
-	if washReligionMode {
+	if marriage {
+		people.BuildMarriageScript(ck2nebula.SPACE, CoreFamily)
+		return
+	} else if washReligionMode {
 		people.BuildWashReligionScript(ck2nebula.SPACE, religion.Religion_东方宗教_道教_taoist)
 		return
 	} else if nameMode {
