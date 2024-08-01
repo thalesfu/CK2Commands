@@ -37,7 +37,7 @@ func BuildTitle() {
 	var titles []*Title
 	titles = append(titles, &Title{
 		Holder: 2703149,
-		Feuds:  []feud.Feud{
+		Feuds: []feud.Feud{
 			//earth.Turkestan图兰.KKhotan于阗().DKashgar可失合儿(),
 			//earth.Turkestan图兰.KKhotan于阗().DKashgar可失合儿().CYopurga岳普湖(),
 			//earth.Turkestan图兰.KKhotan于阗().DKashgar可失合儿().CUchturpan乌什吐鲁番(),
@@ -74,14 +74,15 @@ func BuildTitle() {
 			//earth.Persia波斯帝国.KDaylam德莱木().DDihistan大益斯坦().CKara_kum法拉瓦().BFarava法拉瓦(),
 			//
 			//earth.Persia波斯帝国.KDaylam德莱木().DDihistan大益斯坦().CKara_kum法拉瓦(),
+			earth.Persia波斯帝国.KAfghanistan迦布罗().DZabulistan社护罗萨他那().CZamindawar扎敏达瓦尔().BKhalai哈莱(),
 		},
 	})
-	titles = append(titles, &Title{
-		Holder: 2728929,
-		Feuds: []feud.Feud{
-			earth.Persia波斯帝国.KDaylam德莱木().DDihistan大益斯坦().CKara_kum法拉瓦(),
-		},
-	})
+	//titles = append(titles, &Title{
+	//	Holder: 2728929,
+	//	Feuds: []feud.Feud{
+	//		earth.Persia波斯帝国.KDaylam德莱木().DDihistan大益斯坦().CKara_kum法拉瓦(),
+	//	},
+	//})
 	//titles = append(titles, &Title{
 	//	Holder: 2700333,
 	//	Feuds: []feud.Feud{
