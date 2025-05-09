@@ -9,7 +9,7 @@ import (
 
 func ChangePeopleName() {
 	people := make(map[int]string)
-	people[2721442] = "继荣"
+	people[2765449] = "继光"
 
 	BuildChangePeopleNameScript(ck2nebula.SPACE, people)
 }

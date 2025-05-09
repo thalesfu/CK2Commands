@@ -11,7 +11,7 @@ import (
 
 func Taoist() {
 	peopleIds := make([]int, 0)
-	peopleIds = append(peopleIds, 2698888)
+	peopleIds = append(peopleIds, 2734450)
 
 	BuildReligionScript(ck2nebula.SPACE, religion.Religion_东方宗教_道教_taoist, peopleIds...)
 }

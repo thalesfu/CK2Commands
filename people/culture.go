@@ -11,9 +11,18 @@ import (
 
 func HanPictish() {
 	peopleIds := make([]int, 0)
-	peopleIds = append(peopleIds, 2749220)
+	peopleIds = append(peopleIds, 2755280)
+	peopleIds = append(peopleIds, 2756924)
+	peopleIds = append(peopleIds, 2754581)
 
 	BuildCultureScript(ck2nebula.SPACE, culture.Culture_中华_汉_chinese_group_han, culture.Culture_凯尔特_皮克特_celtic_pictish, peopleIds...)
+}
+
+func Han() {
+	peopleIds := make([]int, 0)
+	peopleIds = append(peopleIds, 2727705)
+
+	BuildCultureScript(ck2nebula.SPACE, culture.Culture_中华_汉_chinese_group_han, culture.Culture_中华_汉_chinese_group_han, peopleIds...)
 }
 
 func BuildCultureScript(space *nebulagolang.Space, culture *ck2nebula.Culture, ethnicity *ck2nebula.Culture, people ...int) {
@@ -33,8 +42,16 @@ func BuildCultureScript(space *nebulagolang.Space, culture *ck2nebula.Culture, e
 		generators = append(generators, generator)
 	}
 
-	CK2Commands.BuildScript(strings.ToLower(fmt.Sprintf("%s%s", culture.Code, ethnicity.Code)), generators...)
+	fileNameBuilder := strings.Builder{}
+	if culture != nil {
+		fileNameBuilder.WriteString(culture.Code)
+	}
 
+	if ethnicity != nil {
+		fileNameBuilder.WriteString(ethnicity.Code)
+	}
+
+	CK2Commands.BuildScript(strings.ToLower(fileNameBuilder.String()), generators...)
 }
 
 func buildCultureScriptGenerator(people *ck2nebula.People, culture *ck2nebula.Culture, ethnicity *ck2nebula.Culture) *PeopleScriptGenerator {

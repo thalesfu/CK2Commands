@@ -21,9 +21,8 @@ import (
 	"github.com/thalesfu/CK2Commands/people"
 	"github.com/thalesfu/CK2Commands/religion"
 	"github.com/thalesfu/ck2nebula"
+	utils2 "github.com/thalesfu/golangutils"
 	"github.com/thalesfu/nebulagolang"
-	utils2 "github.com/thalesfu/nebulagolang/utils"
-	"github.com/thalesfu/paradoxtools/utils"
 	"log"
 	_ "net/http/pprof"
 	"os"
@@ -59,9 +58,15 @@ func main() {
 	nameMode := false
 	washReligionMode := false
 	marriage := false
+	buildStatic := false
 
 	if len(os.Args) > 0 {
 		for _, arg := range os.Args {
+			if arg == "-bs" {
+				buildStatic = true
+				continue
+			}
+
 			if arg == "-f" {
 				forceLoadDataMode = true
 				continue
@@ -103,8 +108,15 @@ func main() {
 			}
 		}
 	}
-
-	if marriage {
+	if buildStatic {
+		culture.BuildCulture()
+		religion.BuildReligion()
+		ck2nebula.BuildModifiers(ck2Folder)
+		ck2nebula.BuildObjectives(ck2Folder)
+		ck2nebula.BuildBuildings(ck2Folder)
+		ck2nebula.BuildTraits(ck2Folder)
+		return
+	} else if marriage {
 		people.BuildMarriageScript(ck2nebula.SPACE, CoreFamily)
 		return
 	} else if washReligionMode {
@@ -115,7 +127,8 @@ func main() {
 	} else if religionMode {
 		people.Taoist()
 	} else if cultureMode {
-		people.HanPictish()
+		//people.HanPictish()
+		people.Han()
 	} else if titleMode {
 		feudal.BuildTitle()
 	} else if watchMode {
@@ -275,7 +288,7 @@ func isSameStory(fp string, story *ck2nebula.Story) bool {
 		return false
 	}
 
-	hash, err := utils.GetFileHash(fp)
+	hash, err := utils2.GetFileHash(fp)
 
 	if err != nil {
 		return false
