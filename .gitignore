@@ -21,3 +21,10 @@ temps/
 *.prof
 
 ck2
+
+# credentials
+neo4j-account.yaml
+nebula-account.yaml
+
+# macOS
+.DS_Store

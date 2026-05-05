@@ -21,6 +21,7 @@ import (
 	"github.com/thalesfu/CK2Commands/people"
 	"github.com/thalesfu/CK2Commands/religion"
 	"github.com/thalesfu/ck2nebula"
+	"github.com/thalesfu/ck2neo4j"
 	utils2 "github.com/thalesfu/golangutils"
 	"github.com/thalesfu/nebulagolang"
 	"log"
@@ -59,6 +60,7 @@ func main() {
 	washReligionMode := false
 	marriage := false
 	buildStatic := false
+	target := "neo4j" // default: write to Neo4j; options: nebula | neo4j | both
 
 	if len(os.Args) > 0 {
 		for _, arg := range os.Args {
@@ -106,15 +108,30 @@ func main() {
 				marriage = true
 				continue
 			}
+
+			if strings.HasPrefix(arg, "-target=") {
+				target = strings.TrimPrefix(arg, "-target=")
+				continue
+			}
 		}
 	}
 	if buildStatic {
-		culture.BuildCulture()
-		religion.BuildReligion()
-		ck2nebula.BuildModifiers(ck2Folder)
-		ck2nebula.BuildObjectives(ck2Folder)
-		ck2nebula.BuildBuildings(ck2Folder)
-		ck2nebula.BuildTraits(ck2Folder)
+		if target == "nebula" || target == "both" {
+			culture.BuildCulture()
+			religion.BuildReligion()
+			ck2nebula.BuildModifiers(ck2Folder)
+			ck2nebula.BuildObjectives(ck2Folder)
+			ck2nebula.BuildBuildings(ck2Folder)
+			ck2nebula.BuildTraits(ck2Folder)
+		}
+		if target == "neo4j" || target == "both" {
+			ck2neo4j.BuildCultures(ck2Folder)
+			ck2neo4j.BuildReligions(ck2Folder)
+			ck2neo4j.BuildModifiers(ck2Folder)
+			ck2neo4j.BuildObjectives(ck2Folder)
+			ck2neo4j.BuildBuildings(ck2Folder)
+			ck2neo4j.BuildTraits(ck2Folder)
+		}
 		return
 	} else if marriage {
 		people.BuildMarriageScript(ck2nebula.SPACE, CoreFamily)
@@ -150,7 +167,7 @@ func main() {
 					if event.Op&fsnotify.Create == fsnotify.Create {
 						fn := filepath.Base(event.Name)
 						if strings.HasSuffix(event.Name, ".ck2") && fn != "oldautosave.ck2" && fn != "olderautosave.ck2" {
-							loadAndAutoBuild(forceLoadDataMode)
+							loadAndAutoBuild(forceLoadDataMode, target)
 						}
 					}
 				case err := <-watcher.Errors:
@@ -191,7 +208,7 @@ func main() {
 		<-done
 		fmt.Println("Program exited.")
 	} else {
-		loadAndAutoBuild(forceLoadDataMode)
+		loadAndAutoBuild(forceLoadDataMode, target)
 	}
 
 	//people.CureFriends(ck2nebula.SPACE, player)
@@ -203,9 +220,9 @@ func main() {
 	//BuildFriends(player)
 }
 
-func loadAndAutoBuild(forceLoadData bool) {
+func loadAndAutoBuild(forceLoadData bool, target string) {
 	start := time.Now()
-	story, player, err := GetStory(forceLoadData)
+	story, player, err := GetStory(forceLoadData, target)
 
 	if err != nil {
 		log.Fatal(err)
@@ -232,7 +249,7 @@ func BuildFriends(player *ck2nebula.People) {
 	}
 }
 
-func GetStory(force bool) (*ck2nebula.Story, *ck2nebula.People, error) {
+func GetStory(force bool, target string) (*ck2nebula.Story, *ck2nebula.People, error) {
 
 	sr := ck2nebula.GetLatestStory(ck2nebula.SPACE)
 
@@ -264,7 +281,13 @@ func GetStory(force bool) (*ck2nebula.Story, *ck2nebula.People, error) {
 
 	if force || errors.As(sr.Err, &nebulagolang.NoDataErr) || !isSameStory(filePath, sr.Data) {
 		log.Printf("%sloading save file \"%s\"%s\n", utils2.PrintColorCyan, filePath, utils2.PrintColorReset)
-		ck2nebula.BuildStory(ck2Folder, filePath, culture.CultureMap, religion.ReligionMap, historypeople.HistoryPeopleMap, historydynasty.HistoryDynastyMap)
+
+		if target == "nebula" || target == "both" {
+			ck2nebula.BuildStory(ck2Folder, filePath, culture.CultureMap, religion.ReligionMap, historypeople.HistoryPeopleMap, historydynasty.HistoryDynastyMap)
+		}
+		if target == "neo4j" || target == "both" {
+			ck2neo4j.BuildStory(ck2Folder, filePath, culture.CultureMap, religion.ReligionMap, historypeople.HistoryPeopleMap, historydynasty.HistoryDynastyMap)
+		}
 
 		sr = ck2nebula.GetLatestStory(ck2nebula.SPACE)
 

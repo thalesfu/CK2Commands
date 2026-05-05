@@ -5,6 +5,7 @@ go 1.23.6
 require (
 	github.com/fsnotify/fsnotify v1.7.0
 	github.com/thalesfu/ck2nebula v0.0.0-20240124143540-d6fb273d2f4f
+	github.com/thalesfu/ck2neo4j v0.0.0-00010101000000-000000000000
 	github.com/thalesfu/golangutils v0.0.0-20250310030459-a6ea23977f07
 	github.com/thalesfu/nebulagolang v0.0.0-20240125053636-96c493d57eef
 	github.com/thalesfu/paradoxtools v0.0.0-20240710142350-8b50cb2dda49
