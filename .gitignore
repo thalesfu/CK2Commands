@@ -23,7 +23,6 @@ temps/
 ck2
 
 # credentials
-neo4j-account.yaml
 nebula-account.yaml
 
 # macOS
